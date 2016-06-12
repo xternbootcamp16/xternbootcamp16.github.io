@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week1s on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/week1/</link>
+    <description>Recent content in Week1s on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Jun 2016 16:27:52 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/week1/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/</link>
+      <pubDate>Sat, 11 Jun 2016 16:27:52 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-1&#34;&gt;Week 1&lt;/h3&gt;
+
+&lt;h1 id=&#34;javascript&#34;&gt;JavaScript&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1: Introduction</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day01/</link>
+      <pubDate>Sat, 11 Jun 2016 16:29:51 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day01/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, May 31, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
+&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
+&lt;li&gt;Anatomy of an HTML element (tags, attributes, contents)&lt;/li&gt;
+&lt;li&gt;Basic CSS selector syntax
+
+&lt;ul&gt;
+&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic DOM manipulation
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.innerText&lt;/code&gt;/&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic event handling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;onsubmit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Anonymous functions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic Form (FirstJS):  &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/&#34;&gt;Foundation&lt;/a&gt; - a front-end framework&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; - a game for practicing CSS selector syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt; - another tool for practicing selector syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-basic-form-firstjs&#34;&gt;Homework: Basic Form (FirstJS)&lt;/h2&gt;
+
+&lt;p&gt;Grab values from form fields and add them to a list.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to employ these concepts that we used in class:
+* Target elements with &lt;code&gt;document.querySelector&lt;/code&gt;
+* Handle events
+* Prevent default event behavior from executing
+* Alter an element&amp;rsquo;s contents via &lt;code&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values as plain text.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in separate paragraphs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in an unordered list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in a &lt;em&gt;definition list&lt;/em&gt; (&lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Output something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;dl&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;dt&amp;gt;First Name&amp;lt;/dt&amp;gt;
+    &amp;lt;dd&amp;gt;Davey&amp;lt;/dd&amp;gt;
+  &amp;lt;/li&amp;gt;
+
+  &amp;lt;li&amp;gt;
+    &amp;lt;dt&amp;gt;Hair color&amp;lt;/dt&amp;gt;
+    &amp;lt;dd&amp;gt;#000000&amp;lt;/dd&amp;gt;
+  &amp;lt;/li&amp;gt;
+
+  &amp;lt;!-- etc. --&amp;gt;
+&amp;lt;/dl&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Display the color value &lt;em&gt;in the specified color&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 2: Objects and Functions</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day02/</link>
+      <pubDate>Sat, 11 Jun 2016 17:09:05 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day02/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 1, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution to Tuesday&amp;rsquo;s homework: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Function expressions&lt;/li&gt;
+&lt;li&gt;Functions as variables&lt;/li&gt;
+&lt;li&gt;Functions as object properties (&lt;em&gt;methods&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Variable scope&lt;/li&gt;
+&lt;li&gt;IIFEs: Immediately Invoked Function Expressions&lt;/li&gt;
+&lt;li&gt;Function invocation and the value of &lt;code&gt;this&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;As functions, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someFunction()&lt;/code&gt;: &lt;code&gt;this === window&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the global object)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Warning&lt;/strong&gt;: This includes functions defined within other functions.&lt;/li&gt;
+&lt;li&gt;As methods, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someObject.someMethod()&lt;/code&gt;: &lt;code&gt;this === someObject&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the object on which the method was called)&lt;/li&gt;
+&lt;li&gt;As event handlers, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someForm.onsubmit = someFunction&lt;/code&gt;: &lt;code&gt;this === someForm&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the object that fired the event)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objects&#34;&gt;Objects&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object literals&lt;/li&gt;
+&lt;li&gt;Property naming&lt;/li&gt;
+&lt;li&gt;Retrieving property values&lt;/li&gt;
+&lt;li&gt;Setting property values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dom&#34;&gt;DOM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Creating elements (&lt;code&gt;document.createElement(&#39;li&#39;)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Setting style properties on elements (&lt;code&gt;someElement.style.backgroundColor = &#39;CadetBlue&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Appending child elements (&lt;code&gt;someList.appendChild(someItem)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;selectors&#34;&gt;Selectors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Descendent (&lt;code&gt;ul li&lt;/code&gt;) and child (&lt;code&gt;ul &amp;gt; li&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;css-properties&#34;&gt;CSS Properties&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;background-color&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;border&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;height&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list-style&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;width&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;organizing-code&#34;&gt;Organizing Code&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.js&lt;/code&gt; files (&lt;code&gt;&amp;lt;script src=&amp;quot;app.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Wrapping in an IIFE (&lt;code&gt;(function() {})();&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Wrapping in a object-literal (&lt;code&gt;{}&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/02-functions&#34;&gt;Day 1 Review, Intro to Functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Finished Basic Form (FirstJS): &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/colors/colors_names.asp&#34;&gt;List of CSS color names&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://benalman.com/news/2010/11/immediately-invoked-function-expression/&#34;&gt;IIFEs as explained by Ben Alman&lt;/a&gt;, who coined the term&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects&#34;&gt;More than you ever wanted to know about &lt;em&gt;objects&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-megaroster&#34;&gt;Homework: Megaroster&lt;/h2&gt;
+
+&lt;p&gt;Create a class roster.&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User can enter a name to be added to the roster.&lt;/li&gt;
+&lt;li&gt;Name will be added to the end of a list&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create &lt;em&gt;at most&lt;/em&gt; one global variable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add names to the &lt;em&gt;top&lt;/em&gt; of the list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;delete&lt;/em&gt; link to every list item that removes the name from the list when clicked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;promote&lt;/em&gt; link to every list item that draws a border around that item when clicked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/dfa5fbf687e0eb39fe6e60837eda35778c7e860a&#34;&gt;Solution: MegaRoster with delete and promote&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 3: Putting the Pieces Together</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day03/</link>
+      <pubDate>Sat, 11 Jun 2016 17:12:02 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day03/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, June 2, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/dfa5fbf687e0eb39fe6e60837eda35778c7e860a&#34;&gt;Solution to Wednesday&amp;rsquo;s homework: MegaRoster with delete and promote&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The grid system&lt;/li&gt;
+&lt;li&gt;Responsive design (changing style based on the window size)&lt;/li&gt;
+&lt;li&gt;Check out the &lt;a href=&#34;https://sudheerdev.github.io/Foundation5CheatSheet/&#34;&gt;Foundation Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;functions-as-methods&#34;&gt;Functions as Methods&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Methods calling methods (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;megaRoster.addChild&lt;/code&gt; calls &lt;code&gt;this.buildListItem&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Binding: Manually setting the value of &lt;code&gt;this&lt;/code&gt; with &lt;code&gt;bind&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;event-objects&#34;&gt;Event Objects&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;currentTarget&lt;/code&gt;: The object on which the event occurred&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;parentElement&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;childNodes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;firstChild&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;firstElementChild&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;insertBefore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;project-organization&#34;&gt;Project Organization&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When to write a new function&lt;/li&gt;
+&lt;li&gt;Avoiding global variables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/03-objects-and-functions&#34;&gt;Day 2 Review: Objects and Functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-megaroster-now-with-even-more-mega&#34;&gt;Homework: MegaRoster - now with even more mega&lt;/h2&gt;
+
+&lt;p&gt;Enhance MegaRoster! Make the students editable, and add the ability to move them around in the list.&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;p&gt;Add a link that moves the student to the top of the list. Either change the behavior of the existing &lt;em&gt;promote&lt;/em&gt; link, or add a new &lt;em&gt;top&lt;/em&gt; link.&lt;/p&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Add links to move the student up and down the list, one spot at a time.&lt;/p&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Disable the &lt;em&gt;up&lt;/em&gt; link when the student reaches the top, and disable the &lt;em&gt;down&lt;/em&gt; link when the student reaches the bottom.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Make the student name editable in place after it&amp;rsquo;s added to the roster.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Make the student data persistent between page refreshes! That is, keep the students from disappearing every time the page is refreshed.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Use &lt;code&gt;localStorage&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879&#34;&gt;Solution: Editable MegaRoster&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 4: LocalStorage &amp; jQuery</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day04/</link>
+      <pubDate>Sat, 11 Jun 2016 17:32:08 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day04/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Friday, June 3, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879&#34;&gt;Solution to Thursday&amp;rsquo;s homework: Editable MegaRoster&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;the-dom&#34;&gt;The DOM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Editable content: &lt;a href=&#34;http://blog.teamtreehouse.com/native-rich-text-editing-with-the-contenteditable-attribute&#34;&gt;&lt;code&gt;contenteditable&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes&#34;&gt;Data attributes and &lt;code&gt;.dataset&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you want to know more, the above items also link to explanations and tutorials.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;localstorage&#34;&gt;&lt;code&gt;localStorage&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;(https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/)&#34;&gt;Using &lt;code&gt;localStorage&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JSON.stringify&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dyn-web.com/tutorials/php-js/json/stringify.php&#34;&gt;Using &lt;code&gt;JSON.stringify&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsfiddle.net/queryj/hLkUz/&#34;&gt;Live example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify&#34;&gt;API reference&lt;/a&gt;, including optional arguments for whitelisting properties and transforming the data as it&amp;rsquo;s stringified&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JSON.parse&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dyn-web.com/tutorials/php-js/json/parse.php&#34;&gt;Using &lt;code&gt;JSON.parse&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse&#34;&gt;API reference&lt;/a&gt;, including optional argument for transforming the data as it&amp;rsquo;s parsed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;css-selectors&#34;&gt;CSS Selectors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_firstchild.asp&#34;&gt;&lt;code&gt;:first-child&lt;/code&gt; pseudo-selector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_last-child.asp&#34;&gt;&lt;code&gt;:last-child&lt;/code&gt; pseudo-selector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_attribute_value.asp&#34;&gt;[&lt;em&gt;attribute&lt;/em&gt;=&lt;em&gt;value&lt;/em&gt;] selector&lt;/a&gt; (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;[contenteditable=true]&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Each of the above items links to the &lt;a href=&#34;http://www.w3schools.com/&#34;&gt;w3schools&lt;/a&gt; page for that selector, including examples, reference material (including browser support) and a &lt;em&gt;Try it Yourself&lt;/em&gt; live editor.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;w3schools has a thorough &lt;a href=&#34;http://www.w3schools.com/cssref/css_selectors.asp&#34;&gt;reference of CSS selectors&lt;/a&gt; beyond those we&amp;rsquo;ve discussed (or will discuss) in class. &lt;strong&gt;Seriously&lt;/strong&gt;, if you&amp;rsquo;re having any trouble with selectors, check out &lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; and &lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;font-awesome-http-fontawesome-io&#34;&gt;&lt;a href=&#34;http://fontawesome.io/&#34;&gt;Font Awesome&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/examples/&#34;&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/icons/&#34;&gt;Icon list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/icons/fontawesome_icons_intro.asp&#34;&gt;Font Awesome intro&lt;/a&gt; on w3schools, including a live editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/accessibility/&#34;&gt;Icon Fonts &amp;amp; Accessibility&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/v/5.5.3/components/buttons.html&#34;&gt;Button styles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t forget your friend the &lt;a href=&#34;https://sudheerdev.github.io/Foundation5CheatSheet/&#34;&gt;Foundation Cheat Sheet&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;jquery&#34;&gt;jQuery&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you&amp;rsquo;re new to jQuery, start with &lt;a href=&#34;https://www.codeschool.com/courses/try-jquery&#34;&gt;Try jQuery&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jquery/&#34;&gt;&lt;code&gt;$()&lt;/code&gt;, the jQuery function&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/selecting-elements/&#34;&gt;Selecting elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/jquery-object/&#34;&gt;jQuery Objects vs. DOM elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/manipulating-elements/&#34;&gt;Manipulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/traversing/&#34;&gt;DOM traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;More jQuery tutorials:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/en/courses/web-beginner-en-bay3D/resume?curriculum_id=50a3fad8c7a770b5fd0007a1&#34;&gt;Codecademy&amp;rsquo;s Intro to jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/default.asp&#34;&gt;jQuery Tutorial on w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Be sure to check out the excellent &lt;a href=&#34;http://api.jquery.com/&#34;&gt;jQuery API documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/04a-localstorage&#34;&gt;&lt;code&gt;localStorage&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/04b-jquery&#34;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879&#34;&gt;Megaroster with editable names&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Make MegaRoster even fancier!&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make the student data persistent between page refreshes! That is, keep the students from disappearing every time the page is refreshed. (Use &lt;code&gt;localStorage&lt;/code&gt;.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;You&amp;rsquo;ll want to keep track of the student data—just the data, not the HTML elements—in an array.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/7e826425584aae6ae72f7be20392fe13d5f0743d&#34;&gt;MegaRoster with localStorage&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make the &lt;code&gt;edit&lt;/code&gt;, &lt;code&gt;up&lt;/code&gt;, etc. links look like buttons using Foundation styles.&lt;/li&gt;
+&lt;li&gt;Use Font-Awesome to make them even fancier.&lt;/li&gt;
+&lt;li&gt;Make it prettier to your heart&amp;rsquo;s content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: &lt;a href=&#34;http://xternbootcamp16.github.io/megaroster/snippets.html&#34;&gt;MegaRoster HTML and CSS snippets&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;favorite&lt;/em&gt; button that changes the appearance of the list item.&lt;/li&gt;
+&lt;li&gt;Make sure the &lt;em&gt;favorite&lt;/em&gt; status persists between page loads.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Included in &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/7e826425584aae6ae72f7be20392fe13d5f0743d&#34;&gt;MegaRoster with localStorage&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Convert it to jQuery (ideally in a separate branch). The good news is that jQuery is already available in your project, thanks to Foundation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/jquery&#34;&gt;MegaRoster with jQuery&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

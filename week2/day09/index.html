@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.16" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+    <title>Day 9: Intro to Angular</title>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/hugo-theme.css" rel="stylesheet">
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    <link href="/css/xtern.css" rel="stylesheet">
+
+  </head>
+  <body class="" data-url="/week2/day09/">
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://getgrav.org">
+  <img src="/images/xtbc-white.png" width="150">
+</a>
+
+      
+    </div>
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/setup-mac/">
+        <a href="/setup-mac/">
+          <span>
+            
+              <b>0a. </b>
+            
+             Setup for Mac
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/google-chrome/">
+              <a href="/setup-mac/google-chrome/">
+                <span>Google Chrome     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/command-line/">
+              <a href="/setup-mac/command-line/">
+                <span>Command Line     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/git/">
+              <a href="/setup-mac/git/">
+                <span>Git     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/nodejs/">
+              <a href="/setup-mac/nodejs/">
+                <span>NodeJS     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/text-editors/">
+              <a href="/setup-mac/text-editors/">
+                <span>Text Editors     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/ssh/">
+              <a href="/setup-mac/ssh/">
+                <span>SSH     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/github/">
+              <a href="/setup-mac/github/">
+                <span>GitHub     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/mongodb/">
+              <a href="/setup-mac/mongodb/">
+                <span>MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/setup-win/">
+        <a href="/setup-win/">
+          <span>
+            
+              <b>0b. </b>
+            
+             Setup for Windows
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/google-chrome/">
+              <a href="/setup-win/google-chrome/">
+                <span>Google Chrome     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/command-line/">
+              <a href="/setup-win/command-line/">
+                <span>Command Line     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/git/">
+              <a href="/setup-win/git/">
+                <span>Git     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
+              <a href="/setup-win/nodejs/">
+                <span>NodeJS     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/text-editors/">
+              <a href="/setup-win/text-editors/">
+                <span>Text Editors     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/ssh/">
+              <a href="/setup-win/ssh/">
+                <span>SSH     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/github/">
+              <a href="/setup-win/github/">
+                <span>GitHub     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/mongodb/">
+              <a href="/setup-win/mongodb/">
+                <span>MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week1/">
+        <a href="/week1/">
+          <span>
+            
+              <b>1. </b>
+            
+             JavaScript
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day01/">
+              <a href="/week1/day01/">
+                <span>Day 1: Introduction     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day02/">
+              <a href="/week1/day02/">
+                <span>Day 2: Objects and Functions     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day03/">
+              <a href="/week1/day03/">
+                <span>Day 3: Putting the Pieces Together     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day04/">
+              <a href="/week1/day04/">
+                <span>Day 4: LocalStorage &amp; jQuery     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/week2/">
+        <a href="/week2/">
+          <span>
+            
+              <b>2. </b>
+            
+             jQuery &amp; Ajax
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day05/">
+              <a href="/week2/day05/">
+                <span>Day 5: jQuery &amp; Ajax     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day06/">
+              <a href="/week2/day06/">
+                <span>Day 6: More Ajax     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day07/">
+              <a href="/week2/day07/">
+                <span>Day 7: Intro to REST     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day08/">
+              <a href="/week2/day08/">
+                <span>Day 8: REST     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item active" data-nav-id="/week2/day09/">
+              <a href="/week2/day09/">
+                <span>Day 9: Intro to Angular     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>from <a href="http://techpoint.org">TechPoint</a> and <a href="http://www.getfretless.com">Fretless</a></p>
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    
+                    
+                <a href="/week2/" itemprop="url"><span itemprop="title">jQuery &amp; Ajax</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                <span itemprop="title"> Day 9: Intro to Angular</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#student-presentations">Student Presentations</a></li>
+<li><a href="#topics-introduction-to-angular">Topics: Introduction to Angular</a>
+<ul>
+<li><a href="#concepts">Concepts</a></li>
+<li><a href="#directives">Directives</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+    	        <div id="body-inner">
+                
+                <h1>Day 9: Intro to Angular</h1>
+                
+
+
+
+<p><date>Friday, June 10, 2016</date></p>
+
+<h2 id="student-presentations">Student Presentations</h2>
+
+<p>Group projects demonstrating the use of jQuery, DOM manipulation, and using Ajax to consume REST APIs.</p>
+
+<h2 id="topics-introduction-to-angular">Topics: Introduction to Angular</h2>
+
+<h3 id="concepts">Concepts</h3>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-View-Controller (MVC) design pattern</a></li>
+<li><a href="https://docs.angularjs.org/guide/module">Modules</a> (<a href="https://docs.angularjs.org/api/ng/function/angular.module"><code>angular.module('moduleName', [])</code></a>)</li>
+<li><a href="https://docs.angularjs.org/guide/controller">Controllers</a> (<code>someModule.controller('ControllerName', function)</code>)</li>
+<li><a href="https://docs.angularjs.org/guide/scope">Scope/<code>$scope</code></a></li>
+</ul>
+
+<h3 id="directives">Directives</h3>
+
+<div class="notices note" ><p>In the view (HTML), directives are specified with <strong>kebab-case</strong> (or &ldquo;dasherized&rdquo;)—that is, with words separated by hyphens. Within JavaScript, they are specified with <strong>camelCase</strong>.</p>
+</div>
+
+
+<ul>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngApp">ngApp</a>: Auto-bootstraps an Angular application and (optionally) specifies the root Module.</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngController">ngController</a>: Attaches a Controller to the view/DOM.</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngModel">ngModel</a>: Binds a form field to a property on the scope.</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngRepeat">ngRepeat</a>: Repeat an element for each item in a collection.
+
+<ul>
+<li>See also: <a href="https://docs.angularjs.org/error/ngRepeat/dupes">ngRepeat:dupes</a> and <code>track by</code></li>
+</ul></li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngSubmit">ngSubmit</a>: Specifies custom behavior (often an invocation of a function property on the scope) when a form is submitted.
+
+<ul>
+<li>Automatically prevents default, unless the <code>action</code> attribute is set on the form.</li>
+</ul></li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngClick">ngClick</a>: Specifies custom behavior when an element is clicked.</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngShow">ngShow</a>: Show an element only when the provided expression is truthy.</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngHide">ngHide</a>: The inverse of <code>ngShow</code>. Only show the element if the provided expression is falsey.</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngBind">ngBind</a>: Tells Angular to replace the text of the element with the value of an expression. You typically use <code>{{ expression }}</code> instead, but <code>ngBind</code> prevents the template from being displayed briefly when the page loads. But for that you can also use&hellip;</li>
+<li><a href="https://docs.angularjs.org/api/ng/directive/ngCloak">ngCloak</a>: Prevent the template from displaying before the view is fully rendered.</li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<p>Acrobats: <a href="https://github.com/xternbootcamp16/acrobats">source</a> | <a href="http://xternbootcamp16.github.io/acrobats/">live</a></p>
+
+
+      
+      </div>
+    </div>
+
+    <div id="navigation">
+        <a class="nav nav-prev" href="/week2/day08"> <i class="fa fa-chevron-left"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/jquery-2.x.min.js"></script>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/perfect-scrollbar.min.js"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/js/jquery.sticky-kit.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+    
+
+  </body>
+</html>
+

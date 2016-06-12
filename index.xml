@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <description>Recent content on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Jun 2016 23:22:09 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>jQuery &amp; Ajax</title>
+      <link>http://replace-this-with-your-hugo-site.com/week2/</link>
+      <pubDate>Sat, 11 Jun 2016 23:22:09 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week2/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-2&#34;&gt;Week 2&lt;/h3&gt;
+
+&lt;h1 id=&#34;jquery-amp-ajax&#34;&gt;jQuery &amp;amp; Ajax&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/</link>
+      <pubDate>Sat, 11 Jun 2016 16:27:52 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-1&#34;&gt;Week 1&lt;/h3&gt;
+
+&lt;h1 id=&#34;javascript&#34;&gt;JavaScript&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setup for Windows</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-win/</link>
+      <pubDate>Fri, 10 Jun 2016 23:37:28 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-win/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-0b&#34;&gt;Week 0b&lt;/h3&gt;
+
+&lt;h1 id=&#34;setup-for-windows&#34;&gt;Setup for Windows&lt;/h1&gt;
+
+&lt;p&gt;With this guide, you can prepare your laptop with everything you&amp;rsquo;ll need to get started with the Xtern Bootcamp. This guide is written specifically for Windows users.&lt;/p&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Setup for Mac</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/</link>
+      <pubDate>Fri, 10 Jun 2016 22:29:17 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-0a&#34;&gt;Week 0a&lt;/h3&gt;
+
+&lt;h1 id=&#34;setup-for-mac&#34;&gt;Setup for Mac&lt;/h1&gt;
+
+&lt;p&gt;With this guide, you can prepare your laptop with everything you&amp;rsquo;ll need to get started with the Xtern Bootcamp. This guide is written specifically for Mac OS X users.&lt;/p&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Day 5: jQuery &amp; Ajax</title>
+      <link>http://replace-this-with-your-hugo-site.com/week2/day05/</link>
+      <pubDate>Sat, 11 Jun 2016 23:23:36 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week2/day05/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 6, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;deployment&#34;&gt;Deployment&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Deploying to GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git checkout -b gh-pages     # Create a new branch
+git push -u master gh-pages  # Push it to GitHub
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your site will be published at &lt;em&gt;username&lt;/em&gt;.github.io/&lt;em&gt;repository&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jQuery.ajax/&#34;&gt;&lt;code&gt;jQuery.ajax()&lt;/code&gt;&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/ajax_ajax.asp&#34;&gt;w3schools page and &lt;em&gt;Try It Yourself&lt;/em&gt; demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms&#34;&gt;JSONP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript-arrays&#34;&gt;JavaScript Arrays&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jsref/jsref_map.asp&#34;&gt;Array &lt;code&gt;map()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jsref/jsref_splice.asp&#34;&gt;Array &lt;code&gt;splice()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Each of the above items links to the &lt;a href=&#34;http://www.w3schools.com/&#34;&gt;w3schools&lt;/a&gt; page for that method, including examples, reference material (including browser support) and a &lt;em&gt;Try it Yourself&lt;/em&gt; live editor.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;css-selectors&#34;&gt;CSS Selectors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_hover.asp&#34;&gt;&lt;code&gt;:hover&lt;/code&gt; pseudo-class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_attribute_value.asp&#34;&gt;[&lt;em&gt;attribute&lt;/em&gt;=&lt;em&gt;value&lt;/em&gt;] selector&lt;/a&gt; (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;[data-id=4]&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Seriously&lt;/strong&gt;, if you&amp;rsquo;re having any trouble with selectors, check out &lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; and &lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;jquery&#34;&gt;jQuery&lt;/h3&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re new to jQuery, start with &lt;a href=&#34;https://www.codeschool.com/courses/try-jquery&#34;&gt;Try jQuery&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jquery/&#34;&gt;&lt;code&gt;$()&lt;/code&gt;, the jQuery function&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/selecting-elements/&#34;&gt;Selecting elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/jquery-object/&#34;&gt;jQuery Objects vs. DOM elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/manipulating-elements/&#34;&gt;Manipulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/traversing/&#34;&gt;DOM traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;More jQuery tutorials:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/en/courses/web-beginner-en-bay3D/resume?curriculum_id=50a3fad8c7a770b5fd0007a1&#34;&gt;Codecademy&amp;rsquo;s Intro to jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/default.asp&#34;&gt;jQuery Tutorial on w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Be sure to check out the excellent &lt;a href=&#34;http://api.jquery.com/&#34;&gt;jQuery API documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster&#34;&gt;MegaRoster with localStorage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/jquery&#34;&gt;MegaRoster with jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/ajax&#34;&gt;MegaRoster with Ajax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MegaRoster with mutants: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/mutants&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/megaroster/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JSON People: &lt;a href=&#34;https://github.com/xternbootcamp16/json-people&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/json-people/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://api.nasa.gov/api.html#apod&#34;&gt;Astronomy Picture of the Day&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;$.ajax({
+  url: &#39;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&#39;,
+  method: &#39;get&#39;,
+  success: function(data) {
+    $(document.body).prepend(&#39;&amp;lt;img src=&amp;quot;&#39; + data.hdurl + &#39;&amp;quot;&amp;gt;&#39;);
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Talk to the &lt;a href=&#34;(http://getfretless.github.io/mutant-school-docs/?javascript#get-a-specific-mutant)&#34;&gt;Mutant School API&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start a new project (or fork JSON People and work from there) that loads all Mutants from the API.&lt;/li&gt;
+&lt;li&gt;When a new record is added to your app, create a new Mutant record by POSTing to the API.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Add a button to delete individual mutants from the API.&lt;/p&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Update existing mutant records.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Integrate the Mutant API with MegaRoster.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else from an existing API.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1: Introduction</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day01/</link>
+      <pubDate>Sat, 11 Jun 2016 16:29:51 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day01/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, May 31, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
+&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
+&lt;li&gt;Anatomy of an HTML element (tags, attributes, contents)&lt;/li&gt;
+&lt;li&gt;Basic CSS selector syntax
+
+&lt;ul&gt;
+&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic DOM manipulation
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.innerText&lt;/code&gt;/&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic event handling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;onsubmit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Anonymous functions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic Form (FirstJS):  &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/&#34;&gt;Foundation&lt;/a&gt; - a front-end framework&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; - a game for practicing CSS selector syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt; - another tool for practicing selector syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-basic-form-firstjs&#34;&gt;Homework: Basic Form (FirstJS)&lt;/h2&gt;
+
+&lt;p&gt;Grab values from form fields and add them to a list.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to employ these concepts that we used in class:
+* Target elements with &lt;code&gt;document.querySelector&lt;/code&gt;
+* Handle events
+* Prevent default event behavior from executing
+* Alter an element&amp;rsquo;s contents via &lt;code&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values as plain text.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in separate paragraphs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in an unordered list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in a &lt;em&gt;definition list&lt;/em&gt; (&lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Output something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;dl&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;dt&amp;gt;First Name&amp;lt;/dt&amp;gt;
+    &amp;lt;dd&amp;gt;Davey&amp;lt;/dd&amp;gt;
+  &amp;lt;/li&amp;gt;
+
+  &amp;lt;li&amp;gt;
+    &amp;lt;dt&amp;gt;Hair color&amp;lt;/dt&amp;gt;
+    &amp;lt;dd&amp;gt;#000000&amp;lt;/dd&amp;gt;
+  &amp;lt;/li&amp;gt;
+
+  &amp;lt;!-- etc. --&amp;gt;
+&amp;lt;/dl&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Display the color value &lt;em&gt;in the specified color&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</link>
+      <pubDate>Fri, 10 Jun 2016 23:39:14 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</guid>
+      <description>
+
+&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
+
+&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
+
+&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and more.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</link>
+      <pubDate>Fri, 10 Jun 2016 22:39:00 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</guid>
+      <description>
+
+&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
+
+&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
+
+&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and a desktop app for Mac.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Day 6: More Ajax</title>
+      <link>http://replace-this-with-your-hugo-site.com/week2/day06/</link>
+      <pubDate>Sat, 11 Jun 2016 23:34:13 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week2/day06/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 7, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check out &lt;a href=&#34;http://www.elated.com/articles/ajax-with-jquery-a-beginners-guide/&#34;&gt;Ajax with jQuery: A Beginner&amp;rsquo;s Guide&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/tags/ref_httpmethods.asp&#34;&gt;GET vs. POST&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;cdns&#34;&gt;CDNs&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/a/2180401&#34;&gt;Why use a CDN?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/&#34;&gt;CDNjs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/libraries/jquery/2.2.4&#34;&gt;jQuery 2.2.4 on CDNjs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/06-ajax-get-requests-and-github-pages-review&#34;&gt;Ajax - GET requests in detail, GitHub pages review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;jMutants: &lt;a href=&#34;https://github.com/xternbootcamp16/jmutants-afternoon&#34;&gt;morning&lt;/a&gt; (with working &lt;em&gt;edit&lt;/em&gt; feature) | &lt;a href=&#34;https://github.com/xternbootcamp16/jmutants-afternoon&#34;&gt;afternoon&lt;/a&gt; (without edit, but with &lt;em&gt;mutant name&lt;/em&gt;, _real&lt;em&gt;name&lt;/em&gt;, and &lt;em&gt;power&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://api.nasa.gov/api.html#apod&#34;&gt;Astronomy Picture of the Day&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;$.get({
+  url: &#39;https://api.nasa.gov/planetary/apod&#39;,
+  data: {
+    API_KEY: &#39;DEMO_KEY&#39;,
+    date: &#39;2016-06-07&#39;
+  }
+  success: function(data) {
+    $(document.body).prepend(&#39;&amp;lt;img src=&amp;quot;&#39; + data.hdurl + &#39;&amp;quot;&amp;gt;&#39;);
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you plan to do much with the NASA APIs, you&amp;rsquo;ll need to sign up for your own API_KEY, which is free.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Try to get further with yesterday&amp;rsquo;s homework.&lt;/p&gt;
+
+&lt;p&gt;Talk to the &lt;a href=&#34;(http://getfretless.github.io/mutant-school-docs/?javascript#get-a-specific-mutant)&#34;&gt;Mutant School API&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start a new project (or fork JSON People and work from there) that loads all Mutants from the API.&lt;/li&gt;
+&lt;li&gt;When a new record is added to your app, create a new Mutant record by POSTing to the API.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Add a button to delete individual mutants from the API.&lt;/p&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Update existing mutant records.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Integrate the Mutant API with MegaRoster.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else with an existing API.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 2: Objects and Functions</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day02/</link>
+      <pubDate>Sat, 11 Jun 2016 17:09:05 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day02/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 1, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution to Tuesday&amp;rsquo;s homework: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Function expressions&lt;/li&gt;
+&lt;li&gt;Functions as variables&lt;/li&gt;
+&lt;li&gt;Functions as object properties (&lt;em&gt;methods&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Variable scope&lt;/li&gt;
+&lt;li&gt;IIFEs: Immediately Invoked Function Expressions&lt;/li&gt;
+&lt;li&gt;Function invocation and the value of &lt;code&gt;this&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;As functions, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someFunction()&lt;/code&gt;: &lt;code&gt;this === window&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the global object)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Warning&lt;/strong&gt;: This includes functions defined within other functions.&lt;/li&gt;
+&lt;li&gt;As methods, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someObject.someMethod()&lt;/code&gt;: &lt;code&gt;this === someObject&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the object on which the method was called)&lt;/li&gt;
+&lt;li&gt;As event handlers, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someForm.onsubmit = someFunction&lt;/code&gt;: &lt;code&gt;this === someForm&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the object that fired the event)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objects&#34;&gt;Objects&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object literals&lt;/li&gt;
+&lt;li&gt;Property naming&lt;/li&gt;
+&lt;li&gt;Retrieving property values&lt;/li&gt;
+&lt;li&gt;Setting property values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dom&#34;&gt;DOM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Creating elements (&lt;code&gt;document.createElement(&#39;li&#39;)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Setting style properties on elements (&lt;code&gt;someElement.style.backgroundColor = &#39;CadetBlue&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Appending child elements (&lt;code&gt;someList.appendChild(someItem)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;selectors&#34;&gt;Selectors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Descendent (&lt;code&gt;ul li&lt;/code&gt;) and child (&lt;code&gt;ul &amp;gt; li&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;css-properties&#34;&gt;CSS Properties&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;background-color&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;border&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;height&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list-style&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;width&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;organizing-code&#34;&gt;Organizing Code&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.js&lt;/code&gt; files (&lt;code&gt;&amp;lt;script src=&amp;quot;app.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Wrapping in an IIFE (&lt;code&gt;(function() {})();&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Wrapping in a object-literal (&lt;code&gt;{}&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/02-functions&#34;&gt;Day 1 Review, Intro to Functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Finished Basic Form (FirstJS): &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/colors/colors_names.asp&#34;&gt;List of CSS color names&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://benalman.com/news/2010/11/immediately-invoked-function-expression/&#34;&gt;IIFEs as explained by Ben Alman&lt;/a&gt;, who coined the term&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects&#34;&gt;More than you ever wanted to know about &lt;em&gt;objects&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-megaroster&#34;&gt;Homework: Megaroster&lt;/h2&gt;
+
+&lt;p&gt;Create a class roster.&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User can enter a name to be added to the roster.&lt;/li&gt;
+&lt;li&gt;Name will be added to the end of a list&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create &lt;em&gt;at most&lt;/em&gt; one global variable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add names to the &lt;em&gt;top&lt;/em&gt; of the list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;delete&lt;/em&gt; link to every list item that removes the name from the list when clicked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;promote&lt;/em&gt; link to every list item that draws a border around that item when clicked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/dfa5fbf687e0eb39fe6e60837eda35778c7e860a&#34;&gt;Solution: MegaRoster with delete and promote&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Command Line</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-win/command-line/</link>
+      <pubDate>Fri, 10 Jun 2016 23:39:44 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-win/command-line/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;ll be using the command line a fair amount in class. I recommend installing a UNIX-style shell in Windows, as it will allow to use the same commands that I use.&lt;/p&gt;
+
+&lt;h2 id=&#34;babun&#34;&gt;Babun&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://babun.github.io/&#34;&gt;Babun&lt;/a&gt; is a UNIX shell for Windows that includes some tools we might otherwise need to install separately. Like most UNIX shells for Windows, Babun is based on Cygwin, but it&amp;rsquo;s preconfigured to be a lot more usable out of the box.&lt;/p&gt;
+
+&lt;p&gt;By default, Babun launches a shell called ZSH. It also includes &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;Oh My ZSH&lt;/a&gt;, a framework for configuring ZSH.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll use the shell often enough that I recommend pinning Babun to the taskbar.&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re not very familiar with UNIX shells, or if you&amp;rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&amp;rsquo;s free &lt;strong&gt;&lt;a href=&#34;http://commandlinepoweruser.com/&#34;&gt;Command Line Power User&lt;/a&gt;&lt;/strong&gt; videos. (They&amp;rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Command Line</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/command-line/</link>
+      <pubDate>Fri, 10 Jun 2016 23:02:52 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/command-line/</guid>
+      <description>
+
+&lt;p&gt;You&amp;rsquo;ll be using a command-line throughout the setup process.&lt;/p&gt;
+
+&lt;h2 id=&#34;terminal-or-iterm2&#34;&gt;Terminal or iTerm2&lt;/h2&gt;
+
+&lt;p&gt;OS X comes with Terminal, which you can find at &lt;code&gt;/Applications/Utilities/Terminal.app&lt;/code&gt; or by searching for Terminal in Spotlight.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/terminal.png&#34; alt=&#34;Terminal.app&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Many Mac users prefer &lt;a href=&#34;https://www.iterm2.com/index.html&#34;&gt;iTerm2&lt;/a&gt; over the built-in Terminal. iTerm2 is free, so I encourage you to check it out. It has some advanced features that the built-in Terminal lacks.&lt;/p&gt;
+
+&lt;p&gt;Whichever you choose, you&amp;rsquo;ll use it frequently enough that I recommend keeping it in your Dock.&lt;/p&gt;
+
+&lt;p&gt;When you launch Terminal or iTerm, it will (by default) run a UNIX shell called Bash. Bash will present a command prompt, indicated by &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;zsh&#34;&gt;ZSH&lt;/h2&gt;
+
+&lt;p&gt;I am a big fan of ZSH, which is an alternative to Bash. Even better is &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;Oh My ZSH&lt;/a&gt;, which is framework for managing ZSH configuration. I highly recommend checking it out. You&amp;rsquo;ll still use Terminal.app or iTerm2 to launch your shell, but it will run ZSH in place of Bash.&lt;/p&gt;
+
+&lt;p&gt;I will be using ZSH (with Oh My ZSH) in class, but most of what we&amp;rsquo;ll do works just as well in Bash.&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re not very familiar with UNIX shells, or if you&amp;rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&amp;rsquo;s free &lt;strong&gt;&lt;a href=&#34;http://commandlinepoweruser.com/&#34;&gt;Command Line Power User&lt;/a&gt;&lt;/strong&gt; videos. (They&amp;rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Day 7: Intro to REST</title>
+      <link>http://replace-this-with-your-hugo-site.com/week2/day07/</link>
+      <pubDate>Sat, 11 Jun 2016 23:42:53 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week2/day07/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 8, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;rest&#34;&gt;REST&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.restapitutorial.com/lessons/httpmethods.html&#34;&gt;Using HTTP Methods for RESTful Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check out &lt;a href=&#34;http://www.elated.com/articles/ajax-with-jquery-a-beginners-guide/&#34;&gt;Ajax with jQuery: A Beginner&amp;rsquo;s Guide&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/tags/ref_httpmethods.asp&#34;&gt;GET vs. POST&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/07-crud-and-rest&#34;&gt;CRUD and REST&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/jmutants-afternoon/tree/pokemon&#34;&gt;jPokémon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Create student rivalries with the &lt;a href=&#34;https://xtern-roster.herokuapp.com/&#34;&gt;Xtern Roster API&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two resources in this API:
+* &lt;a href=&#34;https://xtern-roster.herokuapp.com/people&#34;&gt;People&lt;/a&gt;
+* &lt;a href=&#34;https://xtern-roster.herokuapp.com/rivalries&#34;&gt;Rivalries&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Build an app that allows visitors to do the following:
+ * Create, read, update, and delete person records
+ * Create, read, update, and delete a person&amp;rsquo;s rivalries with others&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 3: Putting the Pieces Together</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day03/</link>
+      <pubDate>Sat, 11 Jun 2016 17:12:02 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day03/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, June 2, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/dfa5fbf687e0eb39fe6e60837eda35778c7e860a&#34;&gt;Solution to Wednesday&amp;rsquo;s homework: MegaRoster with delete and promote&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The grid system&lt;/li&gt;
+&lt;li&gt;Responsive design (changing style based on the window size)&lt;/li&gt;
+&lt;li&gt;Check out the &lt;a href=&#34;https://sudheerdev.github.io/Foundation5CheatSheet/&#34;&gt;Foundation Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;functions-as-methods&#34;&gt;Functions as Methods&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Methods calling methods (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;megaRoster.addChild&lt;/code&gt; calls &lt;code&gt;this.buildListItem&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Binding: Manually setting the value of &lt;code&gt;this&lt;/code&gt; with &lt;code&gt;bind&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;event-objects&#34;&gt;Event Objects&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;currentTarget&lt;/code&gt;: The object on which the event occurred&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;parentElement&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;childNodes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;firstChild&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;firstElementChild&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;insertBefore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;project-organization&#34;&gt;Project Organization&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When to write a new function&lt;/li&gt;
+&lt;li&gt;Avoiding global variables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/03-objects-and-functions&#34;&gt;Day 2 Review: Objects and Functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-megaroster-now-with-even-more-mega&#34;&gt;Homework: MegaRoster - now with even more mega&lt;/h2&gt;
+
+&lt;p&gt;Enhance MegaRoster! Make the students editable, and add the ability to move them around in the list.&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;p&gt;Add a link that moves the student to the top of the list. Either change the behavior of the existing &lt;em&gt;promote&lt;/em&gt; link, or add a new &lt;em&gt;top&lt;/em&gt; link.&lt;/p&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Add links to move the student up and down the list, one spot at a time.&lt;/p&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Disable the &lt;em&gt;up&lt;/em&gt; link when the student reaches the top, and disable the &lt;em&gt;down&lt;/em&gt; link when the student reaches the bottom.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Make the student name editable in place after it&amp;rsquo;s added to the roster.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Make the student data persistent between page refreshes! That is, keep the students from disappearing every time the page is refreshed.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Use &lt;code&gt;localStorage&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879&#34;&gt;Solution: Editable MegaRoster&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-win/git/</link>
+      <pubDate>Fri, 10 Jun 2016 23:40:01 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-win/git/</guid>
+      <description>
+
+&lt;p&gt;Babun includes Git source code management, which we&amp;rsquo;ll use throughout class.&lt;/p&gt;
+
+&lt;h2 id=&#34;configuring-git&#34;&gt;Configuring Git&lt;/h2&gt;
+
+&lt;p&gt;Git comes pre-configured. You just need to tell it what name and email address it should use to sign code that you&amp;rsquo;ve authored. Enter the following commands, substituting your actual name and email address:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git config --global user.name &amp;quot;Your Full Name&amp;quot;
+git config --global user.email &amp;quot;youremailaddress@example.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://desktop.github.com/&#34;&gt;GitHub Desktop&lt;/a&gt;&lt;/strong&gt; is a very nice, free graphical interface for Git. Although we&amp;rsquo;ll use Git from the command-line a great deal, we&amp;rsquo;ll also look at how GitHub Desktop can make certain tasks easier.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

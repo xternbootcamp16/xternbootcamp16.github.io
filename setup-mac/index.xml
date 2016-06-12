@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup-macs on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/setup-mac/</link>
+    <description>Recent content in Setup-macs on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jun 2016 22:29:17 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/setup-mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Setup for Mac</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/</link>
+      <pubDate>Fri, 10 Jun 2016 22:29:17 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-0a&#34;&gt;Week 0a&lt;/h3&gt;
+
+&lt;h1 id=&#34;setup-for-mac&#34;&gt;Setup for Mac&lt;/h1&gt;
+
+&lt;p&gt;With this guide, you can prepare your laptop with everything you&amp;rsquo;ll need to get started with the Xtern Bootcamp. This guide is written specifically for Mac OS X users.&lt;/p&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</link>
+      <pubDate>Fri, 10 Jun 2016 22:39:00 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</guid>
+      <description>
+
+&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
+
+&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
+
+&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and a desktop app for Mac.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Command Line</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/command-line/</link>
+      <pubDate>Fri, 10 Jun 2016 23:02:52 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/command-line/</guid>
+      <description>
+
+&lt;p&gt;You&amp;rsquo;ll be using a command-line throughout the setup process.&lt;/p&gt;
+
+&lt;h2 id=&#34;terminal-or-iterm2&#34;&gt;Terminal or iTerm2&lt;/h2&gt;
+
+&lt;p&gt;OS X comes with Terminal, which you can find at &lt;code&gt;/Applications/Utilities/Terminal.app&lt;/code&gt; or by searching for Terminal in Spotlight.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/terminal.png&#34; alt=&#34;Terminal.app&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Many Mac users prefer &lt;a href=&#34;https://www.iterm2.com/index.html&#34;&gt;iTerm2&lt;/a&gt; over the built-in Terminal. iTerm2 is free, so I encourage you to check it out. It has some advanced features that the built-in Terminal lacks.&lt;/p&gt;
+
+&lt;p&gt;Whichever you choose, you&amp;rsquo;ll use it frequently enough that I recommend keeping it in your Dock.&lt;/p&gt;
+
+&lt;p&gt;When you launch Terminal or iTerm, it will (by default) run a UNIX shell called Bash. Bash will present a command prompt, indicated by &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;zsh&#34;&gt;ZSH&lt;/h2&gt;
+
+&lt;p&gt;I am a big fan of ZSH, which is an alternative to Bash. Even better is &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;Oh My ZSH&lt;/a&gt;, which is framework for managing ZSH configuration. I highly recommend checking it out. You&amp;rsquo;ll still use Terminal.app or iTerm2 to launch your shell, but it will run ZSH in place of Bash.&lt;/p&gt;
+
+&lt;p&gt;I will be using ZSH (with Oh My ZSH) in class, but most of what we&amp;rsquo;ll do works just as well in Bash.&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re not very familiar with UNIX shells, or if you&amp;rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&amp;rsquo;s free &lt;strong&gt;&lt;a href=&#34;http://commandlinepoweruser.com/&#34;&gt;Command Line Power User&lt;/a&gt;&lt;/strong&gt; videos. (They&amp;rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/git/</link>
+      <pubDate>Fri, 10 Jun 2016 23:06:12 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/git/</guid>
+      <description>
+
+&lt;h2 id=&#34;about-git&#34;&gt;About Git&lt;/h2&gt;
+
+&lt;p&gt;Git is a distributed version control system. If you have previously installed Xcode and its command-line tools, you may already have Git installed. Find out by entering the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git --version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you see something like &lt;code&gt;git version 2.8.3&lt;/code&gt;, then you already have Git. If not, skip to the next section to install Homebrew. If you have Git, but the version number is lower than 2.8.3 (as of May 25, 2016—Happy 39th birthday, &lt;em&gt;Star Wars&lt;/em&gt;!), then your version of Git is out of date. Continue to the next step to install Homebrew.&lt;/p&gt;
+
+&lt;p&gt;If your Git version is up-to-date, skip to the Git Configuration section.&lt;/p&gt;
+
+&lt;h2 id=&#34;homebrew&#34;&gt;Homebrew&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt; is a package manager for OS X. That is, it manages the installation of certain software—especially UNIX tools—and the installed versions of that software.&lt;/p&gt;
+
+&lt;p&gt;Install Homebrew with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;installing-git-with-homebrew&#34;&gt;Installing Git with Homebrew&lt;/h2&gt;
+
+&lt;p&gt;If you do not have Git installed at all, or if your version is out of date, run the following command to install the latest version:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;brew install git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now check your Git version again.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git --version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see an up-to-date version number.&lt;/p&gt;
+
+&lt;p&gt;The next time a new version of Git is released, just type the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;brew update           # This updates Homebrew so it knows about the latest versions.
+brew upgrade git      # This upgrades Git itself.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;configuring-git&#34;&gt;Configuring Git&lt;/h1&gt;
+
+&lt;p&gt;Next, tell Git what name and email address it should use to sign code that you&amp;rsquo;ve authored. Enter the following commands, substituting your actual name and email address:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git config --global user.name &amp;quot;Your Full Name&amp;quot;
+git config --global user.email &amp;quot;youremailaddress@example.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://desktop.github.com/&#34;&gt;GitHub Desktop&lt;/a&gt;&lt;/strong&gt; is a very nice, free graphical interface for Git. Although we&amp;rsquo;ll use Git from the command-line a great deal, we&amp;rsquo;ll also look at how GitHub Desktop can make certain tasks easier.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>NodeJS</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/nodejs/</link>
+      <pubDate>Fri, 10 Jun 2016 23:16:25 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/nodejs/</guid>
+      <description>
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;If you installed Homebrew in the previous step, use it to install NodeJS:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;brew install node
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If not, you can click the big, green &lt;em&gt;INSTALL&lt;/em&gt; button on the NodeJS web site.&lt;/p&gt;
+
+&lt;h3 id=&#34;download-nodejs-http-nodejs-org&#34;&gt;&lt;a href=&#34;http://nodejs.org/&#34;&gt;Download NodeJS&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Node version numbers are confusing, but you should using either the LTS version (4.4.5 as of this writing) or the Current version (6.2.1).&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;testing-your-installation&#34;&gt;Testing your installation&lt;/h2&gt;
+
+&lt;p&gt;After Node is installed, test your installation by running the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;npm install -g bower
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see an animated cursor for a moment or two, then something like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;/usr/local/bin/bower -&amp;gt; /usr/local/lib/node_modules/bower/bin/bower
+/usr/local/lib
+└── bower@1.7.9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If the &lt;code&gt;npm&lt;/code&gt; command isn&amp;rsquo;t available, open a new tab in Terminal or iTerm2 and try again. Opening a new tab should make &lt;code&gt;node&lt;/code&gt; and other related commands available to you from any directory, if they weren&amp;rsquo;t already.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Text Editors</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/text-editors/</link>
+      <pubDate>Fri, 10 Jun 2016 23:19:52 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/text-editors/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;&lt;/strong&gt; is free text editor that&amp;rsquo;s especially well-suited for editing code. It is similar to Sublime Text in many respects, but it&amp;rsquo;s completely free and open source, and it&amp;rsquo;s rapidly improving.&lt;/p&gt;
+
+&lt;h2 id=&#34;download-atom-https-atom-io&#34;&gt;&lt;a href=&#34;https://atom.io/&#34;&gt;Download Atom&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Microsoft&amp;rsquo;s &lt;strong&gt;&lt;a href=&#34;http://code.visualstudio.com/&#34;&gt;Visual Studio Code&lt;/a&gt;&lt;/strong&gt; is also open source and rapidly improving. If you&amp;rsquo;re a fan of Microsoft&amp;rsquo;s IntelliSense and the like, you might prefer VS Code.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re used to an IDE, &lt;strong&gt;&lt;a href=&#34;http://www.jetbrains.com/webstorm/&#34;&gt;WebStorm&lt;/a&gt;&lt;/strong&gt; might be more up your alley. Be warned: It&amp;rsquo;s subscription-based, and is $12.90/month, or $129.00 the first year.&lt;/p&gt;
+
+&lt;p&gt;I will be using Atom in class, so I can show you themes and plugins that I like if you give it a shot. I haven&amp;rsquo;t spent enough time with VS Code to know many tricks, and I&amp;rsquo;ve never used WebStorm.&lt;/p&gt;
+
+&lt;p&gt;Whichever editor you use, you&amp;rsquo;ll use it enough that I recommend keeping it in the Dock as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;recommended-packages-for-atom&#34;&gt;Recommended Packages for Atom&lt;/h2&gt;
+
+&lt;p&gt;Atom is highly extensible, and there are a few packages that I highly recommend.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-eslint&#34;&gt;&lt;code&gt;linter-eslint&lt;/code&gt;&lt;/a&gt; checks for JavaScript errors and style violations on the fly.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/language-babel&#34;&gt;&lt;code&gt;language-babel&lt;/code&gt;&lt;/a&gt; adds support for the latest JavaScript features.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/react&#34;&gt;&lt;code&gt;react&lt;/code&gt;&lt;/a&gt; adds support for React&amp;rsquo;s JSX language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/file-icons&#34;&gt;&lt;code&gt;file-icons&lt;/code&gt;&lt;/a&gt; shows icons in the sidebar that correspond to the file type.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/Sublime-Style-Column-Selection&#34;&gt;&lt;code&gt;Sublime-Style-Column-Selection&lt;/code&gt;&lt;/a&gt; is really handy when you&amp;rsquo;ve pasted something in with a bunch of junk at the beginning of each line.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/autocomplete-plus&#34;&gt;&lt;code&gt;autocomplete-plus&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://atom.io/packages/atom-ternjs&#34;&gt;&lt;code&gt;atom-ternjs&lt;/code&gt;&lt;/a&gt; combine to do pretty nice autocompletion for JavaScript. TernJS even provides inline documentation for functions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Since I&amp;rsquo;m always asked, I use the &lt;code&gt;Atom Dark&lt;/code&gt; UI theme, and the &lt;code&gt;Kobalt&lt;/code&gt; syntax theme (with some personal customizations).&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/ssh/</link>
+      <pubDate>Fri, 10 Jun 2016 23:28:03 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/ssh/</guid>
+      <description>
+
+&lt;p&gt;I recommend setting up an SSH key to simplify authentication with GitHub and other services.&lt;/p&gt;
+
+&lt;h2 id=&#34;check-for-an-existing-key&#34;&gt;Check for an existing key&lt;/h2&gt;
+
+&lt;p&gt;Make sure you&amp;rsquo;re in your home directory. You should be by default, but you can double-check with the &amp;ldquo;print working directory&amp;rdquo; command: &lt;code&gt;pwd&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;pwd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should be in &lt;code&gt;/Users/yourusername&lt;/code&gt;. If not, you can switch to that directory with the &lt;code&gt;cd&lt;/code&gt; command, passing in the directory you want to switch to.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;cd ~
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;You can always use a tilde &lt;code&gt;~&lt;/code&gt; as a shortcut for your home directory.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Check to see if you already have an .ssh key configured:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;ls ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If it prints &lt;code&gt;/Users/yourusername/.ssh/id_rsa&lt;/code&gt;, then you already have an SSH key and can skip to the next page: [[GitHub|06 GitHub]].&lt;/p&gt;
+
+&lt;h2 id=&#34;generate-an-ssh-key&#34;&gt;Generate an SSH key&lt;/h2&gt;
+
+&lt;p&gt;Type the following command to generate your SSH key, substituting the same email address you used for Git earlier:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It should prompt you for a file name. You can just hit &amp;lsquo;enter&amp;rsquo; to accept the default.&lt;/p&gt;
+
+&lt;p&gt;It will then prompt you for a password. You can just hit &amp;lsquo;enter&amp;rsquo; (twice) to not set a passphrase. That compromises your key should anyone gain access to your laptop, but it may be simpler for the sake of this course. It&amp;rsquo;s much safer to use a passphrase when generating a key when you truly want to maximize security.&lt;/p&gt;
+
+&lt;p&gt;If all is well, you should see that your identification and your public key have been saved to &lt;code&gt;.ssh/id_rsa&lt;/code&gt; and &lt;code&gt;.ssh/id_rsa.pub&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;p&gt;Run the following command to add your new key to the SSH agent on your Mac:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;ssh-add ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ll test your new key shortly, but first you&amp;rsquo;ll need to create a GitHub account and add your public key to the account.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/github/</link>
+      <pubDate>Fri, 10 Jun 2016 23:31:46 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/github/</guid>
+      <description>
+
+&lt;h2 id=&#34;create-a-free-github-account&#34;&gt;Create a free GitHub account&lt;/h2&gt;
+
+&lt;p&gt;GitHub is a service for storing your code in the cloud. It&amp;rsquo;s wonderful for collaboration.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com&#34;&gt;Sign up for GitHub&lt;/a&gt; using the same email address you used when creating your SSH key and your Git configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/github-01-signup.png&#34; alt=&#34;Sign up for GitHub with your email address&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the next screen, you&amp;rsquo;ll see information about GitHub&amp;rsquo;s free and paid plans. To finish creating a free account, just hit the green &amp;ldquo;Finish sign up&amp;rdquo; button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/github-02-free.png&#34; alt=&#34;Hit the green &amp;quot;Finish sign up&amp;quot; button.&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;add-your-public-key-to-your-github-account&#34;&gt;Add your public key to your GitHub account&lt;/h2&gt;
+
+&lt;p&gt;To send and receive code between your laptop and GitHub securely, you&amp;rsquo;ll need to add your public SSH key to your GitHub account. &lt;strong&gt;Never copy your private key to another machine unless you are absolutely sure what you&amp;rsquo;re doing.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy the contents of your public key to the clipboard with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;cat ~/.ssh/id_rsa.pub | pbcopy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;code&gt;cat&lt;/code&gt; command prints the contents of a text file to the screen—or more accurately, to STDOUT. The &lt;code&gt;pbcopy&lt;/code&gt; command—which is not a standard UNIX utility, but is included with OS X—copies text to the clipboard. The pipe &lt;code&gt;|&lt;/code&gt; takes the output from the command on the left and passes it as an argument to the command on the right.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now go to GitHub settings to add your public key to your account.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/github-03-settings.png&#34; alt=&#34;Click the settings icon in the upper-right of your GitHub page&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Choose &amp;ldquo;SSH Keys&amp;rdquo; from the left menu, then click &amp;ldquo;Add SSH key&amp;rdquo; on the right.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/github-05-add-key.png&#34; alt=&#34;Click the button to add an SSH key to your account&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Give your SSH Key a name (something to identify the machine on which the key was generated, such as &amp;ldquo;MacBook&amp;rdquo;), and then paste in the contents that you copied from Atom.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/github-06-key-details.png&#34; alt=&#34;Paste in the contents of your public key&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;test-your-ssh-key-with-your-github-account&#34;&gt;Test your SSH key with your GitHub account&lt;/h2&gt;
+
+&lt;p&gt;Return to Terminal and type the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;ssh -T git@github.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If all is well, you should see a message like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you see that message, you&amp;rsquo;re in good shape!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/mongodb/</link>
+      <pubDate>Fri, 10 Jun 2016 23:34:00 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/mongodb/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ll use &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt; on at least one project in class, so go ahead and install it. The good news: It can be installed via Homebrew:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;brew install mongodb
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

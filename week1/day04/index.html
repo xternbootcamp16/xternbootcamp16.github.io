@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.16" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+    <title>Day 4: LocalStorage &amp; jQuery</title>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/hugo-theme.css" rel="stylesheet">
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    <link href="/css/xtern.css" rel="stylesheet">
+
+  </head>
+  <body class="" data-url="/week1/day04/">
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://getgrav.org">
+  <img src="/images/xtbc-white.png" width="150">
+</a>
+
+      
+    </div>
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/setup-mac/">
+        <a href="/setup-mac/">
+          <span>
+            
+              <b>0a. </b>
+            
+             Setup for Mac
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/google-chrome/">
+              <a href="/setup-mac/google-chrome/">
+                <span>Google Chrome     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/command-line/">
+              <a href="/setup-mac/command-line/">
+                <span>Command Line     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/git/">
+              <a href="/setup-mac/git/">
+                <span>Git     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/nodejs/">
+              <a href="/setup-mac/nodejs/">
+                <span>NodeJS     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/text-editors/">
+              <a href="/setup-mac/text-editors/">
+                <span>Text Editors     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/ssh/">
+              <a href="/setup-mac/ssh/">
+                <span>SSH     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/github/">
+              <a href="/setup-mac/github/">
+                <span>GitHub     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/mongodb/">
+              <a href="/setup-mac/mongodb/">
+                <span>MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/setup-win/">
+        <a href="/setup-win/">
+          <span>
+            
+              <b>0b. </b>
+            
+             Setup for Windows
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/google-chrome/">
+              <a href="/setup-win/google-chrome/">
+                <span>Google Chrome     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/command-line/">
+              <a href="/setup-win/command-line/">
+                <span>Command Line     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/git/">
+              <a href="/setup-win/git/">
+                <span>Git     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
+              <a href="/setup-win/nodejs/">
+                <span>NodeJS     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/text-editors/">
+              <a href="/setup-win/text-editors/">
+                <span>Text Editors     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/ssh/">
+              <a href="/setup-win/ssh/">
+                <span>SSH     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/github/">
+              <a href="/setup-win/github/">
+                <span>GitHub     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/mongodb/">
+              <a href="/setup-win/mongodb/">
+                <span>MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/week1/">
+        <a href="/week1/">
+          <span>
+            
+              <b>1. </b>
+            
+             JavaScript
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day01/">
+              <a href="/week1/day01/">
+                <span>Day 1: Introduction     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day02/">
+              <a href="/week1/day02/">
+                <span>Day 2: Objects and Functions     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day03/">
+              <a href="/week1/day03/">
+                <span>Day 3: Putting the Pieces Together     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item active" data-nav-id="/week1/day04/">
+              <a href="/week1/day04/">
+                <span>Day 4: LocalStorage &amp; jQuery     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week2/">
+        <a href="/week2/">
+          <span>
+            
+              <b>2. </b>
+            
+             jQuery &amp; Ajax
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day05/">
+              <a href="/week2/day05/">
+                <span>Day 5: jQuery &amp; Ajax     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day06/">
+              <a href="/week2/day06/">
+                <span>Day 6: More Ajax     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day07/">
+              <a href="/week2/day07/">
+                <span>Day 7: Intro to REST     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day08/">
+              <a href="/week2/day08/">
+                <span>Day 8: REST     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day09/">
+              <a href="/week2/day09/">
+                <span>Day 9: Intro to Angular     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>from <a href="http://techpoint.org">TechPoint</a> and <a href="http://www.getfretless.com">Fretless</a></p>
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                
+                
+                  
+                
+                  
+                
+                  
+                    
+                    
+                <a href="/week1/" itemprop="url"><span itemprop="title">JavaScript</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                  
+                
+                <span itemprop="title"> Day 4: LocalStorage &amp; jQuery</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#the-dom">The DOM</a></li>
+<li><a href="#localstorage"><code>localStorage</code></a></li>
+<li><a href="#css-selectors">CSS Selectors</a></li>
+<li><a href="#font-awesome-http-fontawesome-io"><a href="http://fontawesome.io/">Font Awesome</a></a></li>
+<li><a href="#foundation">Foundation</a></li>
+<li><a href="#jquery">jQuery</a></li>
+</ul></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#baseline-goal">Baseline Goal</a></li>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#mega-bonus-credit">Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+    	        <div id="body-inner">
+                
+                <h1>Day 4: LocalStorage &amp; jQuery</h1>
+                
+
+
+
+<p><date>Friday, June 3, 2016</date></p>
+
+<blockquote>
+<p><a href="https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879">Solution to Thursday&rsquo;s homework: Editable MegaRoster</a></p>
+</blockquote>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="the-dom">The DOM</h3>
+
+<ul>
+<li>Editable content: <a href="http://blog.teamtreehouse.com/native-rich-text-editing-with-the-contenteditable-attribute"><code>contenteditable</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">Data attributes and <code>.dataset</code></a></li>
+</ul>
+
+<div class="notices note" ><p>If you want to know more, the above items also link to explanations and tutorials.</p>
+</div>
+
+
+<h3 id="localstorage"><code>localStorage</code></h3>
+
+<ul>
+<li><a href="(https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/)">Using <code>localStorage</code></a></li>
+<li><code>JSON.stringify</code>
+
+<ul>
+<li><a href="http://www.dyn-web.com/tutorials/php-js/json/stringify.php">Using <code>JSON.stringify</code></a></li>
+<li><a href="http://jsfiddle.net/queryj/hLkUz/">Live example</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">API reference</a>, including optional arguments for whitelisting properties and transforming the data as it&rsquo;s stringified</li>
+</ul></li>
+<li><code>JSON.parse</code>
+
+<ul>
+<li><a href="http://www.dyn-web.com/tutorials/php-js/json/parse.php">Using <code>JSON.parse</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">API reference</a>, including optional argument for transforming the data as it&rsquo;s parsed</li>
+</ul></li>
+</ul>
+
+<h3 id="css-selectors">CSS Selectors</h3>
+
+<ul>
+<li><a href="http://www.w3schools.com/cssref/sel_firstchild.asp"><code>:first-child</code> pseudo-selector</a></li>
+<li><a href="http://www.w3schools.com/cssref/sel_last-child.asp"><code>:last-child</code> pseudo-selector</a></li>
+<li><a href="http://www.w3schools.com/cssref/sel_attribute_value.asp">[<em>attribute</em>=<em>value</em>] selector</a> (<em>e.g.</em> <code>[contenteditable=true]</code>)</li>
+</ul>
+
+<div class="notices note" ><p>Each of the above items links to the <a href="http://www.w3schools.com/">w3schools</a> page for that selector, including examples, reference material (including browser support) and a <em>Try it Yourself</em> live editor.</p>
+</div>
+
+
+<div class="notices tip" ><p>w3schools has a thorough <a href="http://www.w3schools.com/cssref/css_selectors.asp">reference of CSS selectors</a> beyond those we&rsquo;ve discussed (or will discuss) in class. <strong>Seriously</strong>, if you&rsquo;re having any trouble with selectors, check out <a href="http://flukeout.github.io/">CSS Diner</a> and <a href="http://toolness.github.io/css-selector-game/">CSS Selector Game</a>.</p>
+</div>
+
+
+<h3 id="font-awesome-http-fontawesome-io"><a href="http://fontawesome.io/">Font Awesome</a></h3>
+
+<ul>
+<li><a href="http://fontawesome.io/examples/">Examples</a></li>
+<li><a href="http://fontawesome.io/icons/">Icon list</a></li>
+<li><a href="http://www.w3schools.com/icons/fontawesome_icons_intro.asp">Font Awesome intro</a> on w3schools, including a live editor</li>
+<li><a href="http://fontawesome.io/accessibility/">Icon Fonts &amp; Accessibility</a></li>
+</ul>
+
+<h3 id="foundation">Foundation</h3>
+
+<ul>
+<li><a href="http://foundation.zurb.com/sites/docs/v/5.5.3/components/buttons.html">Button styles</a></li>
+</ul>
+
+<blockquote>
+<p>Don&rsquo;t forget your friend the <a href="https://sudheerdev.github.io/Foundation5CheatSheet/">Foundation Cheat Sheet</a>.</p>
+</blockquote>
+
+<h3 id="jquery">jQuery</h3>
+
+<blockquote>
+<p>If you&rsquo;re new to jQuery, start with <a href="https://www.codeschool.com/courses/try-jquery">Try jQuery</a>.</p>
+</blockquote>
+
+<ul>
+<li><a href="http://api.jquery.com/jquery/"><code>$()</code>, the jQuery function</a></li>
+<li><a href="https://learn.jquery.com/using-jquery-core/selecting-elements/">Selecting elements</a></li>
+<li><a href="https://learn.jquery.com/using-jquery-core/jquery-object/">jQuery Objects vs. DOM elements</a></li>
+<li><a href="https://learn.jquery.com/using-jquery-core/manipulating-elements/">Manipulation</a></li>
+<li><a href="https://learn.jquery.com/using-jquery-core/traversing/">DOM traversal</a></li>
+<li><a href="https://learn.jquery.com/events/">Events</a></li>
+<li>More jQuery tutorials:
+
+<ul>
+<li><a href="https://www.codecademy.com/en/courses/web-beginner-en-bay3D/resume?curriculum_id=50a3fad8c7a770b5fd0007a1">Codecademy&rsquo;s Intro to jQuery</a></li>
+<li><a href="http://www.w3schools.com/jquery/default.asp">jQuery Tutorial on w3schools</a></li>
+</ul></li>
+</ul>
+
+<div class="notices note" ><p>Be sure to check out the excellent <a href="http://api.jquery.com/">jQuery API documentation</a>.</p>
+</div>
+
+
+<h2 id="presentations">Presentations</h2>
+
+<p>Presentations have been converted from their original format to play in web browsers.</p>
+
+<ul>
+<li><a target="_blank" href="/presentations/week1/04a-localstorage"><code>localStorage</code></a></li>
+<li><a target="_blank" href="/presentations/week1/04b-jquery">jQuery</a></li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li><a href="https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879">Megaroster with editable names</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<p>Make MegaRoster even fancier!</p>
+
+<h3 id="baseline-goal">Baseline Goal</h3>
+
+<ul>
+<li>Make the student data persistent between page refreshes! That is, keep the students from disappearing every time the page is refreshed. (Use <code>localStorage</code>.)</li>
+</ul>
+
+<div class="notices tip" ><p>You&rsquo;ll want to keep track of the student data—just the data, not the HTML elements—in an array.</p>
+</div>
+
+
+<p><strong>Solution</strong>: <a href="https://github.com/xternbootcamp16/megaroster/tree/7e826425584aae6ae72f7be20392fe13d5f0743d">MegaRoster with localStorage</a></p>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Make the <code>edit</code>, <code>up</code>, etc. links look like buttons using Foundation styles.</li>
+<li>Use Font-Awesome to make them even fancier.</li>
+<li>Make it prettier to your heart&rsquo;s content.</li>
+</ul>
+
+<p><strong>Solution</strong>: <a href="http://xternbootcamp16.github.io/megaroster/snippets.html">MegaRoster HTML and CSS snippets</a></p>
+
+<h3 id="mega-bonus-credit">Mega Bonus Credit</h3>
+
+<ul>
+<li>Add a <em>favorite</em> button that changes the appearance of the list item.</li>
+<li>Make sure the <em>favorite</em> status persists between page loads.</li>
+</ul>
+
+<p><strong>Solution</strong>: Included in <a href="https://github.com/xternbootcamp16/megaroster/tree/7e826425584aae6ae72f7be20392fe13d5f0743d">MegaRoster with localStorage</a></p>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<p>Convert it to jQuery (ideally in a separate branch). The good news is that jQuery is already available in your project, thanks to Foundation.</p>
+
+<p><strong>Solution</strong>: <a href="https://github.com/xternbootcamp16/megaroster/tree/jquery">MegaRoster with jQuery</a></p>
+
+
+      
+      </div>
+    </div>
+
+    <div id="navigation">
+        <a class="nav nav-prev" href="/week1/day03"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/jquery-2.x.min.js"></script>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/perfect-scrollbar.min.js"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/js/jquery.sticky-kit.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+    
+
+  </body>
+</html>
+
