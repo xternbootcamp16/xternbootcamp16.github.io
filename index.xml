@@ -6,8 +6,22 @@
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jun 2016 23:22:09 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jun 2016 16:15:26 -0400</lastBuildDate>
     <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular: Meganote</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/</link>
+      <pubDate>Mon, 13 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-3&#34;&gt;Week 3&lt;/h3&gt;
+
+&lt;h1 id=&#34;angular-meganote&#34;&gt;Angular: Meganote&lt;/h1&gt;
+</description>
+    </item>
     
     <item>
       <title>jQuery &amp; Ajax</title>
@@ -74,6 +88,117 @@
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Day 10: ui-router Basics</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day10/</link>
+      <pubDate>Mon, 13 Jun 2016 16:19:37 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day10/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 13, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;State
+
+&lt;ul&gt;
+&lt;li&gt;Child states&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$stateProvider.state()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Templates
+
+&lt;ul&gt;
+&lt;li&gt;Inline templates (&lt;code&gt;template: &#39;&amp;lt;h1&amp;gt;So easy!&amp;lt;/h1&amp;gt;&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Separate files (&lt;code&gt;templateUrl: &#39;myTemplate.html&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ui-view&lt;/code&gt; directive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;npm&#34;&gt;NPM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;package.json&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://browsenpm.org/package.json&#34;&gt;&lt;code&gt;package.json&lt;/code&gt;: An Interactive Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Metadata&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;devDependencies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Scripts (&lt;code&gt;npm start&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;node_modules&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bower&#34;&gt;Bower&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/whats-great-bower/&#34;&gt;What&amp;rsquo;s So Great About Bower?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zellwk.com/blog/bower/&#34;&gt;Managing Your Front-End Dependencies with Bower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bower.json&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Metadata&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dependencies&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bower_components&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bootstrap-http-getbootstrap-com&#34;&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#grid&#34;&gt;Grid system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#buttons&#34;&gt;Button styles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;angular-reference&#34;&gt;Angular Reference&lt;/h2&gt;
+
+&lt;h3 id=&#34;concepts&#34;&gt;Concepts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/module&#34;&gt;Modules&lt;/a&gt; (&lt;a href=&#34;https://docs.angularjs.org/api/ng/function/angular.module&#34;&gt;&lt;code&gt;angular.module(&#39;moduleName&#39;, [])&lt;/code&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/controller&#34;&gt;Controllers&lt;/a&gt; (&lt;code&gt;someModule.controller(&#39;ControllerName&#39;, function)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/scope&#34;&gt;Scope/&lt;code&gt;$scope&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;directives&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;In the view (HTML), directives are specified with &lt;strong&gt;kebab-case&lt;/strong&gt; (or &amp;ldquo;dasherized&amp;rdquo;)—that is, with words separated by hyphens. Within JavaScript, they are specified with &lt;strong&gt;camelCase&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngApp&#34;&gt;ngApp&lt;/a&gt;: Auto-bootstraps an Angular application and (optionally) specifies the root Module.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngController&#34;&gt;ngController&lt;/a&gt;: Attaches a Controller to the view/DOM.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngModel&#34;&gt;ngModel&lt;/a&gt;: Binds a form field to a property on the scope.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngRepeat&#34;&gt;ngRepeat&lt;/a&gt;: Repeat an element for each item in a collection.
+
+&lt;ul&gt;
+&lt;li&gt;See also: &lt;a href=&#34;https://docs.angularjs.org/error/ngRepeat/dupes&#34;&gt;ngRepeat:dupes&lt;/a&gt; and &lt;code&gt;track by&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngSubmit&#34;&gt;ngSubmit&lt;/a&gt;: Specifies custom behavior (often an invocation of a function property on the scope) when a form is submitted.
+
+&lt;ul&gt;
+&lt;li&gt;Automatically prevents default, unless the &lt;code&gt;action&lt;/code&gt; attribute is set on the form.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngClick&#34;&gt;ngClick&lt;/a&gt;: Specifies custom behavior when an element is clicked.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngShow&#34;&gt;ngShow&lt;/a&gt;: Show an element only when the provided expression is truthy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngHide&#34;&gt;ngHide&lt;/a&gt;: The inverse of &lt;code&gt;ngShow&lt;/code&gt;. Only show the element if the provided expression is falsey.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Meganote &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/8221627de162eb9f139749755f190df72581ea6f&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Acrobats: &lt;a href=&#34;https://github.com/xternbootcamp16/acrobats&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/acrobats/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -735,131 +860,19 @@ git push -u master gh-pages  # Push it to GitHub
 
 &lt;p&gt;Create student rivalries with the &lt;a href=&#34;https://xtern-roster.herokuapp.com/&#34;&gt;Xtern Roster API&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;There are two resources in this API:
-* &lt;a href=&#34;https://xtern-roster.herokuapp.com/people&#34;&gt;People&lt;/a&gt;
-* &lt;a href=&#34;https://xtern-roster.herokuapp.com/rivalries&#34;&gt;Rivalries&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Build an app that allows visitors to do the following:
- * Create, read, update, and delete person records
- * Create, read, update, and delete a person&amp;rsquo;s rivalries with others&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 3: Putting the Pieces Together</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day03/</link>
-      <pubDate>Sat, 11 Jun 2016 17:12:02 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day03/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Thursday, June 2, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/dfa5fbf687e0eb39fe6e60837eda35778c7e860a&#34;&gt;Solution to Wednesday&amp;rsquo;s homework: MegaRoster with delete and promote&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+&lt;p&gt;There are two resources in this API:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;The grid system&lt;/li&gt;
-&lt;li&gt;Responsive design (changing style based on the window size)&lt;/li&gt;
-&lt;li&gt;Check out the &lt;a href=&#34;https://sudheerdev.github.io/Foundation5CheatSheet/&#34;&gt;Foundation Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xtern-roster.herokuapp.com/people&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xtern-roster.herokuapp.com/rivalries&#34;&gt;Rivalries&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;functions-as-methods&#34;&gt;Functions as Methods&lt;/h3&gt;
+&lt;p&gt;Build an app that allows visitors to do the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Methods calling methods (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;megaRoster.addChild&lt;/code&gt; calls &lt;code&gt;this.buildListItem&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Binding: Manually setting the value of &lt;code&gt;this&lt;/code&gt; with &lt;code&gt;bind&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create, read, update, and delete person records&lt;/li&gt;
+&lt;li&gt;Create, read, update, and delete a person&amp;rsquo;s rivalries with others&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;event-objects&#34;&gt;Event Objects&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;currentTarget&lt;/code&gt;: The object on which the event occurred&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;parentElement&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;childNodes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;firstChild&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;firstElementChild&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;insertBefore&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;project-organization&#34;&gt;Project Organization&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;When to write a new function&lt;/li&gt;
-&lt;li&gt;Avoiding global variables&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/03-objects-and-functions&#34;&gt;Day 2 Review: Objects and Functions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;homework-megaroster-now-with-even-more-mega&#34;&gt;Homework: MegaRoster - now with even more mega&lt;/h2&gt;
-
-&lt;p&gt;Enhance MegaRoster! Make the students editable, and add the ability to move them around in the list.&lt;/p&gt;
-
-&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
-
-&lt;p&gt;Add a link that moves the student to the top of the list. Either change the behavior of the existing &lt;em&gt;promote&lt;/em&gt; link, or add a new &lt;em&gt;top&lt;/em&gt; link.&lt;/p&gt;
-
-&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Add links to move the student up and down the list, one spot at a time.&lt;/p&gt;
-
-&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Disable the &lt;em&gt;up&lt;/em&gt; link when the student reaches the top, and disable the &lt;em&gt;down&lt;/em&gt; link when the student reaches the bottom.&lt;/p&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Make the student name editable in place after it&amp;rsquo;s added to the roster.&lt;/p&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
-
-&lt;p&gt;Make the student data persistent between page refreshes! That is, keep the students from disappearing every time the page is refreshed.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Use &lt;code&gt;localStorage&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/45eebfa3f35d9d617988d5c647ae737e4db16879&#34;&gt;Solution: Editable MegaRoster&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/git/</link>
-      <pubDate>Fri, 10 Jun 2016 23:40:01 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/git/</guid>
-      <description>
-
-&lt;p&gt;Babun includes Git source code management, which we&amp;rsquo;ll use throughout class.&lt;/p&gt;
-
-&lt;h2 id=&#34;configuring-git&#34;&gt;Configuring Git&lt;/h2&gt;
-
-&lt;p&gt;Git comes pre-configured. You just need to tell it what name and email address it should use to sign code that you&amp;rsquo;ve authored. Enter the following commands, substituting your actual name and email address:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git config --global user.name &amp;quot;Your Full Name&amp;quot;
-git config --global user.email &amp;quot;youremailaddress@example.com&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://desktop.github.com/&#34;&gt;GitHub Desktop&lt;/a&gt;&lt;/strong&gt; is a very nice, free graphical interface for Git. Although we&amp;rsquo;ll use Git from the command-line a great deal, we&amp;rsquo;ll also look at how GitHub Desktop can make certain tasks easier.&lt;/p&gt;
-&lt;/div&gt;
-
 </description>
     </item>
     
