@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week3s on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/week3/</link>
+    <description>Recent content in Week3s on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jun 2016 16:15:26 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/week3/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular: Meganote</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/</link>
+      <pubDate>Mon, 13 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-3&#34;&gt;Week 3&lt;/h3&gt;
+
+&lt;h1 id=&#34;angular-meganote&#34;&gt;Angular: Meganote&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 10: ui-router Basics</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day10/</link>
+      <pubDate>Mon, 13 Jun 2016 16:19:37 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day10/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 13, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;State
+
+&lt;ul&gt;
+&lt;li&gt;Child states&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$stateProvider.state()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Templates
+
+&lt;ul&gt;
+&lt;li&gt;Inline templates (&lt;code&gt;template: &#39;&amp;lt;h1&amp;gt;So easy!&amp;lt;/h1&amp;gt;&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Separate files (&lt;code&gt;templateUrl: &#39;myTemplate.html&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ui-view&lt;/code&gt; directive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;npm&#34;&gt;NPM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;package.json&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://browsenpm.org/package.json&#34;&gt;&lt;code&gt;package.json&lt;/code&gt;: An Interactive Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Metadata&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;devDependencies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Scripts (&lt;code&gt;npm start&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;node_modules&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bower&#34;&gt;Bower&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/whats-great-bower/&#34;&gt;What&amp;rsquo;s So Great About Bower?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zellwk.com/blog/bower/&#34;&gt;Managing Your Front-End Dependencies with Bower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bower.json&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Metadata&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dependencies&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bower_components&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bootstrap-http-getbootstrap-com&#34;&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#grid&#34;&gt;Grid system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#buttons&#34;&gt;Button styles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;angular-reference&#34;&gt;Angular Reference&lt;/h2&gt;
+
+&lt;h3 id=&#34;concepts&#34;&gt;Concepts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/module&#34;&gt;Modules&lt;/a&gt; (&lt;a href=&#34;https://docs.angularjs.org/api/ng/function/angular.module&#34;&gt;&lt;code&gt;angular.module(&#39;moduleName&#39;, [])&lt;/code&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/controller&#34;&gt;Controllers&lt;/a&gt; (&lt;code&gt;someModule.controller(&#39;ControllerName&#39;, function)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/scope&#34;&gt;Scope/&lt;code&gt;$scope&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;directives&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;In the view (HTML), directives are specified with &lt;strong&gt;kebab-case&lt;/strong&gt; (or &amp;ldquo;dasherized&amp;rdquo;)—that is, with words separated by hyphens. Within JavaScript, they are specified with &lt;strong&gt;camelCase&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngApp&#34;&gt;ngApp&lt;/a&gt;: Auto-bootstraps an Angular application and (optionally) specifies the root Module.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngController&#34;&gt;ngController&lt;/a&gt;: Attaches a Controller to the view/DOM.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngModel&#34;&gt;ngModel&lt;/a&gt;: Binds a form field to a property on the scope.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngRepeat&#34;&gt;ngRepeat&lt;/a&gt;: Repeat an element for each item in a collection.
+
+&lt;ul&gt;
+&lt;li&gt;See also: &lt;a href=&#34;https://docs.angularjs.org/error/ngRepeat/dupes&#34;&gt;ngRepeat:dupes&lt;/a&gt; and &lt;code&gt;track by&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngSubmit&#34;&gt;ngSubmit&lt;/a&gt;: Specifies custom behavior (often an invocation of a function property on the scope) when a form is submitted.
+
+&lt;ul&gt;
+&lt;li&gt;Automatically prevents default, unless the &lt;code&gt;action&lt;/code&gt; attribute is set on the form.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngClick&#34;&gt;ngClick&lt;/a&gt;: Specifies custom behavior when an element is clicked.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngShow&#34;&gt;ngShow&lt;/a&gt;: Show an element only when the provided expression is truthy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngHide&#34;&gt;ngHide&lt;/a&gt;: The inverse of &lt;code&gt;ngShow&lt;/code&gt;. Only show the element if the provided expression is falsey.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Meganote &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/8221627de162eb9f139749755f190df72581ea6f&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Acrobats: &lt;a href=&#34;https://github.com/xternbootcamp16/acrobats&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/acrobats/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

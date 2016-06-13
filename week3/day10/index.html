@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 9: Intro to Angular</title>
+    <title>Day 10: ui-router Basics</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week2/day09/">
+  <body class="" data-url="/week3/day10/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -272,7 +272,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/week2/">
+      <li class="dd-item  " data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -320,7 +320,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week2/day09/">
+            <li class="dd-item " data-nav-id="/week2/day09/">
               <a href="/week2/day09/">
                 <span>Day 9: Intro to Angular     </i></span>
               </a>
@@ -335,7 +335,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -351,7 +351,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day10/">
+            <li class="dd-item active" data-nav-id="/week3/day10/">
               <a href="/week3/day10/">
                 <span>Day 10: ui-router Basics     </i></span>
               </a>
@@ -398,15 +398,15 @@
                   
                 
                   
+                
+                  
                     
                     
-                <a href="/week2/" itemprop="url"><span itemprop="title">jQuery &amp; Ajax</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week3/" itemprop="url"><span itemprop="title">Angular: Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                <span itemprop="title"> Day 9: Intro to Angular</span>
+                <span itemprop="title"> Day 10: ui-router Basics</span>
               </div>
               
                   <div class="progress">
@@ -415,8 +415,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#student-presentations">Student Presentations</a></li>
-<li><a href="#topics-introduction-to-angular">Topics: Introduction to Angular</a>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#ui-router"><code>ui-router</code></a></li>
+<li><a href="#npm">NPM</a></li>
+<li><a href="#bower">Bower</a></li>
+<li><a href="#bootstrap-http-getbootstrap-com"><a href="http://getbootstrap.com/">Bootstrap</a></a></li>
+</ul></li>
+<li><a href="#angular-reference">Angular Reference</a>
 <ul>
 <li><a href="#concepts">Concepts</a></li>
 <li><a href="#directives">Directives</a></li>
@@ -434,23 +440,75 @@
             
     	        <div id="body-inner">
                 
-                <h1>Day 9: Intro to Angular</h1>
+                <h1>Day 10: ui-router Basics</h1>
                 
 
 
 
-<p><date>Friday, June 10, 2016</date></p>
+<p><date>Monday, June 13, 2016</date></p>
 
-<h2 id="student-presentations">Student Presentations</h2>
+<h2 id="topics">Topics</h2>
 
-<p>Group projects demonstrating the use of jQuery, DOM manipulation, and using Ajax to consume REST APIs.</p>
+<h3 id="ui-router"><code>ui-router</code></h3>
 
-<h2 id="topics-introduction-to-angular">Topics: Introduction to Angular</h2>
+<ul>
+<li><a href="https://github.com/angular-ui/ui-router#get-started">Getting Started with <code>ui-router</code></a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki"><code>ui-router</code> documentation</a></li>
+<li>State
+
+<ul>
+<li>Child states</li>
+<li><code>$stateProvider.state()</code></li>
+</ul></li>
+<li>Templates
+
+<ul>
+<li>Inline templates (<code>template: '&lt;h1&gt;So easy!&lt;/h1&gt;'</code>)</li>
+<li>Separate files (<code>templateUrl: 'myTemplate.html'</code>)</li>
+</ul></li>
+<li><code>ui-view</code> directive</li>
+</ul>
+
+<h3 id="npm">NPM</h3>
+
+<ul>
+<li><code>package.json</code>
+
+<ul>
+<li><a href="http://browsenpm.org/package.json"><code>package.json</code>: An Interactive Guide</a></li>
+<li>Metadata</li>
+<li><code>devDependencies</code></li>
+<li>Scripts (<code>npm start</code>, etc.)</li>
+</ul></li>
+<li><code>node_modules</code> folder</li>
+</ul>
+
+<h3 id="bower">Bower</h3>
+
+<ul>
+<li><a href="https://css-tricks.com/whats-great-bower/">What&rsquo;s So Great About Bower?</a></li>
+<li><a href="http://zellwk.com/blog/bower/">Managing Your Front-End Dependencies with Bower</a></li>
+<li><code>bower.json</code>
+
+<ul>
+<li>Metadata</li>
+<li><code>dependencies</code></li>
+</ul></li>
+<li><code>bower_components</code> folder</li>
+</ul>
+
+<h3 id="bootstrap-http-getbootstrap-com"><a href="http://getbootstrap.com/">Bootstrap</a></h3>
+
+<ul>
+<li><a href="http://getbootstrap.com/css/#grid">Grid system</a></li>
+<li><a href="http://getbootstrap.com/css/#buttons">Button styles</a></li>
+</ul>
+
+<h2 id="angular-reference">Angular Reference</h2>
 
 <h3 id="concepts">Concepts</h3>
 
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-View-Controller (MVC) design pattern</a></li>
 <li><a href="https://docs.angularjs.org/guide/module">Modules</a> (<a href="https://docs.angularjs.org/api/ng/function/angular.module"><code>angular.module('moduleName', [])</code></a>)</li>
 <li><a href="https://docs.angularjs.org/guide/controller">Controllers</a> (<code>someModule.controller('ControllerName', function)</code>)</li>
 <li><a href="https://docs.angularjs.org/guide/scope">Scope/<code>$scope</code></a></li>
@@ -479,13 +537,14 @@
 <li><a href="https://docs.angularjs.org/api/ng/directive/ngClick">ngClick</a>: Specifies custom behavior when an element is clicked.</li>
 <li><a href="https://docs.angularjs.org/api/ng/directive/ngShow">ngShow</a>: Show an element only when the provided expression is truthy.</li>
 <li><a href="https://docs.angularjs.org/api/ng/directive/ngHide">ngHide</a>: The inverse of <code>ngShow</code>. Only show the element if the provided expression is falsey.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngBind">ngBind</a>: Tells Angular to replace the text of the element with the value of an expression. You typically use <code>{{ expression }}</code> instead, but <code>ngBind</code> prevents the template from being displayed briefly when the page loads. But for that you can also use&hellip;</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngCloak">ngCloak</a>: Prevent the template from displaying before the view is fully rendered.</li>
 </ul>
 
 <h2 id="projects">Projects</h2>
 
-<p>Acrobats: <a href="https://github.com/xternbootcamp16/acrobats">source</a> | <a href="http://xternbootcamp16.github.io/acrobats/">live</a></p>
+<ul>
+<li>Meganote <a href="https://github.com/xternbootcamp16/meganote/tree/8221627de162eb9f139749755f190df72581ea6f">source</a> | <a href="http://bootcamp16.getfretless.com/meganote/#/notes/">live</a></li>
+<li>Acrobats: <a href="https://github.com/xternbootcamp16/acrobats">source</a> | <a href="http://xternbootcamp16.github.io/acrobats/">live</a></li>
+</ul>
 
 
       
@@ -493,8 +552,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/week2/day08"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week3/day10" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

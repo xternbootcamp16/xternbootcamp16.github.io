@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 9: Intro to Angular</title>
+    <title>Angular: Meganote</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week2/day09/">
+  <body class="" data-url="/week3/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -272,7 +272,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/week2/">
+      <li class="dd-item  " data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -320,7 +320,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week2/day09/">
+            <li class="dd-item " data-nav-id="/week2/day09/">
               <a href="/week2/day09/">
                 <span>Day 9: Intro to Angular     </i></span>
               </a>
@@ -335,7 +335,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item active parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -386,10 +386,10 @@
                       </a>
                   </span>
                 
-                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
                 
                 
                 
+                  
                 
                   
                 
@@ -400,101 +400,35 @@
                   
                     
                     
-                <a href="/week2/" itemprop="url"><span itemprop="title">jQuery &amp; Ajax</span></a> <i class="fa fa-angle-right"></i>
-                    
                   
                 
-                  
-                
-                <span itemprop="title"> Day 9: Intro to Angular</span>
+                <span itemprop="title"> Angular: Meganote</span>
               </div>
-              
-                  <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#student-presentations">Student Presentations</a></li>
-<li><a href="#topics-introduction-to-angular">Topics: Introduction to Angular</a>
-<ul>
-<li><a href="#concepts">Concepts</a></li>
-<li><a href="#directives">Directives</a></li>
-</ul></li>
-<li><a href="#projects">Projects</a></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
               
 
             </div>
             
+              <div id="chapter">
+            
     	        <div id="body-inner">
                 
-                <h1>Day 9: Intro to Angular</h1>
-                
 
 
 
-<p><date>Friday, June 10, 2016</date></p>
+<h3 id="week-3">Week 3</h3>
 
-<h2 id="student-presentations">Student Presentations</h2>
-
-<p>Group projects demonstrating the use of jQuery, DOM manipulation, and using Ajax to consume REST APIs.</p>
-
-<h2 id="topics-introduction-to-angular">Topics: Introduction to Angular</h2>
-
-<h3 id="concepts">Concepts</h3>
-
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-View-Controller (MVC) design pattern</a></li>
-<li><a href="https://docs.angularjs.org/guide/module">Modules</a> (<a href="https://docs.angularjs.org/api/ng/function/angular.module"><code>angular.module('moduleName', [])</code></a>)</li>
-<li><a href="https://docs.angularjs.org/guide/controller">Controllers</a> (<code>someModule.controller('ControllerName', function)</code>)</li>
-<li><a href="https://docs.angularjs.org/guide/scope">Scope/<code>$scope</code></a></li>
-</ul>
-
-<h3 id="directives">Directives</h3>
-
-<div class="notices note" ><p>In the view (HTML), directives are specified with <strong>kebab-case</strong> (or &ldquo;dasherized&rdquo;)—that is, with words separated by hyphens. Within JavaScript, they are specified with <strong>camelCase</strong>.</p>
-</div>
+<h1 id="angular-meganote">Angular: Meganote</h1>
 
 
-<ul>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngApp">ngApp</a>: Auto-bootstraps an Angular application and (optionally) specifies the root Module.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngController">ngController</a>: Attaches a Controller to the view/DOM.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngModel">ngModel</a>: Binds a form field to a property on the scope.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngRepeat">ngRepeat</a>: Repeat an element for each item in a collection.
-
-<ul>
-<li>See also: <a href="https://docs.angularjs.org/error/ngRepeat/dupes">ngRepeat:dupes</a> and <code>track by</code></li>
-</ul></li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngSubmit">ngSubmit</a>: Specifies custom behavior (often an invocation of a function property on the scope) when a form is submitted.
-
-<ul>
-<li>Automatically prevents default, unless the <code>action</code> attribute is set on the form.</li>
-</ul></li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngClick">ngClick</a>: Specifies custom behavior when an element is clicked.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngShow">ngShow</a>: Show an element only when the provided expression is truthy.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngHide">ngHide</a>: The inverse of <code>ngShow</code>. Only show the element if the provided expression is falsey.</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngBind">ngBind</a>: Tells Angular to replace the text of the element with the value of an expression. You typically use <code>{{ expression }}</code> instead, but <code>ngBind</code> prevents the template from being displayed briefly when the page loads. But for that you can also use&hellip;</li>
-<li><a href="https://docs.angularjs.org/api/ng/directive/ngCloak">ngCloak</a>: Prevent the template from displaying before the view is fully rendered.</li>
-</ul>
-
-<h2 id="projects">Projects</h2>
-
-<p>Acrobats: <a href="https://github.com/xternbootcamp16/acrobats">source</a> | <a href="http://xternbootcamp16.github.io/acrobats/">live</a></p>
-
-
+      
+        </div> 
       
       </div>
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/week2/day08"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week2/day09"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week3/day10" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
