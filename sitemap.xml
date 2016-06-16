@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/</loc>
     <lastmod>2016-06-14T21:34:12-04:00</lastmod>
   </url>
   
@@ -37,7 +37,7 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/01-seed/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</loc>
     <lastmod>2016-06-14T21:56:25-04:00</lastmod>
   </url>
   
@@ -67,7 +67,7 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/02-setup/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</loc>
     <lastmod>2016-06-14T22:45:03-04:00</lastmod>
   </url>
   
@@ -102,7 +102,7 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/03-google-fonts/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/03-google-fonts/</loc>
     <lastmod>2016-06-15T09:05:23-04:00</lastmod>
   </url>
   
@@ -127,7 +127,7 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/04-bootstrap/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/04-bootstrap/</loc>
     <lastmod>2016-06-15T15:19:00-04:00</lastmod>
   </url>
   
@@ -152,12 +152,12 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/07-notescontroller/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/07-notescontroller/</loc>
     <lastmod>2016-06-15T19:53:04-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/05-layout/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/05-layout/</loc>
     <lastmod>2016-06-15T15:39:05-04:00</lastmod>
   </url>
   
@@ -177,7 +177,7 @@
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/meganote/06-modules-routes/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/app-meganote/06-modules-routes/</loc>
     <lastmod>2016-06-15T15:53:23-04:00</lastmod>
   </url>
   

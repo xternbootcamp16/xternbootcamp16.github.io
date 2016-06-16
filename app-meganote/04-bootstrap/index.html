@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Meganote-Seed</title>
+    <title>Bootstrap</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/meganote/01-seed/">
+  <body class="" data-url="/app-meganote/04-bootstrap/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,8 +43,8 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/meganote/">
-        <a href="/meganote/">
+      <li class="dd-item  parent" data-nav-id="/app-meganote/">
+        <a href="/app-meganote/">
           <span>
             
               <i class="fa fa-file-text-o"></i>
@@ -59,56 +59,56 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/meganote/01-seed/">
-              <a href="/meganote/01-seed/">
+            <li class="dd-item " data-nav-id="/app-meganote/01-seed/">
+              <a href="/app-meganote/01-seed/">
                 <span>Meganote-Seed     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/02-setup/">
-              <a href="/meganote/02-setup/">
+            <li class="dd-item " data-nav-id="/app-meganote/02-setup/">
+              <a href="/app-meganote/02-setup/">
                 <span>Setup     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/03-google-fonts/">
-              <a href="/meganote/03-google-fonts/">
+            <li class="dd-item " data-nav-id="/app-meganote/03-google-fonts/">
+              <a href="/app-meganote/03-google-fonts/">
                 <span>Google Fonts     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/04-bootstrap/">
-              <a href="/meganote/04-bootstrap/">
+            <li class="dd-item active" data-nav-id="/app-meganote/04-bootstrap/">
+              <a href="/app-meganote/04-bootstrap/">
                 <span>Bootstrap     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/07-notescontroller/">
-              <a href="/meganote/07-notescontroller/">
+            <li class="dd-item " data-nav-id="/app-meganote/07-notescontroller/">
+              <a href="/app-meganote/07-notescontroller/">
                 <span>NotesController     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/05-layout/">
-              <a href="/meganote/05-layout/">
+            <li class="dd-item " data-nav-id="/app-meganote/05-layout/">
+              <a href="/app-meganote/05-layout/">
                 <span>Layout &amp; Style     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/06-modules-routes/">
-              <a href="/meganote/06-modules-routes/">
+            <li class="dd-item " data-nav-id="/app-meganote/06-modules-routes/">
+              <a href="/app-meganote/06-modules-routes/">
                 <span>Modules &amp; Routes     </i></span>
               </a>
             </li>
@@ -489,7 +489,7 @@
                   
                     
                     
-                <a href="/meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/app-meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
@@ -503,24 +503,12 @@
                 
                   
                 
-                <span itemprop="title"> Meganote-Seed</span>
+                <span itemprop="title"> Bootstrap</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#clone-the-meganote-seed-https-github-com-xternbootcamp16-meganote-seed-project">Clone the <a href="https://github.com/xternbootcamp16/meganote-seed">meganote-seed</a> project</a></li>
-<li><a href="#remove-its-git-history-and-initialize-your-own-git-repository">Remove its <code>.git</code> history, and initialize your own git repository</a>
-<ul>
-<li><a href="#note-about-commit-messages">Note About Commit Messages</a></li>
-</ul></li>
-<li><a href="#create-a-github-repo">Create a GitHub repo</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -530,45 +518,66 @@
             
     	        <div id="body-inner">
                 
-                <h1>Meganote-Seed</h1>
+                <h1>Bootstrap</h1>
                 
 
+<p>Now that we&rsquo;ve committed our basic, empty project, let&rsquo;s add <a href="http://getbootstrap.com/">Bootstrap</a> to bring some basic structure and mobile-friendly features to our HTML and CSS.</p>
 
+<p>We could download all the bootstrap components manually and include them our project, but we&rsquo;ve used some <a href="http://bower.io/">Bower</a> power to do it for us.</p>
 
-<h2 id="clone-the-meganote-seed-https-github-com-xternbootcamp16-meganote-seed-project">Clone the <a href="https://github.com/xternbootcamp16/meganote-seed">meganote-seed</a> project</h2>
+<p>Let&rsquo;s get some info about Bower&rsquo;s Bootstrap package.</p>
 
-<p>Clone the seed project in a local folder named <code>meganote</code>.</p>
+<p><p class="file">shell</p></p>
 
-<pre><code class="language-zsh">git clone git@github.com:xternbootcamp16/meganote-seed.git meganote
-cd meganote
+<pre><code class="language-zsh">node_modules/.bin/bower info bootstrap
 </code></pre>
 
-<h2 id="remove-its-git-history-and-initialize-your-own-git-repository">Remove its <code>.git</code> history, and initialize your own git repository</h2>
+<p>This shows us a bunch of details about that package, including available versions, the exact name of the package (it&rsquo;s just <em>bootstrap</em>), and its dependencies. If we install Bootstrap in our project, its dependencies will automatically be installed with it.</p>
 
-<p>Open the project in Atom and delete the <code>.git</code> folder to remove all traces of the seed project&rsquo;s repository.</p>
+<p>To include Bootstrap in our project, we need to list Bootstrap among our dependencies in <code>bower.json</code>. The <em>meganote-seed</em> project already included it.</p>
 
-<p>Then initialize your own repository.</p>
+<p><p class="file">bower.json</p></p>
 
-<pre><code class="language-zsh">git init
-git add .
-git commit -m &quot;Initial commit using meganote-seed&quot;
+<pre><code class="language-javascript">    &quot;bootstrap&quot;: &quot;3.3.6&quot;
 </code></pre>
 
-<h3 id="note-about-commit-messages">Note About Commit Messages</h3>
+<p>Had we just added it, we would need to run <code>bower install</code> again to actually add the files to our project. Running <code>npm install</code> will kick of <code>bower install</code> for us, as will just starting up our server with <code>npm start</code>.</p>
 
-<p>If you fail to specify a commit message, git will open a text editor for you to write the message manually. By default, it opens <code>vim</code>, a powerful, but sometimes confusing terminal-based text editor.</p>
+<p>We still need to include Bootstrap&rsquo;s JavaScript and CSS to our app&rsquo;s home page. Open <code>app/index.html</code>, and add the Bootstrap stylesheets and scripts.</p>
 
-<p>To configure Git to use Atom instead, type the following command:</p>
+<p>Add Bootstrap&rsquo;s stylesheet just above <code>app.css</code>, and add the JavaScript just above the other <code>&lt;script&gt;</code> tags near the bottom of the <code>&lt;body&gt;</code>.</p>
 
-<pre><code class="language-zsh">git config --global core.editor &quot;atom --wait&quot;
+<p><p class="file">app/index.html</p></p>
+
+<pre><code class="language-html">...
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;app.css&quot;&gt;
+...
+  &lt;script src=&quot;bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;bower_components/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
 </code></pre>
 
-<h2 id="create-a-github-repo">Create a GitHub repo</h2>
+<p>If you ever need to update a dependency, all you should need to do is issue:</p>
 
-<p>Create a new repository in your GitHub account. Follow the instructions to add this repo as a remote for your local project, and push to that remote.</p>
+<pre><code class="language-zsh">./node_modules/.bin/bower update bootstrap
+</code></pre>
 
-<pre><code class="language-zsh">git remote add origin git@github.com:[YOUR GITHUB USERNAME]/meganote.git
-git push -u origin master
+<p>And it will update <code>bower.json</code> for you and install the new packages. Provided the paths to assets don&rsquo;t change, you shouldn&rsquo;t need to update your <code>index.html</code> file.</p>
+
+<div class="notices tip" ><p><strong>Note:</strong> By including <code>./node_modules/bin/</code> in that command, we ensure that we are running the version of Bower that&rsquo;s installed in this app. You can omit the path if you have Bower installed globally, which you can do with <code>npm install -g bower</code>.</p>
+</div>
+
+
+<p>If you save and refresh the page, you should see some padding that wasn&rsquo;t there before, as well as a change in font sizes.</p>
+
+<p>Let&rsquo;s add everything we&rsquo;ve done so far to git and commit again:</p>
+
+<p><p class="file">shell</p></p>
+
+<pre><code class="language-zsh">git add .
+git commit -m &quot;Add Bootstrap.&quot;
+git push
 </code></pre>
 
 
@@ -577,8 +586,8 @@ git push -u origin master
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/meganote"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/meganote/02-setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/app-meganote/03-google-fonts"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/app-meganote/05-layout" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

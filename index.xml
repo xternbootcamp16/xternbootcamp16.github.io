@@ -11,10 +11,10 @@
     
     <item>
       <title>Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/meganote/</link>
+      <link>http://replace-this-with-your-hugo-site.com/app-meganote/</link>
       <pubDate>Tue, 14 Jun 2016 21:34:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/meganote/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/</guid>
       <description>
 
 &lt;h3 id=&#34;angular&#34;&gt;Angular&lt;/h3&gt;
@@ -107,10 +107,10 @@
     
     <item>
       <title>Meganote-Seed</title>
-      <link>http://replace-this-with-your-hugo-site.com/meganote/01-seed/</link>
+      <link>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</link>
       <pubDate>Tue, 14 Jun 2016 21:56:25 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/meganote/01-seed/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</guid>
       <description>
 
 &lt;h2 id=&#34;clone-the-meganote-seed-https-github-com-xternbootcamp16-meganote-seed-project&#34;&gt;Clone the &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-seed&#34;&gt;meganote-seed&lt;/a&gt; project&lt;/h2&gt;
@@ -586,10 +586,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Setup</title>
-      <link>http://replace-this-with-your-hugo-site.com/meganote/02-setup/</link>
+      <link>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</link>
       <pubDate>Tue, 14 Jun 2016 22:45:03 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/meganote/02-setup/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</guid>
       <description>
 
 &lt;h2 id=&#34;angular-seed&#34;&gt;Angular-seed&lt;/h2&gt;

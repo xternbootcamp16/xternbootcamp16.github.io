@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Meganote</title>
+    <title>Setup</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/meganote/">
+  <body class="" data-url="/app-meganote/02-setup/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,8 +43,8 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/meganote/">
-        <a href="/meganote/">
+      <li class="dd-item  parent" data-nav-id="/app-meganote/">
+        <a href="/app-meganote/">
           <span>
             
               <i class="fa fa-file-text-o"></i>
@@ -59,56 +59,56 @@
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/01-seed/">
-              <a href="/meganote/01-seed/">
+            <li class="dd-item " data-nav-id="/app-meganote/01-seed/">
+              <a href="/app-meganote/01-seed/">
                 <span>Meganote-Seed     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/02-setup/">
-              <a href="/meganote/02-setup/">
+            <li class="dd-item active" data-nav-id="/app-meganote/02-setup/">
+              <a href="/app-meganote/02-setup/">
                 <span>Setup     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/03-google-fonts/">
-              <a href="/meganote/03-google-fonts/">
+            <li class="dd-item " data-nav-id="/app-meganote/03-google-fonts/">
+              <a href="/app-meganote/03-google-fonts/">
                 <span>Google Fonts     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/04-bootstrap/">
-              <a href="/meganote/04-bootstrap/">
+            <li class="dd-item " data-nav-id="/app-meganote/04-bootstrap/">
+              <a href="/app-meganote/04-bootstrap/">
                 <span>Bootstrap     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/07-notescontroller/">
-              <a href="/meganote/07-notescontroller/">
+            <li class="dd-item " data-nav-id="/app-meganote/07-notescontroller/">
+              <a href="/app-meganote/07-notescontroller/">
                 <span>NotesController     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/05-layout/">
-              <a href="/meganote/05-layout/">
+            <li class="dd-item " data-nav-id="/app-meganote/05-layout/">
+              <a href="/app-meganote/05-layout/">
                 <span>Layout &amp; Style     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/06-modules-routes/">
-              <a href="/meganote/06-modules-routes/">
+            <li class="dd-item " data-nav-id="/app-meganote/06-modules-routes/">
+              <a href="/app-meganote/06-modules-routes/">
                 <span>Modules &amp; Routes     </i></span>
               </a>
             </li>
@@ -481,12 +481,16 @@
                       </a>
                   </span>
                 
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
                 
                 
                 
                   
                     
                     
+                <a href="/app-meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
                   
@@ -499,33 +503,137 @@
                 
                   
                 
-                <span itemprop="title"> Meganote</span>
+                <span itemprop="title"> Setup</span>
               </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#angular-seed">Angular-seed</a></li>
+<li><a href="#meganote-seed-structure">Meganote-seed structure</a></li>
+<li><a href="#npm-package-json-and-bower-bower-json">NPM (<code>package.json</code>) and Bower (<code>bower.json</code>)</a></li>
+<li><a href="#npm-start"><code>npm start</code></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
               
 
             </div>
             
-              <div id="chapter">
-            
     	        <div id="body-inner">
+                
+                <h1>Setup</h1>
                 
 
 
 
-<h3 id="angular">Angular</h3>
+<h2 id="angular-seed">Angular-seed</h2>
 
-<h1 id="meganote">Meganote</h1>
+<p><a href="https://github.com/angular/angular-seed">Angular-seed</a> is a bootstrapping project preconfigured to with a suite of tools to make it easy to manage dependencies—including Angular itself—with a directory structure that works well for Angular apps. You could always start a new Angular app from scratch, but using the official seed project is a good idea.</p>
+
+<p>Angular-seed can be a bit overwhelming, because it includes an awful lot of stuff. We&rsquo;ll use our own, considerably simpler seed project, <code>meganote-seed</code>.</p>
+
+<h2 id="meganote-seed-structure">Meganote-seed structure</h2>
+
+<p>Let&rsquo;s take a look at the generated application structure, and what all the pieces are for:</p>
+
+<pre><code>├── LICENSE             --&gt; the MIT license agreement
+├── app                 --&gt; all of the source files for the application
+│   ├── app.js          --&gt; main application module
+│   ├── content         --&gt; static assets, like stylesheets and images
+│   │   └── app.css     --&gt; main stylesheet
+│   ├── index.html      --&gt; main HTML template for the app
+│   └── notes           --&gt; view template and logic for _notes_
+│       └── notes.html  --&gt; view template for _notes_
+├── bower.json          --&gt; client side dependencies (for `bower install`)
+└── package.json        --&gt; development and server side dependencies (for `npm install`)
+</code></pre>
+
+<h2 id="npm-package-json-and-bower-bower-json">NPM (<code>package.json</code>) and Bower (<code>bower.json</code>)</h2>
+
+<p>Starting with non-empty <code>package.json</code> and <code>bower.json</code> files is one of the handiest aspects of starting from a <em>seed</em> project.</p>
+
+<blockquote>
+<p><code>package.json</code> and <code>bower.json</code> serve much the same purpose in a JavaScript project as the <code>Gemfile</code> in a Ruby project (and a bit like the <code>Rakefile</code> as well).</p>
+</blockquote>
+
+<p><a href="https://www.npmjs.com/">NPM</a> and <a href="http://bower.io/">Bower</a> are both package managers. Package managers make the distribution and installation of software dramatically easier than alternative methods. Sometimes we need to reuse the same chunk of code in multiple projects. Sometimes our coworkers need to use software we&rsquo;ve written for a previous project in a new project. Sometimes we want to share something we&rsquo;ve written with the world. In cases like these, using a package manager can simplify including external dependencies and keeping them up-to-date.</p>
+
+<p>NPM, a package manager based on Node, is the most common package management system in the JavaScript world. NPM dependencies and scripts for a project are specified in the <code>package.json</code> file.</p>
+
+<p>Bower is also extremely common and serves a subtly different purpose. Its dependencies and scripts are specified in <code>bower.json</code>.</p>
+
+<p>Like other package managers, NPM and Bower provide a standardized structure that we can use to package and distribute software we&rsquo;ve written.</p>
+
+<p>Why do we need two package managers in our project? Why can&rsquo;t we use <em>either</em> npm or bower, rather than both? npm is ideally suited for managing server-side Node packages and development dependencies—like development-friendly web servers, minification tools, etc.—while Bower is designed for the client side.</p>
+
+<p>The biggest technical difference is that npm handles nested dependencies, while Bower leaves that up to us (which is appropriate for the client side, where we don&rsquo;t want, for example, 5 different versions of jQuery sent to end users).</p>
+
+<h2 id="npm-start"><code>npm start</code></h2>
+
+<p>We can run a task from the command line called <code>npm start</code>, because the <code>start</code> script is defined in <code>package.json</code>.</p>
+
+<pre><code class="language-json">  &quot;start&quot;: &quot;http-server app -a 0.0.0.0 -p 8000 -c-1&quot;,
+  &quot;prestart&quot;: &quot;npm install&quot;,
+  &quot;postinstall&quot;: &quot;bower install&quot;
+}
+</code></pre>
+
+<p>So that <code>start</code> script fires up a web server, serving the project&rsquo;s <code>app</code> directory, on port <code>8000</code>. The <code>prestart</code> script will automatically execute <code>npm start</code> before the <code>start</code> script itself. Similarly, the <code>postinstall</code> script will automatically execute <code>bower install</code> as soon as <code>npm install</code> finishes.</p>
+
+<p>All told, running the following command:</p>
+
+<pre><code class="language-zsh">npm start
+</code></pre>
+
+<p>Will execute the following commands, in this order:</p>
+
+<pre><code class="language-zsh">npm install
+bower install
+http-server app -a 0.0.0.0 -p 8000 -c-1
+</code></pre>
+
+<p>Go ahead and run <code>npm start</code> now.</p>
+
+<p>You&rsquo;ll see the <code>node_modules</code> and <code>app/bower_components</code> directories are added to your project with all the installed dependencies. Don&rsquo;t worry about it adding bloat to your repository. Just like the bundled gems in a Ruby project, <code>node_modules</code> and <code>bower_components</code> are in <code>.gitignore</code>.</p>
+
+<blockquote>
+<p>If you don&rsquo;t want other developers on the project to have to re-download the dependencies from the web, you can include the two directories in your repository.</p>
+</blockquote>
+
+<p>Dependencies are versioned, so if you were to change the version number, and run <code>npm install</code> again, bower will get the correct version of whatever dependency we need.</p>
+
+<p>If npm and bower have finished installing dependencies, the output of <code>npm start</code> should end with this:</p>
+
+<pre><code class="language-zsh">Starting up http-server, serving app on port: 8000
+Hit CTRL-C to stop the server
+</code></pre>
+
+<p>Visit <a href="http://localhost:8000">http://localhost:8000</a> in your web browser.</p>
+
+<p>Hopefully you see something like this:</p>
+
+<pre><code class="language-shell">Meganote
+
+Welcome to Meganote!
+</code></pre>
+
+<p>If so, let&rsquo;s keep moving.</p>
 
 
-      
-        </div> 
       
       </div>
     </div>
 
     <div id="navigation">
-        
-        <a class="nav nav-next" href="/meganote/01-seed" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/app-meganote/01-seed"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/app-meganote/03-google-fonts" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>NotesController</title>
+    <title>Meganote</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/meganote/07-notescontroller/">
+  <body class="" data-url="/app-meganote/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,8 +43,8 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/meganote/">
-        <a href="/meganote/">
+      <li class="dd-item active parent" data-nav-id="/app-meganote/">
+        <a href="/app-meganote/">
           <span>
             
               <i class="fa fa-file-text-o"></i>
@@ -59,56 +59,56 @@
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/01-seed/">
-              <a href="/meganote/01-seed/">
+            <li class="dd-item " data-nav-id="/app-meganote/01-seed/">
+              <a href="/app-meganote/01-seed/">
                 <span>Meganote-Seed     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/02-setup/">
-              <a href="/meganote/02-setup/">
+            <li class="dd-item " data-nav-id="/app-meganote/02-setup/">
+              <a href="/app-meganote/02-setup/">
                 <span>Setup     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/03-google-fonts/">
-              <a href="/meganote/03-google-fonts/">
+            <li class="dd-item " data-nav-id="/app-meganote/03-google-fonts/">
+              <a href="/app-meganote/03-google-fonts/">
                 <span>Google Fonts     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/04-bootstrap/">
-              <a href="/meganote/04-bootstrap/">
+            <li class="dd-item " data-nav-id="/app-meganote/04-bootstrap/">
+              <a href="/app-meganote/04-bootstrap/">
                 <span>Bootstrap     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item active" data-nav-id="/meganote/07-notescontroller/">
-              <a href="/meganote/07-notescontroller/">
+            <li class="dd-item " data-nav-id="/app-meganote/07-notescontroller/">
+              <a href="/app-meganote/07-notescontroller/">
                 <span>NotesController     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/05-layout/">
-              <a href="/meganote/05-layout/">
+            <li class="dd-item " data-nav-id="/app-meganote/05-layout/">
+              <a href="/app-meganote/05-layout/">
                 <span>Layout &amp; Style     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/06-modules-routes/">
-              <a href="/meganote/06-modules-routes/">
+            <li class="dd-item " data-nav-id="/app-meganote/06-modules-routes/">
+              <a href="/app-meganote/06-modules-routes/">
                 <span>Modules &amp; Routes     </i></span>
               </a>
             </li>
@@ -481,16 +481,12 @@
                       </a>
                   </span>
                 
-                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
-                
                 
                 
                 
                   
                     
                     
-                <a href="/meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
-                    
                   
                 
                   
@@ -503,83 +499,33 @@
                 
                   
                 
-                <span itemprop="title"> NotesController</span>
+                <span itemprop="title"> Meganote</span>
               </div>
-              
-                  <div class="progress">
-    <div class="wrapper">
-
-    </div>
-</div>
-
               
 
             </div>
             
+              <div id="chapter">
+            
     	        <div id="body-inner">
                 
-                <h1>NotesController</h1>
-                
-
-<p>Inject a dependency for the <code>Notes</code> module/controller that we&rsquo;ll soon create, and update the catch-all route:</p>
-
-<p><em>app/app.js</em></p>
-
-<pre><code class="language-javascript">angular.module('meganote', [
-...
-  'meganote.version',
-  'meganote.notes'
-...
-  $routeProvider.otherwise({redirectTo: '/notes'});
-...
-</code></pre>
-
-<p>Make a new directory for our new module, <code>app/notes</code>, and add a file named <code>notes.js</code> under it:</p>
-
-<p><em>app/notes/notes.js</em></p>
-
-<pre><code class="language-javascript">'use strict';
-
-angular.module('meganote.notes', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/notes', {
-    templateUrl: 'notes/notes.html',
-    controller: 'NotesController'
-  });
-}])
-
-.controller('NotesController', [function() {
-
-}]);
-</code></pre>
-
-<p>Add a file <code>app/notes/notes.html</code>:</p>
-
-<p><em>app/notes/notes.html</em></p>
-
-<pre><code class="language-html">Welcome to Meganote.
-</code></pre>
-
-<p>Specifying the dependencies to AngularJS is not sufficient to actually get those scripts sent to browsers. We must require the notes controller in <code>index.html</code>:</p>
-
-<p><em>app/index.html</em></p>
-
-<pre><code class="language-html">  &lt;script src=&quot;notes/notes.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-
-<p>Now, if you visit the root url (<a href="http://localhost:8000/">http://localhost:8000/</a>), you should be taken to <code>/notes</code> and see the welcome message from <code>app/notes/notes.html</code>.</p>
-
-<p>Commit.</p>
 
 
+
+<h3 id="angular">Angular</h3>
+
+<h1 id="meganote">Meganote</h1>
+
+
+      
+        </div> 
       
       </div>
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/meganote/06-modules-routes"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/meganote/07-notescontroller" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+        <a class="nav nav-next" href="/app-meganote/01-seed" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
