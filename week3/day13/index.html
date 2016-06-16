@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>MongoDB</title>
+    <title>Day 13: Node &amp; MongoDB</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/mongodb/">
+  <body class="" data-url="/week3/day13/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -281,7 +281,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/mongodb/">
+            <li class="dd-item " data-nav-id="/setup-win/mongodb/">
               <a href="/setup-win/mongodb/">
                 <span>MongoDB     </i></span>
               </a>
@@ -414,7 +414,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -454,7 +454,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day13/">
+            <li class="dd-item active" data-nav-id="/week3/day13/">
               <a href="/week3/day13/">
                 <span>Day 13: Node &amp; MongoDB     </i></span>
               </a>
@@ -499,24 +499,41 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week3/" itemprop="url"><span itemprop="title">Angular: Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> MongoDB</span>
+                <span itemprop="title"> Day 13: Node &amp; MongoDB</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#ngflash-http-sachinchoolur-github-io-angular-flash"><a href="http://sachinchoolur.github.io/angular-flash/">ngFlash</a></a></li>
+<li><a href="#npm-init"><code>npm init</code></a></li>
+<li><a href="#express-http-expressjs-com"><a href="http://expressjs.com/">Express</a></a></li>
+<li><a href="#supervisor-for-hot-reloading">Supervisor - for hot-reloading</a></li>
+<li><a href="#node-modules">Node Modules</a></li>
+<li><a href="#dotenv-https-www-npmjs-com-package-dotenv"><a href="https://www.npmjs.com/package/dotenv">dotenv</a></a></li>
+<li><a href="#mongodb-mlab-com-https-mlab-com">MongoDB / <a href="https://mlab.com/">mLab.com</a></a></li>
+</ul></li>
+<li><a href="#homework">Homework</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -526,12 +543,71 @@
             
     	        <div id="body-inner">
                 
-                <h1>MongoDB</h1>
+                <h1>Day 13: Node &amp; MongoDB</h1>
                 
 
-<p>We&rsquo;ll use <a href="https://www.mongodb.com/">MongoDB</a> on at least one project, so follow the <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/">installation guide</a> to get MongoDB running.</p>
 
-<p>For Windows 7 and newer, you want the version that describes itself as being for <strong>Windows Server 2008 R2 and later</strong>.</p>
+
+<p><date>Thursday, June 16, 2016</date></p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="ngflash-http-sachinchoolur-github-io-angular-flash"><a href="http://sachinchoolur.github.io/angular-flash/">ngFlash</a></h3>
+
+<p>Easy error and success messages for Angular Projects</p>
+
+<h3 id="npm-init"><code>npm init</code></h3>
+
+<p>Interactively generate <code>package.json</code></p>
+
+<h3 id="express-http-expressjs-com"><a href="http://expressjs.com/">Express</a></h3>
+
+<p><code>.listen</code> to set up port
+<code>.get</code> handling GET requests</p>
+
+<ul>
+<li>response.send( )</li>
+<li>response.json( )</li>
+</ul>
+
+<p><code>.use</code> for middleware</p>
+
+<ul>
+<li><a href="http://www.html5rocks.com/en/tutorials/cors/">CORS</a> - Cross Origin Resource Sharing</li>
+</ul>
+
+<h3 id="supervisor-for-hot-reloading">Supervisor - for hot-reloading</h3>
+
+<p>Add <code>dev</code> script in <code>package.json</code></p>
+
+<h3 id="node-modules">Node Modules</h3>
+
+<ul>
+<li><code>require()</code></li>
+<li><code>module.exports</code></li>
+</ul>
+
+<h3 id="dotenv-https-www-npmjs-com-package-dotenv"><a href="https://www.npmjs.com/package/dotenv">dotenv</a></h3>
+
+<p>For managing your secrets</p>
+
+<h3 id="mongodb-mlab-com-https-mlab-com">MongoDB / <a href="https://mlab.com/">mLab.com</a></h3>
+
+<ul>
+<li><a href="http://mongoosejs.com/">Mongoose</a>
+
+<ul>
+<li>models</li>
+<li>schema</li>
+</ul></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>Write a basic Node server that serves some JSON (GET).</li>
+<li>Make it handle all HTTP requests (GET, POST, PUT, DELETE).</li>
+</ul>
 
 
       
@@ -539,8 +615,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/github"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3/day12"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week3/day13" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

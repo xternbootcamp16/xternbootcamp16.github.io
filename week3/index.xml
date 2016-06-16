@@ -239,5 +239,76 @@
 </description>
     </item>
     
+    <item>
+      <title>Day 13: Node &amp; MongoDB</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day13/</link>
+      <pubDate>Thu, 16 Jun 2016 16:51:31 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day13/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, June 16, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;ngflash-http-sachinchoolur-github-io-angular-flash&#34;&gt;&lt;a href=&#34;http://sachinchoolur.github.io/angular-flash/&#34;&gt;ngFlash&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Easy error and success messages for Angular Projects&lt;/p&gt;
+
+&lt;h3 id=&#34;npm-init&#34;&gt;&lt;code&gt;npm init&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Interactively generate &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;express-http-expressjs-com&#34;&gt;&lt;a href=&#34;http://expressjs.com/&#34;&gt;Express&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;.listen&lt;/code&gt; to set up port
+&lt;code&gt;.get&lt;/code&gt; handling GET requests&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;response.send( )&lt;/li&gt;
+&lt;li&gt;response.json( )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;.use&lt;/code&gt; for middleware&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.html5rocks.com/en/tutorials/cors/&#34;&gt;CORS&lt;/a&gt; - Cross Origin Resource Sharing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;supervisor-for-hot-reloading&#34;&gt;Supervisor - for hot-reloading&lt;/h3&gt;
+
+&lt;p&gt;Add &lt;code&gt;dev&lt;/code&gt; script in &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;node-modules&#34;&gt;Node Modules&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;require()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;module.exports&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dotenv-https-www-npmjs-com-package-dotenv&#34;&gt;&lt;a href=&#34;https://www.npmjs.com/package/dotenv&#34;&gt;dotenv&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;For managing your secrets&lt;/p&gt;
+
+&lt;h3 id=&#34;mongodb-mlab-com-https-mlab-com&#34;&gt;MongoDB / &lt;a href=&#34;https://mlab.com/&#34;&gt;mLab.com&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://mongoosejs.com/&#34;&gt;Mongoose&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;models&lt;/li&gt;
+&lt;li&gt;schema&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write a basic Node server that serves some JSON (GET).&lt;/li&gt;
+&lt;li&gt;Make it handle all HTTP requests (GET, POST, PUT, DELETE).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
