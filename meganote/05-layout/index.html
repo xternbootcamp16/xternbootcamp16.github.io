@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>NodeJS</title>
+    <title>Layout &amp; Style</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/nodejs/">
+  <body class="" data-url="/meganote/05-layout/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,7 +43,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/meganote/">
+      <li class="dd-item  parent" data-nav-id="/meganote/">
         <a href="/meganote/">
           <span>
             
@@ -99,7 +99,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/05-layout/">
+            <li class="dd-item active" data-nav-id="/meganote/05-layout/">
               <a href="/meganote/05-layout/">
                 <span>Layout &amp; Style     </i></span>
               </a>
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -249,7 +249,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/nodejs/">
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
               <a href="/setup-win/nodejs/">
                 <span>NodeJS     </i></span>
               </a>
@@ -487,13 +487,9 @@
                 
                 
                   
-                
-                  
-                
-                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
@@ -503,23 +499,16 @@
                 
                   
                 
-                <span itemprop="title"> NodeJS</span>
+                  
+                
+                  
+                
+                <span itemprop="title"> Layout &amp; Style</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#installation">Installation</a>
-<ul>
-<li><a href="#download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></a></li>
-</ul></li>
-<li><a href="#testing-your-installation">Testing your installation</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -529,32 +518,181 @@
             
     	        <div id="body-inner">
                 
-                <h1>NodeJS</h1>
+                <h1>Layout &amp; Style</h1>
                 
 
+<p>Now that we have Bootstrap and font stuff in place, let&rsquo;s start to make this look like a real app.</p>
 
+<p>Our app content gets inserted inside <code>&lt;div ui-view&gt;&lt;/div&gt;</code> (more on that later), so we&rsquo;ll put some basic structure around that using Bootstrap&rsquo;s grid system.</p>
 
-<h2 id="installation">Installation</h2>
-
-<p>The NodeJS web site has a big, green install button. That&rsquo;s all there is to setting up Node.</p>
-
-<h3 id="download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></h3>
-
-<div class="notices note" ><p>Node version numbers are confusing, but you should using either the LTS version (4.4.5 as of this writing) or the Current version (6.2.1).</p>
+<div class="notices note" ><p>Read all about <a href="http://getbootstrap.com/css/#grid">Bootstrap&rsquo;s grid system</a> in the official documentation for <a href="http://getbootstrap.com/css/">Bootstrap&rsquo;s CSS</a>.</p>
 </div>
 
 
-<h2 id="testing-your-installation">Testing your installation</h2>
+<p>When we&rsquo;re done, our <code>index.html</code> should look like this:</p>
 
-<p>After Node is installed, close Babun and reopen it. That way, <code>node</code> and other related commands will be available to you from any folder. Test your installation by running the following command:</p>
+<p><p class="file">app/index.html</p></p>
 
-<pre><code class="language-zsh">npm install -g bower
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html lang=&quot;en&quot; ng-app=&quot;meganote&quot; class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html lang=&quot;en&quot; ng-app=&quot;meganote&quot; class=&quot;no-js lt-ie9 lt-ie8&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html lang=&quot;en&quot; ng-app=&quot;meganote&quot; class=&quot;no-js lt-ie9&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html lang=&quot;en&quot; ng-app=&quot;meganote&quot; class=&quot;no-js&quot;&gt; &lt;!--&lt;![endif]--&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;title ng-bind=&quot;$state.current.name + ' - Meganote'&quot;&gt;Meganote&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic|Oxygen:400,300,700&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/bootstrap/dist/css/bootstrap.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/content/app.css&quot; charset=&quot;utf-8&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;div class=&quot;container wrap&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+          &lt;header&gt;
+            &lt;div class=&quot;well&quot;&gt;
+              Meganote
+            &lt;/div&gt;
+          &lt;/header&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div ui-view&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;script src=&quot;bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;bower_components/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;bower_components/angular-loader/angular-loader.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;bower_components/angular/angular.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;bower_components/angular-ui-router/release/angular-ui-router.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 
-<p>You should see an animated cursor for a moment or two, then something like the following:</p>
+<p>Now update <code>app.css</code> with some nice styles:</p>
 
-<pre><code class="language-zsh">C:\Users\whoever\AppData\Roaming\npm
-`-- bower@1.7.9
+<p><p class="file">app/content/app.css</p></p>
+
+<pre><code class="language-css">body {
+  font-family: Oxygen, Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5 {
+font-family: Merriweather;
+font-weight: 300;
+color: #FE5F55; }
+
+.container {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.col-xs-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+header .well {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  header .well .user-links {
+    float: right;
+    color: #ccc; }
+    header .well .user-links a {
+      cursor: pointer; }
+
+a:link, a:visited, a:hover, a:active {
+  color: #FE5F55; }
+
+i.fa-trash-o {
+  color: #ccc;
+  font-size: 150%;
+  vertical-align: middle;
+  margin-left: 1em; }
+  i.fa-trash-o:hover {
+    color: #999; }
+
+.wysihtml5-toolbar .btn-default {
+  color: #999; }
+
+input#note_title {
+  border: none;
+  font-size: 200%;
+  font-family: Merriweather;
+  color: #FE5F55;
+  font-weight: 300;
+  width: 100%; }
+  input#note_title:focus {
+    outline: none; }
+
+ul#notes {
+  list-style: none;
+  margin-top: 1em;
+  padding: 0;
+  width: 100%;
+  color: #999; }
+  ul#notes li {
+    border-top: 1px solid #ddd;
+    height: 100px;
+    font-size: 90%;
+    cursor: pointer;
+    overflow: hidden; }
+    ul#notes li:first-of-type {
+      border-top: none; }
+    ul#notes li:hover {
+      color: white;
+      background-color: #FE5F55; }
+      ul#notes li:hover .note-title {
+        color: white; }
+    ul#notes li .note-title {
+      color: black;
+      font-family: Merriweather;
+      font-size: 120%;
+      font-weight: 300; }
+    ul#notes li .note-body {
+      height: 54px;
+      overflow: hidden; }
+    ul#notes li a.note {
+      display: block;
+      height: 100px;
+      padding: 1em;
+      text-decoration: none; }
+    ul#notes li a.note:hover {
+      color: white; }
+
+#new_user input[type=&quot;text&quot;],
+#new_user input[type=&quot;password&quot;] {
+  width: 300px;
+  font-size: 120%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0.25em; }
+
+#welcome h1 {
+  color: #FE5F55; }
+#welcome main {
+  margin: 0 auto;
+  width: 360px; }
+
+span.login {
+  margin-left: 1em; }
+
+.ta-editor {
+  margin-top: 0.5em; }
+</code></pre>
+
+<p>Commit your work:</p>
+
+<p><p class="file">shell</p></p>
+
+<pre><code class="language-zsh">git add .
+git commit -m &quot;Add layout and styles&quot;
+git push
 </code></pre>
 
 
@@ -563,8 +701,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/git"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/text-editors" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/meganote/04-bootstrap"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/meganote/06-modules-routes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

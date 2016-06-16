@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>NodeJS</title>
+    <title>Google Fonts</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/nodejs/">
+  <body class="" data-url="/meganote/03-google-fonts/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,7 +43,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/meganote/">
+      <li class="dd-item  parent" data-nav-id="/meganote/">
         <a href="/meganote/">
           <span>
             
@@ -75,7 +75,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/03-google-fonts/">
+            <li class="dd-item active" data-nav-id="/meganote/03-google-fonts/">
               <a href="/meganote/03-google-fonts/">
                 <span>Google Fonts     </i></span>
               </a>
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -249,7 +249,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/nodejs/">
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
               <a href="/setup-win/nodejs/">
                 <span>NodeJS     </i></span>
               </a>
@@ -487,13 +487,9 @@
                 
                 
                   
-                
-                  
-                
-                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
@@ -503,23 +499,16 @@
                 
                   
                 
-                <span itemprop="title"> NodeJS</span>
+                  
+                
+                  
+                
+                <span itemprop="title"> Google Fonts</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#installation">Installation</a>
-<ul>
-<li><a href="#download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></a></li>
-</ul></li>
-<li><a href="#testing-your-installation">Testing your installation</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -529,32 +518,45 @@
             
     	        <div id="body-inner">
                 
-                <h1>NodeJS</h1>
+                <h1>Google Fonts</h1>
                 
 
+<p>Let&rsquo;s add a pair of fonts from Google to our project. Rather than actually add the font files directly to our project, we&rsquo;ll just hotlink the necessary files from a CDN (Content Delivery Network), since Google so graciously provides one.</p>
 
+<p>Visit <a href="https://fonts.google.com/">Google Fonts</a> and browse through some of the selections there. You can try each typeface out right on the page. When you find one you like, click the <i class="fa fa-plus-circle gf-red" aria-hidden="true" title="plus"></i> <span class="sr-only"><em>plus</em></span> button.</p>
 
-<h2 id="installation">Installation</h2>
+<p>You&rsquo;ll see a box with <em>1 Family Selected</em> appear at the bottom of the screen. Click that to pull up the details for that typeface. You&rsquo;ll see the embed code right away—the <code>&lt;link&gt;</code> tag that you should add to the head of your HTML.</p>
 
-<p>The NodeJS web site has a big, green install button. That&rsquo;s all there is to setting up Node.</p>
+<p>This will be the link for only one style of the typeface in order to keep the download small, and thus <em>fast</em>. You may need to add a bold or italic variant, in which case switch to the <span class="gf-tab">Customize</span> tab and select additional styles. When you&rsquo;re finished, switch back to the <span class="gf-tab">Embed</span> tab and grab the <code>&lt;link&gt;</code> tag to embed.</p>
 
-<h3 id="download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></h3>
+<p>For Meganote, I&rsquo;ve picked out one <a href="https://en.wikipedia.org/wiki/Serif">serif</a> font and one sans-serif font: Merriweather and Oxygen, respectively.</p>
 
-<div class="notices note" ><p>Node version numbers are confusing, but you should using either the LTS version (4.4.5 as of this writing) or the Current version (6.2.1).</p>
-</div>
+<p>Add the stylesheet link just above <code>app.css</code> in the header of the index page.</p>
 
+<p><p class="file">app/index.html</p></p>
 
-<h2 id="testing-your-installation">Testing your installation</h2>
-
-<p>After Node is installed, close Babun and reopen it. That way, <code>node</code> and other related commands will be available to you from any folder. Test your installation by running the following command:</p>
-
-<pre><code class="language-zsh">npm install -g bower
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic|Oxygen:400,300,700&quot;&gt;
 </code></pre>
 
-<p>You should see an animated cursor for a moment or two, then something like the following:</p>
+<p>Next, add the following rule to the top of <code>app.css</code> itself, just to make sure the font link worked.</p>
 
-<pre><code class="language-zsh">C:\Users\whoever\AppData\Roaming\npm
-`-- bower@1.7.9
+<p><p class="file">app/app.css</p></p>
+
+<pre><code class="language-css">body {
+  font-family: 'Merriweather';
+  font-size: 1.5em;
+}
+</code></pre>
+
+<p>If you refresh, the body text should appear in a lovely serif font.</p>
+
+<p>Let&rsquo;s commit:</p>
+
+<p><p class="file">shell</p></p>
+
+<pre><code class="language-zsh">git add .
+git commit -m &quot;Add Merriweather and Oxygen fonts from Google.&quot;
+git push
 </code></pre>
 
 
@@ -563,8 +565,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/git"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/text-editors" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/meganote/02-setup"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/meganote/04-bootstrap" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

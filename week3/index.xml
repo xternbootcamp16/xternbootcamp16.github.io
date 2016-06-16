@@ -134,5 +134,110 @@
 </description>
     </item>
     
+    <item>
+      <title>Day 11: Angular Services</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day11/</link>
+      <pubDate>Tue, 14 Jun 2016 16:50:36 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day11/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 14, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;dependency-injection&#34;&gt;Dependency Injection&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/&#34;&gt;Dependency Injection Demystified&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ng-strict-di&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$inject&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;angular-services&#34;&gt;Angular Services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/angular/angular_services.asp&#34;&gt;AngularJS Services: w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/services&#34;&gt;Official Angular Documentation for Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ajax-in-angular&#34;&gt;AJAX in Angular&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$http&lt;/code&gt; service&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;Angular Documentation for $http&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thinkster.io/http&#34;&gt;Introduction to $http: thinkster.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;promises&#34;&gt;Promises&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using promises for deferred actions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.html5rocks.com/en/tutorials/es6/promises/&#34;&gt;JavaScript Promises: There and Back Again&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://andyshora.com/promises-angularjs-explained-as-cartoon.html&#34;&gt;Angular Promises Explained as a Cartoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$state.go()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://eslint.org/&#34;&gt;ESLint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-eslint&#34;&gt;Linter-ESLint (Atom package)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md&#34;&gt;John Papa Angular Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/line-ending-selector&#34;&gt;Line Ending Selector (Atom package)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote, now loading notes from an API: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/7dce724d56da3f7f463f305dd52360b16c5558e5&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Implement update and delete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 12: Update &amp; Delete</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day12/</link>
+      <pubDate>Wed, 15 Jun 2016 19:57:29 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day12/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 15, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Today, Chris Vannoy from &lt;a href=&#34;https://www.theironyard.com/&#34;&gt;The Iron Yard&lt;/a&gt; dropped by to talking about finding a job. He shared insights into hiring processes in a different industries, interview tips, r&amp;eacute;sum&amp;eacute;s, cover letters, LinkedIn, MeetUp groups, and more. You can reach Chris at chris@chrisvannoy.com.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;p&gt;Today we implemented updating and deleting notes from the Meganote API. We used &lt;code&gt;$http&lt;/code&gt; in our own service and bound objects from our controller to a view.&lt;/p&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote, now with updating and deleting: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/3422d653cacfb02be956b99610bb4af87be6bfa8&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display a success message when an API operation succeeds.&lt;/li&gt;
+&lt;li&gt;Display an error message when an API operation fails.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;&lt;a href=&#34;http://sachinchoolur.github.io/angular-flash/&#34;&gt;Angular-flash&lt;/a&gt; is already included via &lt;code&gt;bower.json&lt;/code&gt;. Try using it!&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
   </channel>
 </rss>

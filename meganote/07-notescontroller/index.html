@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>NodeJS</title>
+    <title>NotesController</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/nodejs/">
+  <body class="" data-url="/meganote/07-notescontroller/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,7 +43,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/meganote/">
+      <li class="dd-item  parent" data-nav-id="/meganote/">
         <a href="/meganote/">
           <span>
             
@@ -91,7 +91,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/meganote/07-notescontroller/">
+            <li class="dd-item active" data-nav-id="/meganote/07-notescontroller/">
               <a href="/meganote/07-notescontroller/">
                 <span>NotesController     </i></span>
               </a>
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -249,7 +249,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/nodejs/">
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
               <a href="/setup-win/nodejs/">
                 <span>NodeJS     </i></span>
               </a>
@@ -487,13 +487,9 @@
                 
                 
                   
-                
-                  
-                
-                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
@@ -503,23 +499,16 @@
                 
                   
                 
-                <span itemprop="title"> NodeJS</span>
+                  
+                
+                  
+                
+                <span itemprop="title"> NotesController</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#installation">Installation</a>
-<ul>
-<li><a href="#download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></a></li>
-</ul></li>
-<li><a href="#testing-your-installation">Testing your installation</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -529,33 +518,59 @@
             
     	        <div id="body-inner">
                 
-                <h1>NodeJS</h1>
+                <h1>NotesController</h1>
                 
 
+<p>Inject a dependency for the <code>Notes</code> module/controller that we&rsquo;ll soon create, and update the catch-all route:</p>
 
+<p><em>app/app.js</em></p>
 
-<h2 id="installation">Installation</h2>
-
-<p>The NodeJS web site has a big, green install button. That&rsquo;s all there is to setting up Node.</p>
-
-<h3 id="download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></h3>
-
-<div class="notices note" ><p>Node version numbers are confusing, but you should using either the LTS version (4.4.5 as of this writing) or the Current version (6.2.1).</p>
-</div>
-
-
-<h2 id="testing-your-installation">Testing your installation</h2>
-
-<p>After Node is installed, close Babun and reopen it. That way, <code>node</code> and other related commands will be available to you from any folder. Test your installation by running the following command:</p>
-
-<pre><code class="language-zsh">npm install -g bower
+<pre><code class="language-javascript">angular.module('meganote', [
+...
+  'meganote.version',
+  'meganote.notes'
+...
+  $routeProvider.otherwise({redirectTo: '/notes'});
+...
 </code></pre>
 
-<p>You should see an animated cursor for a moment or two, then something like the following:</p>
+<p>Make a new directory for our new module, <code>app/notes</code>, and add a file named <code>notes.js</code> under it:</p>
 
-<pre><code class="language-zsh">C:\Users\whoever\AppData\Roaming\npm
-`-- bower@1.7.9
+<p><em>app/notes/notes.js</em></p>
+
+<pre><code class="language-javascript">'use strict';
+
+angular.module('meganote.notes', ['ngRoute'])
+
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/notes', {
+    templateUrl: 'notes/notes.html',
+    controller: 'NotesController'
+  });
+}])
+
+.controller('NotesController', [function() {
+
+}]);
 </code></pre>
+
+<p>Add a file <code>app/notes/notes.html</code>:</p>
+
+<p><em>app/notes/notes.html</em></p>
+
+<pre><code class="language-html">Welcome to Meganote.
+</code></pre>
+
+<p>Specifying the dependencies to AngularJS is not sufficient to actually get those scripts sent to browsers. We must require the notes controller in <code>index.html</code>:</p>
+
+<p><em>app/index.html</em></p>
+
+<pre><code class="language-html">  &lt;script src=&quot;notes/notes.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Now, if you visit the root url (<a href="http://localhost:8000/">http://localhost:8000/</a>), you should be taken to <code>/notes</code> and see the welcome message from <code>app/notes/notes.html</code>.</p>
+
+<p>Commit.</p>
 
 
       
@@ -563,8 +578,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/git"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/text-editors" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/meganote/06-modules-routes"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/meganote/07-notescontroller" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

@@ -6,8 +6,22 @@
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jun 2016 16:15:26 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jun 2016 21:34:12 -0400</lastBuildDate>
     <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Meganote</title>
+      <link>http://replace-this-with-your-hugo-site.com/meganote/</link>
+      <pubDate>Tue, 14 Jun 2016 21:34:12 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/meganote/</guid>
+      <description>
+
+&lt;h3 id=&#34;angular&#34;&gt;Angular&lt;/h3&gt;
+
+&lt;h1 id=&#34;meganote&#34;&gt;Meganote&lt;/h1&gt;
+</description>
+    </item>
     
     <item>
       <title>Angular: Meganote</title>
@@ -88,6 +102,52 @@
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Meganote-Seed</title>
+      <link>http://replace-this-with-your-hugo-site.com/meganote/01-seed/</link>
+      <pubDate>Tue, 14 Jun 2016 21:56:25 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/meganote/01-seed/</guid>
+      <description>
+
+&lt;h2 id=&#34;clone-the-meganote-seed-https-github-com-xternbootcamp16-meganote-seed-project&#34;&gt;Clone the &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-seed&#34;&gt;meganote-seed&lt;/a&gt; project&lt;/h2&gt;
+
+&lt;p&gt;Clone the seed project in a local folder named &lt;code&gt;meganote&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git clone git@github.com:xternbootcamp16/meganote-seed.git meganote
+cd meganote
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;remove-its-git-history-and-initialize-your-own-git-repository&#34;&gt;Remove its &lt;code&gt;.git&lt;/code&gt; history, and initialize your own git repository&lt;/h2&gt;
+
+&lt;p&gt;Open the project in Atom and delete the &lt;code&gt;.git&lt;/code&gt; folder to remove all traces of the seed project&amp;rsquo;s repository.&lt;/p&gt;
+
+&lt;p&gt;Then initialize your own repository.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git init
+git add .
+git commit -m &amp;quot;Initial commit using meganote-seed&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;note-about-commit-messages&#34;&gt;Note About Commit Messages&lt;/h3&gt;
+
+&lt;p&gt;If you fail to specify a commit message, git will open a text editor for you to write the message manually. By default, it opens &lt;code&gt;vim&lt;/code&gt;, a powerful, but sometimes confusing terminal-based text editor.&lt;/p&gt;
+
+&lt;p&gt;To configure Git to use Atom instead, type the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git config --global core.editor &amp;quot;atom --wait&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;create-a-github-repo&#34;&gt;Create a GitHub repo&lt;/h2&gt;
+
+&lt;p&gt;Create a new repository in your GitHub account. Follow the instructions to add this repo as a remote for your local project, and push to that remote.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git remote add origin git@github.com:[YOUR GITHUB USERNAME]/meganote.git
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -525,6 +585,179 @@ git push -u master gh-pages  # Push it to GitHub
     </item>
     
     <item>
+      <title>Setup</title>
+      <link>http://replace-this-with-your-hugo-site.com/meganote/02-setup/</link>
+      <pubDate>Tue, 14 Jun 2016 22:45:03 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/meganote/02-setup/</guid>
+      <description>
+
+&lt;h2 id=&#34;angular-seed&#34;&gt;Angular-seed&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular-seed&#34;&gt;Angular-seed&lt;/a&gt; is a bootstrapping project preconfigured to with a suite of tools to make it easy to manage dependencies—including Angular itself—with a directory structure that works well for Angular apps. You could always start a new Angular app from scratch, but using the official seed project is a good idea.&lt;/p&gt;
+
+&lt;p&gt;Angular-seed can be a bit overwhelming, because it includes an awful lot of stuff. We&amp;rsquo;ll use our own, considerably simpler seed project, &lt;code&gt;meganote-seed&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;meganote-seed-structure&#34;&gt;Meganote-seed structure&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take a look at the generated application structure, and what all the pieces are for:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;├── LICENSE             --&amp;gt; the MIT license agreement
+├── app                 --&amp;gt; all of the source files for the application
+│   ├── app.js          --&amp;gt; main application module
+│   ├── content         --&amp;gt; static assets, like stylesheets and images
+│   │   └── app.css     --&amp;gt; main stylesheet
+│   ├── index.html      --&amp;gt; main HTML template for the app
+│   └── notes           --&amp;gt; view template and logic for _notes_
+│       └── notes.html  --&amp;gt; view template for _notes_
+├── bower.json          --&amp;gt; client side dependencies (for `bower install`)
+└── package.json        --&amp;gt; development and server side dependencies (for `npm install`)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;npm-package-json-and-bower-bower-json&#34;&gt;NPM (&lt;code&gt;package.json&lt;/code&gt;) and Bower (&lt;code&gt;bower.json&lt;/code&gt;)&lt;/h2&gt;
+
+&lt;p&gt;Starting with non-empty &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;bower.json&lt;/code&gt; files is one of the handiest aspects of starting from a &lt;em&gt;seed&lt;/em&gt; project.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;bower.json&lt;/code&gt; serve much the same purpose in a JavaScript project as the &lt;code&gt;Gemfile&lt;/code&gt; in a Ruby project (and a bit like the &lt;code&gt;Rakefile&lt;/code&gt; as well).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; and &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt; are both package managers. Package managers make the distribution and installation of software dramatically easier than alternative methods. Sometimes we need to reuse the same chunk of code in multiple projects. Sometimes our coworkers need to use software we&amp;rsquo;ve written for a previous project in a new project. Sometimes we want to share something we&amp;rsquo;ve written with the world. In cases like these, using a package manager can simplify including external dependencies and keeping them up-to-date.&lt;/p&gt;
+
+&lt;p&gt;NPM, a package manager based on Node, is the most common package management system in the JavaScript world. NPM dependencies and scripts for a project are specified in the &lt;code&gt;package.json&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;Bower is also extremely common and serves a subtly different purpose. Its dependencies and scripts are specified in &lt;code&gt;bower.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Like other package managers, NPM and Bower provide a standardized structure that we can use to package and distribute software we&amp;rsquo;ve written.&lt;/p&gt;
+
+&lt;p&gt;Why do we need two package managers in our project? Why can&amp;rsquo;t we use &lt;em&gt;either&lt;/em&gt; npm or bower, rather than both? npm is ideally suited for managing server-side Node packages and development dependencies—like development-friendly web servers, minification tools, etc.—while Bower is designed for the client side.&lt;/p&gt;
+
+&lt;p&gt;The biggest technical difference is that npm handles nested dependencies, while Bower leaves that up to us (which is appropriate for the client side, where we don&amp;rsquo;t want, for example, 5 different versions of jQuery sent to end users).&lt;/p&gt;
+
+&lt;h2 id=&#34;npm-start&#34;&gt;&lt;code&gt;npm start&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;We can run a task from the command line called &lt;code&gt;npm start&lt;/code&gt;, because the &lt;code&gt;start&lt;/code&gt; script is defined in &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;  &amp;quot;start&amp;quot;: &amp;quot;http-server app -a 0.0.0.0 -p 8000 -c-1&amp;quot;,
+  &amp;quot;prestart&amp;quot;: &amp;quot;npm install&amp;quot;,
+  &amp;quot;postinstall&amp;quot;: &amp;quot;bower install&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So that &lt;code&gt;start&lt;/code&gt; script fires up a web server, serving the project&amp;rsquo;s &lt;code&gt;app&lt;/code&gt; directory, on port &lt;code&gt;8000&lt;/code&gt;. The &lt;code&gt;prestart&lt;/code&gt; script will automatically execute &lt;code&gt;npm start&lt;/code&gt; before the &lt;code&gt;start&lt;/code&gt; script itself. Similarly, the &lt;code&gt;postinstall&lt;/code&gt; script will automatically execute &lt;code&gt;bower install&lt;/code&gt; as soon as &lt;code&gt;npm install&lt;/code&gt; finishes.&lt;/p&gt;
+
+&lt;p&gt;All told, running the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will execute the following commands, in this order:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;npm install
+bower install
+http-server app -a 0.0.0.0 -p 8000 -c-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Go ahead and run &lt;code&gt;npm start&lt;/code&gt; now.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll see the &lt;code&gt;node_modules&lt;/code&gt; and &lt;code&gt;app/bower_components&lt;/code&gt; directories are added to your project with all the installed dependencies. Don&amp;rsquo;t worry about it adding bloat to your repository. Just like the bundled gems in a Ruby project, &lt;code&gt;node_modules&lt;/code&gt; and &lt;code&gt;bower_components&lt;/code&gt; are in &lt;code&gt;.gitignore&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you don&amp;rsquo;t want other developers on the project to have to re-download the dependencies from the web, you can include the two directories in your repository.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dependencies are versioned, so if you were to change the version number, and run &lt;code&gt;npm install&lt;/code&gt; again, bower will get the correct version of whatever dependency we need.&lt;/p&gt;
+
+&lt;p&gt;If npm and bower have finished installing dependencies, the output of &lt;code&gt;npm start&lt;/code&gt; should end with this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;Starting up http-server, serving app on port: 8000
+Hit CTRL-C to stop the server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Visit &lt;a href=&#34;http://localhost:8000&#34;&gt;http://localhost:8000&lt;/a&gt; in your web browser.&lt;/p&gt;
+
+&lt;p&gt;Hopefully you see something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;Meganote
+
+Welcome to Meganote!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If so, let&amp;rsquo;s keep moving.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 11: Angular Services</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day11/</link>
+      <pubDate>Tue, 14 Jun 2016 16:50:36 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day11/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 14, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;dependency-injection&#34;&gt;Dependency Injection&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/&#34;&gt;Dependency Injection Demystified&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ng-strict-di&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$inject&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;angular-services&#34;&gt;Angular Services&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/angular/angular_services.asp&#34;&gt;AngularJS Services: w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/services&#34;&gt;Official Angular Documentation for Services&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ajax-in-angular&#34;&gt;AJAX in Angular&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$http&lt;/code&gt; service&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;Angular Documentation for $http&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thinkster.io/http&#34;&gt;Introduction to $http: thinkster.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;promises&#34;&gt;Promises&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using promises for deferred actions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.html5rocks.com/en/tutorials/es6/promises/&#34;&gt;JavaScript Promises: There and Back Again&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://andyshora.com/promises-angularjs-explained-as-cartoon.html&#34;&gt;Angular Promises Explained as a Cartoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$state.go()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://eslint.org/&#34;&gt;ESLint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-eslint&#34;&gt;Linter-ESLint (Atom package)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md&#34;&gt;John Papa Angular Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/line-ending-selector&#34;&gt;Line Ending Selector (Atom package)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote, now loading notes from an API: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/7dce724d56da3f7f463f305dd52360b16c5558e5&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Implement update and delete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 6: More Ajax</title>
       <link>http://replace-this-with-your-hugo-site.com/week2/day06/</link>
       <pubDate>Sat, 11 Jun 2016 23:34:13 -0400</pubDate>
@@ -618,261 +851,6 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
 
 &lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else with an existing API.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 2: Objects and Functions</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day02/</link>
-      <pubDate>Sat, 11 Jun 2016 17:09:05 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day02/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Wednesday, June 1, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution to Tuesday&amp;rsquo;s homework: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Function expressions&lt;/li&gt;
-&lt;li&gt;Functions as variables&lt;/li&gt;
-&lt;li&gt;Functions as object properties (&lt;em&gt;methods&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;Variable scope&lt;/li&gt;
-&lt;li&gt;IIFEs: Immediately Invoked Function Expressions&lt;/li&gt;
-&lt;li&gt;Function invocation and the value of &lt;code&gt;this&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;As functions, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someFunction()&lt;/code&gt;: &lt;code&gt;this === window&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the global object)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Warning&lt;/strong&gt;: This includes functions defined within other functions.&lt;/li&gt;
-&lt;li&gt;As methods, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someObject.someMethod()&lt;/code&gt;: &lt;code&gt;this === someObject&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the object on which the method was called)&lt;/li&gt;
-&lt;li&gt;As event handlers, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;someForm.onsubmit = someFunction&lt;/code&gt;: &lt;code&gt;this === someForm&lt;/code&gt; (&lt;em&gt;i.e.&lt;/em&gt; the object that fired the event)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;objects&#34;&gt;Objects&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Object literals&lt;/li&gt;
-&lt;li&gt;Property naming&lt;/li&gt;
-&lt;li&gt;Retrieving property values&lt;/li&gt;
-&lt;li&gt;Setting property values&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;dom&#34;&gt;DOM&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Creating elements (&lt;code&gt;document.createElement(&#39;li&#39;)&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Setting style properties on elements (&lt;code&gt;someElement.style.backgroundColor = &#39;CadetBlue&#39;&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Appending child elements (&lt;code&gt;someList.appendChild(someItem)&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;selectors&#34;&gt;Selectors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Descendent (&lt;code&gt;ul li&lt;/code&gt;) and child (&lt;code&gt;ul &amp;gt; li&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;css-properties&#34;&gt;CSS Properties&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;background-color&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;border&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;height&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;list-style&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;width&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;organizing-code&#34;&gt;Organizing Code&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.js&lt;/code&gt; files (&lt;code&gt;&amp;lt;script src=&amp;quot;app.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Wrapping in an IIFE (&lt;code&gt;(function() {})();&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Wrapping in a object-literal (&lt;code&gt;{}&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/02-functions&#34;&gt;Day 1 Review, Intro to Functions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Finished Basic Form (FirstJS): &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/colors/colors_names.asp&#34;&gt;List of CSS color names&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://benalman.com/news/2010/11/immediately-invoked-function-expression/&#34;&gt;IIFEs as explained by Ben Alman&lt;/a&gt;, who coined the term&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects&#34;&gt;More than you ever wanted to know about &lt;em&gt;objects&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;homework-megaroster&#34;&gt;Homework: Megaroster&lt;/h2&gt;
-
-&lt;p&gt;Create a class roster.&lt;/p&gt;
-
-&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;User can enter a name to be added to the roster.&lt;/li&gt;
-&lt;li&gt;Name will be added to the end of a list&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create &lt;em&gt;at most&lt;/em&gt; one global variable.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Add names to the &lt;em&gt;top&lt;/em&gt; of the list.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Add a &lt;em&gt;delete&lt;/em&gt; link to every list item that removes the name from the list when clicked.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Add a &lt;em&gt;promote&lt;/em&gt; link to every list item that draws a border around that item when clicked.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster-afternoon/tree/dfa5fbf687e0eb39fe6e60837eda35778c7e860a&#34;&gt;Solution: MegaRoster with delete and promote&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Command Line</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/command-line/</link>
-      <pubDate>Fri, 10 Jun 2016 23:39:44 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/command-line/</guid>
-      <description>
-
-&lt;p&gt;We&amp;rsquo;ll be using the command line a fair amount in class. I recommend installing a UNIX-style shell in Windows, as it will allow to use the same commands that I use.&lt;/p&gt;
-
-&lt;h2 id=&#34;babun&#34;&gt;Babun&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://babun.github.io/&#34;&gt;Babun&lt;/a&gt; is a UNIX shell for Windows that includes some tools we might otherwise need to install separately. Like most UNIX shells for Windows, Babun is based on Cygwin, but it&amp;rsquo;s preconfigured to be a lot more usable out of the box.&lt;/p&gt;
-
-&lt;p&gt;By default, Babun launches a shell called ZSH. It also includes &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;Oh My ZSH&lt;/a&gt;, a framework for configuring ZSH.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;ll use the shell often enough that I recommend pinning Babun to the taskbar.&lt;/p&gt;
-
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re not very familiar with UNIX shells, or if you&amp;rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&amp;rsquo;s free &lt;strong&gt;&lt;a href=&#34;http://commandlinepoweruser.com/&#34;&gt;Command Line Power User&lt;/a&gt;&lt;/strong&gt; videos. (They&amp;rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Command Line</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-mac/command-line/</link>
-      <pubDate>Fri, 10 Jun 2016 23:02:52 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/command-line/</guid>
-      <description>
-
-&lt;p&gt;You&amp;rsquo;ll be using a command-line throughout the setup process.&lt;/p&gt;
-
-&lt;h2 id=&#34;terminal-or-iterm2&#34;&gt;Terminal or iTerm2&lt;/h2&gt;
-
-&lt;p&gt;OS X comes with Terminal, which you can find at &lt;code&gt;/Applications/Utilities/Terminal.app&lt;/code&gt; or by searching for Terminal in Spotlight.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://davestrus.com/images/terminal.png&#34; alt=&#34;Terminal.app&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Many Mac users prefer &lt;a href=&#34;https://www.iterm2.com/index.html&#34;&gt;iTerm2&lt;/a&gt; over the built-in Terminal. iTerm2 is free, so I encourage you to check it out. It has some advanced features that the built-in Terminal lacks.&lt;/p&gt;
-
-&lt;p&gt;Whichever you choose, you&amp;rsquo;ll use it frequently enough that I recommend keeping it in your Dock.&lt;/p&gt;
-
-&lt;p&gt;When you launch Terminal or iTerm, it will (by default) run a UNIX shell called Bash. Bash will present a command prompt, indicated by &lt;code&gt;$&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;zsh&#34;&gt;ZSH&lt;/h2&gt;
-
-&lt;p&gt;I am a big fan of ZSH, which is an alternative to Bash. Even better is &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;Oh My ZSH&lt;/a&gt;, which is framework for managing ZSH configuration. I highly recommend checking it out. You&amp;rsquo;ll still use Terminal.app or iTerm2 to launch your shell, but it will run ZSH in place of Bash.&lt;/p&gt;
-
-&lt;p&gt;I will be using ZSH (with Oh My ZSH) in class, but most of what we&amp;rsquo;ll do works just as well in Bash.&lt;/p&gt;
-
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re not very familiar with UNIX shells, or if you&amp;rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&amp;rsquo;s free &lt;strong&gt;&lt;a href=&#34;http://commandlinepoweruser.com/&#34;&gt;Command Line Power User&lt;/a&gt;&lt;/strong&gt; videos. (They&amp;rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Day 7: Intro to REST</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day07/</link>
-      <pubDate>Sat, 11 Jun 2016 23:42:53 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day07/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Wednesday, June 8, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;rest&#34;&gt;REST&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.restapitutorial.com/lessons/httpmethods.html&#34;&gt;Using HTTP Methods for RESTful Services&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Check out &lt;a href=&#34;http://www.elated.com/articles/ajax-with-jquery-a-beginners-guide/&#34;&gt;Ajax with jQuery: A Beginner&amp;rsquo;s Guide&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/tags/ref_httpmethods.asp&#34;&gt;GET vs. POST&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/07-crud-and-rest&#34;&gt;CRUD and REST&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/jmutants-afternoon/tree/pokemon&#34;&gt;jPokémon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
-
-&lt;p&gt;Create student rivalries with the &lt;a href=&#34;https://xtern-roster.herokuapp.com/&#34;&gt;Xtern Roster API&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;There are two resources in this API:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://xtern-roster.herokuapp.com/people&#34;&gt;People&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://xtern-roster.herokuapp.com/rivalries&#34;&gt;Rivalries&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Build an app that allows visitors to do the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create, read, update, and delete person records&lt;/li&gt;
-&lt;li&gt;Create, read, update, and delete a person&amp;rsquo;s rivalries with others&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

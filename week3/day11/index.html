@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>NodeJS</title>
+    <title>Day 11: Angular Services</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/nodejs/">
+  <body class="" data-url="/week3/day11/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -249,7 +249,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/nodejs/">
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
               <a href="/setup-win/nodejs/">
                 <span>NodeJS     </i></span>
               </a>
@@ -414,7 +414,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -438,7 +438,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day11/">
+            <li class="dd-item active" data-nav-id="/week3/day11/">
               <a href="/week3/day11/">
                 <span>Day 11: Angular Services     </i></span>
               </a>
@@ -491,19 +491,19 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week3/" itemprop="url"><span itemprop="title">Angular: Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> NodeJS</span>
+                <span itemprop="title"> Day 11: Angular Services</span>
               </div>
               
                   <div class="progress">
@@ -512,11 +512,17 @@
 <ul>
 <li>
 <ul>
-<li><a href="#installation">Installation</a>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#angular-services">Angular Services</a></li>
+<li><a href="#ajax-in-angular">AJAX in Angular</a></li>
+<li><a href="#promises">Promises</a></li>
+<li><a href="#ui-router"><code>ui-router</code></a></li>
 </ul></li>
-<li><a href="#testing-your-installation">Testing your installation</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -529,33 +535,70 @@
             
     	        <div id="body-inner">
                 
-                <h1>NodeJS</h1>
+                <h1>Day 11: Angular Services</h1>
                 
 
 
 
-<h2 id="installation">Installation</h2>
+<p><date>Tuesday, June 14, 2016</date></p>
 
-<p>The NodeJS web site has a big, green install button. That&rsquo;s all there is to setting up Node.</p>
+<h2 id="topics">Topics</h2>
 
-<h3 id="download-nodejs-http-nodejs-org"><a href="http://nodejs.org/">Download NodeJS</a></h3>
+<h3 id="dependency-injection">Dependency Injection</h3>
 
-<div class="notices note" ><p>Node version numbers are confusing, but you should using either the LTS version (4.4.5 as of this writing) or the Current version (6.2.1).</p>
-</div>
+<ul>
+<li><a href="http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/">Dependency Injection Demystified</a></li>
+<li><code>ng-strict-di</code></li>
+<li><code>$inject</code></li>
+</ul>
 
+<h3 id="angular-services">Angular Services</h3>
 
-<h2 id="testing-your-installation">Testing your installation</h2>
+<ul>
+<li><a href="http://www.w3schools.com/angular/angular_services.asp">AngularJS Services: w3schools</a></li>
+<li><a href="https://docs.angularjs.org/guide/services">Official Angular Documentation for Services</a></li>
+</ul>
 
-<p>After Node is installed, close Babun and reopen it. That way, <code>node</code> and other related commands will be available to you from any folder. Test your installation by running the following command:</p>
+<h3 id="ajax-in-angular">AJAX in Angular</h3>
 
-<pre><code class="language-zsh">npm install -g bower
-</code></pre>
+<ul>
+<li><code>$http</code> service</li>
+<li><a href="https://docs.angularjs.org/api/ng/service/$http">Angular Documentation for $http</a></li>
+<li><a href="https://thinkster.io/http">Introduction to $http: thinkster.io</a></li>
+</ul>
 
-<p>You should see an animated cursor for a moment or two, then something like the following:</p>
+<h3 id="promises">Promises</h3>
 
-<pre><code class="language-zsh">C:\Users\whoever\AppData\Roaming\npm
-`-- bower@1.7.9
-</code></pre>
+<ul>
+<li>Using promises for deferred actions</li>
+<li><a href="http://www.html5rocks.com/en/tutorials/es6/promises/">JavaScript Promises: There and Back Again</a></li>
+<li><a href="http://andyshora.com/promises-angularjs-explained-as-cartoon.html">Angular Promises Explained as a Cartoon</a></li>
+</ul>
+
+<h3 id="ui-router"><code>ui-router</code></h3>
+
+<ul>
+<li><a href="https://github.com/angular-ui/ui-router#get-started">Getting Started with <code>ui-router</code></a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki"><code>ui-router</code> documentation</a></li>
+<li><code>$state.go()</code></li>
+</ul>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="http://eslint.org/">ESLint</a></li>
+<li><a href="https://atom.io/packages/linter-eslint">Linter-ESLint (Atom package)</a></li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">John Papa Angular Style Guide</a></li>
+<li><a href="https://atom.io/packages/line-ending-selector">Line Ending Selector (Atom package)</a></li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<p>Meganote, now loading notes from an API: <a href="https://github.com/xternbootcamp16/meganote/tree/7dce724d56da3f7f463f305dd52360b16c5558e5">source</a> | <a href="http://bootcamp16.getfretless.com/meganote/#/notes/">live</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<p>Implement update and delete.</p>
 
 
       
@@ -563,8 +606,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/git"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/text-editors" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3/day10"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week3/day12" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
