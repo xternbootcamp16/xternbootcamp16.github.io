@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Meganote</title>
+    <title>Day 14: Wrapping up Meganote</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/app-meganote/">
+  <body class="" data-url="/week3/day14/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,7 +43,7 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/app-meganote/">
+      <li class="dd-item  " data-nav-id="/app-meganote/">
         <a href="/app-meganote/">
           <span>
             
@@ -414,7 +414,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -462,7 +462,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day14/">
+            <li class="dd-item active" data-nav-id="/week3/day14/">
               <a href="/week3/day14/">
                 <span>Day 14: Wrapping up Meganote     </i></span>
               </a>
@@ -497,51 +497,139 @@
                       </a>
                   </span>
                 
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
                 
                 
+                
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                 
                   
                     
                     
+                <a href="/week3/" itemprop="url"><span itemprop="title">Angular: Meganote</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Meganote</span>
+                <span itemprop="title"> Day 14: Wrapping up Meganote</span>
               </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#cors">CORS</a></li>
+<li><a href="#mongoose">Mongoose</a></li>
+<li><a href="#third-party-packages-added-to-meganote">Third-Party Packages added to Meganote</a></li>
+<li><a href="#more-ui-router">More <code>ui-router</code></a></li>
+<li><a href="#more-angular">More Angular</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
               
 
             </div>
             
-              <div id="chapter">
-            
     	        <div id="body-inner">
+                
+                <h1>Day 14: Wrapping up Meganote</h1>
                 
 
 
 
-<h3 id="angular">Angular</h3>
+<p><date>Friday, June 17, 2016</date></p>
 
-<h1 id="meganote">Meganote</h1>
+<h2 id="topics">Topics</h2>
+
+<h3 id="markdown">Markdown</h3>
+
+<ul>
+<li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a> - An overview of Markdown from Github</li>
+<li><a href="http://www.markdowntutorial.com/">Markdown Tutorial</a> - a quick, interactive tutorial for the basics</li>
+</ul>
+
+<div class="notices tip" ><p>Add a <code>README.md</code> Markdown file to your projects to explain setup and usage.  Your users and your future self will thank you.</p>
+</div>
 
 
-      
-        </div> 
+<h3 id="cors">CORS</h3>
+
+<ul>
+<li><a href="https://www.w3.org/TR/cors/">CORS W3C specification</a></li>
+<li><code>Access-Control</code> headers to specify what types of requests and methods are allowed</li>
+<li><a href="http://justindavis.co/2015/08/31/CORS-in-Express/">Cross-Origin Requests in Express.JS</a></li>
+</ul>
+
+<h3 id="mongoose">Mongoose</h3>
+
+<ul>
+<li><code>.sort()</code></li>
+<li><code>.findOne()</code></li>
+<li><a href="http://mongoosejs.com/docs/middleware.html">Middleware / Hooks</a>
+
+<ul>
+<li>Set up events to occur before or after a supported Document, Query, or Model function</li>
+<li><code>schema.pre('save')</code> - to occur before a <code>save</code> function</li>
+<li><code>schema.post('save')</code> - to occur after a <code>save</code> function</li>
+</ul></li>
+</ul>
+
+<h3 id="third-party-packages-added-to-meganote">Third-Party Packages added to Meganote</h3>
+
+<ul>
+<li><a href="https://www.npmjs.com/package/sanitize-html">Sanitize HTML</a> (Node)
+<br>Clean up user-submitted HTML, preserving whitelisted elements and whitelisted attributes on a per-element basis.</li>
+<li><a href="https://www.npmjs.com/package/html-to-text">HTML-to-Text</a> (Node)
+<br>An advanced converter that parses HTML and returns beautiful text.</li>
+<li><a href="http://textangular.com/">textAngular</a> (Angular)
+<br>A Lightweight, Two-Way-Bound &amp; Totally Awesome Angular.js Text-Editor.</li>
+</ul>
+
+<h3 id="more-ui-router">More <code>ui-router</code></h3>
+
+<ul>
+<li><a href="http://angular-ui.github.io/ui-router/1.0.0-alpha.3/modules/ng1_directives.html#uisrefng1"><code>ui-sref</code></a> - A directive that binds an anchor tag (<code>&lt;a&gt;</code>) to a state</li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/URL-Routing#url-parameters">URL Routing with Parameters</a></li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views">Nested States and Views</a> - Also known as child states</li>
+<li><a href="https://github.com/angular-ui/ui-router/wiki#resolve">Resolve</a> - Provides your controller with content or data that is custom to the state.  Any promises will be resolved and converted to a value <em>before</em> instantiating the controller.</li>
+</ul>
+
+<h3 id="more-angular">More Angular</h3>
+
+<ul>
+<li><code>ng-bind-html</code> - tells Angular to replace the innerHTML of an element with the value of an expression.  Similar to <code>{{ expression }}</code></li>
+<li><code>.constant</code> - register a Provider on an angular module that returns a constant value</li>
+</ul>
+
+<pre><code class="language-js">  angular.module('myApp')
+    .constant('API_URL', 'http://myapi.com/example/all');
+</code></pre>
+
+
       
       </div>
     </div>
 
     <div id="navigation">
-        
-        <a class="nav nav-next" href="/app-meganote/01-seed" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3/day13"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week3/day14" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

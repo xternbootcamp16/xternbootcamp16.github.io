@@ -310,5 +310,83 @@
 </description>
     </item>
     
+    <item>
+      <title>Day 14: Wrapping up Meganote</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day14/</link>
+      <pubDate>Fri, 17 Jun 2016 13:16:56 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day14/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Friday, June 17, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;Mastering Markdown&lt;/a&gt; - An overview of Markdown from Github&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.markdowntutorial.com/&#34;&gt;Markdown Tutorial&lt;/a&gt; - a quick, interactive tutorial for the basics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Add a &lt;code&gt;README.md&lt;/code&gt; Markdown file to your projects to explain setup and usage.  Your users and your future self will thank you.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;cors&#34;&gt;CORS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.w3.org/TR/cors/&#34;&gt;CORS W3C specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Access-Control&lt;/code&gt; headers to specify what types of requests and methods are allowed&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://justindavis.co/2015/08/31/CORS-in-Express/&#34;&gt;Cross-Origin Requests in Express.JS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mongoose&#34;&gt;Mongoose&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.sort()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.findOne()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mongoosejs.com/docs/middleware.html&#34;&gt;Middleware / Hooks&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set up events to occur before or after a supported Document, Query, or Model function&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;schema.pre(&#39;save&#39;)&lt;/code&gt; - to occur before a &lt;code&gt;save&lt;/code&gt; function&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;schema.post(&#39;save&#39;)&lt;/code&gt; - to occur after a &lt;code&gt;save&lt;/code&gt; function&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;third-party-packages-added-to-meganote&#34;&gt;Third-Party Packages added to Meganote&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/sanitize-html&#34;&gt;Sanitize HTML&lt;/a&gt; (Node)
+&lt;br&gt;Clean up user-submitted HTML, preserving whitelisted elements and whitelisted attributes on a per-element basis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/html-to-text&#34;&gt;HTML-to-Text&lt;/a&gt; (Node)
+&lt;br&gt;An advanced converter that parses HTML and returns beautiful text.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://textangular.com/&#34;&gt;textAngular&lt;/a&gt; (Angular)
+&lt;br&gt;A Lightweight, Two-Way-Bound &amp;amp; Totally Awesome Angular.js Text-Editor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;more-ui-router&#34;&gt;More &lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/ui-router/1.0.0-alpha.3/modules/ng1_directives.html#uisrefng1&#34;&gt;&lt;code&gt;ui-sref&lt;/code&gt;&lt;/a&gt; - A directive that binds an anchor tag (&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;) to a state&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki/URL-Routing#url-parameters&#34;&gt;URL Routing with Parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views&#34;&gt;Nested States and Views&lt;/a&gt; - Also known as child states&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki#resolve&#34;&gt;Resolve&lt;/a&gt; - Provides your controller with content or data that is custom to the state.  Any promises will be resolved and converted to a value &lt;em&gt;before&lt;/em&gt; instantiating the controller.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;more-angular&#34;&gt;More Angular&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ng-bind-html&lt;/code&gt; - tells Angular to replace the innerHTML of an element with the value of an expression.  Similar to &lt;code&gt;{{ expression }}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.constant&lt;/code&gt; - register a Provider on an angular module that returns a constant value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;  angular.module(&#39;myApp&#39;)
+    .constant(&#39;API_URL&#39;, &#39;http://myapi.com/example/all&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
