@@ -6,8 +6,22 @@
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jun 2016 21:34:12 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jun 2016 16:15:26 -0400</lastBuildDate>
     <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular: Mutant Office Hours</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/</link>
+      <pubDate>Mon, 20 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-4&#34;&gt;Week 4&lt;/h3&gt;
+
+&lt;h1 id=&#34;angular-mutant-office-hours&#34;&gt;Angular: Mutant Office Hours&lt;/h1&gt;
+</description>
+    </item>
     
     <item>
       <title>Meganote</title>
@@ -102,6 +116,70 @@
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Day 15: Mutant Office Hours</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/day15/</link>
+      <pubDate>Mon, 20 Jun 2016 13:16:56 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/day15/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 20, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;john-papa-s-style-guide-https-github-com-johnpapa-angular-styleguide-tree-master-a1&#34;&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1&#34;&gt;John Papa&amp;rsquo;s Style Guide&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;THE Angular-team endorsed style guide for AngularJS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#single-responsibility&#34;&gt;Single Responsibility&lt;/a&gt; - One component per file, less than 400 lines of code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#iife&#34;&gt;IIFE&lt;/a&gt; - Removes variables from the global scope&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#controlleras-with-vm&#34;&gt;controllerAs with vm&lt;/a&gt; - Use capture variable for &lt;code&gt;this&lt;/code&gt; when using &lt;code&gt;controllerAs&lt;/code&gt; syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#bindable-members-up-top&#34;&gt;Bindable members up top&lt;/a&gt; - Place bindable members at the top of the controller, not spread through the controller code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/js/js_strict.asp&#34;&gt;&lt;code&gt;&#39;use strict&#39;&lt;/code&gt;&lt;/a&gt; - for enforcing &amp;lsquo;strict mode&amp;rsquo; in JavaScript projects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;firebase-https-www-firebase-com&#34;&gt;&lt;a href=&#34;https://www.firebase.com/&#34;&gt;Firebase&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A realtime database utilizing web sockets&lt;/li&gt;
+&lt;li&gt;Handles user authentication&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;angularfire-https-www-firebase-com-docs-web-libraries-angular&#34;&gt;&lt;a href=&#34;https://www.firebase.com/docs/web/libraries/angular/&#34;&gt;AngularFire&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Officially supported AngularJS binding for Firebase&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;twilio-https-www-twilio-com&#34;&gt;&lt;a href=&#34;https://www.twilio.com/&#34;&gt;Twilio&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cloud communication platform for voice calls and texts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mailgun-http-www-mailgun-com&#34;&gt;&lt;a href=&#34;http://www.mailgun.com/&#34;&gt;mailgun&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Email automation service&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mutant Office Hours:
+&lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours&#34;&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read the sections of the Style Guide listed above&lt;/li&gt;
+&lt;li&gt;Review commit history for the day&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -684,173 +762,6 @@ Welcome to Meganote!
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;If so, let&amp;rsquo;s keep moving.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 11: Angular Services</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day11/</link>
-      <pubDate>Tue, 14 Jun 2016 16:50:36 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day11/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Tuesday, June 14, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;dependency-injection&#34;&gt;Dependency Injection&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/&#34;&gt;Dependency Injection Demystified&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ng-strict-di&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$inject&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;angular-services&#34;&gt;Angular Services&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/angular/angular_services.asp&#34;&gt;AngularJS Services: w3schools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/services&#34;&gt;Official Angular Documentation for Services&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ajax-in-angular&#34;&gt;AJAX in Angular&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$http&lt;/code&gt; service&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;Angular Documentation for $http&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://thinkster.io/http&#34;&gt;Introduction to $http: thinkster.io&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;promises&#34;&gt;Promises&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Using promises for deferred actions&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.html5rocks.com/en/tutorials/es6/promises/&#34;&gt;JavaScript Promises: There and Back Again&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://andyshora.com/promises-angularjs-explained-as-cartoon.html&#34;&gt;Angular Promises Explained as a Cartoon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$state.go()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://eslint.org/&#34;&gt;ESLint&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-eslint&#34;&gt;Linter-ESLint (Atom package)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md&#34;&gt;John Papa Angular Style Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/line-ending-selector&#34;&gt;Line Ending Selector (Atom package)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;p&gt;Meganote, now loading notes from an API: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/7dce724d56da3f7f463f305dd52360b16c5558e5&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
-
-&lt;p&gt;Implement update and delete.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 6: More Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day06/</link>
-      <pubDate>Sat, 11 Jun 2016 23:34:13 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day06/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Tuesday, June 7, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Check out &lt;a href=&#34;http://www.elated.com/articles/ajax-with-jquery-a-beginners-guide/&#34;&gt;Ajax with jQuery: A Beginner&amp;rsquo;s Guide&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/tags/ref_httpmethods.asp&#34;&gt;GET vs. POST&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;cdns&#34;&gt;CDNs&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/a/2180401&#34;&gt;Why use a CDN?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/&#34;&gt;CDNjs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/libraries/jquery/2.2.4&#34;&gt;jQuery 2.2.4 on CDNjs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/06-ajax-get-requests-and-github-pages-review&#34;&gt;Ajax - GET requests in detail, GitHub pages review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;jMutants: &lt;a href=&#34;https://github.com/xternbootcamp16/jmutants-afternoon&#34;&gt;morning&lt;/a&gt; (with working &lt;em&gt;edit&lt;/em&gt; feature) | &lt;a href=&#34;https://github.com/xternbootcamp16/jmutants-afternoon&#34;&gt;afternoon&lt;/a&gt; (without edit, but with &lt;em&gt;mutant name&lt;/em&gt;, _real&lt;em&gt;name&lt;/em&gt;, and &lt;em&gt;power&lt;/em&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://api.nasa.gov/api.html#apod&#34;&gt;Astronomy Picture of the Day&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;$.get({
-  url: &#39;https://api.nasa.gov/planetary/apod&#39;,
-  data: {
-    API_KEY: &#39;DEMO_KEY&#39;,
-    date: &#39;2016-06-07&#39;
-  }
-  success: function(data) {
-    $(document.body).prepend(&#39;&amp;lt;img src=&amp;quot;&#39; + data.hdurl + &#39;&amp;quot;&amp;gt;&#39;);
-  }
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you plan to do much with the NASA APIs, you&amp;rsquo;ll need to sign up for your own API_KEY, which is free.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
-
-&lt;p&gt;Try to get further with yesterday&amp;rsquo;s homework.&lt;/p&gt;
-
-&lt;p&gt;Talk to the &lt;a href=&#34;(http://getfretless.github.io/mutant-school-docs/?javascript#get-a-specific-mutant)&#34;&gt;Mutant School API&lt;/a&gt;!&lt;/p&gt;
-
-&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Start a new project (or fork JSON People and work from there) that loads all Mutants from the API.&lt;/li&gt;
-&lt;li&gt;When a new record is added to your app, create a new Mutant record by POSTing to the API.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Add a button to delete individual mutants from the API.&lt;/p&gt;
-
-&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Update existing mutant records.&lt;/p&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Integrate the Mutant API with MegaRoster.&lt;/p&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
-
-&lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else with an existing API.&lt;/p&gt;
 </description>
     </item>
     

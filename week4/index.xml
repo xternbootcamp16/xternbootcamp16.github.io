@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week4s on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/week4/</link>
+    <description>Recent content in Week4s on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jun 2016 16:15:26 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/week4/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular: Mutant Office Hours</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/</link>
+      <pubDate>Mon, 20 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-4&#34;&gt;Week 4&lt;/h3&gt;
+
+&lt;h1 id=&#34;angular-mutant-office-hours&#34;&gt;Angular: Mutant Office Hours&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 15: Mutant Office Hours</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/day15/</link>
+      <pubDate>Mon, 20 Jun 2016 13:16:56 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/day15/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 20, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;john-papa-s-style-guide-https-github-com-johnpapa-angular-styleguide-tree-master-a1&#34;&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1&#34;&gt;John Papa&amp;rsquo;s Style Guide&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;THE Angular-team endorsed style guide for AngularJS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#single-responsibility&#34;&gt;Single Responsibility&lt;/a&gt; - One component per file, less than 400 lines of code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#iife&#34;&gt;IIFE&lt;/a&gt; - Removes variables from the global scope&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#controlleras-with-vm&#34;&gt;controllerAs with vm&lt;/a&gt; - Use capture variable for &lt;code&gt;this&lt;/code&gt; when using &lt;code&gt;controllerAs&lt;/code&gt; syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/tree/master/a1#bindable-members-up-top&#34;&gt;Bindable members up top&lt;/a&gt; - Place bindable members at the top of the controller, not spread through the controller code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/js/js_strict.asp&#34;&gt;&lt;code&gt;&#39;use strict&#39;&lt;/code&gt;&lt;/a&gt; - for enforcing &amp;lsquo;strict mode&amp;rsquo; in JavaScript projects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;firebase-https-www-firebase-com&#34;&gt;&lt;a href=&#34;https://www.firebase.com/&#34;&gt;Firebase&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A realtime database utilizing web sockets&lt;/li&gt;
+&lt;li&gt;Handles user authentication&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;angularfire-https-www-firebase-com-docs-web-libraries-angular&#34;&gt;&lt;a href=&#34;https://www.firebase.com/docs/web/libraries/angular/&#34;&gt;AngularFire&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Officially supported AngularJS binding for Firebase&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;twilio-https-www-twilio-com&#34;&gt;&lt;a href=&#34;https://www.twilio.com/&#34;&gt;Twilio&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cloud communication platform for voice calls and texts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mailgun-http-www-mailgun-com&#34;&gt;&lt;a href=&#34;http://www.mailgun.com/&#34;&gt;mailgun&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Email automation service&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mutant Office Hours:
+&lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours&#34;&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read the sections of the Style Guide listed above&lt;/li&gt;
+&lt;li&gt;Review commit history for the day&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
