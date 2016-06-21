@@ -663,105 +663,83 @@ git push -u master gh-pages  # Push it to GitHub
     </item>
     
     <item>
-      <title>Setup</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</link>
-      <pubDate>Tue, 14 Jun 2016 22:45:03 -0400</pubDate>
+      <title>Day 16: Firebase and Twilio</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/day16/</link>
+      <pubDate>Tue, 21 Jun 2016 16:10:52 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/week4/day16/</guid>
       <description>
 
-&lt;h2 id=&#34;angular-seed&#34;&gt;Angular-seed&lt;/h2&gt;
+&lt;p&gt;&lt;date&gt;Tuesday, June 21, 2016&lt;/date&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular-seed&#34;&gt;Angular-seed&lt;/a&gt; is a bootstrapping project preconfigured to with a suite of tools to make it easy to manage dependencies—including Angular itself—with a directory structure that works well for Angular apps. You could always start a new Angular app from scratch, but using the official seed project is a good idea.&lt;/p&gt;
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
 
-&lt;p&gt;Angular-seed can be a bit overwhelming, because it includes an awful lot of stuff. We&amp;rsquo;ll use our own, considerably simpler seed project, &lt;code&gt;meganote-seed&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;firebase-3-0-https-firebase-google-com-docs-angularfire-2-0-https-www-firebase-com-docs-web-libraries-angular-api-html&#34;&gt;&lt;a href=&#34;https://firebase.google.com/docs/&#34;&gt;Firebase 3.0&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.firebase.com/docs/web/libraries/angular/api.html&#34;&gt;AngularFire 2.0&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h2 id=&#34;meganote-seed-structure&#34;&gt;Meganote-seed structure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$firebaseArray&lt;/code&gt; for creating an array-like object that syncs with Firebase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$add&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$remove&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$save&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Let&amp;rsquo;s take a look at the generated application structure, and what all the pieces are for:&lt;/p&gt;
+&lt;p&gt;Firebase 3.0 app initialization for front-end&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;├── LICENSE             --&amp;gt; the MIT license agreement
-├── app                 --&amp;gt; all of the source files for the application
-│   ├── app.js          --&amp;gt; main application module
-│   ├── content         --&amp;gt; static assets, like stylesheets and images
-│   │   └── app.css     --&amp;gt; main stylesheet
-│   ├── index.html      --&amp;gt; main HTML template for the app
-│   └── notes           --&amp;gt; view template and logic for _notes_
-│       └── notes.html  --&amp;gt; view template for _notes_
-├── bower.json          --&amp;gt; client side dependencies (for `bower install`)
-└── package.json        --&amp;gt; development and server side dependencies (for `npm install`)
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var config = {
+  apiKey: &#39;&amp;lt;your-api-key&amp;gt;&#39;,
+  authDomain: &#39;&amp;lt;your-auth-domain&amp;gt;&#39;,
+  databaseURL: &#39;&amp;lt;your-database-url&amp;gt;&#39;,
+  storageBucket: &#39;&amp;lt;your-storage-bucket&amp;gt;&#39;
+};
+firebase.initializeApp(config);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;npm-package-json-and-bower-bower-json&#34;&gt;NPM (&lt;code&gt;package.json&lt;/code&gt;) and Bower (&lt;code&gt;bower.json&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;Firebase 3.0 app initialization for Node.js&lt;/p&gt;
 
-&lt;p&gt;Starting with non-empty &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;bower.json&lt;/code&gt; files is one of the handiest aspects of starting from a &lt;em&gt;seed&lt;/em&gt; project.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;bower.json&lt;/code&gt; serve much the same purpose in a JavaScript project as the &lt;code&gt;Gemfile&lt;/code&gt; in a Ruby project (and a bit like the &lt;code&gt;Rakefile&lt;/code&gt; as well).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; and &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt; are both package managers. Package managers make the distribution and installation of software dramatically easier than alternative methods. Sometimes we need to reuse the same chunk of code in multiple projects. Sometimes our coworkers need to use software we&amp;rsquo;ve written for a previous project in a new project. Sometimes we want to share something we&amp;rsquo;ve written with the world. In cases like these, using a package manager can simplify including external dependencies and keeping them up-to-date.&lt;/p&gt;
-
-&lt;p&gt;NPM, a package manager based on Node, is the most common package management system in the JavaScript world. NPM dependencies and scripts for a project are specified in the &lt;code&gt;package.json&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;Bower is also extremely common and serves a subtly different purpose. Its dependencies and scripts are specified in &lt;code&gt;bower.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Like other package managers, NPM and Bower provide a standardized structure that we can use to package and distribute software we&amp;rsquo;ve written.&lt;/p&gt;
-
-&lt;p&gt;Why do we need two package managers in our project? Why can&amp;rsquo;t we use &lt;em&gt;either&lt;/em&gt; npm or bower, rather than both? npm is ideally suited for managing server-side Node packages and development dependencies—like development-friendly web servers, minification tools, etc.—while Bower is designed for the client side.&lt;/p&gt;
-
-&lt;p&gt;The biggest technical difference is that npm handles nested dependencies, while Bower leaves that up to us (which is appropriate for the client side, where we don&amp;rsquo;t want, for example, 5 different versions of jQuery sent to end users).&lt;/p&gt;
-
-&lt;h2 id=&#34;npm-start&#34;&gt;&lt;code&gt;npm start&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;We can run a task from the command line called &lt;code&gt;npm start&lt;/code&gt;, because the &lt;code&gt;start&lt;/code&gt; script is defined in &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;  &amp;quot;start&amp;quot;: &amp;quot;http-server app -a 0.0.0.0 -p 8000 -c-1&amp;quot;,
-  &amp;quot;prestart&amp;quot;: &amp;quot;npm install&amp;quot;,
-  &amp;quot;postinstall&amp;quot;: &amp;quot;bower install&amp;quot;
-}
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var firebase = require(&amp;quot;firebase&amp;quot;);
+firebase.initializeApp({
+  serviceAccount: &amp;quot;path/to/serviceAccountCredentials.json&amp;quot;,
+  databaseURL: &amp;quot;https://databaseName.firebaseio.com&amp;quot;
+});
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;So that &lt;code&gt;start&lt;/code&gt; script fires up a web server, serving the project&amp;rsquo;s &lt;code&gt;app&lt;/code&gt; directory, on port &lt;code&gt;8000&lt;/code&gt;. The &lt;code&gt;prestart&lt;/code&gt; script will automatically execute &lt;code&gt;npm start&lt;/code&gt; before the &lt;code&gt;start&lt;/code&gt; script itself. Similarly, the &lt;code&gt;postinstall&lt;/code&gt; script will automatically execute &lt;code&gt;bower install&lt;/code&gt; as soon as &lt;code&gt;npm install&lt;/code&gt; finishes.&lt;/p&gt;
+&lt;h3 id=&#34;dotenv-https-github-com-motdotla-dotenv&#34;&gt;&lt;a href=&#34;https://github.com/motdotla/dotenv&#34;&gt;dotenv&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;All told, running the following command:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Loads environment variables from &lt;code&gt;.env&lt;/code&gt; for nodejs projects&lt;/li&gt;
+&lt;li&gt;Should I commit my &lt;code&gt;.env&lt;/code&gt; file?  &lt;a href=&#34;https://github.com/motdotla/dotenv#should-i-commit-my-env-file&#34;&gt;Answer here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;npm start
+&lt;h3 id=&#34;twilio&#34;&gt;Twilio&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cloud-based communication for text and phone calls&lt;/li&gt;
+&lt;li&gt;Supports multiple server-side SDKs, including Java, C#, Node, Ruby, and Python&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Node setup&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var twilio = require(&#39;twilio&#39;);
+var client = new twilio.RestClient(accountSid, authToken);
+
+client.messages.create({
+    body: &#39;Hello from Node&#39;,
+    to: &#39;+12345678901&#39;,  // Text this number
+    from: &#39;+12345678901&#39; // From a valid Twilio number
+}, function(err, message) {
+    if(err) {
+        console.error(err.message);
+    }
+});
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Will execute the following commands, in this order:&lt;/p&gt;
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;npm install
-bower install
-http-server app -a 0.0.0.0 -p 8000 -c-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Go ahead and run &lt;code&gt;npm start&lt;/code&gt; now.&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll see the &lt;code&gt;node_modules&lt;/code&gt; and &lt;code&gt;app/bower_components&lt;/code&gt; directories are added to your project with all the installed dependencies. Don&amp;rsquo;t worry about it adding bloat to your repository. Just like the bundled gems in a Ruby project, &lt;code&gt;node_modules&lt;/code&gt; and &lt;code&gt;bower_components&lt;/code&gt; are in &lt;code&gt;.gitignore&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;If you don&amp;rsquo;t want other developers on the project to have to re-download the dependencies from the web, you can include the two directories in your repository.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Dependencies are versioned, so if you were to change the version number, and run &lt;code&gt;npm install&lt;/code&gt; again, bower will get the correct version of whatever dependency we need.&lt;/p&gt;
-
-&lt;p&gt;If npm and bower have finished installing dependencies, the output of &lt;code&gt;npm start&lt;/code&gt; should end with this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;Starting up http-server, serving app on port: 8000
-Hit CTRL-C to stop the server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Visit &lt;a href=&#34;http://localhost:8000&#34;&gt;http://localhost:8000&lt;/a&gt; in your web browser.&lt;/p&gt;
-
-&lt;p&gt;Hopefully you see something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;Meganote
-
-Welcome to Meganote!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If so, let&amp;rsquo;s keep moving.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mutant Office Hours (Angular):
+&lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/330a7770d407cfd22d6e694db439e168d6d230d0&#34;&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mutant Office Hours Server (Node): &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours-server/tree/fa25dc0653b9dba7f94836d88926404f4d4bcbce&#34;&gt;source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

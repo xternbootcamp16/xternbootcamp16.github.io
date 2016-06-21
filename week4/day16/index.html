@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Text Editors</title>
+    <title>Day 16: Firebase and Twilio</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-mac/text-editors/">
+  <body class="" data-url="/week4/day16/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -122,7 +122,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-mac/">
+      <li class="dd-item  " data-nav-id="/setup-mac/">
         <a href="/setup-mac/">
           <span>
             
@@ -170,7 +170,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-mac/text-editors/">
+            <li class="dd-item " data-nav-id="/setup-mac/text-editors/">
               <a href="/setup-mac/text-editors/">
                 <span>Text Editors     </i></span>
               </a>
@@ -477,7 +477,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week4/">
+      <li class="dd-item  parent" data-nav-id="/week4/">
         <a href="/week4/">
           <span>
             
@@ -501,7 +501,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week4/day16/">
+            <li class="dd-item active" data-nav-id="/week4/day16/">
               <a href="/week4/day16/">
                 <span>Day 16: Firebase and Twilio     </i></span>
               </a>
@@ -544,23 +544,23 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-mac/" itemprop="url"><span itemprop="title">Setup for Mac</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week4/" itemprop="url"><span itemprop="title">Angular: Mutant Office Hours</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Text Editors</span>
+                <span itemprop="title"> Day 16: Firebase and Twilio</span>
               </div>
               
                   <div class="progress">
@@ -569,8 +569,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#download-atom-https-atom-io"><a href="https://atom.io/">Download Atom</a></a></li>
-<li><a href="#recommended-packages-for-atom">Recommended Packages for Atom</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#firebase-3-0-https-firebase-google-com-docs-angularfire-2-0-https-www-firebase-com-docs-web-libraries-angular-api-html"><a href="https://firebase.google.com/docs/">Firebase 3.0</a> &amp; <a href="https://www.firebase.com/docs/web/libraries/angular/api.html">AngularFire 2.0</a></a></li>
+<li><a href="#dotenv-https-github-com-motdotla-dotenv"><a href="https://github.com/motdotla/dotenv">dotenv</a></a></li>
+<li><a href="#twilio">Twilio</a></li>
+</ul></li>
+<li><a href="#project">Project</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -583,39 +588,81 @@
             
     	        <div id="body-inner">
                 
-                <h1>Text Editors</h1>
+                <h1>Day 16: Firebase and Twilio</h1>
                 
 
 
 
-<p><strong><a href="https://atom.io/">Atom</a></strong> is free text editor that&rsquo;s especially well-suited for editing code. It is similar to Sublime Text in many respects, but it&rsquo;s completely free and open source, and it&rsquo;s rapidly improving.</p>
+<p><date>Tuesday, June 21, 2016</date></p>
 
-<h2 id="download-atom-https-atom-io"><a href="https://atom.io/">Download Atom</a></h2>
+<h2 id="topics">Topics</h2>
 
-<p>Microsoft&rsquo;s <strong><a href="http://code.visualstudio.com/">Visual Studio Code</a></strong> is also open source and rapidly improving. If you&rsquo;re a fan of Microsoft&rsquo;s IntelliSense and the like, you might prefer VS Code.</p>
-
-<p>If you&rsquo;re used to an IDE, <strong><a href="http://www.jetbrains.com/webstorm/">WebStorm</a></strong> might be more up your alley. Be warned: It&rsquo;s subscription-based, and is $12.90/month, or $129.00 the first year.</p>
-
-<p>I will be using Atom in class, so I can show you themes and plugins that I like if you give it a shot. I haven&rsquo;t spent enough time with VS Code to know many tricks, and I&rsquo;ve never used WebStorm.</p>
-
-<p>Whichever editor you use, you&rsquo;ll use it enough that I recommend keeping it in the Dock as well.</p>
-
-<h2 id="recommended-packages-for-atom">Recommended Packages for Atom</h2>
-
-<p>Atom is highly extensible, and there are a few packages that I highly recommend.</p>
+<h3 id="firebase-3-0-https-firebase-google-com-docs-angularfire-2-0-https-www-firebase-com-docs-web-libraries-angular-api-html"><a href="https://firebase.google.com/docs/">Firebase 3.0</a> &amp; <a href="https://www.firebase.com/docs/web/libraries/angular/api.html">AngularFire 2.0</a></h3>
 
 <ul>
-<li><a href="https://atom.io/packages/linter-eslint"><code>linter-eslint</code></a> checks for JavaScript errors and style violations on the fly.</li>
-<li><a href="https://atom.io/packages/language-babel"><code>language-babel</code></a> adds support for the latest JavaScript features.</li>
-<li><a href="https://atom.io/packages/react"><code>react</code></a> adds support for React&rsquo;s JSX language.</li>
-<li><a href="https://atom.io/packages/file-icons"><code>file-icons</code></a> shows icons in the sidebar that correspond to the file type.</li>
-<li><a href="https://atom.io/packages/Sublime-Style-Column-Selection"><code>Sublime-Style-Column-Selection</code></a> is really handy when you&rsquo;ve pasted something in with a bunch of junk at the beginning of each line.</li>
-<li><a href="https://atom.io/packages/autocomplete-plus"><code>autocomplete-plus</code></a> and <a href="https://atom.io/packages/atom-ternjs"><code>atom-ternjs</code></a> combine to do pretty nice autocompletion for JavaScript. TernJS even provides inline documentation for functions.</li>
+<li><code>$firebaseArray</code> for creating an array-like object that syncs with Firebase</li>
+<li><code>$add</code></li>
+<li><code>$remove</code></li>
+<li><code>$save</code></li>
 </ul>
 
-<div class="notices note" ><p>Since I&rsquo;m always asked, I use the <code>Atom Dark</code> UI theme, and the <code>Kobalt</code> syntax theme (with some personal customizations).</p>
-</div>
+<p>Firebase 3.0 app initialization for front-end</p>
 
+<pre><code class="language-js">var config = {
+  apiKey: '&lt;your-api-key&gt;',
+  authDomain: '&lt;your-auth-domain&gt;',
+  databaseURL: '&lt;your-database-url&gt;',
+  storageBucket: '&lt;your-storage-bucket&gt;'
+};
+firebase.initializeApp(config);
+</code></pre>
+
+<p>Firebase 3.0 app initialization for Node.js</p>
+
+<pre><code class="language-js">var firebase = require(&quot;firebase&quot;);
+firebase.initializeApp({
+  serviceAccount: &quot;path/to/serviceAccountCredentials.json&quot;,
+  databaseURL: &quot;https://databaseName.firebaseio.com&quot;
+});
+</code></pre>
+
+<h3 id="dotenv-https-github-com-motdotla-dotenv"><a href="https://github.com/motdotla/dotenv">dotenv</a></h3>
+
+<ul>
+<li>Loads environment variables from <code>.env</code> for nodejs projects</li>
+<li>Should I commit my <code>.env</code> file?  <a href="https://github.com/motdotla/dotenv#should-i-commit-my-env-file">Answer here</a></li>
+</ul>
+
+<h3 id="twilio">Twilio</h3>
+
+<ul>
+<li>Cloud-based communication for text and phone calls</li>
+<li>Supports multiple server-side SDKs, including Java, C#, Node, Ruby, and Python</li>
+</ul>
+
+<p>Node setup</p>
+
+<pre><code class="language-js">var twilio = require('twilio');
+var client = new twilio.RestClient(accountSid, authToken);
+
+client.messages.create({
+    body: 'Hello from Node',
+    to: '+12345678901',  // Text this number
+    from: '+12345678901' // From a valid Twilio number
+}, function(err, message) {
+    if(err) {
+        console.error(err.message);
+    }
+});
+</code></pre>
+
+<h2 id="project">Project</h2>
+
+<ul>
+<li>Mutant Office Hours (Angular):
+<a href="https://github.com/xternbootcamp16/mutant-office-hours/tree/330a7770d407cfd22d6e694db439e168d6d230d0">source</a></li>
+<li>Mutant Office Hours Server (Node): <a href="https://github.com/xternbootcamp16/mutant-office-hours-server/tree/fa25dc0653b9dba7f94836d88926404f4d4bcbce">source</a></li>
+</ul>
 
 
       
@@ -623,8 +670,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-mac/nodejs"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-mac/ssh" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week4/day15"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week4/day16" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
