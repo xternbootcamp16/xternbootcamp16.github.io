@@ -168,5 +168,56 @@ client.messages.create({
 </description>
     </item>
     
+    <item>
+      <title>Day 17: Authorization</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/day17/</link>
+      <pubDate>Wed, 22 Jun 2016 14:34:38 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/day17/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 22, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;authorization-with-firebase&#34;&gt;Authorization with Firebase&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firebase supports multiple authorization methods with minimal configuration - Email/Password, Facebook, Twitter, Github, Google&lt;/li&gt;
+&lt;li&gt;Registration and sign-in functions return promises&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://firebase.google.com/docs/auth/&#34;&gt;Firebase Authentication Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;important-firebase-auth-functions-in-angularfire&#34;&gt;Important Firebase Auth Functions in AngularFire&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$createUserWithEmailAndPassword()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$signInUserWithEmailAndPassword()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$signOut()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$deleteUser()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/firebase/angularfire#documentation&#34;&gt;AngularFire Github Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation-building-blocks-http-zurb-com-building-blocks&#34;&gt;&lt;a href=&#34;http://zurb.com/building-blocks&#34;&gt;Foundation Building Blocks&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A quick and easy way to add components like navbars, layouts, forms, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zurb.com/building-blocks/f6-top-bar&#34;&gt;Navbar used in class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zurb.com/building-blocks/log-in-form&#34;&gt;Log in form used in class&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Review today&amp;rsquo;s commit history&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vm.register()&lt;/code&gt; and &lt;code&gt;vm.login()&lt;/code&gt; functions have been created.  Implement &lt;code&gt;vm.logout&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/ff6a0c0ae9662ed1aa48cc99b1bb8da6bcd0cd33&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
