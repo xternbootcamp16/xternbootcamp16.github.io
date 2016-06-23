@@ -219,5 +219,64 @@ client.messages.create({
 </description>
     </item>
     
+    <item>
+      <title>Day 18: Re-Factory-ing</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/day18/</link>
+      <pubDate>Thu, 23 Jun 2016 11:36:04 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/day18/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, June 23, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;controllers&#34;&gt;Controllers&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Should only handle logic that directly relates to the view&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#accessible-members-up-top&#34;&gt;Defer Controller Logic to Services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/making-skinny-angularjs-controllers&#34;&gt;Making Skinny AngularJS Controllers&lt;/a&gt; - a well-explained article showing the before and after of refactoring a controller using services&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If code is requesting data from an API or database, it should probably be in a service&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;factories&#34;&gt;Factories&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Handle the business logic so your controllers can be slim and focused&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#single-responsibility-1&#34;&gt;Single Responsibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#accessible-members-up-top&#34;&gt;Accessible Members Up Top&lt;/a&gt; - Similar to &amp;lsquo;bindable members up top&amp;rsquo; for controllers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14324451/angular-service-vs-angular-factory&#34;&gt;&lt;code&gt;angular.service&lt;/code&gt; vs &lt;code&gt;angular.factory&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Basic Setup of an Angular Factory (IIFE excluded for brevity)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;angular
+  .module(&#39;myModule&#39;)
+  .factory(&#39;myFactory&#39;, myFactory);
+
+function myFactory() {
+  var service = {};
+
+  return service;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Review today&amp;rsquo;s commit history&lt;/li&gt;
+&lt;li&gt;We set up the authService factory and created the &lt;code&gt;register&lt;/code&gt; property on it.  Continue adding additional properties to the factory to refactor the other methods and dependencies in the &lt;code&gt;AuthController&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/699f1bce23c4209ad93b0ec415b3fd30100b3c1b&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

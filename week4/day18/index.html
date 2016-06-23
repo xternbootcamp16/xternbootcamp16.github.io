@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>SSH</title>
+    <title>Day 18: Re-Factory-ing</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/ssh/">
+  <body class="" data-url="/week4/day18/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -265,7 +265,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/ssh/">
+            <li class="dd-item " data-nav-id="/setup-win/ssh/">
               <a href="/setup-win/ssh/">
                 <span>SSH     </i></span>
               </a>
@@ -477,7 +477,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week4/">
+      <li class="dd-item  parent" data-nav-id="/week4/">
         <a href="/week4/">
           <span>
             
@@ -517,7 +517,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week4/day18/">
+            <li class="dd-item active" data-nav-id="/week4/day18/">
               <a href="/week4/day18/">
                 <span>Day 18: Re-Factory-ing     </i></span>
               </a>
@@ -562,21 +562,21 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week4/" itemprop="url"><span itemprop="title">Angular: Mutant Office Hours</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> SSH</span>
+                <span itemprop="title"> Day 18: Re-Factory-ing</span>
               </div>
               
                   <div class="progress">
@@ -585,9 +585,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#check-for-an-existing-key">Check for an existing key</a></li>
-<li><a href="#generate-an-ssh-key">Generate an SSH key</a></li>
-<li><a href="#change-file-permissions">Change file permissions</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#controllers">Controllers</a></li>
+<li><a href="#factories">Factories</a></li>
+</ul></li>
+<li><a href="#homework">Homework</a></li>
+<li><a href="#project">Project</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -600,58 +604,59 @@
             
     	        <div id="body-inner">
                 
-                <h1>SSH</h1>
+                <h1>Day 18: Re-Factory-ing</h1>
                 
 
 
 
-<p>I recommend setting up an SSH key to simplify authentication with GitHub and other services.</p>
+<p><date>Thursday, June 23, 2016</date></p>
 
-<h2 id="check-for-an-existing-key">Check for an existing key</h2>
+<h2 id="topics">Topics</h2>
 
-<p>In Babun, make sure you&rsquo;re in your home directory. You will be by default, but you can double-check with the &ldquo;print working directory&rdquo; command: <code>pwd</code></p>
+<h3 id="controllers">Controllers</h3>
 
-<pre><code class="language-zsh">pwd
-</code></pre>
+<ul>
+<li>Should only handle logic that directly relates to the view</li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#accessible-members-up-top">Defer Controller Logic to Services</a></li>
+<li><a href="https://scotch.io/tutorials/making-skinny-angularjs-controllers">Making Skinny AngularJS Controllers</a> - a well-explained article showing the before and after of refactoring a controller using services</li>
+</ul>
 
-<p>You should be in <code>/home/yourusername</code>. If not, you can switch to that directory with the <code>cd</code> command, passing in the directory you want to switch to.</p>
-
-<pre><code class="language-zsh">cd ~
-</code></pre>
-
-<div class="notices tip" ><p>You can always use a tilde <code>~</code> as a shortcut for your home directory.</p>
+<div class="notices tip" ><p>If code is requesting data from an API or database, it should probably be in a service</p>
 </div>
 
 
-<p>Check for an <code>.ssh</code> directory:</p>
+<h3 id="factories">Factories</h3>
 
-<pre><code class="language-zsh">ls .ssh
+<ul>
+<li>Handle the business logic so your controllers can be slim and focused</li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#single-responsibility-1">Single Responsibility</a></li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#accessible-members-up-top">Accessible Members Up Top</a> - Similar to &lsquo;bindable members up top&rsquo; for controllers</li>
+<li><a href="http://stackoverflow.com/questions/14324451/angular-service-vs-angular-factory"><code>angular.service</code> vs <code>angular.factory</code></a></li>
+</ul>
+
+<p>Basic Setup of an Angular Factory (IIFE excluded for brevity)</p>
+
+<pre><code class="language-js">angular
+  .module('myModule')
+  .factory('myFactory', myFactory);
+
+function myFactory() {
+  var service = {};
+
+  return service;
+}
 </code></pre>
 
-<p>If you see an <code>id_rsa.pub</code> file, then you already have an SSH key and can skip to the next page.</p>
+<h2 id="homework">Homework</h2>
 
-<h2 id="generate-an-ssh-key">Generate an SSH key</h2>
+<ul>
+<li>Review today&rsquo;s commit history</li>
+<li>We set up the authService factory and created the <code>register</code> property on it.  Continue adding additional properties to the factory to refactor the other methods and dependencies in the <code>AuthController</code></li>
+</ul>
 
-<p>Type the following command to generate your SSH key, substituting the same email address you used for Git earlier:</p>
+<h2 id="project">Project</h2>
 
-<pre><code class="language-zsh">ssh-keygen -t rsa -C &quot;youremail@example.com&quot;
-</code></pre>
-
-<p>It should prompt you for a file name. You can just hit &lsquo;enter&rsquo; to accept the default.</p>
-
-<p>It will then prompt you for a password. You can just hit &lsquo;enter&rsquo; (twice) to not set a passphrase. That compromises your key should anyone gain access to your laptop, but it may be simpler for the sake of this course. It&rsquo;s much safer to use a passphrase when generating a key when you truly want to maximize security.</p>
-
-<p>If all is well, you should see that your identification and your public key have been saved to <code>.ssh/id_rsa</code> and <code>.ssh/id_rsa.pub</code> respectively.</p>
-
-<h2 id="change-file-permissions">Change file permissions</h2>
-
-<p>The new keys will not have been generated with the correct file permissions, so run these two commands:</p>
-
-<pre><code class="language-zsh">chmod -R 700 .ssh/
-chmod 600 .ssh/id_rsa
-</code></pre>
-
-<p>You&rsquo;ll test your new key shortly, but first you&rsquo;ll need to create a GitHub account and add your public key to the account.</p>
+<p>Mutant Office Hours: <a href="https://github.com/xternbootcamp16/mutant-office-hours/tree/699f1bce23c4209ad93b0ec415b3fd30100b3c1b">Source</a></p>
 
 
       
@@ -659,8 +664,8 @@ chmod 600 .ssh/id_rsa
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/text-editors"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/github" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week4/day17"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week4/day18" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
