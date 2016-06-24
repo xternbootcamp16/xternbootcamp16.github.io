@@ -278,5 +278,98 @@ function myFactory() {
 </description>
     </item>
     
+    <item>
+      <title>Day 19: Resolve and Directives</title>
+      <link>http://replace-this-with-your-hugo-site.com/week4/day19/</link>
+      <pubDate>Fri, 24 Jun 2016 15:41:42 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week4/day19/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Friday, June 24, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;resolve-https-github-com-angular-ui-ui-router-wiki-resolve&#34;&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki#resolve&#34;&gt;Resolve&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use resolve to provide your controller with content or data that is custom to the state.&lt;/li&gt;
+&lt;li&gt;Promises will be resolved and converted to a value &lt;em&gt;before&lt;/em&gt; the controller is instantiated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$stateChangeError&lt;/code&gt; - fired when an error occurs during the transition to a state&lt;/li&gt;
+&lt;li&gt;Properties of the resolve object can be injected into the controller for the state.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;$stateProvider.state(&#39;example&#39;, {
+  url: &#39;/example&#39;,
+  controller: &#39;ExampleController&#39;,
+  resolve: {
+    user: function(authService) {
+      return authService.auth.$requireSignIn();
+    }
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;custom-directives-https-docs-angularjs-org-guide-directive&#34;&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/directive&#34;&gt;Custom Directives&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Angular directives are markers that tell AngularJS to attach specified behavior to a DOM element.&lt;/li&gt;
+&lt;li&gt;Directives can be used in the DOM as an Element, Attribute, Class, or Comment.&lt;/li&gt;
+&lt;li&gt;Use isolate scope to prevent the directive from inheriting from parent scope.&lt;/li&gt;
+&lt;li&gt;Directive names are &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;camelCase&lt;/a&gt; in Javascript and &lt;a href=&#34;http://en.wikipedia.org/wiki/Letter_case#Computers&#34;&gt;dash-delimited&lt;/a&gt; in HTML.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JavaScript&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;app.directive(&#39;myDirective&#39;, function() {
+  return {
+    restrict: &#39;E&#39;,
+    scope: {},
+    templateUrl: &#39;app/example.html&#39;
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;HTML&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;my-directive&amp;gt;&amp;lt;/my-directive&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;more-firebase-authentication&#34;&gt;More Firebase Authentication&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$getAuth()&lt;/code&gt; - synchronously retrieves the current authentication state&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$requireSignIn()&lt;/code&gt; - returns the user if authenticated, &lt;code&gt;AUTH_REQUIRED&lt;/code&gt; error if not&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firebase.com/docs/web/libraries/angular/guide/user-auth.html#section-routers&#34;&gt;Authenticating with Routers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Fork the &lt;a href=&#34;https://github.com/xternbootcamp16/meganote&#34;&gt;Meganote Repo&lt;/a&gt; to your personal GitHub.  Refactor it according to &lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md&#34;&gt;John Papa&amp;rsquo;s Angular Style Guide&lt;/a&gt; and submit a pull request on the original repo when you are done.&lt;/p&gt;
+
+&lt;h3 id=&#34;criteria&#34;&gt;Criteria&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#single-responsibility&#34;&gt;Singular Responsibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#iife&#34;&gt;IIFE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#bindable-members-up-top&#34;&gt;Bindable members up top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#controlleras-with-vm&#34;&gt;controllerAs with vm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use an Angular &lt;code&gt;.constant&lt;/code&gt; to provide the value of the URL in the requests to the API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Refactor the notes service as a factory&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Refactor the notes-form as a directive instead of child state&lt;/p&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/37c3e7df30ff50e4d9d0805ffd9a6136694e0436&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

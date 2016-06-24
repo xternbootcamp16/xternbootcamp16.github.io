@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>GitHub</title>
+    <title>Day 19: Resolve and Directives</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-mac/github/">
+  <body class="" data-url="/week4/day19/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -122,7 +122,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-mac/">
+      <li class="dd-item  " data-nav-id="/setup-mac/">
         <a href="/setup-mac/">
           <span>
             
@@ -186,7 +186,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-mac/github/">
+            <li class="dd-item " data-nav-id="/setup-mac/github/">
               <a href="/setup-mac/github/">
                 <span>GitHub     </i></span>
               </a>
@@ -477,7 +477,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week4/">
+      <li class="dd-item  parent" data-nav-id="/week4/">
         <a href="/week4/">
           <span>
             
@@ -525,7 +525,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week4/day19/">
+            <li class="dd-item active" data-nav-id="/week4/day19/">
               <a href="/week4/day19/">
                 <span>Day 19: Resolve and Directives     </i></span>
               </a>
@@ -568,23 +568,23 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-mac/" itemprop="url"><span itemprop="title">Setup for Mac</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week4/" itemprop="url"><span itemprop="title">Angular: Mutant Office Hours</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> GitHub</span>
+                <span itemprop="title"> Day 19: Resolve and Directives</span>
               </div>
               
                   <div class="progress">
@@ -593,9 +593,19 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create-a-free-github-account">Create a free GitHub account</a></li>
-<li><a href="#add-your-public-key-to-your-github-account">Add your public key to your GitHub account</a></li>
-<li><a href="#test-your-ssh-key-with-your-github-account">Test your SSH key with your GitHub account</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#resolve-https-github-com-angular-ui-ui-router-wiki-resolve"><a href="https://github.com/angular-ui/ui-router/wiki#resolve">Resolve</a></a></li>
+<li><a href="#custom-directives-https-docs-angularjs-org-guide-directive"><a href="https://docs.angularjs.org/guide/directive">Custom Directives</a></a></li>
+<li><a href="#more-firebase-authentication">More Firebase Authentication</a></li>
+</ul></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#criteria">Criteria</a></li>
+<li><a href="#mega-bonus-credit">Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+</ul></li>
+<li><a href="#project">Project</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -608,61 +618,93 @@
             
     	        <div id="body-inner">
                 
-                <h1>GitHub</h1>
+                <h1>Day 19: Resolve and Directives</h1>
                 
 
 
 
-<h2 id="create-a-free-github-account">Create a free GitHub account</h2>
+<p><date>Friday, June 24, 2016</date></p>
 
-<p>GitHub is a service for storing your code in the cloud. It&rsquo;s wonderful for collaboration.</p>
+<h2 id="topics">Topics</h2>
 
-<p><a href="https://github.com">Sign up for GitHub</a> using the same email address you used when creating your SSH key and your Git configuration.</p>
+<h3 id="resolve-https-github-com-angular-ui-ui-router-wiki-resolve"><a href="https://github.com/angular-ui/ui-router/wiki#resolve">Resolve</a></h3>
 
-<p><img src="http://davestrus.com/images/github-01-signup.png" alt="Sign up for GitHub with your email address" /></p>
+<ul>
+<li>Use resolve to provide your controller with content or data that is custom to the state.</li>
+<li>Promises will be resolved and converted to a value <em>before</em> the controller is instantiated.</li>
+<li><code>$stateChangeError</code> - fired when an error occurs during the transition to a state</li>
+<li>Properties of the resolve object can be injected into the controller for the state.</li>
+</ul>
 
-<p>On the next screen, you&rsquo;ll see information about GitHub&rsquo;s free and paid plans. To finish creating a free account, just hit the green &ldquo;Finish sign up&rdquo; button.</p>
-
-<p><img src="http://davestrus.com/images/github-02-free.png" alt="Hit the green &quot;Finish sign up&quot; button." /></p>
-
-<h2 id="add-your-public-key-to-your-github-account">Add your public key to your GitHub account</h2>
-
-<p>To send and receive code between your laptop and GitHub securely, you&rsquo;ll need to add your public SSH key to your GitHub account. <strong>Never copy your private key to another machine unless you are absolutely sure what you&rsquo;re doing.</strong></p>
-
-<p>Copy the contents of your public key to the clipboard with the following command:</p>
-
-<pre><code class="language-zsh">cat ~/.ssh/id_rsa.pub | pbcopy
+<pre><code class="language-js">$stateProvider.state('example', {
+  url: '/example',
+  controller: 'ExampleController',
+  resolve: {
+    user: function(authService) {
+      return authService.auth.$requireSignIn();
+    }
+  }
+});
 </code></pre>
 
-<blockquote>
-<p>The <code>cat</code> command prints the contents of a text file to the screen—or more accurately, to STDOUT. The <code>pbcopy</code> command—which is not a standard UNIX utility, but is included with OS X—copies text to the clipboard. The pipe <code>|</code> takes the output from the command on the left and passes it as an argument to the command on the right.</p>
-</blockquote>
+<h3 id="custom-directives-https-docs-angularjs-org-guide-directive"><a href="https://docs.angularjs.org/guide/directive">Custom Directives</a></h3>
 
-<p>Now go to GitHub settings to add your public key to your account.</p>
+<ul>
+<li>Angular directives are markers that tell AngularJS to attach specified behavior to a DOM element.</li>
+<li>Directives can be used in the DOM as an Element, Attribute, Class, or Comment.</li>
+<li>Use isolate scope to prevent the directive from inheriting from parent scope.</li>
+<li>Directive names are <a href="http://en.wikipedia.org/wiki/CamelCase">camelCase</a> in Javascript and <a href="http://en.wikipedia.org/wiki/Letter_case#Computers">dash-delimited</a> in HTML.</li>
+</ul>
 
-<p><img src="http://davestrus.com/images/github-03-settings.png" alt="Click the settings icon in the upper-right of your GitHub page" /></p>
+<p>JavaScript</p>
 
-<p>Choose &ldquo;SSH Keys&rdquo; from the left menu, then click &ldquo;Add SSH key&rdquo; on the right.</p>
-
-<p><img src="http://davestrus.com/images/github-05-add-key.png" alt="Click the button to add an SSH key to your account" /></p>
-
-<p>Give your SSH Key a name (something to identify the machine on which the key was generated, such as &ldquo;MacBook&rdquo;), and then paste in the contents that you copied from Atom.</p>
-
-<p><img src="http://davestrus.com/images/github-06-key-details.png" alt="Paste in the contents of your public key" /></p>
-
-<h2 id="test-your-ssh-key-with-your-github-account">Test your SSH key with your GitHub account</h2>
-
-<p>Return to Terminal and type the following command:</p>
-
-<pre><code class="language-zsh">ssh -T git@github.com
+<pre><code class="language-js">app.directive('myDirective', function() {
+  return {
+    restrict: 'E',
+    scope: {},
+    templateUrl: 'app/example.html'
+  }
+});
 </code></pre>
 
-<p>If all is well, you should see a message like this:</p>
+<p>HTML</p>
 
-<pre><code class="language-shell">You've successfully authenticated, but GitHub does not provide shell access.
+<pre><code class="language-html">&lt;my-directive&gt;&lt;/my-directive&gt;
 </code></pre>
 
-<p>If you see that message, you&rsquo;re in good shape!</p>
+<h3 id="more-firebase-authentication">More Firebase Authentication</h3>
+
+<ul>
+<li><code>$getAuth()</code> - synchronously retrieves the current authentication state</li>
+<li><code>$requireSignIn()</code> - returns the user if authenticated, <code>AUTH_REQUIRED</code> error if not</li>
+<li><a href="https://www.firebase.com/docs/web/libraries/angular/guide/user-auth.html#section-routers">Authenticating with Routers</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<p>Fork the <a href="https://github.com/xternbootcamp16/meganote">Meganote Repo</a> to your personal GitHub.  Refactor it according to <a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">John Papa&rsquo;s Angular Style Guide</a> and submit a pull request on the original repo when you are done.</p>
+
+<h3 id="criteria">Criteria</h3>
+
+<ul>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#single-responsibility">Singular Responsibility</a></li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#iife">IIFE</a></li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#bindable-members-up-top">Bindable members up top</a></li>
+<li><a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#controlleras-with-vm">controllerAs with vm</a></li>
+<li>Use an Angular <code>.constant</code> to provide the value of the URL in the requests to the API</li>
+</ul>
+
+<h3 id="mega-bonus-credit">Mega Bonus Credit</h3>
+
+<p>Refactor the notes service as a factory</p>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<p>Refactor the notes-form as a directive instead of child state</p>
+
+<h2 id="project">Project</h2>
+
+<p>Mutant Office Hours: <a href="https://github.com/xternbootcamp16/mutant-office-hours/tree/37c3e7df30ff50e4d9d0805ffd9a6136694e0436">Source</a></p>
 
 
       
@@ -670,8 +712,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-mac/ssh"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-mac/mongodb" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week4/day18"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week4/day19" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
