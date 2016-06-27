@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week5s on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/week5/</link>
+    <description>Recent content in Week5s on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jun 2016 16:15:26 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/week5/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular / Node: Mutant Office Hours</title>
+      <link>http://replace-this-with-your-hugo-site.com/week5/</link>
+      <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week5/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-5&#34;&gt;Week 5&lt;/h3&gt;
+
+&lt;h1 id=&#34;angular-and-node-mutant-office-hours&#34;&gt;Angular and Node: Mutant Office Hours&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 20: Mailgun and Firebase Security</title>
+      <link>http://replace-this-with-your-hugo-site.com/week5/day20/</link>
+      <pubDate>Mon, 27 Jun 2016 16:25:11 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week5/day20/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 27, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;github-pull-requests&#34;&gt;Github Pull Requests&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A request to merge modified code into an existing repository&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/using-pull-requests/&#34;&gt;GitHub Help: Using pull requests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/commenting-on-differences-between-files/&#34;&gt;GitHub Help: Commenting on differences between files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mailgun&#34;&gt;Mailgun&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/mailgun-js&#34;&gt;mailgun-js&lt;/a&gt; - Simple Node.js helper module for Mailgun API&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://documentation.mailgun.com/quickstart.html&#34;&gt;Quickstart Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Node mailgun setup&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var mailgun = require(&#39;mailgun-js&#39;);
+var mailgunClient = mailgun({ apiKey: MY_API_KEY, domain: MY_DOMAIN });
+
+var emailData = {
+  from: &#39;Example User &amp;lt;user@example.com&amp;gt;&#39;,
+  to: &#39;recipient@example.com&#39;,
+  subject: &#39;Example Email&#39;,
+  text: &#39;This is an email for example purposes&#39;  
+};
+
+mailgunClient.messages().send(emailData, function(error, body) {
+  console.log(body);
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;firebase-security&#34;&gt;Firebase Security&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rules are defined in JSON&lt;/li&gt;
+&lt;li&gt;Can define rules in three flavors:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.read&lt;/code&gt; - describes if and when data can be read&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.write&lt;/code&gt; - describes if and when data can be written&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.validate&lt;/code&gt; - defines correctly formatted values for the data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firebase.com/docs/security/guide/securing-data.html#section-cascade&#34;&gt;Security rules cascade&lt;/a&gt; - child rules can only grant additional privileges, not revoke a read or write privilege.&lt;/li&gt;
+&lt;li&gt;Firebase console has a simulator for testing the security rules that are written&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firebase.com/docs/security/quickstart.html&#34;&gt;Security Quickstart Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Continue refactor of meganote based on peer feedback on your pull request&lt;/p&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/63a93fa014208d11c80fec3f785672c8d2809f43&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mutant Office Hours Server:
+&lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours-server/tree/3526b32a5e949b75aaa575d66bbc212e2f71d7cc&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 12: Update &amp; Delete</title>
+    <title>Day 20: Mailgun and Firebase Security</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week3/day12/">
+  <body class="" data-url="/week5/day20/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -414,7 +414,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/week3/">
+      <li class="dd-item  " data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -446,7 +446,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week3/day12/">
+            <li class="dd-item " data-nav-id="/week3/day12/">
               <a href="/week3/day12/">
                 <span>Day 12: Update &amp; Delete     </i></span>
               </a>
@@ -540,7 +540,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week5/">
+      <li class="dd-item  parent" data-nav-id="/week5/">
         <a href="/week5/">
           <span>
             
@@ -556,7 +556,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week5/day20/">
+            <li class="dd-item active" data-nav-id="/week5/day20/">
               <a href="/week5/day20/">
                 <span>Day 20: Mailgun and Firebase Security     </i></span>
               </a>
@@ -607,17 +607,17 @@
                   
                 
                   
-                    
-                    
-                <a href="/week3/" itemprop="url"><span itemprop="title">Angular: Meganote</span></a> <i class="fa fa-angle-right"></i>
-                    
-                  
                 
                   
                 
                   
+                    
+                    
+                <a href="/week5/" itemprop="url"><span itemprop="title">Angular / Node: Mutant Office Hours</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
                 
-                <span itemprop="title"> Day 12: Update &amp; Delete</span>
+                <span itemprop="title"> Day 20: Mailgun and Firebase Security</span>
               </div>
               
                   <div class="progress">
@@ -626,9 +626,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#topics">Topics</a></li>
-<li><a href="#projects">Projects</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#github-pull-requests">Github Pull Requests</a></li>
+<li><a href="#mailgun">Mailgun</a></li>
+<li><a href="#firebase-security">Firebase Security</a></li>
+</ul></li>
 <li><a href="#homework">Homework</a></li>
+<li><a href="#projects">Projects</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -641,35 +646,73 @@
             
     	        <div id="body-inner">
                 
-                <h1>Day 12: Update &amp; Delete</h1>
+                <h1>Day 20: Mailgun and Firebase Security</h1>
                 
 
 
 
-<p><date>Wednesday, June 15, 2016</date></p>
-
-<blockquote>
-<p>Today, Chris Vannoy from <a href="https://www.theironyard.com/">The Iron Yard</a> dropped by to talking about finding a job. He shared insights into hiring processes in a different industries, interview tips, r&eacute;sum&eacute;s, cover letters, LinkedIn, MeetUp groups, and more. You can reach Chris at chris@chrisvannoy.com.</p>
-</blockquote>
+<p><date>Monday, June 27, 2016</date></p>
 
 <h2 id="topics">Topics</h2>
 
-<p>Today we implemented updating and deleting notes from the Meganote API. We used <code>$http</code> in our own service and bound objects from our controller to a view.</p>
+<h3 id="github-pull-requests">Github Pull Requests</h3>
 
-<h2 id="projects">Projects</h2>
+<ul>
+<li>A request to merge modified code into an existing repository</li>
+<li><a href="https://help.github.com/articles/using-pull-requests/">GitHub Help: Using pull requests</a></li>
+<li><a href="https://help.github.com/articles/commenting-on-differences-between-files/">GitHub Help: Commenting on differences between files</a></li>
+</ul>
 
-<p>Meganote, now with updating and deleting: <a href="https://github.com/xternbootcamp16/meganote/tree/3422d653cacfb02be956b99610bb4af87be6bfa8">source</a> | <a href="http://bootcamp16.getfretless.com/meganote/#/notes/">live</a></p>
+<h3 id="mailgun">Mailgun</h3>
+
+<ul>
+<li><a href="https://www.npmjs.com/package/mailgun-js">mailgun-js</a> - Simple Node.js helper module for Mailgun API</li>
+<li><a href="https://documentation.mailgun.com/quickstart.html">Quickstart Guide</a></li>
+</ul>
+
+<p>Node mailgun setup</p>
+
+<pre><code class="language-js">var mailgun = require('mailgun-js');
+var mailgunClient = mailgun({ apiKey: MY_API_KEY, domain: MY_DOMAIN });
+
+var emailData = {
+  from: 'Example User &lt;user@example.com&gt;',
+  to: 'recipient@example.com',
+  subject: 'Example Email',
+  text: 'This is an email for example purposes'  
+};
+
+mailgunClient.messages().send(emailData, function(error, body) {
+  console.log(body);
+});
+</code></pre>
+
+<h3 id="firebase-security">Firebase Security</h3>
+
+<ul>
+<li>Rules are defined in JSON</li>
+<li>Can define rules in three flavors:
+
+<ul>
+<li><code>.read</code> - describes if and when data can be read</li>
+<li><code>.write</code> - describes if and when data can be written</li>
+<li><code>.validate</code> - defines correctly formatted values for the data</li>
+</ul></li>
+<li><a href="https://www.firebase.com/docs/security/guide/securing-data.html#section-cascade">Security rules cascade</a> - child rules can only grant additional privileges, not revoke a read or write privilege.</li>
+<li>Firebase console has a simulator for testing the security rules that are written</li>
+<li><a href="https://www.firebase.com/docs/security/quickstart.html">Security Quickstart Guide</a></li>
+</ul>
 
 <h2 id="homework">Homework</h2>
 
-<ul>
-<li>Display a success message when an API operation succeeds.</li>
-<li>Display an error message when an API operation fails.</li>
-</ul>
+<p>Continue refactor of meganote based on peer feedback on your pull request</p>
 
-<div class="notices tip" ><p><a href="http://sachinchoolur.github.io/angular-flash/">Angular-flash</a> is already included via <code>bower.json</code>. Try using it!</p>
-</div>
+<h2 id="projects">Projects</h2>
 
+<p>Mutant Office Hours: <a href="https://github.com/xternbootcamp16/mutant-office-hours/tree/63a93fa014208d11c80fec3f785672c8d2809f43">Source</a></p>
+
+<p>Mutant Office Hours Server:
+<a href="https://github.com/xternbootcamp16/mutant-office-hours-server/tree/3526b32a5e949b75aaa575d66bbc212e2f71d7cc">Source</a></p>
 
 
       
@@ -677,8 +720,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/week3/day11"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week3/day13" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week5"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week5/day20" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

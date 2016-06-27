@@ -6,8 +6,22 @@
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jun 2016 16:15:26 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jun 2016 16:15:26 -0400</lastBuildDate>
     <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular / Node: Mutant Office Hours</title>
+      <link>http://replace-this-with-your-hugo-site.com/week5/</link>
+      <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week5/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-5&#34;&gt;Week 5&lt;/h3&gt;
+
+&lt;h1 id=&#34;angular-and-node-mutant-office-hours&#34;&gt;Angular and Node: Mutant Office Hours&lt;/h1&gt;
+</description>
+    </item>
     
     <item>
       <title>Angular: Mutant Office Hours</title>
@@ -659,87 +673,6 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and a desktop app for Mac.&lt;/p&gt;
 &lt;/div&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>Day 16: Firebase and Twilio</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day16/</link>
-      <pubDate>Tue, 21 Jun 2016 16:10:52 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day16/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Tuesday, June 21, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;firebase-3-0-https-firebase-google-com-docs-angularfire-2-0-https-www-firebase-com-docs-web-libraries-angular-api-html&#34;&gt;&lt;a href=&#34;https://firebase.google.com/docs/&#34;&gt;Firebase 3.0&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.firebase.com/docs/web/libraries/angular/api.html&#34;&gt;AngularFire 2.0&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$firebaseArray&lt;/code&gt; for creating an array-like object that syncs with Firebase&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$add&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$remove&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$save&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Firebase 3.0 app initialization for front-end&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var config = {
-  apiKey: &#39;&amp;lt;your-api-key&amp;gt;&#39;,
-  authDomain: &#39;&amp;lt;your-auth-domain&amp;gt;&#39;,
-  databaseURL: &#39;&amp;lt;your-database-url&amp;gt;&#39;,
-  storageBucket: &#39;&amp;lt;your-storage-bucket&amp;gt;&#39;
-};
-firebase.initializeApp(config);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Firebase 3.0 app initialization for Node.js&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var firebase = require(&amp;quot;firebase&amp;quot;);
-firebase.initializeApp({
-  serviceAccount: &amp;quot;path/to/serviceAccountCredentials.json&amp;quot;,
-  databaseURL: &amp;quot;https://databaseName.firebaseio.com&amp;quot;
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;dotenv-https-github-com-motdotla-dotenv&#34;&gt;&lt;a href=&#34;https://github.com/motdotla/dotenv&#34;&gt;dotenv&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Loads environment variables from &lt;code&gt;.env&lt;/code&gt; for nodejs projects&lt;/li&gt;
-&lt;li&gt;Should I commit my &lt;code&gt;.env&lt;/code&gt; file?  &lt;a href=&#34;https://github.com/motdotla/dotenv#should-i-commit-my-env-file&#34;&gt;Answer here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;twilio&#34;&gt;Twilio&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Cloud-based communication for text and phone calls&lt;/li&gt;
-&lt;li&gt;Supports multiple server-side SDKs, including Java, C#, Node, Ruby, and Python&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Node setup&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var twilio = require(&#39;twilio&#39;);
-var client = new twilio.RestClient(accountSid, authToken);
-
-client.messages.create({
-    body: &#39;Hello from Node&#39;,
-    to: &#39;+12345678901&#39;,  // Text this number
-    from: &#39;+12345678901&#39; // From a valid Twilio number
-}, function(err, message) {
-    if(err) {
-        console.error(err.message);
-    }
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Mutant Office Hours (Angular):
-&lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/330a7770d407cfd22d6e694db439e168d6d230d0&#34;&gt;source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mutant Office Hours Server (Node): &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours-server/tree/fa25dc0653b9dba7f94836d88926404f4d4bcbce&#34;&gt;source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
