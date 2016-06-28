@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Text Editors</title>
+    <title>Day 21: Directives and Angular Form Validation</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-mac/text-editors/">
+  <body class="" data-url="/week5/day21/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -122,7 +122,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-mac/">
+      <li class="dd-item  " data-nav-id="/setup-mac/">
         <a href="/setup-mac/">
           <span>
             
@@ -170,7 +170,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-mac/text-editors/">
+            <li class="dd-item " data-nav-id="/setup-mac/text-editors/">
               <a href="/setup-mac/text-editors/">
                 <span>Text Editors     </i></span>
               </a>
@@ -540,7 +540,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week5/">
+      <li class="dd-item  parent" data-nav-id="/week5/">
         <a href="/week5/">
           <span>
             
@@ -564,7 +564,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week5/day21/">
+            <li class="dd-item active" data-nav-id="/week5/day21/">
               <a href="/week5/day21/">
                 <span>Day 21: Directives and Angular Form Validation     </i></span>
               </a>
@@ -607,25 +607,25 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-mac/" itemprop="url"><span itemprop="title">Setup for Mac</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week5/" itemprop="url"><span itemprop="title">Angular / Node: Mutant Office Hours</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Text Editors</span>
+                <span itemprop="title"> Day 21: Directives and Angular Form Validation</span>
               </div>
               
                   <div class="progress">
@@ -634,8 +634,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#download-atom-https-atom-io"><a href="https://atom.io/">Download Atom</a></a></li>
-<li><a href="#recommended-packages-for-atom">Recommended Packages for Atom</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#directives">Directives</a></li>
+<li><a href="#angular-form-validation">Angular Form Validation</a></li>
+<li><a href="#foundation-callouts-http-foundation-zurb-com-sites-docs-callout-html"><a href="http://foundation.zurb.com/sites/docs/callout.html">Foundation Callouts</a></a></li>
+</ul></li>
+<li><a href="#homework">Homework</a></li>
+<li><a href="#project">Project</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -648,39 +654,76 @@
             
     	        <div id="body-inner">
                 
-                <h1>Text Editors</h1>
+                <h1>Day 21: Directives and Angular Form Validation</h1>
                 
 
 
 
-<p><strong><a href="https://atom.io/">Atom</a></strong> is free text editor that&rsquo;s especially well-suited for editing code. It is similar to Sublime Text in many respects, but it&rsquo;s completely free and open source, and it&rsquo;s rapidly improving.</p>
+<p><date>Tuesday, June 28, 2016</date></p>
 
-<h2 id="download-atom-https-atom-io"><a href="https://atom.io/">Download Atom</a></h2>
+<h2 id="topics">Topics</h2>
 
-<p>Microsoft&rsquo;s <strong><a href="http://code.visualstudio.com/">Visual Studio Code</a></strong> is also open source and rapidly improving. If you&rsquo;re a fan of Microsoft&rsquo;s IntelliSense and the like, you might prefer VS Code.</p>
-
-<p>If you&rsquo;re used to an IDE, <strong><a href="http://www.jetbrains.com/webstorm/">WebStorm</a></strong> might be more up your alley. Be warned: It&rsquo;s subscription-based, and is $12.90/month, or $129.00 the first year.</p>
-
-<p>I will be using Atom in class, so I can show you themes and plugins that I like if you give it a shot. I haven&rsquo;t spent enough time with VS Code to know many tricks, and I&rsquo;ve never used WebStorm.</p>
-
-<p>Whichever editor you use, you&rsquo;ll use it enough that I recommend keeping it in the Dock as well.</p>
-
-<h2 id="recommended-packages-for-atom">Recommended Packages for Atom</h2>
-
-<p>Atom is highly extensible, and there are a few packages that I highly recommend.</p>
+<h3 id="directives">Directives</h3>
 
 <ul>
-<li><a href="https://atom.io/packages/linter-eslint"><code>linter-eslint</code></a> checks for JavaScript errors and style violations on the fly.</li>
-<li><a href="https://atom.io/packages/language-babel"><code>language-babel</code></a> adds support for the latest JavaScript features.</li>
-<li><a href="https://atom.io/packages/react"><code>react</code></a> adds support for React&rsquo;s JSX language.</li>
-<li><a href="https://atom.io/packages/file-icons"><code>file-icons</code></a> shows icons in the sidebar that correspond to the file type.</li>
-<li><a href="https://atom.io/packages/Sublime-Style-Column-Selection"><code>Sublime-Style-Column-Selection</code></a> is really handy when you&rsquo;ve pasted something in with a bunch of junk at the beginning of each line.</li>
-<li><a href="https://atom.io/packages/autocomplete-plus"><code>autocomplete-plus</code></a> and <a href="https://atom.io/packages/atom-ternjs"><code>atom-ternjs</code></a> combine to do pretty nice autocompletion for JavaScript. TernJS even provides inline documentation for functions.</li>
+<li><a href="https://scotch.io/tutorials/angularjs-form-validation">Creating Custom Directives</a></li>
+<li>Binding to isolate scope
+
+<ul>
+<li><code>=</code> - two-way data binding</li>
+<li><code>&amp;</code> - one-way data binding</li>
+<li><code>@</code> - for binding of strings</li>
+</ul></li>
+<li>Use <code>bindToController</code> if using <code>controllerAs</code> syntax in the directive</li>
+<li><a href="https://blog.umur.io/2013/07/02/angularjs-directives-using-isolated-scope-with-attributes/">AngularJS Directives, Using Isolated Scope with Attributes</a></li>
 </ul>
 
-<div class="notices note" ><p>Since I&rsquo;m always asked, I use the <code>Atom Dark</code> UI theme, and the <code>Kobalt</code> syntax theme (with some personal customizations).</p>
-</div>
+<p>Data binding example</p>
 
+<pre><code class="language-js">angular
+  .module('myApp')
+  .directive('myDirective', myDirective);
+
+function myDirective() {
+  return {
+    templateUrl: 'myTemplate.html',
+    restrict: 'E',
+    scope: {
+      example: '='
+    }
+  };
+}
+</code></pre>
+
+<pre><code class="language-html">&lt;my-directive example=&quot;vm.exampleValue&quot;&gt;&lt;/my-directive&gt;
+</code></pre>
+
+<h3 id="angular-form-validation">Angular Form Validation</h3>
+
+<ul>
+<li><a href="https://scotch.io/tutorials/angularjs-form-validation">AngularJS Form Validation</a> - Excellent tutorial by scotch.io</li>
+<li>Angular form Properties
+
+<ul>
+<li><code>$valid</code> - <em>Boolean</em>  - Tells if an item is currently valid</li>
+<li><code>$invalid</code> - <em>Boolean</em> - Opposite of <code>$valid</code></li>
+<li><code>$pristine</code> - <em>Boolean</em> - True if the item (form or input) has not been used yet</li>
+<li><code>$dirty</code> - <em>Boolean</em> - True if the item has been used</li>
+</ul></li>
+<li><a href="https://docs.angularjs.org/guide/forms">Angular Documentation for Forms</a></li>
+</ul>
+
+<h3 id="foundation-callouts-http-foundation-zurb-com-sites-docs-callout-html"><a href="http://foundation.zurb.com/sites/docs/callout.html">Foundation Callouts</a></h3>
+
+<p>Easy Foundation classes useful for error rendering</p>
+
+<h2 id="homework">Homework</h2>
+
+<p>We added callouts to display Firebase server errors and &ldquo;email required&rdquo; errors on the login form.  Add additional callouts for validating email format and password presence.</p>
+
+<h2 id="project">Project</h2>
+
+<p>Mutant Office Hours: <a href="https://github.com/xternbootcamp16/mutant-office-hours/tree/fa8a6ca1046213b805b4518ce10dd05a879bb24b">Source</a></p>
 
 
       
@@ -688,8 +731,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-mac/nodejs"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-mac/ssh" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week5/day20"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week5/day21" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

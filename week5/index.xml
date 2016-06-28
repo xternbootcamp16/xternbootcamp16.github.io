@@ -96,5 +96,81 @@ mailgunClient.messages().send(emailData, function(error, body) {
 </description>
     </item>
     
+    <item>
+      <title>Day 21: Directives and Angular Form Validation</title>
+      <link>http://replace-this-with-your-hugo-site.com/week5/day21/</link>
+      <pubDate>Tue, 28 Jun 2016 16:32:11 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week5/day21/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 28, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;directives&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/angularjs-form-validation&#34;&gt;Creating Custom Directives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Binding to isolate scope
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;=&lt;/code&gt; - two-way data binding&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; - one-way data binding&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@&lt;/code&gt; - for binding of strings&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;bindToController&lt;/code&gt; if using &lt;code&gt;controllerAs&lt;/code&gt; syntax in the directive&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.umur.io/2013/07/02/angularjs-directives-using-isolated-scope-with-attributes/&#34;&gt;AngularJS Directives, Using Isolated Scope with Attributes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Data binding example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;angular
+  .module(&#39;myApp&#39;)
+  .directive(&#39;myDirective&#39;, myDirective);
+
+function myDirective() {
+  return {
+    templateUrl: &#39;myTemplate.html&#39;,
+    restrict: &#39;E&#39;,
+    scope: {
+      example: &#39;=&#39;
+    }
+  };
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;my-directive example=&amp;quot;vm.exampleValue&amp;quot;&amp;gt;&amp;lt;/my-directive&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;angular-form-validation&#34;&gt;Angular Form Validation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/angularjs-form-validation&#34;&gt;AngularJS Form Validation&lt;/a&gt; - Excellent tutorial by scotch.io&lt;/li&gt;
+&lt;li&gt;Angular form Properties
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$valid&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt;  - Tells if an item is currently valid&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$invalid&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt; - Opposite of &lt;code&gt;$valid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$pristine&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt; - True if the item (form or input) has not been used yet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$dirty&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt; - True if the item has been used&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/forms&#34;&gt;Angular Documentation for Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation-callouts-http-foundation-zurb-com-sites-docs-callout-html&#34;&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/callout.html&#34;&gt;Foundation Callouts&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Easy Foundation classes useful for error rendering&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;We added callouts to display Firebase server errors and &amp;ldquo;email required&amp;rdquo; errors on the login form.  Add additional callouts for validating email format and password presence.&lt;/p&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/fa8a6ca1046213b805b4518ce10dd05a879bb24b&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

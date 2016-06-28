@@ -134,6 +134,79 @@
     </item>
     
     <item>
+      <title>Day 20: Mailgun and Firebase Security</title>
+      <link>http://replace-this-with-your-hugo-site.com/week5/day20/</link>
+      <pubDate>Mon, 27 Jun 2016 16:25:11 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week5/day20/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 27, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;github-pull-requests&#34;&gt;Github Pull Requests&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A request to merge modified code into an existing repository&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/using-pull-requests/&#34;&gt;GitHub Help: Using pull requests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/commenting-on-differences-between-files/&#34;&gt;GitHub Help: Commenting on differences between files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mailgun&#34;&gt;Mailgun&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/mailgun-js&#34;&gt;mailgun-js&lt;/a&gt; - Simple Node.js helper module for Mailgun API&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://documentation.mailgun.com/quickstart.html&#34;&gt;Quickstart Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Node mailgun setup&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var mailgun = require(&#39;mailgun-js&#39;);
+var mailgunClient = mailgun({ apiKey: MY_API_KEY, domain: MY_DOMAIN });
+
+var emailData = {
+  from: &#39;Example User &amp;lt;user@example.com&amp;gt;&#39;,
+  to: &#39;recipient@example.com&#39;,
+  subject: &#39;Example Email&#39;,
+  text: &#39;This is an email for example purposes&#39;  
+};
+
+mailgunClient.messages().send(emailData, function(error, body) {
+  console.log(body);
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;firebase-security&#34;&gt;Firebase Security&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rules are defined in JSON&lt;/li&gt;
+&lt;li&gt;Can define rules in three flavors:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.read&lt;/code&gt; - describes if and when data can be read&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.write&lt;/code&gt; - describes if and when data can be written&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.validate&lt;/code&gt; - defines correctly formatted values for the data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firebase.com/docs/security/guide/securing-data.html#section-cascade&#34;&gt;Security rules cascade&lt;/a&gt; - child rules can only grant additional privileges, not revoke a read or write privilege.&lt;/li&gt;
+&lt;li&gt;Firebase console has a simulator for testing the security rules that are written&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firebase.com/docs/security/quickstart.html&#34;&gt;Security Quickstart Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Continue refactor of meganote based on peer feedback on your pull request&lt;/p&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/63a93fa014208d11c80fec3f785672c8d2809f43&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mutant Office Hours Server:
+&lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours-server/tree/3526b32a5e949b75aaa575d66bbc212e2f71d7cc&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 15: Mutant Office Hours</title>
       <link>http://replace-this-with-your-hugo-site.com/week4/day15/</link>
       <pubDate>Mon, 20 Jun 2016 13:16:56 -0400</pubDate>
@@ -644,33 +717,6 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;/ul&gt;
 
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and more.&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Google Chrome</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</link>
-      <pubDate>Fri, 10 Jun 2016 22:39:00 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</guid>
-      <description>
-
-&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
-
-&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
-
-&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and a desktop app for Mac.&lt;/p&gt;
 &lt;/div&gt;
 
 </description>
