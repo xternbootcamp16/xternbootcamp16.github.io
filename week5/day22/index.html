@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>GitHub</title>
+    <title>Days 22-24: Wrapping up Mutant Office Hours</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/github/">
+  <body class="" data-url="/week5/day22/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -273,7 +273,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/github/">
+            <li class="dd-item " data-nav-id="/setup-win/github/">
               <a href="/setup-win/github/">
                 <span>GitHub     </i></span>
               </a>
@@ -540,7 +540,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week5/">
+      <li class="dd-item  parent" data-nav-id="/week5/">
         <a href="/week5/">
           <span>
             
@@ -572,7 +572,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week5/day22/">
+            <li class="dd-item active" data-nav-id="/week5/day22/">
               <a href="/week5/day22/">
                 <span>Days 22-24: Wrapping up Mutant Office Hours     </i></span>
               </a>
@@ -617,23 +617,23 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week5/" itemprop="url"><span itemprop="title">Angular / Node: Mutant Office Hours</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> GitHub</span>
+                <span itemprop="title"> Days 22-24: Wrapping up Mutant Office Hours</span>
               </div>
               
                   <div class="progress">
@@ -642,9 +642,15 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create-a-free-github-account">Create a free GitHub account</a></li>
-<li><a href="#add-your-public-key-to-your-github-account">Add your public key to your GitHub account</a></li>
-<li><a href="#test-your-ssh-key-with-your-github-account">Test your SSH key with your GitHub account</a></li>
+<li><a href="#group-project">Group Project</a></li>
+<li><a href="#project-criteria">Project Criteria</a>
+<ul>
+<li>
+<ul>
+<li><a href="#feature-suggestions">Feature Suggestions:</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -657,72 +663,70 @@
             
     	        <div id="body-inner">
                 
-                <h1>GitHub</h1>
+                <h1>Days 22-24: Wrapping up Mutant Office Hours</h1>
                 
 
 
 
-<h2 id="create-a-free-github-account">Create a free GitHub account</h2>
+<p><date>Tuesday, June 28, 2016</date></p>
 
-<p>GitHub is a service for storing your code in the cloud. It&rsquo;s wonderful for collaboration.</p>
+<h2 id="group-project">Group Project</h2>
 
-<p><a href="https://github.com">Sign up for GitHub</a> using the same email address you used when creating your SSH key and your Git configuration.</p>
+<p>Now that we have completed the basic functionality of our Mutant Office Hours application, spend the next few days refining it and adding functionality.  You can work individually, or in groups of up to three people.</p>
 
-<p><img src="http://davestrus.com/images/github-01-signup.png" alt="Sign up for GitHub with your email address" /></p>
+<p>If working in a group, you will all need to be able to push to the same repo.  There are two ways to do this:</p>
 
-<p>On the next screen, you&rsquo;ll see information about GitHub&rsquo;s free and paid plans. To finish creating a free account, just hit the green &ldquo;Finish sign up&rdquo; button.</p>
+<ul>
+<li><a href="https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/">Invite collaborators to a personal repository</a> - easiest when the number of collaborators is small</li>
+<li><a href="https://help.github.com/articles/creating-a-new-organization-account/">Create an organization</a> - suitable for large projects with multiple owners, administrators, and collaborators</li>
+</ul>
 
-<p><img src="http://davestrus.com/images/github-02-free.png" alt="Hit the green &quot;Finish sign up&quot; button." /></p>
+<p>As you begin work on a new feature of your application, always create a branch and work on that branch, not on <code>master</code>. A new branch can be created by:</p>
 
-<h2 id="add-your-public-key-to-your-github-account">Add your public key to your GitHub account</h2>
-
-<p>To send and receive code between your laptop and GitHub securely, you&rsquo;ll need to add your <em>public</em> SSH key to your GitHub account. <strong>Never copy your <em>private</em> key to another machine unless you are absolutely sure what you&rsquo;re doing.</strong></p>
-
-<p>Copy your public key to the clipboard with the following command:</p>
-
-<pre><code class="language-zsh">cat .ssh/id_rsa.pub | pbcopy
+<pre><code class="language-sh">git checkout -b branch-name
 </code></pre>
 
-<blockquote>
-<p>The <code>cat</code> command prints the contents of a text file to the screen—or more accurately, to STDOUT. The <code>pbcopy</code> command—which is not a standard UNIX utility, but is included with Babun—copies text to the clipboard. The pipe <code>|</code> takes the output from the command on the left and passes it as an argument to the command on the right.</p>
-</blockquote>
+<p>The basic steps of your workflow should be:</p>
 
-<p>Now go to GitHub settings to add your public key to your account.</p>
+<ol>
+<li>Checkout a branch</li>
+<li>Add commits as you work on the feature</li>
+<li>Create a pull request</li>
+<li>Discuss and review the code with your team</li>
+<li>Merge the PR (pull request) into <code>master</code></li>
+</ol>
 
-<p><img src="http://davestrus.com/images/github-03-settings.png" alt="Click the settings icon in the upper-right of your GitHub page" /></p>
+<p>Here is a great link from the Github team that helps with <a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow</a></p>
 
-<p>Choose &ldquo;SSH Keys&rdquo; from the left menu, then click &ldquo;Add SSH key&rdquo; on the right.</p>
+<h2 id="project-criteria">Project Criteria</h2>
 
-<p><img src="http://davestrus.com/images/github-05-add-key.png" alt="Click the button to add an SSH key to your account" /></p>
+<p>You can modify and extend your project in any way you see fit, as long as you are using primarily AngularJS to do it.  Projects will be presented on Tuesday, July 5th, so make sure your project is in a fully functional state at that time.</p>
 
-<p>Give your SSH Key a name (something to identify the machine on which the key was generated, such as &ldquo;Windows 8.1 laptop&rdquo;), and then paste in the contents that you copied from Atom.</p>
+<h4 id="feature-suggestions">Feature Suggestions:</h4>
 
-<p><img src="http://davestrus.com/images/github-06-key-details.png" alt="Paste in the contents of your public key" /></p>
+<ol>
+<li>Add custom styling</li>
+<li>Add display name and other information to user profile
 
-<h2 id="test-your-ssh-key-with-your-github-account">Test your SSH key with your GitHub account</h2>
+<ul>
+<li>Show the name on the main mutant list page</li>
+<li>Add sender name to the text message</li>
+<li><strong>Bonus</strong> - use gravatar to add a profile pic</li>
+</ul></li>
+<li>Make completed appointments move to an archived state</li>
+<li>Have an option for a &ldquo;view-only&rdquo; mode.  The form can still be used to add new mutants, but the action buttons and checkboxes are removed or disabled</li>
+<li>Use resolve properties to prevent a logged-in user from navigating to the &lsquo;register&rsquo; or &lsquo;login&rsquo; states</li>
+<li>Flash messaging</li>
+<li>Registration confirmation before activating a new account</li>
+<li>Add ability to reset password</li>
+<li>Add validations to the data on firebase</li>
+</ol>
 
-<p>Type the following command:</p>
+<h2 id="projects">Projects</h2>
 
-<pre><code class="language-zsh">ssh -T git@github.com
-</code></pre>
+<p>Mutant Office Hours: <a href="https://github.com/xternbootcamp16/mutant-office-hours/tree/6e9820f274bc870f8b07d87ee5cb6416a94a764e">Source</a></p>
 
-<p>If all is well, you should see a message like this:</p>
-
-<pre><code class="language-shell">You've successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
-
-<p>If you see that message, you&rsquo;re in good shape! If you instead see something like&hellip;</p>
-
-<pre><code class="language-zsh">This private key will be ignored.
-Load key &quot;/home/whoever/.ssh/id_rsa&quot;: bad permissions
-Permission denied (publickey).
-</code></pre>
-
-<p>&hellip;then you need to run the following commands to change file permissions:</p>
-
-<pre><code class="language-zsh">chmod -R 700 ~/.ssh/
-chmod 600 ~/.ssh/id_rsa
-</code></pre>
+<p>Mutant Office Hours Server: <a href="https://github.com/xternbootcamp16/mutant-office-hours-server/tree/3526b32a5e949b75aaa575d66bbc212e2f71d7cc">Source</a></p>
 
 
       
@@ -730,8 +734,8 @@ chmod 600 ~/.ssh/id_rsa
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/ssh"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/mongodb" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week5/day21"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week5/day22" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
