@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 6: More Ajax</title>
+    <title>Day 25: Review</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week2/day06/">
+  <body class="" data-url="/week6/day25/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -351,7 +351,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/week2/">
+      <li class="dd-item  " data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -375,7 +375,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week2/day06/">
+            <li class="dd-item " data-nav-id="/week2/day06/">
               <a href="/week2/day06/">
                 <span>Day 6: More Ajax     </i></span>
               </a>
@@ -587,7 +587,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week6/">
+      <li class="dd-item  parent" data-nav-id="/week6/">
         <a href="/week6/">
           <span>
             
@@ -603,7 +603,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week6/day25/">
+            <li class="dd-item active" data-nav-id="/week6/day25/">
               <a href="/week6/day25/">
                 <span>Day 25: Review     </i></span>
               </a>
@@ -652,21 +652,21 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/week2/" itemprop="url"><span itemprop="title">jQuery &amp; Ajax</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week6/" itemprop="url"><span itemprop="title">Authentication with NodeJS</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Day 6: More Ajax</span>
+                <span itemprop="title"> Day 25: Review</span>
               </div>
               
                   <div class="progress">
@@ -677,20 +677,10 @@
 <ul>
 <li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#ajax">Ajax</a></li>
-<li><a href="#cdns">CDNs</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#angularjs">AngularJS</a></li>
 </ul></li>
-<li><a href="#presentations">Presentations</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#homework">Homework</a>
-<ul>
-<li><a href="#baseline-goal">Baseline Goal</a></li>
-<li><a href="#bonus-credit">Bonus Credit</a></li>
-<li><a href="#mega-bonus-credit">Mega Bonus Credit</a></li>
-<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
-<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
-</ul></li>
+<li><a href="#homework">Homework</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -703,97 +693,64 @@
             
     	        <div id="body-inner">
                 
-                <h1>Day 6: More Ajax</h1>
+                <h1>Day 25: Review</h1>
                 
 
 
 
-<p><date>Tuesday, June 7, 2016</date></p>
+<p><date>Tuesday, July 5, 2016</date></p>
 
 <h2 id="topics">Topics</h2>
 
-<h3 id="ajax">Ajax</h3>
+<h3 id="javascript">JavaScript</h3>
 
 <ul>
-<li>Check out <a href="http://www.elated.com/articles/ajax-with-jquery-a-beginners-guide/">Ajax with jQuery: A Beginner&rsquo;s Guide</a>;</li>
-<li><a href="http://www.w3schools.com/tags/ref_httpmethods.asp">GET vs. POST</a></li>
+<li>Hoisting - Function and variable declarations are always hoisted to the top of their containing scope by the JavaScript interpreter.  Variable assignments are not hoisted.</li>
+<li><a href="https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/">Function Declarations vs Function Expressions</a> - A quick overview of hoisting with examples</li>
+<li><a href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">Scoping and Hoisting</a> - A more in-depth look at scoping and hoisting</li>
 </ul>
 
-<h3 id="cdns">CDNs</h3>
+<p>So this:</p>
 
-<ul>
-<li><a href="http://stackoverflow.com/a/2180401">Why use a CDN?</a></li>
-<li><a href="https://cdnjs.com/">CDNjs</a></li>
-<li><a href="https://cdnjs.com/libraries/jquery/2.2.4">jQuery 2.2.4 on CDNjs</a></li>
-</ul>
-
-<pre><code class="language-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-js">function foo() {
+  bar();
+  var x = 1;
+}
 </code></pre>
 
-<h2 id="presentations">Presentations</h2>
+<p>Is interpreted as:</p>
 
-<p>Presentations have been converted from their original format to play in web browsers.</p>
-
-<ul>
-<li><a target="_blank" href="/presentations/week2/06-ajax-get-requests-and-github-pages-review">Ajax - GET requests in detail, GitHub pages review</a></li>
-</ul>
-
-<h2 id="projects">Projects</h2>
-
-<ul>
-<li>jMutants: <a href="https://github.com/xternbootcamp16/jmutants-afternoon">morning</a> (with working <em>edit</em> feature) | <a href="https://github.com/xternbootcamp16/jmutants-afternoon">afternoon</a> (without edit, but with <em>mutant name</em>, _real<em>name</em>, and <em>power</em>)</li>
-</ul>
-
-<h2 id="links">Links</h2>
-
-<ul>
-<li><a href="https://api.nasa.gov/api.html#apod">Astronomy Picture of the Day</a></li>
-</ul>
-
-<pre><code class="language-js">$.get({
-  url: 'https://api.nasa.gov/planetary/apod',
-  data: {
-    API_KEY: 'DEMO_KEY',
-    date: '2016-06-07'
-  }
-  success: function(data) {
-    $(document.body).prepend('&lt;img src=&quot;' + data.hdurl + '&quot;&gt;');
-  }
-});
+<pre><code class="language-js">function foo() {
+  var x;
+  bar();
+  x = 1;
+}
 </code></pre>
 
-<div class="notices note" ><p>If you plan to do much with the NASA APIs, you&rsquo;ll need to sign up for your own API_KEY, which is free.</p>
-</div>
+<h3 id="angularjs">AngularJS</h3>
 
+<ul>
+<li><code>controllerAs</code></li>
+<li><code>resolve</code></li>
+<li>Factories</li>
+<li>Custom Directives
+
+<ul>
+<li>Default use is as attribute or element (as of Angular 1.3)</li>
+<li><code>bindToController</code> - binds isolate scope properties to controller for use with <code>controllerAs</code> syntax</li>
+</ul></li>
+<li>Style
+
+<ul>
+<li>Function declarations over function expressions</li>
+<li><code>activate()</code> functions for resolving start-up logic for a controller</li>
+<li>Bindable / Accessible members up top</li>
+</ul></li>
+</ul>
 
 <h2 id="homework">Homework</h2>
 
-<p>Try to get further with yesterday&rsquo;s homework.</p>
-
-<p>Talk to the <a href="(http://getfretless.github.io/mutant-school-docs/?javascript#get-a-specific-mutant)">Mutant School API</a>!</p>
-
-<h3 id="baseline-goal">Baseline Goal</h3>
-
-<ul>
-<li>Start a new project (or fork JSON People and work from there) that loads all Mutants from the API.</li>
-<li>When a new record is added to your app, create a new Mutant record by POSTing to the API.</li>
-</ul>
-
-<h3 id="bonus-credit">Bonus Credit</h3>
-
-<p>Add a button to delete individual mutants from the API.</p>
-
-<h3 id="mega-bonus-credit">Mega Bonus Credit</h3>
-
-<p>Update existing mutant records.</p>
-
-<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
-
-<p>Integrate the Mutant API with MegaRoster.</p>
-
-<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
-
-<p>Add <a href="https://pokeapi.co/docsv2/#pokemon">Pok&eacute;mon</a>, <a href="https://swapi.co/documentation">Star Wars characters</a>, or something else with an existing API.</p>
+<p>Continue working on refactor of Meganote.  If you need to start from a fresh copy, the repo in its current state can be cloned <a href="https://github.com/xternbootcamp16/meganote/commit/2fcc8902aefb6a202adefb55f3d70bdc445166f1">here</a></p>
 
 
       
@@ -801,8 +758,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/week2/day05"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week2/day07" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week5/day22"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week6/day25" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

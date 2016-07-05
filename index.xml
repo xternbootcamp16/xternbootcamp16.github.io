@@ -24,6 +24,20 @@
     </item>
     
     <item>
+      <title>Authentication with NodeJS</title>
+      <link>http://replace-this-with-your-hugo-site.com/week6/</link>
+      <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week6/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-6&#34;&gt;Week 6&lt;/h3&gt;
+
+&lt;h1 id=&#34;authentication-with-nodejs&#34;&gt;Authentication with NodeJS&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Angular: Mutant Office Hours</title>
       <link>http://replace-this-with-your-hugo-site.com/week4/</link>
       <pubDate>Mon, 20 Jun 2016 16:15:26 -0400</pubDate>
@@ -130,6 +144,70 @@
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Day 25: Review</title>
+      <link>http://replace-this-with-your-hugo-site.com/week6/day25/</link>
+      <pubDate>Tue, 05 Jul 2016 15:37:48 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week6/day25/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, July 5, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hoisting - Function and variable declarations are always hoisted to the top of their containing scope by the JavaScript interpreter.  Variable assignments are not hoisted.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/&#34;&gt;Function Declarations vs Function Expressions&lt;/a&gt; - A quick overview of hoisting with examples&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html&#34;&gt;Scoping and Hoisting&lt;/a&gt; - A more in-depth look at scoping and hoisting&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function foo() {
+  bar();
+  var x = 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is interpreted as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function foo() {
+  var x;
+  bar();
+  x = 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;angularjs&#34;&gt;AngularJS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;controllerAs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;resolve&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Factories&lt;/li&gt;
+&lt;li&gt;Custom Directives
+
+&lt;ul&gt;
+&lt;li&gt;Default use is as attribute or element (as of Angular 1.3)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bindToController&lt;/code&gt; - binds isolate scope properties to controller for use with &lt;code&gt;controllerAs&lt;/code&gt; syntax&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Style
+
+&lt;ul&gt;
+&lt;li&gt;Function declarations over function expressions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;activate()&lt;/code&gt; functions for resolving start-up logic for a controller&lt;/li&gt;
+&lt;li&gt;Bindable / Accessible members up top&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Continue working on refactor of Meganote.  If you need to start from a fresh copy, the repo in its current state can be cloned &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/commit/2fcc8902aefb6a202adefb55f3d70bdc445166f1&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -570,155 +648,6 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
 
 &lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else from an existing API.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 1: Introduction</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day01/</link>
-      <pubDate>Sat, 11 Jun 2016 16:29:51 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day01/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Tuesday, May 31, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
-&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
-&lt;li&gt;Anatomy of an HTML element (tags, attributes, contents)&lt;/li&gt;
-&lt;li&gt;Basic CSS selector syntax
-
-&lt;ul&gt;
-&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Basic DOM manipulation
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.innerText&lt;/code&gt;/&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Basic event handling
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;onsubmit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Anonymous functions&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.preventDefault&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Basic Form (FirstJS):  &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/&#34;&gt;Foundation&lt;/a&gt; - a front-end framework&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; - a game for practicing CSS selector syntax&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt; - another tool for practicing selector syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;homework-basic-form-firstjs&#34;&gt;Homework: Basic Form (FirstJS)&lt;/h2&gt;
-
-&lt;p&gt;Grab values from form fields and add them to a list.&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll need to employ these concepts that we used in class:
-* Target elements with &lt;code&gt;document.querySelector&lt;/code&gt;
-* Handle events
-* Prevent default event behavior from executing
-* Alter an element&amp;rsquo;s contents via &lt;code&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Display values as plain text.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Display values in separate paragraphs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Display values in an unordered list.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Display values in a &lt;em&gt;definition list&lt;/em&gt; (&lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Output something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;dl&amp;gt;
-  &amp;lt;li&amp;gt;
-    &amp;lt;dt&amp;gt;First Name&amp;lt;/dt&amp;gt;
-    &amp;lt;dd&amp;gt;Davey&amp;lt;/dd&amp;gt;
-  &amp;lt;/li&amp;gt;
-
-  &amp;lt;li&amp;gt;
-    &amp;lt;dt&amp;gt;Hair color&amp;lt;/dt&amp;gt;
-    &amp;lt;dd&amp;gt;#000000&amp;lt;/dd&amp;gt;
-  &amp;lt;/li&amp;gt;
-
-  &amp;lt;!-- etc. --&amp;gt;
-&amp;lt;/dl&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
-
-&lt;p&gt;Display the color value &lt;em&gt;in the specified color&lt;/em&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Google Chrome</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</link>
-      <pubDate>Fri, 10 Jun 2016 23:39:14 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</guid>
-      <description>
-
-&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
-
-&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
-
-&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and more.&lt;/p&gt;
-&lt;/div&gt;
-
 </description>
     </item>
     
