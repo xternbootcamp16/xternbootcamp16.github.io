@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Command Line</title>
+    <title>Day 26: Gulp</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/command-line/">
+  <body class="" data-url="/week6/day26/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -233,7 +233,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/command-line/">
+            <li class="dd-item " data-nav-id="/setup-win/command-line/">
               <a href="/setup-win/command-line/">
                 <span>Command Line     </i></span>
               </a>
@@ -587,7 +587,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week6/">
+      <li class="dd-item  parent" data-nav-id="/week6/">
         <a href="/week6/">
           <span>
             
@@ -611,7 +611,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week6/day26/">
+            <li class="dd-item active" data-nav-id="/week6/day26/">
               <a href="/week6/day26/">
                 <span>Day 26: Gulp     </i></span>
               </a>
@@ -656,25 +656,25 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week6/" itemprop="url"><span itemprop="title">Authentication with NodeJS</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Command Line</span>
+                <span itemprop="title"> Day 26: Gulp</span>
               </div>
               
                   <div class="progress">
@@ -683,7 +683,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#babun">Babun</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#gulp-http-gulpjs-com"><a href="http://gulpjs.com/">Gulp</a></a></li>
+<li><a href="#basic-setup">Basic Setup</a></li>
+<li><a href="#gulp-plugins-used-in-meganote-so-far">Gulp plugins used in Meganote (so far&hellip;)</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -696,24 +702,69 @@
             
     	        <div id="body-inner">
                 
-                <h1>Command Line</h1>
+                <h1>Day 26: Gulp</h1>
                 
 
 
 
-<p>We&rsquo;ll be using the command line a fair amount in class. I recommend installing a UNIX-style shell in Windows, as it will allow to use the same commands that I use.</p>
+<p><date>Wednesday, July 6, 2016</date></p>
 
-<h2 id="babun">Babun</h2>
+<h2 id="topics">Topics</h2>
 
-<p><a href="http://babun.github.io/">Babun</a> is a UNIX shell for Windows that includes some tools we might otherwise need to install separately. Like most UNIX shells for Windows, Babun is based on Cygwin, but it&rsquo;s preconfigured to be a lot more usable out of the box.</p>
+<h3 id="gulp-http-gulpjs-com"><a href="http://gulpjs.com/">Gulp</a></h3>
 
-<p>By default, Babun launches a shell called ZSH. It also includes <a href="http://ohmyz.sh/">Oh My ZSH</a>, a framework for configuring ZSH.</p>
+<ul>
+<li>A JavaScript task runner that lets you automate repetitive tasks such as:
 
-<p>We&rsquo;ll use the shell often enough that I recommend pinning Babun to the taskbar.</p>
+<ul>
+<li>Concatenating JS files</li>
+<li>Refreshing the browser when a file is saved</li>
+<li>Bundling and minifying files</li>
+<li>Running unit tests</li>
+<li>And so much more!</li>
+</ul></li>
+<li><a href="http://brandonclapp.com/what-is-gulp-js-and-why-use-it/">What is Gulp.js and why use it?</a></li>
+<li><a href="https://www.codefellows.org/blog/quick-intro-to-gulp-js">Quick intro to Gulp.js</a></li>
+</ul>
 
-<div class="notices tip" ><p>If you&rsquo;re not very familiar with UNIX shells, or if you&rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&rsquo;s free <strong><a href="http://commandlinepoweruser.com/">Command Line Power User</a></strong> videos. (They&rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)</p>
-</div>
+<h3 id="basic-setup">Basic Setup</h3>
 
+<p>First, install Gulp globally if you don&rsquo;t already have it on your machine</p>
+
+<pre><code class="language-sh">npm install -g gulp
+</code></pre>
+
+<p>Use <code>npm install</code> to add Gulp and other plugins that you need to the dev dependencies of your project in <code>package.json</code></p>
+
+<pre><code class="language-sh">npm install --save-dev gulp gulp-concat gulp-plumber gulp-babel
+</code></pre>
+
+<p>Add <code>gulpfile.js</code> at the root level of your project and add references to the node modules you installed</p>
+
+<pre><code class="language-js">var gulp = require('gulp');
+var concat = require('concat');
+var plumber = require('plumber');
+var babel = require('babel');
+</code></pre>
+
+<p>And now you&rsquo;re ready to start writing Gulp tasks!</p>
+
+<h3 id="gulp-plugins-used-in-meganote-so-far">Gulp plugins used in Meganote (so far&hellip;)</h3>
+
+<ul>
+<li><a href="https://www.npmjs.com/package/gulp-concat"><code>gulp-concat</code></a> - Concatenates files</li>
+<li><a href="https://www.npmjs.com/package/gulp-sourcemaps"><code>gulp-sourcemaps</code></a> - Maps concatenated / minified files back to original sources</li>
+<li><a href="https://www.npmjs.com/package/gulp-plumber"><code>gulp-plumber</code></a> - Prevent pipe breaking caused by errors from Gulp plugins</li>
+<li><a href="https://www.npmjs.com/package/gulp-babel"><code>gulp-babel</code></a> - Transpile ES6 to ES5</li>
+<li><a href="https://www.npmjs.com/package/gulp-connect"><code>gulp-connect</code></a> - Run a webserver with live reloading</li>
+<li><a href="https://www.npmjs.com/package/gulp-order"><code>gulp-order</code></a> - Order a stream of files</li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<p>Meganote: <a href="https://github.com/xternbootcamp16/meganote/tree/4cde223e83105c2a49530161a1a9779aaecbaad8">Morning</a> | <a href="https://github.com/xternbootcamp16/meganote/tree/8f13a322ccafd0afa43146f1229c387cd737c358">Afternoon</a></p>
+
+<p>Meganote-server: <a href="https://github.com/xternbootcamp16/meganote-server/tree/a8125a986c42db2308a5559ebad84e72559eca3e">Source</a></p>
 
 
       
@@ -721,8 +772,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/google-chrome"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week6/day25"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week6/day26" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

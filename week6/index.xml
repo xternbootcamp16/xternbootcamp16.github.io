@@ -87,5 +87,74 @@
 </description>
     </item>
     
+    <item>
+      <title>Day 26: Gulp</title>
+      <link>http://replace-this-with-your-hugo-site.com/week6/day26/</link>
+      <pubDate>Wed, 06 Jul 2016 14:18:59 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week6/day26/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, July 6, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;gulp-http-gulpjs-com&#34;&gt;&lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A JavaScript task runner that lets you automate repetitive tasks such as:
+
+&lt;ul&gt;
+&lt;li&gt;Concatenating JS files&lt;/li&gt;
+&lt;li&gt;Refreshing the browser when a file is saved&lt;/li&gt;
+&lt;li&gt;Bundling and minifying files&lt;/li&gt;
+&lt;li&gt;Running unit tests&lt;/li&gt;
+&lt;li&gt;And so much more!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brandonclapp.com/what-is-gulp-js-and-why-use-it/&#34;&gt;What is Gulp.js and why use it?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codefellows.org/blog/quick-intro-to-gulp-js&#34;&gt;Quick intro to Gulp.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;basic-setup&#34;&gt;Basic Setup&lt;/h3&gt;
+
+&lt;p&gt;First, install Gulp globally if you don&amp;rsquo;t already have it on your machine&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install -g gulp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Use &lt;code&gt;npm install&lt;/code&gt; to add Gulp and other plugins that you need to the dev dependencies of your project in &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev gulp gulp-concat gulp-plumber gulp-babel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add &lt;code&gt;gulpfile.js&lt;/code&gt; at the root level of your project and add references to the node modules you installed&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var gulp = require(&#39;gulp&#39;);
+var concat = require(&#39;concat&#39;);
+var plumber = require(&#39;plumber&#39;);
+var babel = require(&#39;babel&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now you&amp;rsquo;re ready to start writing Gulp tasks!&lt;/p&gt;
+
+&lt;h3 id=&#34;gulp-plugins-used-in-meganote-so-far&#34;&gt;Gulp plugins used in Meganote (so far&amp;hellip;)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-concat&#34;&gt;&lt;code&gt;gulp-concat&lt;/code&gt;&lt;/a&gt; - Concatenates files&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-sourcemaps&#34;&gt;&lt;code&gt;gulp-sourcemaps&lt;/code&gt;&lt;/a&gt; - Maps concatenated / minified files back to original sources&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-plumber&#34;&gt;&lt;code&gt;gulp-plumber&lt;/code&gt;&lt;/a&gt; - Prevent pipe breaking caused by errors from Gulp plugins&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-babel&#34;&gt;&lt;code&gt;gulp-babel&lt;/code&gt;&lt;/a&gt; - Transpile ES6 to ES5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-connect&#34;&gt;&lt;code&gt;gulp-connect&lt;/code&gt;&lt;/a&gt; - Run a webserver with live reloading&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-order&#34;&gt;&lt;code&gt;gulp-order&lt;/code&gt;&lt;/a&gt; - Order a stream of files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/4cde223e83105c2a49530161a1a9779aaecbaad8&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/8f13a322ccafd0afa43146f1229c387cd737c358&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/a8125a986c42db2308a5559ebad84e72559eca3e&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
