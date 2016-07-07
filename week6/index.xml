@@ -156,5 +156,112 @@ var babel = require(&#39;babel&#39;);
 </description>
     </item>
     
+    <item>
+      <title>Day 27: ECMAScript 6</title>
+      <link>http://replace-this-with-your-hugo-site.com/week6/day27/</link>
+      <pubDate>Thu, 07 Jul 2016 14:52:33 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week6/day27/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, July 7, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;exploring-es6-http-exploringjs-com-es6-index-html-toc-ch-first-steps&#34;&gt;&lt;a href=&#34;http://exploringjs.com/es6/index.html#toc_ch_first-steps&#34;&gt;Exploring ES6&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;A free eBook with tons of information about the new version of JavaScript.  A good place to start is &lt;a href=&#34;http://exploringjs.com/es6/ch_first-steps.html&#34;&gt;Chapter 4 - First steps with ECMAScript 6&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;new-features-of-ecmascript-6-used-in-class&#34;&gt;New features of ECMAScript 6 used in class&lt;/h3&gt;
+
+&lt;p&gt;Block scoping - Great article &lt;a href=&#34;https://www.sitepoint.com/joys-block-scoping-es6/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;let&lt;/code&gt; for block-scoped variables without hoisting&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt; for immutable variables&lt;/li&gt;
+&lt;li&gt;Block-scoped functions - no need for IIFE&amp;rsquo;s!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Arrow functions&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Old way
+numbers.map(function(x) { return x + 1; });
+
+// ES6 way
+numbers.map(x =&amp;gt; { x + 1 })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lexical scoping of &lt;code&gt;this&lt;/code&gt; - article &lt;a href=&#34;https://toddmotto.com/es6-arrow-functions-syntaxes-and-lexical-scoping/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Old way
+this.nums.forEach(function(x) {
+  if (x === 1)
+    this.ary.push(x);
+}.bind(this));
+
+// ES6 way
+this.nums.forEach(x =&amp;gt; {
+  if (x === 1)
+    this.ary.push(x)
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;String interpolation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Old way
+var message = &amp;quot;Hello, &amp;quot; + person.name + &amp;quot;,\n&amp;quot; +
+&amp;quot;It is &amp;quot; + destination.distance + &amp;quot; miles to &amp;quot; + destination.place + &amp;quot;.&amp;quot;
+
+// ES6 way
+let message = `Hello, ${person.name},
+It is ${destination.distance} miles to ${destination.place}.`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Object property shorthand&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Old way
+obj = { x: x, y: y };
+
+// ES6 way
+obj = { x, y }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Classes&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;class Example {
+  constructor (a, b) {
+    this.a = a
+    this.b = b
+  }
+  otherFunction (x) {
+    return x * 5
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/d254cc0b6903d42cc341cf36bb712f0f12b13bf1&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/ff163bfb68caf00240a345426be033e86b60da92&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/1bb67a3998459268681a21fb0f67c6572554a572&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Modify your Meganote Server to allow it to create users&lt;/p&gt;
+
+&lt;h4 id=&#34;base-requirement&#34;&gt;Base Requirement:&lt;/h4&gt;
+
+&lt;p&gt;Save users without passwords&lt;/p&gt;
+
+&lt;h4 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit:&lt;/h4&gt;
+
+&lt;p&gt;Verify that the password and password confirmation match before saving the user (still don&amp;rsquo;t save the password, though)&lt;/p&gt;
+
+&lt;h4 id=&#34;super-mega-bonus-credit-hyperfighting&#34;&gt;Super Mega Bonus Credit Hyperfighting:&lt;/h4&gt;
+
+&lt;p&gt;Store &lt;em&gt;encrypted&lt;/em&gt; passwords using &lt;code&gt;bcryptjs&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

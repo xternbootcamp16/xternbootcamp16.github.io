@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>MongoDB</title>
+    <title>Day 27: ECMAScript 6</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/mongodb/">
+  <body class="" data-url="/week6/day27/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -281,7 +281,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/mongodb/">
+            <li class="dd-item " data-nav-id="/setup-win/mongodb/">
               <a href="/setup-win/mongodb/">
                 <span>MongoDB     </i></span>
               </a>
@@ -587,7 +587,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week6/">
+      <li class="dd-item  parent" data-nav-id="/week6/">
         <a href="/week6/">
           <span>
             
@@ -619,7 +619,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week6/day27/">
+            <li class="dd-item active" data-nav-id="/week6/day27/">
               <a href="/week6/day27/">
                 <span>Day 27: ECMAScript 6     </i></span>
               </a>
@@ -664,30 +664,51 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week6/" itemprop="url"><span itemprop="title">Authentication with NodeJS</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> MongoDB</span>
+                <span itemprop="title"> Day 27: ECMAScript 6</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#exploring-es6-http-exploringjs-com-es6-index-html-toc-ch-first-steps"><a href="http://exploringjs.com/es6/index.html#toc_ch_first-steps">Exploring ES6</a></a></li>
+<li><a href="#new-features-of-ecmascript-6-used-in-class">New features of ECMAScript 6 used in class</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li>
+<ul>
+<li><a href="#base-requirement">Base Requirement:</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit:</a></li>
+<li><a href="#super-mega-bonus-credit-hyperfighting">Super Mega Bonus Credit Hyperfighting:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -697,12 +718,107 @@
             
     	        <div id="body-inner">
                 
-                <h1>MongoDB</h1>
+                <h1>Day 27: ECMAScript 6</h1>
                 
 
-<p>We&rsquo;ll use <a href="https://www.mongodb.com/">MongoDB</a> on at least one project, so follow the <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/">installation guide</a> to get MongoDB running.</p>
 
-<p>For Windows 7 and newer, you want the version that describes itself as being for <strong>Windows Server 2008 R2 and later</strong>.</p>
+
+<p><date>Thursday, July 7, 2016</date></p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="exploring-es6-http-exploringjs-com-es6-index-html-toc-ch-first-steps"><a href="http://exploringjs.com/es6/index.html#toc_ch_first-steps">Exploring ES6</a></h3>
+
+<p>A free eBook with tons of information about the new version of JavaScript.  A good place to start is <a href="http://exploringjs.com/es6/ch_first-steps.html">Chapter 4 - First steps with ECMAScript 6</a></p>
+
+<h3 id="new-features-of-ecmascript-6-used-in-class">New features of ECMAScript 6 used in class</h3>
+
+<p>Block scoping - Great article <a href="https://www.sitepoint.com/joys-block-scoping-es6/">here</a></p>
+
+<ul>
+<li><code>let</code> for block-scoped variables without hoisting</li>
+<li><code>const</code> for immutable variables</li>
+<li>Block-scoped functions - no need for IIFE&rsquo;s!</li>
+</ul>
+
+<p>Arrow functions</p>
+
+<pre><code class="language-js">// Old way
+numbers.map(function(x) { return x + 1; });
+
+// ES6 way
+numbers.map(x =&gt; { x + 1 })
+</code></pre>
+
+<p>Lexical scoping of <code>this</code> - article <a href="https://toddmotto.com/es6-arrow-functions-syntaxes-and-lexical-scoping/">here</a></p>
+
+<pre><code class="language-js">// Old way
+this.nums.forEach(function(x) {
+  if (x === 1)
+    this.ary.push(x);
+}.bind(this));
+
+// ES6 way
+this.nums.forEach(x =&gt; {
+  if (x === 1)
+    this.ary.push(x)
+})
+</code></pre>
+
+<p>String interpolation</p>
+
+<pre><code class="language-js">// Old way
+var message = &quot;Hello, &quot; + person.name + &quot;,\n&quot; +
+&quot;It is &quot; + destination.distance + &quot; miles to &quot; + destination.place + &quot;.&quot;
+
+// ES6 way
+let message = `Hello, ${person.name},
+It is ${destination.distance} miles to ${destination.place}.`
+</code></pre>
+
+<p>Object property shorthand</p>
+
+<pre><code class="language-js">// Old way
+obj = { x: x, y: y };
+
+// ES6 way
+obj = { x, y }
+</code></pre>
+
+<p>Classes</p>
+
+<pre><code class="language-js">class Example {
+  constructor (a, b) {
+    this.a = a
+    this.b = b
+  }
+  otherFunction (x) {
+    return x * 5
+  }
+}
+</code></pre>
+
+<h2 id="projects">Projects</h2>
+
+<p>Meganote: <a href="https://github.com/xternbootcamp16/meganote/tree/d254cc0b6903d42cc341cf36bb712f0f12b13bf1">Morning</a> | <a href="https://github.com/xternbootcamp16/meganote/tree/ff163bfb68caf00240a345426be033e86b60da92">Afternoon</a></p>
+
+<p>Meganote-server: <a href="https://github.com/xternbootcamp16/meganote-server/tree/1bb67a3998459268681a21fb0f67c6572554a572">Source</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<p>Modify your Meganote Server to allow it to create users</p>
+
+<h4 id="base-requirement">Base Requirement:</h4>
+
+<p>Save users without passwords</p>
+
+<h4 id="super-mega-bonus-credit">Super Mega Bonus Credit:</h4>
+
+<p>Verify that the password and password confirmation match before saving the user (still don&rsquo;t save the password, though)</p>
+
+<h4 id="super-mega-bonus-credit-hyperfighting">Super Mega Bonus Credit Hyperfighting:</h4>
+
+<p>Store <em>encrypted</em> passwords using <code>bcryptjs</code></p>
 
 
       
@@ -710,8 +826,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/github"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week6/day26"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week6/day27" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
