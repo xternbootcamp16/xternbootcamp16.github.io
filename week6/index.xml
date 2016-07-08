@@ -263,5 +263,73 @@ obj = { x, y }
 </description>
     </item>
     
+    <item>
+      <title>Day 28: User Authentication</title>
+      <link>http://replace-this-with-your-hugo-site.com/week6/day28/</link>
+      <pubDate>Fri, 08 Jul 2016 13:08:42 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week6/day28/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Friday, July 8, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;bcrypt&#34;&gt;bcrypt&lt;/h3&gt;
+
+&lt;p&gt;bcrypt is a password hashing function based on the Blowfish cipher, developed in 1999.&lt;/p&gt;
+
+&lt;h4 id=&#34;key-features&#34;&gt;Key features&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It is an &lt;strong&gt;adaptive function&lt;/strong&gt;, meaning the iteration count can be increased to counteract increases in computing power.  As computers get more powerful, the difficulty of reversing the encryption can be increased.&lt;/li&gt;
+&lt;li&gt;Utilizes a &lt;strong&gt;salt&lt;/strong&gt;, random data used as an additional input to a hashing function.  This helps prevent &lt;a href=&#34;https://en.wikipedia.org/wiki/Rainbow_table&#34;&gt;rainbow-table attacks&lt;/a&gt; - attacks using a pre-computed table for reversing cryptographic hash functions.&lt;/li&gt;
+&lt;li&gt;Identify bcrypt hashes easily - they all start with &amp;ldquo;$2a$&amp;rdquo;, &amp;ldquo;$2b$&amp;rdquo;, or &amp;ldquo;$2y$&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Never, EVER store plain-text user passwords in your database. Always encrypt.   Read &lt;a href=&#34;http://dustwell.com/how-to-handle-passwords-bcrypt.html&#34;&gt;Storing user passwords securely: hashing, salting, and bcrypt&lt;/a&gt; for a great explanation.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;bcryptjs-https-www-npmjs-com-package-bcryptjs&#34;&gt;&lt;a href=&#34;https://www.npmjs.com/package/bcryptjs&#34;&gt;bcryptjs&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Optimized bcrypt in plain JavaScript with zero dependencies&lt;/p&gt;
+
+&lt;p&gt;How to get started:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install bcryptjs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var bcrypt = require(&#39;bcryptjs&#39;);
+var salt = bcrypt.genSaltSync(10); // parameter is the number of rounds to use
+var hash = bcrypt.hashSync(&#39;plain_text_password&#39;, salt);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote:  &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/e527d75025d4357af527f47adc652b7acb396f2c&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/f1b26abb35938831bddcfaed45307f041d99a047&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;User authentication and persistence in Meganote&lt;/p&gt;
+
+&lt;h4 id=&#34;base-requirements&#34;&gt;Base Requirements&lt;/h4&gt;
+
+&lt;p&gt;If user is signed out, display a link to &amp;lsquo;Sign Up&amp;rsquo; in the navbar&lt;/p&gt;
+
+&lt;p&gt;If user is signed in, display a link to &amp;lsquo;Sign Out&amp;rsquo; instead (and have it work). Also, display the current user&amp;rsquo;s name in the navbar&lt;/p&gt;
+
+&lt;h4 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h4&gt;
+
+&lt;p&gt;Use custom directives to fulfill the base requirements&lt;/p&gt;
+
+&lt;h4 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h4&gt;
+
+&lt;p&gt;Create a working profile page where you can update a user&amp;rsquo;s profile&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

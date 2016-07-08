@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>MongoDB</title>
+    <title>Day 28: User Authentication</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-mac/mongodb/">
+  <body class="" data-url="/week6/day28/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -122,7 +122,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-mac/">
+      <li class="dd-item  " data-nav-id="/setup-mac/">
         <a href="/setup-mac/">
           <span>
             
@@ -194,7 +194,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-mac/mongodb/">
+            <li class="dd-item " data-nav-id="/setup-mac/mongodb/">
               <a href="/setup-mac/mongodb/">
                 <span>MongoDB     </i></span>
               </a>
@@ -587,7 +587,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week6/">
+      <li class="dd-item  parent" data-nav-id="/week6/">
         <a href="/week6/">
           <span>
             
@@ -627,7 +627,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week6/day28/">
+            <li class="dd-item active" data-nav-id="/week6/day28/">
               <a href="/week6/day28/">
                 <span>Day 28: User Authentication     </i></span>
               </a>
@@ -670,32 +670,56 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-mac/" itemprop="url"><span itemprop="title">Setup for Mac</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week6/" itemprop="url"><span itemprop="title">Authentication with NodeJS</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> MongoDB</span>
+                <span itemprop="title"> Day 28: User Authentication</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#bcrypt">bcrypt</a>
+<ul>
+<li><a href="#key-features">Key features</a></li>
+</ul></li>
+<li><a href="#bcryptjs-https-www-npmjs-com-package-bcryptjs"><a href="https://www.npmjs.com/package/bcryptjs">bcryptjs</a></a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li>
+<ul>
+<li><a href="#base-requirements">Base Requirements</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -705,13 +729,68 @@
             
     	        <div id="body-inner">
                 
-                <h1>MongoDB</h1>
+                <h1>Day 28: User Authentication</h1>
                 
 
-<p>We&rsquo;ll use <a href="https://www.mongodb.com/">MongoDB</a> on at least one project in class, so go ahead and install it. The good news: It can be installed via Homebrew:</p>
 
-<pre><code class="language-zsh">brew install mongodb
+
+<p><date>Friday, July 8, 2016</date></p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="bcrypt">bcrypt</h3>
+
+<p>bcrypt is a password hashing function based on the Blowfish cipher, developed in 1999.</p>
+
+<h4 id="key-features">Key features</h4>
+
+<ul>
+<li>It is an <strong>adaptive function</strong>, meaning the iteration count can be increased to counteract increases in computing power.  As computers get more powerful, the difficulty of reversing the encryption can be increased.</li>
+<li>Utilizes a <strong>salt</strong>, random data used as an additional input to a hashing function.  This helps prevent <a href="https://en.wikipedia.org/wiki/Rainbow_table">rainbow-table attacks</a> - attacks using a pre-computed table for reversing cryptographic hash functions.</li>
+<li>Identify bcrypt hashes easily - they all start with &ldquo;$2a$&rdquo;, &ldquo;$2b$&rdquo;, or &ldquo;$2y$&rdquo;</li>
+</ul>
+
+<div class="notices tip" ><p>Never, EVER store plain-text user passwords in your database. Always encrypt.   Read <a href="http://dustwell.com/how-to-handle-passwords-bcrypt.html">Storing user passwords securely: hashing, salting, and bcrypt</a> for a great explanation.</p>
+</div>
+
+
+<h3 id="bcryptjs-https-www-npmjs-com-package-bcryptjs"><a href="https://www.npmjs.com/package/bcryptjs">bcryptjs</a></h3>
+
+<p>Optimized bcrypt in plain JavaScript with zero dependencies</p>
+
+<p>How to get started:</p>
+
+<pre><code class="language-sh">npm install bcryptjs
 </code></pre>
+
+<pre><code class="language-js">var bcrypt = require('bcryptjs');
+var salt = bcrypt.genSaltSync(10); // parameter is the number of rounds to use
+var hash = bcrypt.hashSync('plain_text_password', salt);
+</code></pre>
+
+<h2 id="projects">Projects</h2>
+
+<p>Meganote:  <a href="https://github.com/xternbootcamp16/meganote/tree/e527d75025d4357af527f47adc652b7acb396f2c">Source</a></p>
+
+<p>Meganote-server: <a href="https://github.com/xternbootcamp16/meganote-server/tree/f1b26abb35938831bddcfaed45307f041d99a047">Source</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<p>User authentication and persistence in Meganote</p>
+
+<h4 id="base-requirements">Base Requirements</h4>
+
+<p>If user is signed out, display a link to &lsquo;Sign Up&rsquo; in the navbar</p>
+
+<p>If user is signed in, display a link to &lsquo;Sign Out&rsquo; instead (and have it work). Also, display the current user&rsquo;s name in the navbar</p>
+
+<h4 id="super-mega-bonus-credit">Super Mega Bonus Credit</h4>
+
+<p>Use custom directives to fulfill the base requirements</p>
+
+<h4 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h4>
+
+<p>Create a working profile page where you can update a user&rsquo;s profile</p>
 
 
       
@@ -719,8 +798,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-mac/github"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week6/day27"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week6/day28" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
