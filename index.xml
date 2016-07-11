@@ -6,8 +6,22 @@
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jun 2016 16:15:26 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jul 2016 18:53:46 -0400</lastBuildDate>
     <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wrapping up Meganote</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/</link>
+      <pubDate>Mon, 11 Jul 2016 18:53:46 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-7&#34;&gt;Week 7&lt;/h3&gt;
+
+&lt;h1 id=&#34;wrapping-up-meganote&#34;&gt;Wrapping up Meganote&lt;/h1&gt;
+</description>
+    </item>
     
     <item>
       <title>Angular / Node: Mutant Office Hours</title>
@@ -144,6 +158,68 @@
 &lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Day 29: More User Authentication</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/day29/</link>
+      <pubDate>Mon, 11 Jul 2016 19:00:12 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/day29/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, July 11, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;bcrypt&#34;&gt;bcrypt&lt;/h3&gt;
+
+&lt;p&gt;We used &lt;code&gt;bcryptjs&lt;/code&gt; to hash user passwords before storing them in the database for security.  We can also use it to verify that the hash of an incoming plain-text password matches the stored hash.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Synchronous password checking
+bcrypt.compareSync(&#39;password_string&#39;, stored_password_hash);
+
+// Async password checking
+bcrypt.compare(&#39;password_string&#39;, stored_password_hash, (err, res) =&amp;gt; {
+  // returns true if password is correct
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;mongoose&#34;&gt;Mongoose&lt;/h3&gt;
+
+&lt;p&gt;In Mongoose, instances of Models are known as &lt;em&gt;documents&lt;/em&gt;.  They have many pre-defined instance methods.  Pre-defined instance methods can be overwritten if necessary, or new custom methods can be added.  We have now done both.&lt;/p&gt;
+
+&lt;p&gt;First, we overwrote the existing &lt;code&gt;.toJSON()&lt;/code&gt; method to remove extraneous data from the returned user object.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;userSchema.methods.toJSON = function() {
+  var user = this.toObject();
+  delete user.password;
+  delete user.__v;
+  return user;
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Later, we wrote a custom &lt;code&gt;.authenticate()&lt;/code&gt; method for checking to make sure the password was correct before logging in a user.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;userSchema.methods.authenticate = function(password, callback) {
+  bcrypt.compare(password, this.passwordDigest, (err, isMatch) =&amp;gt; {
+    callback(isMatch);
+  });
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote:  &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/789d560d632e6da1afcca0c5659e9aa0761ac026&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/5c622f60cbb7979da752ce66f9ef3898dcad40fb&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Show flash messages for the success or failure of &amp;lsquo;sign up&amp;rsquo; and &amp;lsquo;log in&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;In Meganote Server, re-write the route for logging in using promises&lt;/p&gt;
 </description>
     </item>
     
@@ -391,263 +467,6 @@ git commit -m &amp;quot;Initial commit using meganote-seed&amp;quot;
 &lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git remote add origin git@github.com:[YOUR GITHUB USERNAME]/meganote.git
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 10: ui-router Basics</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day10/</link>
-      <pubDate>Mon, 13 Jun 2016 16:19:37 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day10/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Monday, June 13, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;State
-
-&lt;ul&gt;
-&lt;li&gt;Child states&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$stateProvider.state()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Templates
-
-&lt;ul&gt;
-&lt;li&gt;Inline templates (&lt;code&gt;template: &#39;&amp;lt;h1&amp;gt;So easy!&amp;lt;/h1&amp;gt;&#39;&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Separate files (&lt;code&gt;templateUrl: &#39;myTemplate.html&#39;&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ui-view&lt;/code&gt; directive&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;npm&#34;&gt;NPM&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;package.json&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://browsenpm.org/package.json&#34;&gt;&lt;code&gt;package.json&lt;/code&gt;: An Interactive Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Metadata&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;devDependencies&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Scripts (&lt;code&gt;npm start&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;node_modules&lt;/code&gt; folder&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bower&#34;&gt;Bower&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/whats-great-bower/&#34;&gt;What&amp;rsquo;s So Great About Bower?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://zellwk.com/blog/bower/&#34;&gt;Managing Your Front-End Dependencies with Bower&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bower.json&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Metadata&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dependencies&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bower_components&lt;/code&gt; folder&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bootstrap-http-getbootstrap-com&#34;&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#grid&#34;&gt;Grid system&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#buttons&#34;&gt;Button styles&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;angular-reference&#34;&gt;Angular Reference&lt;/h2&gt;
-
-&lt;h3 id=&#34;concepts&#34;&gt;Concepts&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/module&#34;&gt;Modules&lt;/a&gt; (&lt;a href=&#34;https://docs.angularjs.org/api/ng/function/angular.module&#34;&gt;&lt;code&gt;angular.module(&#39;moduleName&#39;, [])&lt;/code&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/controller&#34;&gt;Controllers&lt;/a&gt; (&lt;code&gt;someModule.controller(&#39;ControllerName&#39;, function)&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/scope&#34;&gt;Scope/&lt;code&gt;$scope&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;directives&#34;&gt;Directives&lt;/h3&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;In the view (HTML), directives are specified with &lt;strong&gt;kebab-case&lt;/strong&gt; (or &amp;ldquo;dasherized&amp;rdquo;)—that is, with words separated by hyphens. Within JavaScript, they are specified with &lt;strong&gt;camelCase&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngApp&#34;&gt;ngApp&lt;/a&gt;: Auto-bootstraps an Angular application and (optionally) specifies the root Module.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngController&#34;&gt;ngController&lt;/a&gt;: Attaches a Controller to the view/DOM.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngModel&#34;&gt;ngModel&lt;/a&gt;: Binds a form field to a property on the scope.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngRepeat&#34;&gt;ngRepeat&lt;/a&gt;: Repeat an element for each item in a collection.
-
-&lt;ul&gt;
-&lt;li&gt;See also: &lt;a href=&#34;https://docs.angularjs.org/error/ngRepeat/dupes&#34;&gt;ngRepeat:dupes&lt;/a&gt; and &lt;code&gt;track by&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngSubmit&#34;&gt;ngSubmit&lt;/a&gt;: Specifies custom behavior (often an invocation of a function property on the scope) when a form is submitted.
-
-&lt;ul&gt;
-&lt;li&gt;Automatically prevents default, unless the &lt;code&gt;action&lt;/code&gt; attribute is set on the form.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngClick&#34;&gt;ngClick&lt;/a&gt;: Specifies custom behavior when an element is clicked.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngShow&#34;&gt;ngShow&lt;/a&gt;: Show an element only when the provided expression is truthy.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngHide&#34;&gt;ngHide&lt;/a&gt;: The inverse of &lt;code&gt;ngShow&lt;/code&gt;. Only show the element if the provided expression is falsey.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Meganote &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/8221627de162eb9f139749755f190df72581ea6f&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Acrobats: &lt;a href=&#34;https://github.com/xternbootcamp16/acrobats&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/acrobats/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 5: jQuery &amp; Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day05/</link>
-      <pubDate>Sat, 11 Jun 2016 23:23:36 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day05/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Monday, June 6, 2016&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;deployment&#34;&gt;Deployment&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Deploying to GitHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git checkout -b gh-pages     # Create a new branch
-git push -u master gh-pages  # Push it to GitHub
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Your site will be published at &lt;em&gt;username&lt;/em&gt;.github.io/&lt;em&gt;repository&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jQuery.ajax/&#34;&gt;&lt;code&gt;jQuery.ajax()&lt;/code&gt;&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/ajax_ajax.asp&#34;&gt;w3schools page and &lt;em&gt;Try It Yourself&lt;/em&gt; demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms&#34;&gt;JSONP&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;javascript-arrays&#34;&gt;JavaScript Arrays&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jsref/jsref_map.asp&#34;&gt;Array &lt;code&gt;map()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jsref/jsref_splice.asp&#34;&gt;Array &lt;code&gt;splice()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Each of the above items links to the &lt;a href=&#34;http://www.w3schools.com/&#34;&gt;w3schools&lt;/a&gt; page for that method, including examples, reference material (including browser support) and a &lt;em&gt;Try it Yourself&lt;/em&gt; live editor.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h3 id=&#34;css-selectors&#34;&gt;CSS Selectors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_hover.asp&#34;&gt;&lt;code&gt;:hover&lt;/code&gt; pseudo-class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_attribute_value.asp&#34;&gt;[&lt;em&gt;attribute&lt;/em&gt;=&lt;em&gt;value&lt;/em&gt;] selector&lt;/a&gt; (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;[data-id=4]&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices tip&#34; &gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Seriously&lt;/strong&gt;, if you&amp;rsquo;re having any trouble with selectors, check out &lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; and &lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-
-
-&lt;h3 id=&#34;jquery&#34;&gt;jQuery&lt;/h3&gt;
-
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re new to jQuery, start with &lt;a href=&#34;https://www.codeschool.com/courses/try-jquery&#34;&gt;Try jQuery&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jquery/&#34;&gt;&lt;code&gt;$()&lt;/code&gt;, the jQuery function&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/selecting-elements/&#34;&gt;Selecting elements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/jquery-object/&#34;&gt;jQuery Objects vs. DOM elements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/manipulating-elements/&#34;&gt;Manipulation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/traversing/&#34;&gt;DOM traversal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;More jQuery tutorials:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/en/courses/web-beginner-en-bay3D/resume?curriculum_id=50a3fad8c7a770b5fd0007a1&#34;&gt;Codecademy&amp;rsquo;s Intro to jQuery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/default.asp&#34;&gt;jQuery Tutorial on w3schools&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Be sure to check out the excellent &lt;a href=&#34;http://api.jquery.com/&#34;&gt;jQuery API documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster&#34;&gt;MegaRoster with localStorage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/jquery&#34;&gt;MegaRoster with jQuery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/ajax&#34;&gt;MegaRoster with Ajax&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;MegaRoster with mutants: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/mutants&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/megaroster/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;JSON People: &lt;a href=&#34;https://github.com/xternbootcamp16/json-people&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/json-people/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://api.nasa.gov/api.html#apod&#34;&gt;Astronomy Picture of the Day&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;$.ajax({
-  url: &#39;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&#39;,
-  method: &#39;get&#39;,
-  success: function(data) {
-    $(document.body).prepend(&#39;&amp;lt;img src=&amp;quot;&#39; + data.hdurl + &#39;&amp;quot;&amp;gt;&#39;);
-  }
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
-
-&lt;p&gt;Talk to the &lt;a href=&#34;(http://getfretless.github.io/mutant-school-docs/?javascript#get-a-specific-mutant)&#34;&gt;Mutant School API&lt;/a&gt;!&lt;/p&gt;
-
-&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Start a new project (or fork JSON People and work from there) that loads all Mutants from the API.&lt;/li&gt;
-&lt;li&gt;When a new record is added to your app, create a new Mutant record by POSTing to the API.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Add a button to delete individual mutants from the API.&lt;/p&gt;
-
-&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Update existing mutant records.&lt;/p&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
-
-&lt;p&gt;Integrate the Mutant API with MegaRoster.&lt;/p&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
-
-&lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else from an existing API.&lt;/p&gt;
 </description>
     </item>
     

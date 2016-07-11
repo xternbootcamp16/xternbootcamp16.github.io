@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Modules &amp; Routes</title>
+    <title>Wrapping up Meganote</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/app-meganote/06-modules-routes/">
+  <body class="" data-url="/week7/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -43,7 +43,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/app-meganote/">
+      <li class="dd-item  " data-nav-id="/app-meganote/">
         <a href="/app-meganote/">
           <span>
             
@@ -107,7 +107,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/app-meganote/06-modules-routes/">
+            <li class="dd-item " data-nav-id="/app-meganote/06-modules-routes/">
               <a href="/app-meganote/06-modules-routes/">
                 <span>Modules &amp; Routes     </i></span>
               </a>
@@ -642,7 +642,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week7/">
+      <li class="dd-item active parent" data-nav-id="/week7/">
         <a href="/week7/">
           <span>
             
@@ -693,166 +693,59 @@
                       </a>
                   </span>
                 
-                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
                 
                 
                 
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                 
                   
                     
                     
-                <a href="/app-meganote/" itemprop="url"><span itemprop="title">Meganote</span></a> <i class="fa fa-angle-right"></i>
-                    
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Modules &amp; Routes</span>
+                <span itemprop="title"> Wrapping up Meganote</span>
               </div>
-              
-                  <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#angular-module">angular.module()</a></li>
-<li><a href="#ui-router">UI-Router</a>
-<ul>
-<li><a href="#stateprovider">$stateProvider</a></li>
-<li><a href="#urlrouterprovider">$urlRouterProvider</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
               
 
             </div>
             
+              <div id="chapter">
+            
     	        <div id="body-inner">
                 
-                <h1>Modules &amp; Routes</h1>
-                
 
 
 
-<p>Wow. How have we gone this far without looking at <code>app.js</code> in any real detail?</p>
+<h3 id="week-7">Week 7</h3>
 
-<p><p class="file">app/app.js</p></p>
-
-<pre><code class="language-js">(function() {
-  var app = angular.module('meganote', [
-    'ui.router'
-  ]);
-
-  function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/notes');
-
-    $stateProvider
-
-      .state('notes', {
-        url: '/notes',
-        template: '&lt;h1&gt;Meganote&lt;/h1&gt;&lt;p&gt;{{ message }}&lt;/p&gt;',
-        controller: function($scope) {
-          $scope.message = &quot;Welcome to Meganote!&quot;;
-        }
-      });
-  }
-
-  config['$inject'] = ['$stateProvider', '$urlRouterProvider'];
-  app.config(config);
-})();
-</code></pre>
-
-<p>Now let&rsquo;s break it down.</p>
-
-<h2 id="angular-module">angular.module()</h2>
-
-<p>This file defines the main Angular module and routing instructions.</p>
-
-<p>The first argument to <code>angular.module</code> is the name of the module, and the second argument is an array containing the <em>names</em> of other modules that this one requires, as strings.</p>
-
-<div class="notices tip" ><p>Without the second argument, you are <em>retrieving</em> an existing module, rather than <em>creating</em> one. Read more on <a href="http://www.w3schools.com/angular/angular_modules.asp">w3schools</a> or <a href="https://docs.angularjs.org/api/ng/function/angular.module">the official <code>angular.module</code> documentation</a>.</p>
-</div>
+<h1 id="wrapping-up-meganote">Wrapping up Meganote</h1>
 
 
-<!-- <div class="notices note" ><p>Read <a href="http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/">AngularJS Dependency Injection Demystified</a> for more information, but rest assured that we&rsquo;ll be coming back to this topic.</p>
-</div>
- -->
-
-<p>The <code>meganote</code> module is already setup to require the <code>ui-router</code> module, which is also sourced with a <code>&lt;script&gt;</code> tag in the layout.</p>
-
-<div class="notices note" ><p>Since this module represents our entire app, it is the one referenced by the <code>ng-app</code> directive on the <code>&lt;html&gt;</code> tag in the layout.</p>
-</div>
-
-
-<p>We&rsquo;re saving the new module to a local variable called <code>app</code>. Below that, we define a function named <code>config</code> that, as its name suggests, will configure our module. This function has two parameters, <code>$stateProvider</code> and <code>$urlRouterProvider</code>, but of which are services in the UI-Router.</p>
-
-<h2 id="ui-router">UI-Router</h2>
-
-<p><a href="https://github.com/angular-ui/ui-router/wiki">UI-Router</a> is one of several routing frameworks for Angular. Routing frameworks are responsible for managing the URLs in single-page applications like this one. Strictly speaking, we&rsquo;ll always be on <code>index.html</code>, but the URL will change as we click around in our app.</p>
-
-<p>UI-Router uses a <a href="https://en.wikipedia.org/wiki/Finite-state_machine"><em>state-machine</em></a> to manage all of this, so we&rsquo;ll define <em>states</em> that map specific URLs to specific templates and controllers, as well to define some behavior.</p>
-
-<div class="notices note" ><p>Check out the <a href="https://github.com/angular-ui/ui-router">UI-Router project page</a> and the <a href="https://github.com/angular-ui/ui-router/wiki">In-Depth Guide</a> for more information.</p>
-</div>
-
-
-<h3 id="stateprovider">$stateProvider</h3>
-
-<p>We use <code>$stateProvider</code> to define states, which can be as simple as giving the state a name and a template.</p>
-
-<pre><code class="language-js">$stateProvider.state('mutants', {
-  template: '&lt;h1&gt;Behold, Ye Mutants!&lt;/h1&gt;'
-});
-</code></pre>
-
-<p>We could then link to this state from our HTML, despite having not defined a URL for it. Most of the time, however, we will define a URL&emdash;both for the sake of maintaining browser history (<em>i.e.</em> preserving the behavior of the <em>back</em> button), and to create direct links to individual resources.</p>
-
-<p>We go one step further and specify a <em>controller</em> as well. The controller is a function that will run whenever this state is loaded.</p>
-
-<pre><code class="language-js">$stateProvider.state('notes', {
-  url: '/notes',
-  template: '&lt;h1&gt;Meganote&lt;/h1&gt;&lt;p&gt;{{ message }}&lt;/p&gt;',
-  controller: function($scope) {
-    $scope.message = &quot;Welcome to Meganote!&quot;;
-  }
-});
-</code></pre>
-
-<h3 id="urlrouterprovider">$urlRouterProvider</h3>
-
-<p><a href="http://angular-ui.github.io/ui-router/site/#/api/ui.router.router.$urlRouterProvider"><code>$urlRouterProvider</code></a> watches for changes in the URL and looks for a state with a matching rule.</p>
-
-<p><code>$urlRouterProvider.otherwise()</code> lets us specify a path to use when no matching rule is found. For our app, a reasonable default would be a <strong>notes</strong> page, hence <code>$urlRouterProvider.otherwise('/notes')</code>.</p>
-
-
+      
+        </div> 
       
       </div>
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/app-meganote/05-layout"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/app-meganote/07-notescontroller" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week6/day28"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week7/day29" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

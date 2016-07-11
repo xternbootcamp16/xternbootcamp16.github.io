@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week7s on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/week7/</link>
+    <description>Recent content in Week7s on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jul 2016 18:53:46 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/week7/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wrapping up Meganote</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/</link>
+      <pubDate>Mon, 11 Jul 2016 18:53:46 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-7&#34;&gt;Week 7&lt;/h3&gt;
+
+&lt;h1 id=&#34;wrapping-up-meganote&#34;&gt;Wrapping up Meganote&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 29: More User Authentication</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/day29/</link>
+      <pubDate>Mon, 11 Jul 2016 19:00:12 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/day29/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, July 11, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;bcrypt&#34;&gt;bcrypt&lt;/h3&gt;
+
+&lt;p&gt;We used &lt;code&gt;bcryptjs&lt;/code&gt; to hash user passwords before storing them in the database for security.  We can also use it to verify that the hash of an incoming plain-text password matches the stored hash.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Synchronous password checking
+bcrypt.compareSync(&#39;password_string&#39;, stored_password_hash);
+
+// Async password checking
+bcrypt.compare(&#39;password_string&#39;, stored_password_hash, (err, res) =&amp;gt; {
+  // returns true if password is correct
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;mongoose&#34;&gt;Mongoose&lt;/h3&gt;
+
+&lt;p&gt;In Mongoose, instances of Models are known as &lt;em&gt;documents&lt;/em&gt;.  They have many pre-defined instance methods.  Pre-defined instance methods can be overwritten if necessary, or new custom methods can be added.  We have now done both.&lt;/p&gt;
+
+&lt;p&gt;First, we overwrote the existing &lt;code&gt;.toJSON()&lt;/code&gt; method to remove extraneous data from the returned user object.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;userSchema.methods.toJSON = function() {
+  var user = this.toObject();
+  delete user.password;
+  delete user.__v;
+  return user;
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Later, we wrote a custom &lt;code&gt;.authenticate()&lt;/code&gt; method for checking to make sure the password was correct before logging in a user.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;userSchema.methods.authenticate = function(password, callback) {
+  bcrypt.compare(password, this.passwordDigest, (err, isMatch) =&amp;gt; {
+    callback(isMatch);
+  });
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote:  &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/789d560d632e6da1afcca0c5659e9aa0761ac026&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/5c622f60cbb7979da752ce66f9ef3898dcad40fb&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Show flash messages for the success or failure of &amp;lsquo;sign up&amp;rsquo; and &amp;lsquo;log in&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;In Meganote Server, re-write the route for logging in using promises&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
