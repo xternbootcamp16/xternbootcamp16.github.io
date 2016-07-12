@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Wrapping up Meganote</title>
+    <title>Day 30: Authentication with JWT</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week7/">
+  <body class="" data-url="/week7/day30/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -642,7 +642,7 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/week7/">
+      <li class="dd-item  parent" data-nav-id="/week7/">
         <a href="/week7/">
           <span>
             
@@ -666,7 +666,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week7/day30/">
+            <li class="dd-item active" data-nav-id="/week7/day30/">
               <a href="/week7/day30/">
                 <span>Day 30: Authentication with JWT     </i></span>
               </a>
@@ -701,6 +701,8 @@
                       </a>
                   </span>
                 
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
                 
                 
                 
@@ -725,35 +727,153 @@
                   
                     
                     
+                <a href="/week7/" itemprop="url"><span itemprop="title">Wrapping up Meganote</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
-                <span itemprop="title"> Wrapping up Meganote</span>
+                <span itemprop="title"> Day 30: Authentication with JWT</span>
               </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#json-web-tokens">JSON Web Tokens</a>
+<ul>
+<li><a href="#advantages-of-jwts">Advantages of JWTs</a></li>
+<li><a href="#learn-more-about-json-web-tokens">Learn more about JSON Web Tokens</a></li>
+</ul></li>
+<li><a href="#angular-interceptors">Angular Interceptors</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li>
+<ul>
+<li><a href="#flash-messages">Flash messages</a></li>
+<li><a href="#better-error-messages-from-the-server">Better error messages from the server</a></li>
+<li><a href="#database-validation">Database validation</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
               
 
             </div>
             
-              <div id="chapter">
-            
     	        <div id="body-inner">
+                
+                <h1>Day 30: Authentication with JWT</h1>
                 
 
 
 
-<h3 id="week-7">Week 7</h3>
+<p><date>Tuesday, July 12, 2016</date></p>
 
-<h1 id="wrapping-up-meganote">Wrapping up Meganote</h1>
+<h2 id="topics">Topics</h2>
+
+<h3 id="json-web-tokens">JSON Web Tokens</h3>
+
+<p>JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.</p>
+
+<p>JWTs are composed of three base-64 strings that are joined together with dot notation.</p>
+
+<p><code>xxxxxxxxxx.yyyyyyyyyyy.zzzzzzzzz</code></p>
+
+<p>The first component is the <em>header</em>, which contains information about the type of token and the hashing algorithm used to create it.</p>
+
+<pre><code class="language-js">// decoded header
+{
+  &quot;alg&quot;: &quot;HS256&quot;,
+  &quot;typ&quot;: &quot;JWT&quot;
+}
+</code></pre>
+
+<p>The second component is the <em>payload</em>, which contains the actual information being sent.</p>
+
+<pre><code class="language-js">// decoded payload
+{
+  &quot;title&quot;: &quot;The greatest note ever&quot;,
+  &quot;body_html&quot;: &quot;seriously, it is&quot;
+}
+</code></pre>
+
+<p>The last component is the <em>signature</em>.  To create it, you take the encoded header, encoded payload, specified hashing algorithm, a secret, and sign it.</p>
+
+<pre><code class="language-js">// method to create a signature
+HMACSHA256(
+  base64UrlEncode(header) + &quot;.&quot; + base64UrlEncode(payload),
+  secret)
+</code></pre>
+
+<h4 id="advantages-of-jwts">Advantages of JWTs</h4>
+
+<ul>
+<li>Lightweight</li>
+<li>Self-contained</li>
+<li>Reduced database queries, since the token contains all of the required information about the user</li>
+<li>Because information can be signed, you can be confident that the sender is who they say they are, and that the information has not been tampered with</li>
+</ul>
+
+<h4 id="learn-more-about-json-web-tokens">Learn more about JSON Web Tokens</h4>
+
+<ul>
+<li><a href="https://jwt.io/introduction/">Introduction to JSON Web Tokens - jwt.io</a></li>
+<li><a href="https://scotch.io/tutorials/the-anatomy-of-a-json-web-token">The Anatomy of a JSON Web Token - scotch.io</a></li>
+<li><a href="https://jwt.io/">JWT Debugger</a> - a useful tool for interactively working with JWTs</li>
+</ul>
+
+<h3 id="angular-interceptors">Angular Interceptors</h3>
+
+<p>Interceptors are used any time it is desirable to intercept requests before they are handed to the server and responses before they are handed off to the application code. They are factories that are added to the <code>$httpProvider.interceptors</code> array</p>
+
+<p>In Meganote, we used an interceptor to add JSON Web Tokens to the headers of requests being sent to our API</p>
+
+<p>Read more about interceptors <a href="https://docs.angularjs.org/api/ng/service/$http">here</a></p>
+
+<h2 id="projects">Projects</h2>
+
+<p>Meganote:  <a href="https://github.com/xternbootcamp16/meganote/tree/f2a7deaec6389589ed82c512b5b862a1f53893a2">Morning</a> | <a href="https://github.com/xternbootcamp16/meganote/tree/354ca8350988b43eb95cc695ed995cb52fcc3622">Afternoon</a></p>
+
+<p>Meganote-server: <a href="https://github.com/xternbootcamp16/meganote-server/tree/4b41f89775990101773b3957dc20438125669ca7">Morning</a> | <a href="https://github.com/xternbootcamp16/meganote-server/tree/272530344fc593fcb4edff059160971c04a5425b">Afternoon</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<p>Meganote polish!  Add final touches for a better user experience</p>
+
+<h4 id="flash-messages">Flash messages</h4>
+
+<p>Add flash messages for events like successfully signing in or out, reusing a username, non-matching passwords, etc</p>
+
+<h4 id="better-error-messages-from-the-server">Better error messages from the server</h4>
+
+<p>Enhance the returned JSON responses from the server for better communication with the user</p>
+
+<h4 id="database-validation">Database validation</h4>
+
+<p>Enforce database rules on the server side for things like unique usernames and password length</p>
+
+<h4 id="super-mega-bonus-credit">Super Mega Bonus Credit</h4>
+
+<p>Add a spinner animation that appears while waiting for responses from the API</p>
 
 
-      
-        </div> 
       
       </div>
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/week6/day28"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week7/day29" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week7/day29"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week7/day30" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

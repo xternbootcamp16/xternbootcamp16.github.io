@@ -85,5 +85,104 @@ bcrypt.compare(&#39;password_string&#39;, stored_password_hash, (err, res) =&amp
 </description>
     </item>
     
+    <item>
+      <title>Day 30: Authentication with JWT</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/day30/</link>
+      <pubDate>Tue, 12 Jul 2016 15:22:54 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/day30/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, July 12, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;json-web-tokens&#34;&gt;JSON Web Tokens&lt;/h3&gt;
+
+&lt;p&gt;JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.&lt;/p&gt;
+
+&lt;p&gt;JWTs are composed of three base-64 strings that are joined together with dot notation.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;xxxxxxxxxx.yyyyyyyyyyy.zzzzzzzzz&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The first component is the &lt;em&gt;header&lt;/em&gt;, which contains information about the type of token and the hashing algorithm used to create it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// decoded header
+{
+  &amp;quot;alg&amp;quot;: &amp;quot;HS256&amp;quot;,
+  &amp;quot;typ&amp;quot;: &amp;quot;JWT&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second component is the &lt;em&gt;payload&lt;/em&gt;, which contains the actual information being sent.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// decoded payload
+{
+  &amp;quot;title&amp;quot;: &amp;quot;The greatest note ever&amp;quot;,
+  &amp;quot;body_html&amp;quot;: &amp;quot;seriously, it is&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last component is the &lt;em&gt;signature&lt;/em&gt;.  To create it, you take the encoded header, encoded payload, specified hashing algorithm, a secret, and sign it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// method to create a signature
+HMACSHA256(
+  base64UrlEncode(header) + &amp;quot;.&amp;quot; + base64UrlEncode(payload),
+  secret)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;advantages-of-jwts&#34;&gt;Advantages of JWTs&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lightweight&lt;/li&gt;
+&lt;li&gt;Self-contained&lt;/li&gt;
+&lt;li&gt;Reduced database queries, since the token contains all of the required information about the user&lt;/li&gt;
+&lt;li&gt;Because information can be signed, you can be confident that the sender is who they say they are, and that the information has not been tampered with&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;learn-more-about-json-web-tokens&#34;&gt;Learn more about JSON Web Tokens&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jwt.io/introduction/&#34;&gt;Introduction to JSON Web Tokens - jwt.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/the-anatomy-of-a-json-web-token&#34;&gt;The Anatomy of a JSON Web Token - scotch.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jwt.io/&#34;&gt;JWT Debugger&lt;/a&gt; - a useful tool for interactively working with JWTs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;angular-interceptors&#34;&gt;Angular Interceptors&lt;/h3&gt;
+
+&lt;p&gt;Interceptors are used any time it is desirable to intercept requests before they are handed to the server and responses before they are handed off to the application code. They are factories that are added to the &lt;code&gt;$httpProvider.interceptors&lt;/code&gt; array&lt;/p&gt;
+
+&lt;p&gt;In Meganote, we used an interceptor to add JSON Web Tokens to the headers of requests being sent to our API&lt;/p&gt;
+
+&lt;p&gt;Read more about interceptors &lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote:  &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/f2a7deaec6389589ed82c512b5b862a1f53893a2&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/354ca8350988b43eb95cc695ed995cb52fcc3622&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/4b41f89775990101773b3957dc20438125669ca7&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/272530344fc593fcb4edff059160971c04a5425b&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Meganote polish!  Add final touches for a better user experience&lt;/p&gt;
+
+&lt;h4 id=&#34;flash-messages&#34;&gt;Flash messages&lt;/h4&gt;
+
+&lt;p&gt;Add flash messages for events like successfully signing in or out, reusing a username, non-matching passwords, etc&lt;/p&gt;
+
+&lt;h4 id=&#34;better-error-messages-from-the-server&#34;&gt;Better error messages from the server&lt;/h4&gt;
+
+&lt;p&gt;Enhance the returned JSON responses from the server for better communication with the user&lt;/p&gt;
+
+&lt;h4 id=&#34;database-validation&#34;&gt;Database validation&lt;/h4&gt;
+
+&lt;p&gt;Enforce database rules on the server side for things like unique usernames and password length&lt;/p&gt;
+
+&lt;h4 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h4&gt;
+
+&lt;p&gt;Add a spinner animation that appears while waiting for responses from the API&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
