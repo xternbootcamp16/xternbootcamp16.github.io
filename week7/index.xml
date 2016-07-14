@@ -184,5 +184,110 @@ HMACSHA256(
 </description>
     </item>
     
+    <item>
+      <title>Day 32: Minification, Promises and ng-Resource</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/day32/</link>
+      <pubDate>Thu, 14 Jul 2016 14:49:51 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/day32/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, July 14, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;minification&#34;&gt;Minification&lt;/h3&gt;
+
+&lt;p&gt;Minification is the process of making code as compact as possible without changing its functionality.  Since a lot of the white space, new lines, descriptive names, comments, and sometimes even block delimiters are purely for human readability, much of it can be stripped out while remaining completely functional.&lt;/p&gt;
+
+&lt;p&gt;This is particularly important for JavaScript, since it is served over an internet connection, and the size of the files can dramatically effect the time it takes to transfer the required files and ultimately render a page.  In our project, we used &lt;a href=&#34;https://www.npmjs.com/package/gulp-uglify&#34;&gt;gulp-uglify&lt;/a&gt; for minifying JavaScript, and &lt;a href=&#34;https://www.npmjs.com/package/gulp-clean-css&#34;&gt;gulp-clean-css&lt;/a&gt; to minify CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// regular code
+
+var numberArray = [];
+for (var i = 0; i &amp;lt; 20; i++ ) {
+  numberArray[i] = i;
+}
+
+// minified code
+
+var a=[];for(var i=0;i&amp;lt;20;i++){a[i]=i;}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;promises&#34;&gt;Promises&lt;/h3&gt;
+
+&lt;p&gt;Promises provide an easy-to-use interface for handling asynchronous tasks without blocking execution while waiting for the async task to complete.  Previously, this type of work was done using callback functions, but nested callbacks can quickly become very difficult to manage (and even read).&lt;/p&gt;
+
+&lt;p&gt;Luckily, ES6 now provides native support for promises, so we no longer have to bring in an external promise library to take advantage of them. Basically, promises allow us to use &lt;code&gt;.then()&lt;/code&gt; functions to write what we would &lt;em&gt;like to do&lt;/em&gt; if the promises resolve successfully, and &lt;code&gt;.catch()&lt;/code&gt; to handle what happens if an error occurs and we don&amp;rsquo;t get the data we expect.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// make a promise
+let samplePromise = new Promise((resolve, reject) =&amp;gt; {
+  if ( /* everything works as we expect */ ) {
+    resolve(&#39;Great success!&#39;)
+  } else {
+    reject(&#39;That did not work...&#39;)
+  }
+})
+
+// use the promise
+samplePromise
+  .then(result =&amp;gt; {
+    console.log(result); // &#39;Great success!&#39;
+  })
+  .catch(err =&amp;gt; {
+    console.log(err); // &#39;That did not work...&#39;
+  });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another great thing about promises is that they can be chained together - multiple &lt;code&gt;.then()&lt;/code&gt; functions can happen sequentially, with each &lt;code&gt;.then()&lt;/code&gt; depending on the successful return of the promise before it.  An error at any point of the chain propagates through the entire chain, so only one &lt;code&gt;.catch()&lt;/code&gt; is needed to handle multiple possible errors.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// chained promises
+firstPromise
+  .then(firstResult =&amp;gt; {
+    return secondThingThatReturnsAPromise(firstResult);
+  })
+  .then(secondResult =&amp;gt; {
+    return thirdThingThatReturnsAPromise(secondResult);
+  })
+  .then(thirdResult =&amp;gt; {
+    // do something with thirdResult
+  })
+  .catch(err =&amp;gt; {
+    // catches any error from any of the previous promises
+  })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;resources-for-learning-more-about-promises&#34;&gt;Resources for learning more about Promises&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://promisesaplus.com/&#34;&gt;Promises/A+&lt;/a&gt; - the actual specification&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://davidwalsh.name/promises&#34;&gt;JavaScript Promise API&lt;/a&gt; - a helpful article about the basics of promises by David Walsh&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.html5rocks.com/en/tutorials/es6/promises/&#34;&gt;JavaScript Promises: There and Back Again&lt;/a&gt; - A bit more in-depth look by Jake Archibald&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ngresource-https-docs-angularjs-org-api-ngresource-service-resource&#34;&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ngResource/service/$resource&#34;&gt;ngResource&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;ngResource&lt;/code&gt; is an Angular module that provides interaction support with RESTful services through the &lt;code&gt;$resource&lt;/code&gt; service (it&amp;rsquo;s a factory). By default, &lt;code&gt;$resource&lt;/code&gt; provides support for the following actions:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;{ &#39;get&#39;:    {method:&#39;GET&#39;},
+  &#39;save&#39;:   {method:&#39;POST&#39;},
+  &#39;query&#39;:  {method:&#39;GET&#39;, isArray:true},
+  &#39;remove&#39;: {method:&#39;DELETE&#39;},
+  &#39;delete&#39;: {method:&#39;DELETE&#39;} };
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Custom actions can be added when the resource is created by passing additional parameters.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$resource(url, [paramDefaults], [actions], options);&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Create your own Angular app from scratch that utilizes &lt;code&gt;$resource&lt;/code&gt; to interact with data from an API&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

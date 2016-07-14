@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>SSH</title>
+    <title>Day 32: Minification, Promises and ng-Resource</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-win/ssh/">
+  <body class="" data-url="/week7/day32/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -209,7 +209,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-win/">
+      <li class="dd-item  " data-nav-id="/setup-win/">
         <a href="/setup-win/">
           <span>
             
@@ -265,7 +265,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-win/ssh/">
+            <li class="dd-item " data-nav-id="/setup-win/ssh/">
               <a href="/setup-win/ssh/">
                 <span>SSH     </i></span>
               </a>
@@ -642,7 +642,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week7/">
+      <li class="dd-item  parent" data-nav-id="/week7/">
         <a href="/week7/">
           <span>
             
@@ -674,7 +674,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week7/day32/">
+            <li class="dd-item active" data-nav-id="/week7/day32/">
               <a href="/week7/day32/">
                 <span>Day 32: Minification, Promises and ng-Resource     </i></span>
               </a>
@@ -719,27 +719,27 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-win/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week7/" itemprop="url"><span itemprop="title">Wrapping up Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> SSH</span>
+                <span itemprop="title"> Day 32: Minification, Promises and ng-Resource</span>
               </div>
               
                   <div class="progress">
@@ -748,9 +748,16 @@
 <ul>
 <li>
 <ul>
-<li><a href="#check-for-an-existing-key">Check for an existing key</a></li>
-<li><a href="#generate-an-ssh-key">Generate an SSH key</a></li>
-<li><a href="#change-file-permissions">Change file permissions</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#minification">Minification</a></li>
+<li><a href="#promises">Promises</a>
+<ul>
+<li><a href="#resources-for-learning-more-about-promises">Resources for learning more about Promises</a></li>
+</ul></li>
+<li><a href="#ngresource-https-docs-angularjs-org-api-ngresource-service-resource"><a href="https://docs.angularjs.org/api/ngResource/service/$resource">ngResource</a></a></li>
+</ul></li>
+<li><a href="#homework">Homework</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -763,58 +770,105 @@
             
     	        <div id="body-inner">
                 
-                <h1>SSH</h1>
+                <h1>Day 32: Minification, Promises and ng-Resource</h1>
                 
 
 
 
-<p>I recommend setting up an SSH key to simplify authentication with GitHub and other services.</p>
+<p><date>Thursday, July 14, 2016</date></p>
 
-<h2 id="check-for-an-existing-key">Check for an existing key</h2>
+<h2 id="topics">Topics</h2>
 
-<p>In Babun, make sure you&rsquo;re in your home directory. You will be by default, but you can double-check with the &ldquo;print working directory&rdquo; command: <code>pwd</code></p>
+<h3 id="minification">Minification</h3>
 
-<pre><code class="language-zsh">pwd
+<p>Minification is the process of making code as compact as possible without changing its functionality.  Since a lot of the white space, new lines, descriptive names, comments, and sometimes even block delimiters are purely for human readability, much of it can be stripped out while remaining completely functional.</p>
+
+<p>This is particularly important for JavaScript, since it is served over an internet connection, and the size of the files can dramatically effect the time it takes to transfer the required files and ultimately render a page.  In our project, we used <a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a> for minifying JavaScript, and <a href="https://www.npmjs.com/package/gulp-clean-css">gulp-clean-css</a> to minify CSS.</p>
+
+<pre><code class="language-js">// regular code
+
+var numberArray = [];
+for (var i = 0; i &lt; 20; i++ ) {
+  numberArray[i] = i;
+}
+
+// minified code
+
+var a=[];for(var i=0;i&lt;20;i++){a[i]=i;}
+
 </code></pre>
 
-<p>You should be in <code>/home/yourusername</code>. If not, you can switch to that directory with the <code>cd</code> command, passing in the directory you want to switch to.</p>
+<h3 id="promises">Promises</h3>
 
-<pre><code class="language-zsh">cd ~
+<p>Promises provide an easy-to-use interface for handling asynchronous tasks without blocking execution while waiting for the async task to complete.  Previously, this type of work was done using callback functions, but nested callbacks can quickly become very difficult to manage (and even read).</p>
+
+<p>Luckily, ES6 now provides native support for promises, so we no longer have to bring in an external promise library to take advantage of them. Basically, promises allow us to use <code>.then()</code> functions to write what we would <em>like to do</em> if the promises resolve successfully, and <code>.catch()</code> to handle what happens if an error occurs and we don&rsquo;t get the data we expect.</p>
+
+<pre><code class="language-js">
+// make a promise
+let samplePromise = new Promise((resolve, reject) =&gt; {
+  if ( /* everything works as we expect */ ) {
+    resolve('Great success!')
+  } else {
+    reject('That did not work...')
+  }
+})
+
+// use the promise
+samplePromise
+  .then(result =&gt; {
+    console.log(result); // 'Great success!'
+  })
+  .catch(err =&gt; {
+    console.log(err); // 'That did not work...'
+  });
+
 </code></pre>
 
-<div class="notices tip" ><p>You can always use a tilde <code>~</code> as a shortcut for your home directory.</p>
-</div>
+<p>Another great thing about promises is that they can be chained together - multiple <code>.then()</code> functions can happen sequentially, with each <code>.then()</code> depending on the successful return of the promise before it.  An error at any point of the chain propagates through the entire chain, so only one <code>.catch()</code> is needed to handle multiple possible errors.</p>
 
-
-<p>Check for an <code>.ssh</code> directory:</p>
-
-<pre><code class="language-zsh">ls .ssh
+<pre><code class="language-js">// chained promises
+firstPromise
+  .then(firstResult =&gt; {
+    return secondThingThatReturnsAPromise(firstResult);
+  })
+  .then(secondResult =&gt; {
+    return thirdThingThatReturnsAPromise(secondResult);
+  })
+  .then(thirdResult =&gt; {
+    // do something with thirdResult
+  })
+  .catch(err =&gt; {
+    // catches any error from any of the previous promises
+  })
 </code></pre>
 
-<p>If you see an <code>id_rsa.pub</code> file, then you already have an SSH key and can skip to the next page.</p>
+<h4 id="resources-for-learning-more-about-promises">Resources for learning more about Promises</h4>
 
-<h2 id="generate-an-ssh-key">Generate an SSH key</h2>
+<ul>
+<li><a href="https://promisesaplus.com/">Promises/A+</a> - the actual specification</li>
+<li><a href="https://davidwalsh.name/promises">JavaScript Promise API</a> - a helpful article about the basics of promises by David Walsh</li>
+<li><a href="http://www.html5rocks.com/en/tutorials/es6/promises/">JavaScript Promises: There and Back Again</a> - A bit more in-depth look by Jake Archibald</li>
+</ul>
 
-<p>Type the following command to generate your SSH key, substituting the same email address you used for Git earlier:</p>
+<h3 id="ngresource-https-docs-angularjs-org-api-ngresource-service-resource"><a href="https://docs.angularjs.org/api/ngResource/service/$resource">ngResource</a></h3>
 
-<pre><code class="language-zsh">ssh-keygen -t rsa -C &quot;youremail@example.com&quot;
+<p><code>ngResource</code> is an Angular module that provides interaction support with RESTful services through the <code>$resource</code> service (it&rsquo;s a factory). By default, <code>$resource</code> provides support for the following actions:</p>
+
+<pre><code class="language-js">{ 'get':    {method:'GET'},
+  'save':   {method:'POST'},
+  'query':  {method:'GET', isArray:true},
+  'remove': {method:'DELETE'},
+  'delete': {method:'DELETE'} };
 </code></pre>
 
-<p>It should prompt you for a file name. You can just hit &lsquo;enter&rsquo; to accept the default.</p>
+<p>Custom actions can be added when the resource is created by passing additional parameters.</p>
 
-<p>It will then prompt you for a password. You can just hit &lsquo;enter&rsquo; (twice) to not set a passphrase. That compromises your key should anyone gain access to your laptop, but it may be simpler for the sake of this course. It&rsquo;s much safer to use a passphrase when generating a key when you truly want to maximize security.</p>
+<p><code>$resource(url, [paramDefaults], [actions], options);</code></p>
 
-<p>If all is well, you should see that your identification and your public key have been saved to <code>.ssh/id_rsa</code> and <code>.ssh/id_rsa.pub</code> respectively.</p>
+<h2 id="homework">Homework</h2>
 
-<h2 id="change-file-permissions">Change file permissions</h2>
-
-<p>The new keys will not have been generated with the correct file permissions, so run these two commands:</p>
-
-<pre><code class="language-zsh">chmod -R 700 .ssh/
-chmod 600 .ssh/id_rsa
-</code></pre>
-
-<p>You&rsquo;ll test your new key shortly, but first you&rsquo;ll need to create a GitHub account and add your public key to the account.</p>
+<p>Create your own Angular app from scratch that utilizes <code>$resource</code> to interact with data from an API</p>
 
 
       
@@ -822,8 +876,8 @@ chmod 600 .ssh/id_rsa
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-win/text-editors"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-win/github" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week7/day30"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week7/day32" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
