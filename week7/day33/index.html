@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Command Line</title>
+    <title>Day 33: Freelancing and Ruby</title>
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/hybrid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-mac/command-line/">
+  <body class="" data-url="/week7/day33/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -122,7 +122,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-mac/">
+      <li class="dd-item  " data-nav-id="/setup-mac/">
         <a href="/setup-mac/">
           <span>
             
@@ -146,7 +146,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-mac/command-line/">
+            <li class="dd-item " data-nav-id="/setup-mac/command-line/">
               <a href="/setup-mac/command-line/">
                 <span>Command Line     </i></span>
               </a>
@@ -642,7 +642,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week7/">
+      <li class="dd-item  parent" data-nav-id="/week7/">
         <a href="/week7/">
           <span>
             
@@ -690,7 +690,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week7/day33/">
+            <li class="dd-item active" data-nav-id="/week7/day33/">
               <a href="/week7/day33/">
                 <span>Day 33: Freelancing and Ruby     </i></span>
               </a>
@@ -733,29 +733,29 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     
                     
-                <a href="/setup-mac/" itemprop="url"><span itemprop="title">Setup for Mac</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week7/" itemprop="url"><span itemprop="title">Wrapping up Meganote</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                <span itemprop="title"> Command Line</span>
+                <span itemprop="title"> Day 33: Freelancing and Ruby</span>
               </div>
               
                   <div class="progress">
@@ -764,8 +764,18 @@
 <ul>
 <li>
 <ul>
-<li><a href="#terminal-or-iterm2">Terminal or iTerm2</a></li>
-<li><a href="#zsh">ZSH</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#mean">MEAN</a></li>
+<li><a href="#filters-and-focus">Filters and Focus</a></li>
+<li><a href="#installing-ruby-and-ruby-on-rails">Installing Ruby and Ruby on Rails</a></li>
+<li><a href="#freelancing">Freelancing</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a>
+<ul>
+<li><a href="#meganote-server-updates">Meganote Server updates</a></li>
+</ul></li>
+<li><a href="#homework">Homework</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -778,34 +788,65 @@
             
     	        <div id="body-inner">
                 
-                <h1>Command Line</h1>
+                <h1>Day 33: Freelancing and Ruby</h1>
                 
 
 
 
-<p>You&rsquo;ll be using a command-line throughout the setup process.</p>
+<p><date>Friday, July 15, 2016</date></p>
 
-<h2 id="terminal-or-iterm2">Terminal or iTerm2</h2>
+<h2 id="topics">Topics</h2>
 
-<p>OS X comes with Terminal, which you can find at <code>/Applications/Utilities/Terminal.app</code> or by searching for Terminal in Spotlight.</p>
+<h3 id="mean">MEAN</h3>
 
-<p><img src="http://davestrus.com/images/terminal.png" alt="Terminal.app" /></p>
+<p>We&rsquo;ve been developing with the so-called <em>MEAN</em> stack. MEAN is an acronym.</p>
 
-<p>Many Mac users prefer <a href="https://www.iterm2.com/index.html">iTerm2</a> over the built-in Terminal. iTerm2 is free, so I encourage you to check it out. It has some advanced features that the built-in Terminal lacks.</p>
+<ul>
+<li><a href="https://www.mongodb.com/"><strong>M</strong>ongo</a> - database</li>
+<li><a href="http://expressjs.com/"><strong>E</strong>xpress</a> - minimalist web framework for Node</li>
+<li><a href="https://angularjs.org/"><strong>A</strong>ngular</a> - front-end MVW framework</li>
+<li><a href="https://nodejs.org/en/"><strong>N</strong>ode</a> - JavaScript runtime for executing JS outside a browser environment, such as on a server</li>
+</ul>
 
-<p>Whichever you choose, you&rsquo;ll use it frequently enough that I recommend keeping it in your Dock.</p>
+<h3 id="filters-and-focus">Filters and Focus</h3>
 
-<p>When you launch Terminal or iTerm, it will (by default) run a UNIX shell called Bash. Bash will present a command prompt, indicated by <code>$</code>.</p>
+<ul>
+<li>Using <a href="https://docs.angularjs.org/api/ng/filter/filter"><code>filter</code></a> to get a subset of an array (<em>e.g.</em> to search through a list of notes, showing only the matches).</li>
+<li>Overcoming HTML5&rsquo;s inability to deal with autofocus in dynamic templates with a custom directive.</li>
+</ul>
 
-<h2 id="zsh">ZSH</h2>
+<h3 id="installing-ruby-and-ruby-on-rails">Installing Ruby and Ruby on Rails</h3>
 
-<p>I am a big fan of ZSH, which is an alternative to Bash. Even better is <a href="http://ohmyz.sh/">Oh My ZSH</a>, which is framework for managing ZSH configuration. I highly recommend checking it out. You&rsquo;ll still use Terminal.app or iTerm2 to launch your shell, but it will run ZSH in place of Bash.</p>
+<ul>
+<li><a href="https://github.com/getfretless/ruby-installfest-mac/wiki/02-Ruby-and-Ruby-on-Rails">Instructions for Mac</a></li>
+<li><a href="http://learnwebtutorials.com/step-by-step-tutorial-on-installing-ruby-on-rails-4-on-windows-8">Instructions for Windows</a></li>
+<li><a href="https://teamtreehouse.com/library/installing-a-ruby-development-environment/installing-a-ruby-development-environment/installing-ruby-on-windows">Video instruction for Windows</a> (may require a <a href="https://teamtreehouse.com/">Treehouse</a> account)</li>
+<li><a href="https://c9.io/">Cloud9 remote development environment</a>
 
-<p>I will be using ZSH (with Oh My ZSH) in class, but most of what we&rsquo;ll do works just as well in Bash.</p>
+<ul>
+<li><a href="https://www.railstutorial.org/book/beginning#sec-development_environment">Cloud9 tutorial for Rails</a></li>
+</ul></li>
+</ul>
 
-<div class="notices tip" ><p>If you&rsquo;re not very familiar with UNIX shells, or if you&rsquo;d like to learn some cool tricks, including Oh My ZSH features, sign up for Wes Bos&rsquo;s free <strong><a href="http://commandlinepoweruser.com/">Command Line Power User</a></strong> videos. (They&rsquo;re all on YouTube, but signing up for the email makes it a little easier to find them.)</p>
-</div>
+<h3 id="freelancing">Freelancing</h3>
 
+<ul>
+<li><a href="http://www.creativeboom.com/interviews/jeffrey-zeldman-on-agency-life-the-changing-web-and-why-he-had-to-get-back-to-his-roots/">Jeffrey Zeldman interview at Creative Boom</a></li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<h3 id="meganote-server-updates">Meganote Server updates</h3>
+
+<ul>
+<li><a href="/xternbootcamp16/meganote/commit/380a11f620ce4338e604c8ab23f7930659be9aa0" title="Allow unused args, prefixed with underscores.">Allow unused args, prefixed with underscores.</a></li>
+<li><a href="/xternbootcamp16/meganote/commit/0fcb5ce435503c732d8b890416ae67722f0cfade" title="Add focusOn directive for autofocus.">Add focusOn directive for autofocus.</a></li>
+<li><a href="/xternbootcamp16/meganote/commit/1d3203f95625f8769a497d9b1912abae81d8140e" title="Use focusOn to focus appropriate form fields.">Use focusOn to focus appropriate form fields.</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<p>Keep working on your new, from-scratch Angular app!</p>
 
 
       
@@ -813,8 +854,8 @@
     </div>
 
     <div id="navigation">
-        <a class="nav nav-prev" href="/setup-mac/google-chrome"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-mac/git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week7/day32"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week7/day33" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
