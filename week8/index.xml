@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week8s on Xtern Bootcamp 16</title>
+    <link>http://replace-this-with-your-hugo-site.com/week8/index.xml</link>
+    <description>Recent content in Week8s on Xtern Bootcamp 16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jul 2016 16:15:26 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/week8/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ruby on Rails</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/</link>
+      <pubDate>Mon, 18 Jul 2016 16:15:26 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week8/</guid>
+      <description>
+
+&lt;h3 id=&#34;week-8&#34;&gt;Week 8&lt;/h3&gt;
+
+&lt;h1 id=&#34;ruby-on-rails&#34;&gt;Ruby on Rails&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 34: Ruby on Rails</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/day34/</link>
+      <pubDate>Mon, 18 Jul 2016 16:40:12 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week8/day34/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, July 18, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;ruby&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby is a dynamic, open source programming language with extremely readable syntax. It was specifically built with programmer happiness and productivity in mind.&lt;/p&gt;
+
+&lt;h4 id=&#34;some-ruby-links&#34;&gt;Some Ruby links&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby-lang.org&lt;/a&gt; - the official website for Ruby&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/learn/ruby&#34;&gt;Codecademy - Ruby&lt;/a&gt; - a great way to get started with the basics of Ruby syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://poignant.guide/&#34;&gt;Why&amp;rsquo;s (Poignant) Guide to Ruby&lt;/a&gt; - an entertaining, if eccentric, intro to Ruby&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ruby-on-rails&#34;&gt;Ruby on Rails&lt;/h3&gt;
+
+&lt;p&gt;Rails is an open source web framework built with Ruby.  Like Ruby, it was built with an emphasis on productivity and programmer happiness by following principles of &lt;em&gt;convention over configuration&lt;/em&gt;.  This means that many of the tiny decisions that have to be made in nearly every web app - (&amp;lsquo;should we name that variable &amp;ldquo;id&amp;rdquo;, &amp;ldquo;postId&amp;rdquo;, &amp;ldquo;post_id&amp;rdquo;&amp;hellip;?&amp;lsquo;) - are largely unnecessary and don&amp;rsquo;t need to be solved repeatedly.  By following conventions for these types of decisions, more effort can be put towards the parts of the program that matter and productivity can be greatly increase.&lt;/p&gt;
+
+&lt;h4 id=&#34;some-ruby-on-rails-links&#34;&gt;Some Ruby on Rails links&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;rubyonrails.org&lt;/a&gt; - the official website for all things Rails&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.railstutorial.org/&#34;&gt;railstutorial.org&lt;/a&gt; - Michael Hartl&amp;rsquo;s free and excellent tutorial of building a social-networking app from the ground up&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://railsforzombies.org/&#34;&gt;Rails for Zombies&lt;/a&gt; - Codecademy.com&amp;rsquo;s free online interactive Rails introduction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Bluit: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/78038a9dde19b6492322518b6b0d6bbfa0b50731&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/a76ea07639a6e8a60eee198019b784243a206c28&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bluit wiki with detailed build instructions: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/wiki/01-Setup&#34;&gt;wiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Create an Angular app using ngResource to interact with the Bluit API.&lt;/p&gt;
+
+&lt;p&gt;Morning API URL: &lt;a href=&#34;https://bluitxtern.herokuapp.com/&#34;&gt;https://bluitxtern.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Afternoon API URL: &lt;a href=&#34;http://bluitx.herokuapp.com/&#34;&gt;http://bluitx.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 35: Readme and more Bluit</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/day35/</link>
+      <pubDate>Tue, 19 Jul 2016 15:27:44 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week8/day35/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, July 19, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;ve covered markdown briefly before.  &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/week3/day14&#34;&gt;Here is a link&lt;/a&gt; to the page that has several great resources for learning and using markdown.  Specifically, we used markdown to write a &lt;code&gt;README.md&lt;/code&gt; for our Meganote project on Github.&lt;/p&gt;
+
+&lt;h4 id=&#34;important-info-to-include-in-a-readme-md&#34;&gt;Important info to include in a &lt;code&gt;README.md&lt;/code&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description of the project&lt;/li&gt;
+&lt;li&gt;Technologies used in the project&lt;/li&gt;
+&lt;li&gt;Dependencies&lt;/li&gt;
+&lt;li&gt;Instructions for getting the project up and running&lt;/li&gt;
+&lt;li&gt;Configuration options&lt;/li&gt;
+&lt;li&gt;Deployment Instructions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/meganote/blob/master/README.md&#34;&gt;Here is a link&lt;/a&gt; to the &lt;code&gt;README.md&lt;/code&gt; that we wrote today for Meganote as an example.&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;The Atom text editor has a package available called &lt;code&gt;markdown-preview&lt;/code&gt;.  It allows you to see a live preview of how your markdown file will look when it is rendered.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Bluit: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/247ba5a423d5aaabb35d3c46c8321a9108d61a6a&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/410772f8af43260de299f783b0f51a63e56c7ee4&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bluit wiki with detailed build instructions: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/wiki/01-Setup&#34;&gt;wiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;README.md&lt;/code&gt; files for the other projects that we have created during this course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 36: Testing, Partials, Pagination, Devise</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/day36/</link>
+      <pubDate>Wed, 20 Jul 2016 15:56:50 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week8/day36/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, July 20, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;testing&#34;&gt;Testing&lt;/h3&gt;
+
+&lt;p&gt;Testing is an important part of good software design.  Having a solid suite of tests ensures that your software actually does the things it was designed to do.  More importantly, as your program grows and new features are added and refactored, it ensures that none of the original functionality can be inadvertently compromised.&lt;/p&gt;
+
+&lt;p&gt;A popular method in use today is Test Driven Development (TDD).  In TDD, the tests are actually written &lt;em&gt;before&lt;/em&gt; the code.  The three steps in TDD are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write a failing test&lt;/li&gt;
+&lt;li&gt;Write enough code to make the test pass&lt;/li&gt;
+&lt;li&gt;Refactor the code&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;some-testing-resources&#34;&gt;Some testing resources&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://guides.rubyonrails.org/testing.html&#34;&gt;A Guide to Testing Rails Applications&lt;/a&gt; - from the Rails docs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/unit-testing&#34;&gt;Angular Unit Testing&lt;/a&gt; - from the Angular guides&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://agiledata.org/essays/tdd.html&#34;&gt;Introduction to Test-Driven Development&lt;/a&gt; - an (extensive) introduction to TDD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bluit&#34;&gt;Bluit&lt;/h3&gt;
+
+&lt;h4 id=&#34;partials&#34;&gt;Partials&lt;/h4&gt;
+
+&lt;p&gt;Often in a Rails project, we end up using nearly identical HTML markup in multiple places.  Luckily, Rails allows you to create &lt;em&gt;partials&lt;/em&gt; - reusable HTML components that you can use anywhere you need it. A common use case (and one we used today) is for forms.  Many times an identical form is used for both creating and editing a resource like our Posts. All you have to do to create a partial is add some html to a file whose name starts with an underscore, like &lt;code&gt;_form.html.erb&lt;/code&gt;.  Here&amp;rsquo;s an example where we create such a partial and used it for both &lt;code&gt;new&lt;/code&gt; and &lt;code&gt;edit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!--_form.html.erb--&amp;gt;
+
+&amp;lt;%= form_for @post do |f| %&amp;gt;
+  &amp;lt;fieldset&amp;gt;
+    &amp;lt;%= f.label :title %&amp;gt;
+    &amp;lt;%= f.text_field :title, autofocus: true %&amp;gt;
+  &amp;lt;/fieldset&amp;gt;
+  &amp;lt;fieldset&amp;gt;
+    &amp;lt;%= f.label :link_url %&amp;gt;
+    &amp;lt;%= f.url_field :link_url %&amp;gt;
+  &amp;lt;/fieldset&amp;gt;
+  &amp;lt;fieldset&amp;gt;
+    &amp;lt;%= f.label :body %&amp;gt;
+    &amp;lt;%= f.text_area :body %&amp;gt;
+  &amp;lt;/fieldset&amp;gt;
+
+  &amp;lt;%= f.submit class: &amp;quot;btn btn-default&amp;quot; %&amp;gt;
+&amp;lt;% end %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!--new.html.erb--&amp;gt;
+
+&amp;lt;%= render &amp;quot;form&amp;quot; %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!--edit.html.erb--&amp;gt;
+
+&amp;lt;%= render &amp;quot;form&amp;quot; %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;pagination&#34;&gt;Pagination&lt;/h4&gt;
+
+&lt;p&gt;As the number of records grows, it can become unwieldy to have hundreds or even thousands of records displayed on a single page.  This is where &lt;em&gt;pagination&lt;/em&gt; comes in handy.  It allows us to specify how many records are displayed on a page at any given time, and provides easy navigation between the pages.  In class, we used two different ruby gems for our project - the morning class used &lt;a href=&#34;https://github.com/mislav/will_paginate&#34;&gt;will-paginate&lt;/a&gt;, and the afternoon class used &lt;a href=&#34;https://github.com/amatsuda/kaminari&#34;&gt;Kaminari&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;devise&#34;&gt;Devise&lt;/h4&gt;
+
+&lt;p&gt;While it is not difficult to create your own user authentication system, much of the code for such a system will look very similar or even identical for many projects.  So, why not use a gem?  We used &lt;a href=&#34;https://github.com/plataformatec/devise&#34;&gt;Devise&lt;/a&gt;, a flexible authentication solution for Rails.&lt;/p&gt;
+
+&lt;p&gt;Devise is comprised of 10 main modules that you can opt to use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Database Authenticatable: hashes and stores passwords&lt;/li&gt;
+&lt;li&gt;Omniauthable: adds OmniAuth support&lt;/li&gt;
+&lt;li&gt;Confirmable: sends emails with confirmation instructions&lt;/li&gt;
+&lt;li&gt;Recoverable: for password resets&lt;/li&gt;
+&lt;li&gt;Registerable: handles the sign-up process&lt;/li&gt;
+&lt;li&gt;Rememberable: generates and clears tokens for remembering users&lt;/li&gt;
+&lt;li&gt;Trackable: tracks all sorts of stuff like sign-in count&lt;/li&gt;
+&lt;li&gt;Timeoutable: expires sessions after a set period of time&lt;/li&gt;
+&lt;li&gt;Validatable: user and password validations&lt;/li&gt;
+&lt;li&gt;Lockable: locks an account after multiple failes sign-in attempts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Bluit: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/9f1b2410b4d9091e28eb58970d2eb08719e723a8&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/1a46968eb965ed85562921e98d11a18facf126d3&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 37: Testing with Rspec and Capybara</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/day37/</link>
+      <pubDate>Thu, 21 Jul 2016 15:53:24 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week8/day37/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, July 21, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;testing&#34;&gt;Testing&lt;/h3&gt;
+
+&lt;h4 id=&#34;rspec-and-capybara&#34;&gt;RSpec and Capybara&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rspec.info/&#34;&gt;RSpec&lt;/a&gt; is a popular testing framework for the Ruby language, and is widely used for testing Rails applications.  It can be considered a &lt;em&gt;Domain-Specific Language&lt;/em&gt; (DSL), a computer language specialized to a particular application domain, and is written to resemble a natural language specification.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jnicklas.github.io/capybara/&#34;&gt;Cabybara&lt;/a&gt; is a web-based automation framework that simulates how users interact with your application, and is also a DSL. It lets us use high-level commands like &lt;code&gt;#click_button&lt;/code&gt; or &lt;code&gt;#visit&lt;/code&gt; to emulate how a user would actually use the application.&lt;/p&gt;
+
+&lt;p&gt;Using these two tools together, say we wanted to test that when a &amp;ldquo;User visits the home page successfully, we expect there to be an h1 element with text that says &amp;lsquo;Pokemon&amp;rsquo;&amp;rdquo;.  This could be written as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;feature &amp;quot;User visits home page&amp;quot; do
+  scenario &amp;quot;successfully&amp;quot; do
+    visit root_path
+
+    expect(page).to have_css &amp;quot;h1&amp;quot;, text: &amp;quot;Pokemon&amp;quot;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;By adhering to the principles of &lt;em&gt;Test-Driven Development&lt;/em&gt; (TDD), and writing this test before any code, we can follow the error messages of our failing test to write code that eventually meets the requirements and causes the test to pass. Once this first test passes, we can write a new spec for the next step of the user story and continue the process.&lt;/p&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;We built a small sample app by following principles of TDD, utilizing RSpec and Capybara.  Code can be found here:&lt;/p&gt;
+
+&lt;p&gt;Pokedex: &lt;a href=&#34;https://github.com/xternbootcamp16/pokedex/tree/b3d7e89dfd265307a6545f6f2a75a18e8944be99&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/pokedex/tree/4dca0a4abbbef517e2f610f397c50855ba47d832&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

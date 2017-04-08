@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.19" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+    <title>Day 36: Testing, Partials, Pagination, Devise</title>
+    <link href="http://replace-this-with-your-hugo-site.com//css/nucleus.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/hybrid.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/featherlight.min.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/horsey.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/theme.css" rel="stylesheet">
+    <link href="http://replace-this-with-your-hugo-site.com//css/hugo-theme.css" rel="stylesheet">
+    <script src="http://replace-this-with-your-hugo-site.com//js/jquery-2.x.min.js"></script>
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    <link href="/css/xtern.css" rel="stylesheet">
+
+  </head>
+  <body class="" data-url="/week8/day36/">
+    
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://bootcamp16.getfretless.com/">
+  <img src="/images/xtbc-white.png" width="150">
+</a>
+
+      
+    </div>
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/app-meganote/">
+        <a href="/app-meganote/">
+          <span>
+            
+              <i class="fa fa-file-text-o"></i>
+            
+             Meganote
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/01-seed/">
+              <a href="/app-meganote/01-seed/">
+                <span>Meganote-Seed     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/02-setup/">
+              <a href="/app-meganote/02-setup/">
+                <span>Setup     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/03-google-fonts/">
+              <a href="/app-meganote/03-google-fonts/">
+                <span>Google Fonts     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/04-bootstrap/">
+              <a href="/app-meganote/04-bootstrap/">
+                <span>Bootstrap     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/07-notescontroller/">
+              <a href="/app-meganote/07-notescontroller/">
+                <span>NotesController     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/05-layout/">
+              <a href="/app-meganote/05-layout/">
+                <span>Layout &amp; Style     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/app-meganote/06-modules-routes/">
+              <a href="/app-meganote/06-modules-routes/">
+                <span>Modules &amp; Routes     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/setup-mac/">
+        <a href="/setup-mac/">
+          <span>
+            
+              <b>0a. </b>
+            
+             Setup for Mac
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/google-chrome/">
+              <a href="/setup-mac/google-chrome/">
+                <span>Google Chrome     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/command-line/">
+              <a href="/setup-mac/command-line/">
+                <span>Command Line     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/git/">
+              <a href="/setup-mac/git/">
+                <span>Git     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/nodejs/">
+              <a href="/setup-mac/nodejs/">
+                <span>NodeJS     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/text-editors/">
+              <a href="/setup-mac/text-editors/">
+                <span>Text Editors     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/ssh/">
+              <a href="/setup-mac/ssh/">
+                <span>SSH     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/github/">
+              <a href="/setup-mac/github/">
+                <span>GitHub     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-mac/mongodb/">
+              <a href="/setup-mac/mongodb/">
+                <span>MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/setup-win/">
+        <a href="/setup-win/">
+          <span>
+            
+              <b>0b. </b>
+            
+             Setup for Windows
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/google-chrome/">
+              <a href="/setup-win/google-chrome/">
+                <span>Google Chrome     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/command-line/">
+              <a href="/setup-win/command-line/">
+                <span>Command Line     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/git/">
+              <a href="/setup-win/git/">
+                <span>Git     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/nodejs/">
+              <a href="/setup-win/nodejs/">
+                <span>NodeJS     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/text-editors/">
+              <a href="/setup-win/text-editors/">
+                <span>Text Editors     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/ssh/">
+              <a href="/setup-win/ssh/">
+                <span>SSH     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/github/">
+              <a href="/setup-win/github/">
+                <span>GitHub     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/setup-win/mongodb/">
+              <a href="/setup-win/mongodb/">
+                <span>MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week1/">
+        <a href="/week1/">
+          <span>
+            
+              <b>1. </b>
+            
+             JavaScript
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day01/">
+              <a href="/week1/day01/">
+                <span>Day 1: Introduction     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day02/">
+              <a href="/week1/day02/">
+                <span>Day 2: Objects and Functions     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day03/">
+              <a href="/week1/day03/">
+                <span>Day 3: Putting the Pieces Together     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week1/day04/">
+              <a href="/week1/day04/">
+                <span>Day 4: LocalStorage &amp; jQuery     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week2/">
+        <a href="/week2/">
+          <span>
+            
+              <b>2. </b>
+            
+             jQuery &amp; Ajax
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day05/">
+              <a href="/week2/day05/">
+                <span>Day 5: jQuery &amp; Ajax     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day06/">
+              <a href="/week2/day06/">
+                <span>Day 6: More Ajax     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day07/">
+              <a href="/week2/day07/">
+                <span>Day 7: Intro to REST     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day08/">
+              <a href="/week2/day08/">
+                <span>Day 8: REST     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day09/">
+              <a href="/week2/day09/">
+                <span>Day 9: Intro to Angular     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week3/">
+        <a href="/week3/">
+          <span>
+            
+              <b>3. </b>
+            
+             Angular: Meganote
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week3/day10/">
+              <a href="/week3/day10/">
+                <span>Day 10: ui-router Basics     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week3/day11/">
+              <a href="/week3/day11/">
+                <span>Day 11: Angular Services     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week3/day12/">
+              <a href="/week3/day12/">
+                <span>Day 12: Update &amp; Delete     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week3/day13/">
+              <a href="/week3/day13/">
+                <span>Day 13: Node &amp; MongoDB     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week3/day14/">
+              <a href="/week3/day14/">
+                <span>Day 14: Wrapping up Meganote     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week4/">
+        <a href="/week4/">
+          <span>
+            
+              <b>4. </b>
+            
+             Angular: Mutant Office Hours
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week4/day15/">
+              <a href="/week4/day15/">
+                <span>Day 15: Mutant Office Hours     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week4/day16/">
+              <a href="/week4/day16/">
+                <span>Day 16: Firebase and Twilio     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week4/day17/">
+              <a href="/week4/day17/">
+                <span>Day 17: Authorization     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week4/day18/">
+              <a href="/week4/day18/">
+                <span>Day 18: Re-Factory-ing     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week4/day19/">
+              <a href="/week4/day19/">
+                <span>Day 19: Resolve and Directives     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week5/">
+        <a href="/week5/">
+          <span>
+            
+              <b>5. </b>
+            
+             Angular / Node: Mutant Office Hours
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week5/day20/">
+              <a href="/week5/day20/">
+                <span>Day 20: Mailgun and Firebase Security     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week5/day21/">
+              <a href="/week5/day21/">
+                <span>Day 21: Directives and Angular Form Validation     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week5/day22/">
+              <a href="/week5/day22/">
+                <span>Days 22-24: Wrapping up Mutant Office Hours     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week6/">
+        <a href="/week6/">
+          <span>
+            
+              <b>6. </b>
+            
+             Authentication with NodeJS
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week6/day25/">
+              <a href="/week6/day25/">
+                <span>Day 25: Review     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week6/day26/">
+              <a href="/week6/day26/">
+                <span>Day 26: Gulp     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week6/day27/">
+              <a href="/week6/day27/">
+                <span>Day 27: ECMAScript 6     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week6/day28/">
+              <a href="/week6/day28/">
+                <span>Day 28: User Authentication     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/week7/">
+        <a href="/week7/">
+          <span>
+            
+              <b>7. </b>
+            
+             Wrapping up Meganote
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week7/day29/">
+              <a href="/week7/day29/">
+                <span>Day 29: More User Authentication     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week7/day30/">
+              <a href="/week7/day30/">
+                <span>Day 30: Authentication with JWT     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week7/day31/">
+              <a href="/week7/day31/">
+                <span>Day 31: Deployment     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week7/day32/">
+              <a href="/week7/day32/">
+                <span>Day 32: Minification, Promises and ng-Resource     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week7/day33/">
+              <a href="/week7/day33/">
+                <span>Day 33: Freelancing and Ruby     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/week8/">
+        <a href="/week8/">
+          <span>
+            
+              <b>8. </b>
+            
+             Ruby on Rails
+            
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week8/day34/">
+              <a href="/week8/day34/">
+                <span>Day 34: Ruby on Rails     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week8/day35/">
+              <a href="/week8/day35/">
+                <span>Day 35: Readme and more Bluit     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item active" data-nav-id="/week8/day36/">
+              <a href="/week8/day36/">
+                <span>Day 36: Testing, Partials, Pagination, Devise     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week8/day37/">
+              <a href="/week8/day37/">
+                <span>Day 37: Testing with Rspec and Capybara     </i></span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+     
+    <section id="footer">
+      <p>from <a href="http://techpoint.org">TechPoint</a> and <a href="http://www.getfretless.com">Fretless</a></p>
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                  
+                  
+                  
+                    
+                    
+                <a href="/week8/" itemprop="url"><span itemprop="title">Ruby on Rails</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                <span itemprop="title"> Day 36: Testing, Partials, Pagination, Devise</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#testing">Testing</a>
+<ul>
+<li><a href="#some-testing-resources">Some testing resources</a></li>
+</ul></li>
+<li><a href="#bluit">Bluit</a>
+<ul>
+<li><a href="#partials">Partials</a></li>
+<li><a href="#pagination">Pagination</a></li>
+<li><a href="#devise">Devise</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+              <div id="body-inner">
+                
+                <h1>Day 36: Testing, Partials, Pagination, Devise</h1>
+                
+
+
+
+<p><date>Wednesday, July 20, 2016</date></p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="testing">Testing</h3>
+
+<p>Testing is an important part of good software design.  Having a solid suite of tests ensures that your software actually does the things it was designed to do.  More importantly, as your program grows and new features are added and refactored, it ensures that none of the original functionality can be inadvertently compromised.</p>
+
+<p>A popular method in use today is Test Driven Development (TDD).  In TDD, the tests are actually written <em>before</em> the code.  The three steps in TDD are:</p>
+
+<ol>
+<li>Write a failing test</li>
+<li>Write enough code to make the test pass</li>
+<li>Refactor the code</li>
+</ol>
+
+<h4 id="some-testing-resources">Some testing resources</h4>
+
+<ul>
+<li><a href="http://guides.rubyonrails.org/testing.html">A Guide to Testing Rails Applications</a> - from the Rails docs</li>
+<li><a href="https://docs.angularjs.org/guide/unit-testing">Angular Unit Testing</a> - from the Angular guides</li>
+<li><a href="http://agiledata.org/essays/tdd.html">Introduction to Test-Driven Development</a> - an (extensive) introduction to TDD</li>
+</ul>
+
+<h3 id="bluit">Bluit</h3>
+
+<h4 id="partials">Partials</h4>
+
+<p>Often in a Rails project, we end up using nearly identical HTML markup in multiple places.  Luckily, Rails allows you to create <em>partials</em> - reusable HTML components that you can use anywhere you need it. A common use case (and one we used today) is for forms.  Many times an identical form is used for both creating and editing a resource like our Posts. All you have to do to create a partial is add some html to a file whose name starts with an underscore, like <code>_form.html.erb</code>.  Here&rsquo;s an example where we create such a partial and used it for both <code>new</code> and <code>edit</code>.</p>
+
+<pre><code class="language-html">&lt;!--_form.html.erb--&gt;
+
+&lt;%= form_for @post do |f| %&gt;
+  &lt;fieldset&gt;
+    &lt;%= f.label :title %&gt;
+    &lt;%= f.text_field :title, autofocus: true %&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;%= f.label :link_url %&gt;
+    &lt;%= f.url_field :link_url %&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;%= f.label :body %&gt;
+    &lt;%= f.text_area :body %&gt;
+  &lt;/fieldset&gt;
+
+  &lt;%= f.submit class: &quot;btn btn-default&quot; %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<pre><code class="language-html">&lt;!--new.html.erb--&gt;
+
+&lt;%= render &quot;form&quot; %&gt;
+</code></pre>
+
+<pre><code class="language-html">&lt;!--edit.html.erb--&gt;
+
+&lt;%= render &quot;form&quot; %&gt;
+</code></pre>
+
+<h4 id="pagination">Pagination</h4>
+
+<p>As the number of records grows, it can become unwieldy to have hundreds or even thousands of records displayed on a single page.  This is where <em>pagination</em> comes in handy.  It allows us to specify how many records are displayed on a page at any given time, and provides easy navigation between the pages.  In class, we used two different ruby gems for our project - the morning class used <a href="https://github.com/mislav/will_paginate">will-paginate</a>, and the afternoon class used <a href="https://github.com/amatsuda/kaminari">Kaminari</a></p>
+
+<h4 id="devise">Devise</h4>
+
+<p>While it is not difficult to create your own user authentication system, much of the code for such a system will look very similar or even identical for many projects.  So, why not use a gem?  We used <a href="https://github.com/plataformatec/devise">Devise</a>, a flexible authentication solution for Rails.</p>
+
+<p>Devise is comprised of 10 main modules that you can opt to use:</p>
+
+<ul>
+<li>Database Authenticatable: hashes and stores passwords</li>
+<li>Omniauthable: adds OmniAuth support</li>
+<li>Confirmable: sends emails with confirmation instructions</li>
+<li>Recoverable: for password resets</li>
+<li>Registerable: handles the sign-up process</li>
+<li>Rememberable: generates and clears tokens for remembering users</li>
+<li>Trackable: tracks all sorts of stuff like sign-in count</li>
+<li>Timeoutable: expires sessions after a set period of time</li>
+<li>Validatable: user and password validations</li>
+<li>Lockable: locks an account after multiple failes sign-in attempts</li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<p>Bluit: <a href="https://github.com/xternbootcamp16/bluit-rails/tree/9f1b2410b4d9091e28eb58970d2eb08719e723a8">Morning</a> | <a href="https://github.com/xternbootcamp16/bluit-rails/tree/1a46968eb965ed85562921e98d11a18facf126d3">Afternoon</a></p>
+
+
+      
+      
+      </div>
+    </div>
+
+    
+
+    <div id="navigation">
+        
+        <a class="nav nav-prev" href="/week8/day35"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week8/day37" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="http://replace-this-with-your-hugo-site.com//js/clipboard.min.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/perfect-scrollbar.min.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/jquery.sticky-kit.min.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/featherlight.min.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/html5shiv-printshiv.min.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/modernizr.custom.71422.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/learn.js"></script>
+    <script src="http://replace-this-with-your-hugo-site.com//js/hugo-learn.js"></script>
+    
+
+  </body>
+</html>
+

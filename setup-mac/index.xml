@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Setup-macs on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/setup-mac/</link>
+    <link>http://replace-this-with-your-hugo-site.com/setup-mac/index.xml</link>
     <description>Recent content in Setup-macs on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

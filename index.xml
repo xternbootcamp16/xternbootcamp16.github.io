@@ -2,162 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <link>http://replace-this-with-your-hugo-site.com/index.xml</link>
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jul 2016 18:53:46 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 Jul 2016 16:40:12 -0400</lastBuildDate>
     <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Wrapping up Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/</link>
-      <pubDate>Mon, 11 Jul 2016 18:53:46 -0400</pubDate>
+      <title>Day 34: Ruby on Rails</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/day34/</link>
+      <pubDate>Mon, 18 Jul 2016 16:40:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/week8/day34/</guid>
       <description>
 
-&lt;h3 id=&#34;week-7&#34;&gt;Week 7&lt;/h3&gt;
+&lt;p&gt;&lt;date&gt;Monday, July 18, 2016&lt;/date&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;wrapping-up-meganote&#34;&gt;Wrapping up Meganote&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Angular / Node: Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/</link>
-      <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week5/</guid>
-      <description>
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
 
-&lt;h3 id=&#34;week-5&#34;&gt;Week 5&lt;/h3&gt;
+&lt;h3 id=&#34;ruby&#34;&gt;Ruby&lt;/h3&gt;
 
-&lt;h1 id=&#34;angular-and-node-mutant-office-hours&#34;&gt;Angular and Node: Mutant Office Hours&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Authentication with NodeJS</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/</link>
-      <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week6/</guid>
-      <description>
+&lt;p&gt;Ruby is a dynamic, open source programming language with extremely readable syntax. It was specifically built with programmer happiness and productivity in mind.&lt;/p&gt;
 
-&lt;h3 id=&#34;week-6&#34;&gt;Week 6&lt;/h3&gt;
+&lt;h4 id=&#34;some-ruby-links&#34;&gt;Some Ruby links&lt;/h4&gt;
 
-&lt;h1 id=&#34;authentication-with-nodejs&#34;&gt;Authentication with NodeJS&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Angular: Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/</link>
-      <pubDate>Mon, 20 Jun 2016 16:15:26 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week4/</guid>
-      <description>
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby-lang.org&lt;/a&gt; - the official website for Ruby&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/learn/ruby&#34;&gt;Codecademy - Ruby&lt;/a&gt; - a great way to get started with the basics of Ruby syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://poignant.guide/&#34;&gt;Why&amp;rsquo;s (Poignant) Guide to Ruby&lt;/a&gt; - an entertaining, if eccentric, intro to Ruby&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&#34;week-4&#34;&gt;Week 4&lt;/h3&gt;
+&lt;h3 id=&#34;ruby-on-rails&#34;&gt;Ruby on Rails&lt;/h3&gt;
 
-&lt;h1 id=&#34;angular-mutant-office-hours&#34;&gt;Angular: Mutant Office Hours&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/</link>
-      <pubDate>Tue, 14 Jun 2016 21:34:12 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/</guid>
-      <description>
+&lt;p&gt;Rails is an open source web framework built with Ruby.  Like Ruby, it was built with an emphasis on productivity and programmer happiness by following principles of &lt;em&gt;convention over configuration&lt;/em&gt;.  This means that many of the tiny decisions that have to be made in nearly every web app - (&amp;lsquo;should we name that variable &amp;ldquo;id&amp;rdquo;, &amp;ldquo;postId&amp;rdquo;, &amp;ldquo;post_id&amp;rdquo;&amp;hellip;?&amp;lsquo;) - are largely unnecessary and don&amp;rsquo;t need to be solved repeatedly.  By following conventions for these types of decisions, more effort can be put towards the parts of the program that matter and productivity can be greatly increase.&lt;/p&gt;
 
-&lt;h3 id=&#34;angular&#34;&gt;Angular&lt;/h3&gt;
+&lt;h4 id=&#34;some-ruby-on-rails-links&#34;&gt;Some Ruby on Rails links&lt;/h4&gt;
 
-&lt;h1 id=&#34;meganote&#34;&gt;Meganote&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Angular: Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/</link>
-      <pubDate>Mon, 13 Jun 2016 16:15:26 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week3/</guid>
-      <description>
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;rubyonrails.org&lt;/a&gt; - the official website for all things Rails&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.railstutorial.org/&#34;&gt;railstutorial.org&lt;/a&gt; - Michael Hartl&amp;rsquo;s free and excellent tutorial of building a social-networking app from the ground up&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://railsforzombies.org/&#34;&gt;Rails for Zombies&lt;/a&gt; - Codecademy.com&amp;rsquo;s free online interactive Rails introduction&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&#34;week-3&#34;&gt;Week 3&lt;/h3&gt;
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
 
-&lt;h1 id=&#34;angular-meganote&#34;&gt;Angular: Meganote&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>jQuery &amp; Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/</link>
-      <pubDate>Sat, 11 Jun 2016 23:22:09 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week2/</guid>
-      <description>
+&lt;p&gt;Bluit: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/78038a9dde19b6492322518b6b0d6bbfa0b50731&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/a76ea07639a6e8a60eee198019b784243a206c28&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;week-2&#34;&gt;Week 2&lt;/h3&gt;
+&lt;p&gt;Bluit wiki with detailed build instructions: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/wiki/01-Setup&#34;&gt;wiki&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;jquery-amp-ajax&#34;&gt;jQuery &amp;amp; Ajax&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/</link>
-      <pubDate>Sat, 11 Jun 2016 16:27:52 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/week1/</guid>
-      <description>
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
 
-&lt;h3 id=&#34;week-1&#34;&gt;Week 1&lt;/h3&gt;
+&lt;p&gt;Create an Angular app using ngResource to interact with the Bluit API.&lt;/p&gt;
 
-&lt;h1 id=&#34;javascript&#34;&gt;JavaScript&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Setup for Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/</link>
-      <pubDate>Fri, 10 Jun 2016 23:37:28 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/</guid>
-      <description>
+&lt;p&gt;Morning API URL: &lt;a href=&#34;https://bluitxtern.herokuapp.com/&#34;&gt;https://bluitxtern.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;week-0b&#34;&gt;Week 0b&lt;/h3&gt;
-
-&lt;h1 id=&#34;setup-for-windows&#34;&gt;Setup for Windows&lt;/h1&gt;
-
-&lt;p&gt;With this guide, you can prepare your laptop with everything you&amp;rsquo;ll need to get started with the Xtern Bootcamp. This guide is written specifically for Windows users.&lt;/p&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Setup for Mac</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-mac/</link>
-      <pubDate>Fri, 10 Jun 2016 22:29:17 -0400</pubDate>
-      
-      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/</guid>
-      <description>
-
-&lt;h3 id=&#34;week-0a&#34;&gt;Week 0a&lt;/h3&gt;
-
-&lt;h1 id=&#34;setup-for-mac&#34;&gt;Setup for Mac&lt;/h1&gt;
-
-&lt;p&gt;With this guide, you can prepare your laptop with everything you&amp;rsquo;ll need to get started with the Xtern Bootcamp. This guide is written specifically for Mac OS X users.&lt;/p&gt;
-
-&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;If you have trouble at any point, please contact Davey Strus (dave@getfretless).&lt;/p&gt;
-&lt;/div&gt;
-
+&lt;p&gt;Afternoon API URL: &lt;a href=&#34;http://bluitx.herokuapp.com/&#34;&gt;http://bluitx.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -467,6 +367,728 @@ git commit -m &amp;quot;Initial commit using meganote-seed&amp;quot;
 &lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git remote add origin git@github.com:[YOUR GITHUB USERNAME]/meganote.git
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 10: ui-router Basics</title>
+      <link>http://replace-this-with-your-hugo-site.com/week3/day10/</link>
+      <pubDate>Mon, 13 Jun 2016 16:19:37 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week3/day10/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 13, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;ui-router&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router#get-started&#34;&gt;Getting Started with &lt;code&gt;ui-router&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/angular-ui/ui-router/wiki&#34;&gt;&lt;code&gt;ui-router&lt;/code&gt; documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;State
+
+&lt;ul&gt;
+&lt;li&gt;Child states&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$stateProvider.state()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Templates
+
+&lt;ul&gt;
+&lt;li&gt;Inline templates (&lt;code&gt;template: &#39;&amp;lt;h1&amp;gt;So easy!&amp;lt;/h1&amp;gt;&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Separate files (&lt;code&gt;templateUrl: &#39;myTemplate.html&#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ui-view&lt;/code&gt; directive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;npm&#34;&gt;NPM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;package.json&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://browsenpm.org/package.json&#34;&gt;&lt;code&gt;package.json&lt;/code&gt;: An Interactive Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Metadata&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;devDependencies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Scripts (&lt;code&gt;npm start&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;node_modules&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bower&#34;&gt;Bower&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/whats-great-bower/&#34;&gt;What&amp;rsquo;s So Great About Bower?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zellwk.com/blog/bower/&#34;&gt;Managing Your Front-End Dependencies with Bower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bower.json&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Metadata&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dependencies&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bower_components&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bootstrap-http-getbootstrap-com&#34;&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#grid&#34;&gt;Grid system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/css/#buttons&#34;&gt;Button styles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;angular-reference&#34;&gt;Angular Reference&lt;/h2&gt;
+
+&lt;h3 id=&#34;concepts&#34;&gt;Concepts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/module&#34;&gt;Modules&lt;/a&gt; (&lt;a href=&#34;https://docs.angularjs.org/api/ng/function/angular.module&#34;&gt;&lt;code&gt;angular.module(&#39;moduleName&#39;, [])&lt;/code&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/controller&#34;&gt;Controllers&lt;/a&gt; (&lt;code&gt;someModule.controller(&#39;ControllerName&#39;, function)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/scope&#34;&gt;Scope/&lt;code&gt;$scope&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;directives&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;In the view (HTML), directives are specified with &lt;strong&gt;kebab-case&lt;/strong&gt; (or &amp;ldquo;dasherized&amp;rdquo;)—that is, with words separated by hyphens. Within JavaScript, they are specified with &lt;strong&gt;camelCase&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngApp&#34;&gt;ngApp&lt;/a&gt;: Auto-bootstraps an Angular application and (optionally) specifies the root Module.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngController&#34;&gt;ngController&lt;/a&gt;: Attaches a Controller to the view/DOM.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngModel&#34;&gt;ngModel&lt;/a&gt;: Binds a form field to a property on the scope.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngRepeat&#34;&gt;ngRepeat&lt;/a&gt;: Repeat an element for each item in a collection.
+
+&lt;ul&gt;
+&lt;li&gt;See also: &lt;a href=&#34;https://docs.angularjs.org/error/ngRepeat/dupes&#34;&gt;ngRepeat:dupes&lt;/a&gt; and &lt;code&gt;track by&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngSubmit&#34;&gt;ngSubmit&lt;/a&gt;: Specifies custom behavior (often an invocation of a function property on the scope) when a form is submitted.
+
+&lt;ul&gt;
+&lt;li&gt;Automatically prevents default, unless the &lt;code&gt;action&lt;/code&gt; attribute is set on the form.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngClick&#34;&gt;ngClick&lt;/a&gt;: Specifies custom behavior when an element is clicked.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngShow&#34;&gt;ngShow&lt;/a&gt;: Show an element only when the provided expression is truthy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/api/ng/directive/ngHide&#34;&gt;ngHide&lt;/a&gt;: The inverse of &lt;code&gt;ngShow&lt;/code&gt;. Only show the element if the provided expression is falsey.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Meganote &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/8221627de162eb9f139749755f190df72581ea6f&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://bootcamp16.getfretless.com/meganote/#/notes/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Acrobats: &lt;a href=&#34;https://github.com/xternbootcamp16/acrobats&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/acrobats/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 5: jQuery &amp; Ajax</title>
+      <link>http://replace-this-with-your-hugo-site.com/week2/day05/</link>
+      <pubDate>Sat, 11 Jun 2016 23:23:36 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week2/day05/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 6, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;deployment&#34;&gt;Deployment&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Deploying to GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;git checkout -b gh-pages     # Create a new branch
+git push -u master gh-pages  # Push it to GitHub
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your site will be published at &lt;em&gt;username&lt;/em&gt;.github.io/&lt;em&gt;repository&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;ajax&#34;&gt;Ajax&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jQuery.ajax/&#34;&gt;&lt;code&gt;jQuery.ajax()&lt;/code&gt;&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/ajax_ajax.asp&#34;&gt;w3schools page and &lt;em&gt;Try It Yourself&lt;/em&gt; demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms&#34;&gt;JSONP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript-arrays&#34;&gt;JavaScript Arrays&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jsref/jsref_map.asp&#34;&gt;Array &lt;code&gt;map()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jsref/jsref_splice.asp&#34;&gt;Array &lt;code&gt;splice()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Each of the above items links to the &lt;a href=&#34;http://www.w3schools.com/&#34;&gt;w3schools&lt;/a&gt; page for that method, including examples, reference material (including browser support) and a &lt;em&gt;Try it Yourself&lt;/em&gt; live editor.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;css-selectors&#34;&gt;CSS Selectors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_hover.asp&#34;&gt;&lt;code&gt;:hover&lt;/code&gt; pseudo-class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/cssref/sel_attribute_value.asp&#34;&gt;[&lt;em&gt;attribute&lt;/em&gt;=&lt;em&gt;value&lt;/em&gt;] selector&lt;/a&gt; (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;[data-id=4]&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Seriously&lt;/strong&gt;, if you&amp;rsquo;re having any trouble with selectors, check out &lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; and &lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;jquery&#34;&gt;jQuery&lt;/h3&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;If you&amp;rsquo;re new to jQuery, start with &lt;a href=&#34;https://www.codeschool.com/courses/try-jquery&#34;&gt;Try jQuery&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://api.jquery.com/jquery/&#34;&gt;&lt;code&gt;$()&lt;/code&gt;, the jQuery function&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/selecting-elements/&#34;&gt;Selecting elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/jquery-object/&#34;&gt;jQuery Objects vs. DOM elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/manipulating-elements/&#34;&gt;Manipulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/using-jquery-core/traversing/&#34;&gt;DOM traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.jquery.com/events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;More jQuery tutorials:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/en/courses/web-beginner-en-bay3D/resume?curriculum_id=50a3fad8c7a770b5fd0007a1&#34;&gt;Codecademy&amp;rsquo;s Intro to jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/jquery/default.asp&#34;&gt;jQuery Tutorial on w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Be sure to check out the excellent &lt;a href=&#34;http://api.jquery.com/&#34;&gt;jQuery API documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster&#34;&gt;MegaRoster with localStorage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/jquery&#34;&gt;MegaRoster with jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/ajax&#34;&gt;MegaRoster with Ajax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MegaRoster with mutants: &lt;a href=&#34;https://github.com/xternbootcamp16/megaroster/tree/mutants&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/megaroster/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JSON People: &lt;a href=&#34;https://github.com/xternbootcamp16/json-people&#34;&gt;source&lt;/a&gt; | &lt;a href=&#34;http://xternbootcamp16.github.io/json-people/&#34;&gt;live&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://api.nasa.gov/api.html#apod&#34;&gt;Astronomy Picture of the Day&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;$.ajax({
+  url: &#39;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&#39;,
+  method: &#39;get&#39;,
+  success: function(data) {
+    $(document.body).prepend(&#39;&amp;lt;img src=&amp;quot;&#39; + data.hdurl + &#39;&amp;quot;&amp;gt;&#39;);
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Talk to the &lt;a href=&#34;(http://getfretless.github.io/mutant-school-docs/?javascript#get-a-specific-mutant)&#34;&gt;Mutant School API&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start a new project (or fork JSON People and work from there) that loads all Mutants from the API.&lt;/li&gt;
+&lt;li&gt;When a new record is added to your app, create a new Mutant record by POSTing to the API.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Add a button to delete individual mutants from the API.&lt;/p&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Update existing mutant records.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;p&gt;Integrate the Mutant API with MegaRoster.&lt;/p&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Add &lt;a href=&#34;https://pokeapi.co/docsv2/#pokemon&#34;&gt;Pok&amp;eacute;mon&lt;/a&gt;, &lt;a href=&#34;https://swapi.co/documentation&#34;&gt;Star Wars characters&lt;/a&gt;, or something else from an existing API.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1: Introduction</title>
+      <link>http://replace-this-with-your-hugo-site.com/week1/day01/</link>
+      <pubDate>Sat, 11 Jun 2016 16:29:51 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week1/day01/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, May 31, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
+&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
+&lt;li&gt;Anatomy of an HTML element (tags, attributes, contents)&lt;/li&gt;
+&lt;li&gt;Basic CSS selector syntax
+
+&lt;ul&gt;
+&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic DOM manipulation
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.innerText&lt;/code&gt;/&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic event handling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;onsubmit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Anonymous functions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic Form (FirstJS):  &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/firstjs-afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/&#34;&gt;Foundation&lt;/a&gt; - a front-end framework&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://flukeout.github.io/&#34;&gt;CSS Diner&lt;/a&gt; - a game for practicing CSS selector syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://toolness.github.io/css-selector-game/&#34;&gt;CSS Selector Game&lt;/a&gt; - another tool for practicing selector syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework-basic-form-firstjs&#34;&gt;Homework: Basic Form (FirstJS)&lt;/h2&gt;
+
+&lt;p&gt;Grab values from form fields and add them to a list.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to employ these concepts that we used in class:
+* Target elements with &lt;code&gt;document.querySelector&lt;/code&gt;
+* Handle events
+* Prevent default event behavior from executing
+* Alter an element&amp;rsquo;s contents via &lt;code&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values as plain text.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in separate paragraphs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in an unordered list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display values in a &lt;em&gt;definition list&lt;/em&gt; (&lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Output something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;dl&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;dt&amp;gt;First Name&amp;lt;/dt&amp;gt;
+    &amp;lt;dd&amp;gt;Davey&amp;lt;/dd&amp;gt;
+  &amp;lt;/li&amp;gt;
+
+  &amp;lt;li&amp;gt;
+    &amp;lt;dt&amp;gt;Hair color&amp;lt;/dt&amp;gt;
+    &amp;lt;dd&amp;gt;#000000&amp;lt;/dd&amp;gt;
+  &amp;lt;/li&amp;gt;
+
+  &amp;lt;!-- etc. --&amp;gt;
+&amp;lt;/dl&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;p&gt;Display the color value &lt;em&gt;in the specified color&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://xternbootcamp16.github.io/firstjs-afternoon/&#34;&gt;Solution: FirstJS (Basic Form)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</link>
+      <pubDate>Fri, 10 Jun 2016 23:39:14 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</guid>
+      <description>
+
+&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
+
+&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
+
+&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and more.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome</title>
+      <link>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</link>
+      <pubDate>Fri, 10 Jun 2016 22:39:00 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</guid>
+      <description>
+
+&lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
+
+&lt;h3 id=&#34;download-google-chrome-http-www-google-com-chrome&#34;&gt;&lt;a href=&#34;http://www.google.com/chrome/&#34;&gt;Download Google Chrome&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&#34;recommended-extensions&#34;&gt;Recommended Extensions&lt;/h2&gt;
+
+&lt;p&gt;I recommend installing the following extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa&#34;&gt;JSON Formatter&lt;/a&gt;: This displays JSON in a readable format in Chrome. There are several extensions that share this name. Accept no imitations; use the one I link to here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&#34;&gt;Postman&lt;/a&gt;: This gives you a nice interface for building HTTP requests, including POST requests—ideal for testing APIs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Check out the &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman web site&lt;/a&gt; for &lt;a href=&#34;https://www.getpostman.com/docs/&#34;&gt;documentation&lt;/a&gt; and a desktop app for Mac.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Day 35: Readme and more Bluit</title>
+      <link>http://replace-this-with-your-hugo-site.com/week8/day35/</link>
+      <pubDate>Tue, 19 Jul 2016 15:27:44 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week8/day35/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, July 19, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;ve covered markdown briefly before.  &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/week3/day14&#34;&gt;Here is a link&lt;/a&gt; to the page that has several great resources for learning and using markdown.  Specifically, we used markdown to write a &lt;code&gt;README.md&lt;/code&gt; for our Meganote project on Github.&lt;/p&gt;
+
+&lt;h4 id=&#34;important-info-to-include-in-a-readme-md&#34;&gt;Important info to include in a &lt;code&gt;README.md&lt;/code&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description of the project&lt;/li&gt;
+&lt;li&gt;Technologies used in the project&lt;/li&gt;
+&lt;li&gt;Dependencies&lt;/li&gt;
+&lt;li&gt;Instructions for getting the project up and running&lt;/li&gt;
+&lt;li&gt;Configuration options&lt;/li&gt;
+&lt;li&gt;Deployment Instructions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xternbootcamp16/meganote/blob/master/README.md&#34;&gt;Here is a link&lt;/a&gt; to the &lt;code&gt;README.md&lt;/code&gt; that we wrote today for Meganote as an example.&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;The Atom text editor has a package available called &lt;code&gt;markdown-preview&lt;/code&gt;.  It allows you to see a live preview of how your markdown file will look when it is rendered.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Bluit: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/247ba5a423d5aaabb35d3c46c8321a9108d61a6a&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/tree/410772f8af43260de299f783b0f51a63e56c7ee4&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bluit wiki with detailed build instructions: &lt;a href=&#34;https://github.com/xternbootcamp16/bluit-rails/wiki/01-Setup&#34;&gt;wiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;README.md&lt;/code&gt; files for the other projects that we have created during this course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 30: Authentication with JWT</title>
+      <link>http://replace-this-with-your-hugo-site.com/week7/day30/</link>
+      <pubDate>Tue, 12 Jul 2016 15:22:54 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week7/day30/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, July 12, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;json-web-tokens&#34;&gt;JSON Web Tokens&lt;/h3&gt;
+
+&lt;p&gt;JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.&lt;/p&gt;
+
+&lt;p&gt;JWTs are composed of three base-64 strings that are joined together with dot notation.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;xxxxxxxxxx.yyyyyyyyyyy.zzzzzzzzz&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The first component is the &lt;em&gt;header&lt;/em&gt;, which contains information about the type of token and the hashing algorithm used to create it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// decoded header
+{
+  &amp;quot;alg&amp;quot;: &amp;quot;HS256&amp;quot;,
+  &amp;quot;typ&amp;quot;: &amp;quot;JWT&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second component is the &lt;em&gt;payload&lt;/em&gt;, which contains the actual information being sent.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// decoded payload
+{
+  &amp;quot;title&amp;quot;: &amp;quot;The greatest note ever&amp;quot;,
+  &amp;quot;body_html&amp;quot;: &amp;quot;seriously, it is&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last component is the &lt;em&gt;signature&lt;/em&gt;.  To create it, you take the encoded header, encoded payload, specified hashing algorithm, a secret, and sign it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// method to create a signature
+HMACSHA256(
+  base64UrlEncode(header) + &amp;quot;.&amp;quot; + base64UrlEncode(payload),
+  secret)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;advantages-of-jwts&#34;&gt;Advantages of JWTs&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lightweight&lt;/li&gt;
+&lt;li&gt;Self-contained&lt;/li&gt;
+&lt;li&gt;Reduced database queries, since the token contains all of the required information about the user&lt;/li&gt;
+&lt;li&gt;Because information can be signed, you can be confident that the sender is who they say they are, and that the information has not been tampered with&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;learn-more-about-json-web-tokens&#34;&gt;Learn more about JSON Web Tokens&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jwt.io/introduction/&#34;&gt;Introduction to JSON Web Tokens - jwt.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/the-anatomy-of-a-json-web-token&#34;&gt;The Anatomy of a JSON Web Token - scotch.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jwt.io/&#34;&gt;JWT Debugger&lt;/a&gt; - a useful tool for interactively working with JWTs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;angular-interceptors&#34;&gt;Angular Interceptors&lt;/h3&gt;
+
+&lt;p&gt;Interceptors are used any time it is desirable to intercept requests before they are handed to the server and responses before they are handed off to the application code. They are factories that are added to the &lt;code&gt;$httpProvider.interceptors&lt;/code&gt; array&lt;/p&gt;
+
+&lt;p&gt;In Meganote, we used an interceptor to add JSON Web Tokens to the headers of requests being sent to our API&lt;/p&gt;
+
+&lt;p&gt;Read more about interceptors &lt;a href=&#34;https://docs.angularjs.org/api/ng/service/$http&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote:  &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/f2a7deaec6389589ed82c512b5b862a1f53893a2&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/354ca8350988b43eb95cc695ed995cb52fcc3622&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/4b41f89775990101773b3957dc20438125669ca7&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/272530344fc593fcb4edff059160971c04a5425b&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Meganote polish!  Add final touches for a better user experience&lt;/p&gt;
+
+&lt;h4 id=&#34;flash-messages&#34;&gt;Flash messages&lt;/h4&gt;
+
+&lt;p&gt;Add flash messages for events like successfully signing in or out, reusing a username, non-matching passwords, etc&lt;/p&gt;
+
+&lt;h4 id=&#34;better-error-messages-from-the-server&#34;&gt;Better error messages from the server&lt;/h4&gt;
+
+&lt;p&gt;Enhance the returned JSON responses from the server for better communication with the user&lt;/p&gt;
+
+&lt;h4 id=&#34;database-validation&#34;&gt;Database validation&lt;/h4&gt;
+
+&lt;p&gt;Enforce database rules on the server side for things like unique usernames and password length&lt;/p&gt;
+
+&lt;h4 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h4&gt;
+
+&lt;p&gt;Add a spinner animation that appears while waiting for responses from the API&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 26: Gulp</title>
+      <link>http://replace-this-with-your-hugo-site.com/week6/day26/</link>
+      <pubDate>Wed, 06 Jul 2016 14:18:59 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week6/day26/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, July 6, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;gulp-http-gulpjs-com&#34;&gt;&lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A JavaScript task runner that lets you automate repetitive tasks such as:
+
+&lt;ul&gt;
+&lt;li&gt;Concatenating JS files&lt;/li&gt;
+&lt;li&gt;Refreshing the browser when a file is saved&lt;/li&gt;
+&lt;li&gt;Bundling and minifying files&lt;/li&gt;
+&lt;li&gt;Running unit tests&lt;/li&gt;
+&lt;li&gt;And so much more!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brandonclapp.com/what-is-gulp-js-and-why-use-it/&#34;&gt;What is Gulp.js and why use it?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codefellows.org/blog/quick-intro-to-gulp-js&#34;&gt;Quick intro to Gulp.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;basic-setup&#34;&gt;Basic Setup&lt;/h3&gt;
+
+&lt;p&gt;First, install Gulp globally if you don&amp;rsquo;t already have it on your machine&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install -g gulp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Use &lt;code&gt;npm install&lt;/code&gt; to add Gulp and other plugins that you need to the dev dependencies of your project in &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev gulp gulp-concat gulp-plumber gulp-babel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add &lt;code&gt;gulpfile.js&lt;/code&gt; at the root level of your project and add references to the node modules you installed&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var gulp = require(&#39;gulp&#39;);
+var concat = require(&#39;concat&#39;);
+var plumber = require(&#39;plumber&#39;);
+var babel = require(&#39;babel&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now you&amp;rsquo;re ready to start writing Gulp tasks!&lt;/p&gt;
+
+&lt;h3 id=&#34;gulp-plugins-used-in-meganote-so-far&#34;&gt;Gulp plugins used in Meganote (so far&amp;hellip;)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-concat&#34;&gt;&lt;code&gt;gulp-concat&lt;/code&gt;&lt;/a&gt; - Concatenates files&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-sourcemaps&#34;&gt;&lt;code&gt;gulp-sourcemaps&lt;/code&gt;&lt;/a&gt; - Maps concatenated / minified files back to original sources&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-plumber&#34;&gt;&lt;code&gt;gulp-plumber&lt;/code&gt;&lt;/a&gt; - Prevent pipe breaking caused by errors from Gulp plugins&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-babel&#34;&gt;&lt;code&gt;gulp-babel&lt;/code&gt;&lt;/a&gt; - Transpile ES6 to ES5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-connect&#34;&gt;&lt;code&gt;gulp-connect&lt;/code&gt;&lt;/a&gt; - Run a webserver with live reloading&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/package/gulp-order&#34;&gt;&lt;code&gt;gulp-order&lt;/code&gt;&lt;/a&gt; - Order a stream of files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Meganote: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/4cde223e83105c2a49530161a1a9779aaecbaad8&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xternbootcamp16/meganote/tree/8f13a322ccafd0afa43146f1229c387cd737c358&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meganote-server: &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-server/tree/a8125a986c42db2308a5559ebad84e72559eca3e&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 21: Directives and Angular Form Validation</title>
+      <link>http://replace-this-with-your-hugo-site.com/week5/day21/</link>
+      <pubDate>Tue, 28 Jun 2016 16:32:11 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/week5/day21/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 28, 2016&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;directives&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/angularjs-form-validation&#34;&gt;Creating Custom Directives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Binding to isolate scope
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;=&lt;/code&gt; - two-way data binding&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; - one-way data binding&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@&lt;/code&gt; - for binding of strings&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;bindToController&lt;/code&gt; if using &lt;code&gt;controllerAs&lt;/code&gt; syntax in the directive&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.umur.io/2013/07/02/angularjs-directives-using-isolated-scope-with-attributes/&#34;&gt;AngularJS Directives, Using Isolated Scope with Attributes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Data binding example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;angular
+  .module(&#39;myApp&#39;)
+  .directive(&#39;myDirective&#39;, myDirective);
+
+function myDirective() {
+  return {
+    templateUrl: &#39;myTemplate.html&#39;,
+    restrict: &#39;E&#39;,
+    scope: {
+      example: &#39;=&#39;
+    }
+  };
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;my-directive example=&amp;quot;vm.exampleValue&amp;quot;&amp;gt;&amp;lt;/my-directive&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;angular-form-validation&#34;&gt;Angular Form Validation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/angularjs-form-validation&#34;&gt;AngularJS Form Validation&lt;/a&gt; - Excellent tutorial by scotch.io&lt;/li&gt;
+&lt;li&gt;Angular form Properties
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$valid&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt;  - Tells if an item is currently valid&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$invalid&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt; - Opposite of &lt;code&gt;$valid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$pristine&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt; - True if the item (form or input) has not been used yet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$dirty&lt;/code&gt; - &lt;em&gt;Boolean&lt;/em&gt; - True if the item has been used&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.angularjs.org/guide/forms&#34;&gt;Angular Documentation for Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation-callouts-http-foundation-zurb-com-sites-docs-callout-html&#34;&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/callout.html&#34;&gt;Foundation Callouts&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Easy Foundation classes useful for error rendering&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;We added callouts to display Firebase server errors and &amp;ldquo;email required&amp;rdquo; errors on the login form.  Add additional callouts for validating email format and password presence.&lt;/p&gt;
+
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+
+&lt;p&gt;Mutant Office Hours: &lt;a href=&#34;https://github.com/xternbootcamp16/mutant-office-hours/tree/fa8a6ca1046213b805b4518ce10dd05a879bb24b&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
