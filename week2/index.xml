@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week2s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week2/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week2/index.xml</link>
     <description>Recent content in Week2s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jun 2016 23:22:09 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>jQuery &amp; Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/</link>
+      <link>http://bootcamp16.getfretless.com/week2/</link>
       <pubDate>Sat, 11 Jun 2016 23:22:09 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/</guid>
       <description>
 
 &lt;h3 id=&#34;week-2&#34;&gt;Week 2&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 5: jQuery &amp; Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day05/</link>
+      <link>http://bootcamp16.getfretless.com/week2/day05/</link>
       <pubDate>Sat, 11 Jun 2016 23:23:36 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day05/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/day05/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 6, 2016&lt;/date&gt;&lt;/p&gt;
@@ -112,7 +112,7 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -171,10 +171,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 6: More Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day06/</link>
+      <link>http://bootcamp16.getfretless.com/week2/day06/</link>
       <pubDate>Sat, 11 Jun 2016 23:34:13 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day06/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/day06/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, June 7, 2016&lt;/date&gt;&lt;/p&gt;
@@ -204,7 +204,7 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/06-ajax-get-requests-and-github-pages-review&#34;&gt;Ajax - GET requests in detail, GitHub pages review&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week2/06-ajax-get-requests-and-github-pages-review&#34;&gt;Ajax - GET requests in detail, GitHub pages review&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -268,10 +268,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 7: Intro to REST</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day07/</link>
+      <link>http://bootcamp16.getfretless.com/week2/day07/</link>
       <pubDate>Sat, 11 Jun 2016 23:42:53 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day07/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/day07/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, June 8, 2016&lt;/date&gt;&lt;/p&gt;
@@ -296,7 +296,7 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/07-crud-and-rest&#34;&gt;CRUD and REST&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week2/07-crud-and-rest&#34;&gt;CRUD and REST&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -327,10 +327,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 8: REST</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day08/</link>
+      <link>http://bootcamp16.getfretless.com/week2/day08/</link>
       <pubDate>Sat, 11 Jun 2016 23:45:36 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day08/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/day08/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, June 9, 2016&lt;/date&gt;&lt;/p&gt;
@@ -408,10 +408,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 9: Intro to Angular</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day09/</link>
+      <link>http://bootcamp16.getfretless.com/week2/day09/</link>
       <pubDate>Sat, 11 Jun 2016 23:47:58 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day09/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/day09/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Friday, June 10, 2016&lt;/date&gt;&lt;/p&gt;

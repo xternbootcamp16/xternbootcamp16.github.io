@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>App-meganotes on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/app-meganote/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/app-meganote/index.xml</link>
     <description>Recent content in App-meganotes on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jun 2016 21:34:12 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/app-meganote/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/app-meganote/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/</link>
       <pubDate>Tue, 14 Jun 2016 21:34:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/</guid>
       <description>
 
 &lt;h3 id=&#34;angular&#34;&gt;Angular&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Meganote-Seed</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/01-seed/</link>
       <pubDate>Tue, 14 Jun 2016 21:56:25 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/01-seed/</guid>
       <description>
 
 &lt;h2 id=&#34;clone-the-meganote-seed-https-github-com-xternbootcamp16-meganote-seed-project&#34;&gt;Clone the &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-seed&#34;&gt;meganote-seed&lt;/a&gt; project&lt;/h2&gt;
@@ -71,10 +71,10 @@ git push -u origin master
     
     <item>
       <title>Setup</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/02-setup/</link>
       <pubDate>Tue, 14 Jun 2016 22:45:03 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/02-setup/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/02-setup/</guid>
       <description>
 
 &lt;h2 id=&#34;angular-seed&#34;&gt;Angular-seed&lt;/h2&gt;
@@ -174,10 +174,10 @@ Welcome to Meganote!
     
     <item>
       <title>Google Fonts</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/03-google-fonts/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/03-google-fonts/</link>
       <pubDate>Wed, 15 Jun 2016 09:05:23 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/03-google-fonts/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/03-google-fonts/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s add a pair of fonts from Google to our project. Rather than actually add the font files directly to our project, we&amp;rsquo;ll just hotlink the necessary files from a CDN (Content Delivery Network), since Google so graciously provides one.&lt;/p&gt;
 
 &lt;p&gt;Visit &lt;a href=&#34;https://fonts.google.com/&#34;&gt;Google Fonts&lt;/a&gt; and browse through some of the selections there. You can try each typeface out right on the page. When you find one you like, click the &lt;i class=&#34;fa fa-plus-circle gf-red&#34; aria-hidden=&#34;true&#34; title=&#34;plus&#34;&gt;&lt;/i&gt; &lt;span class=&#34;sr-only&#34;&gt;&lt;em&gt;plus&lt;/em&gt;&lt;/span&gt; button.&lt;/p&gt;
@@ -220,10 +220,10 @@ git push
     
     <item>
       <title>Bootstrap</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/04-bootstrap/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/04-bootstrap/</link>
       <pubDate>Wed, 15 Jun 2016 15:19:00 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/04-bootstrap/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/04-bootstrap/</guid>
       <description>&lt;p&gt;Now that we&amp;rsquo;ve committed our basic, empty project, let&amp;rsquo;s add &lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; to bring some basic structure and mobile-friendly features to our HTML and CSS.&lt;/p&gt;
 
 &lt;p&gt;We could download all the bootstrap components manually and include them our project, but we&amp;rsquo;ve used some &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt; power to do it for us.&lt;/p&gt;
@@ -287,10 +287,10 @@ git push
     
     <item>
       <title>NotesController</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/07-notescontroller/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/07-notescontroller/</link>
       <pubDate>Wed, 15 Jun 2016 19:53:04 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/07-notescontroller/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/07-notescontroller/</guid>
       <description>&lt;p&gt;Inject a dependency for the &lt;code&gt;Notes&lt;/code&gt; module/controller that we&amp;rsquo;ll soon create, and update the catch-all route:&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;app/app.js&lt;/em&gt;&lt;/p&gt;
@@ -346,10 +346,10 @@ angular.module(&#39;meganote.notes&#39;, [&#39;ngRoute&#39;])
     
     <item>
       <title>Layout &amp; Style</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/05-layout/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/05-layout/</link>
       <pubDate>Wed, 15 Jun 2016 15:39:05 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/05-layout/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/05-layout/</guid>
       <description>&lt;p&gt;Now that we have Bootstrap and font stuff in place, let&amp;rsquo;s start to make this look like a real app.&lt;/p&gt;
 
 &lt;p&gt;Our app content gets inserted inside &lt;code&gt;&amp;lt;div ui-view&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; (more on that later), so we&amp;rsquo;ll put some basic structure around that using Bootstrap&amp;rsquo;s grid system.&lt;/p&gt;
@@ -528,10 +528,10 @@ git push
     
     <item>
       <title>Modules &amp; Routes</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/06-modules-routes/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/06-modules-routes/</link>
       <pubDate>Wed, 15 Jun 2016 15:53:23 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/06-modules-routes/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/06-modules-routes/</guid>
       <description>
 
 &lt;p&gt;Wow. How have we gone this far without looking at &lt;code&gt;app.js&lt;/code&gt; in any real detail?&lt;/p&gt;

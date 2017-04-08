@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week1s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week1/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week1/index.xml</link>
     <description>Recent content in Week1s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jun 2016 16:27:52 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>JavaScript</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/</link>
+      <link>http://bootcamp16.getfretless.com/week1/</link>
       <pubDate>Sat, 11 Jun 2016 16:27:52 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week1/</guid>
+      <guid>http://bootcamp16.getfretless.com/week1/</guid>
       <description>
 
 &lt;h3 id=&#34;week-1&#34;&gt;Week 1&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 1: Introduction</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day01/</link>
+      <link>http://bootcamp16.getfretless.com/week1/day01/</link>
       <pubDate>Sat, 11 Jun 2016 16:29:51 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day01/</guid>
+      <guid>http://bootcamp16.getfretless.com/week1/day01/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, May 31, 2016&lt;/date&gt;&lt;/p&gt;
@@ -66,8 +66,8 @@
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -147,10 +147,10 @@
     
     <item>
       <title>Day 2: Objects and Functions</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day02/</link>
+      <link>http://bootcamp16.getfretless.com/week1/day02/</link>
       <pubDate>Sat, 11 Jun 2016 17:09:05 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day02/</guid>
+      <guid>http://bootcamp16.getfretless.com/week1/day02/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, June 1, 2016&lt;/date&gt;&lt;/p&gt;
@@ -225,7 +225,7 @@
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/02-functions&#34;&gt;Day 1 Review, Intro to Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/02-functions&#34;&gt;Day 1 Review, Intro to Functions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -285,10 +285,10 @@
     
     <item>
       <title>Day 3: Putting the Pieces Together</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day03/</link>
+      <link>http://bootcamp16.getfretless.com/week1/day03/</link>
       <pubDate>Sat, 11 Jun 2016 17:12:02 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day03/</guid>
+      <guid>http://bootcamp16.getfretless.com/week1/day03/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, June 2, 2016&lt;/date&gt;&lt;/p&gt;
@@ -342,7 +342,7 @@
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/03-objects-and-functions&#34;&gt;Day 2 Review: Objects and Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/03-objects-and-functions&#34;&gt;Day 2 Review: Objects and Functions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;homework-megaroster-now-with-even-more-mega&#34;&gt;Homework: MegaRoster - now with even more mega&lt;/h2&gt;
@@ -379,10 +379,10 @@
     
     <item>
       <title>Day 4: LocalStorage &amp; jQuery</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day04/</link>
+      <link>http://bootcamp16.getfretless.com/week1/day04/</link>
       <pubDate>Sat, 11 Jun 2016 17:32:08 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day04/</guid>
+      <guid>http://bootcamp16.getfretless.com/week1/day04/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Friday, June 3, 2016&lt;/date&gt;&lt;/p&gt;
@@ -488,8 +488,8 @@
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/04a-localstorage&#34;&gt;&lt;code&gt;localStorage&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/04b-jquery&#34;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/04a-localstorage&#34;&gt;&lt;code&gt;localStorage&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/04b-jquery&#34;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;

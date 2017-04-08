@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/index.xml</link>
     <description>Recent content on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Jul 2016 16:40:12 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Day 34: Ruby on Rails</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/day34/</link>
+      <link>http://bootcamp16.getfretless.com/week8/day34/</link>
       <pubDate>Mon, 18 Jul 2016 16:40:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/day34/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/day34/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, July 18, 2016&lt;/date&gt;&lt;/p&gt;
@@ -63,10 +63,10 @@
     
     <item>
       <title>Day 29: More User Authentication</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day29/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day29/</link>
       <pubDate>Mon, 11 Jul 2016 19:00:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day29/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day29/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, July 11, 2016&lt;/date&gt;&lt;/p&gt;
@@ -125,10 +125,10 @@ bcrypt.compare(&#39;password_string&#39;, stored_password_hash, (err, res) =&amp
     
     <item>
       <title>Day 25: Review</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/day25/</link>
+      <link>http://bootcamp16.getfretless.com/week6/day25/</link>
       <pubDate>Tue, 05 Jul 2016 15:37:48 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/day25/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/day25/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, July 5, 2016&lt;/date&gt;&lt;/p&gt;
@@ -189,10 +189,10 @@ bcrypt.compare(&#39;password_string&#39;, stored_password_hash, (err, res) =&amp
     
     <item>
       <title>Day 20: Mailgun and Firebase Security</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/day20/</link>
+      <link>http://bootcamp16.getfretless.com/week5/day20/</link>
       <pubDate>Mon, 27 Jun 2016 16:25:11 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week5/day20/</guid>
+      <guid>http://bootcamp16.getfretless.com/week5/day20/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 27, 2016&lt;/date&gt;&lt;/p&gt;
@@ -262,10 +262,10 @@ mailgunClient.messages().send(emailData, function(error, body) {
     
     <item>
       <title>Day 15: Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day15/</link>
+      <link>http://bootcamp16.getfretless.com/week4/day15/</link>
       <pubDate>Mon, 20 Jun 2016 13:16:56 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day15/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/day15/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 20, 2016&lt;/date&gt;&lt;/p&gt;
@@ -326,10 +326,10 @@ mailgunClient.messages().send(emailData, function(error, body) {
     
     <item>
       <title>Meganote-Seed</title>
-      <link>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</link>
+      <link>http://bootcamp16.getfretless.com/app-meganote/01-seed/</link>
       <pubDate>Tue, 14 Jun 2016 21:56:25 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/app-meganote/01-seed/</guid>
+      <guid>http://bootcamp16.getfretless.com/app-meganote/01-seed/</guid>
       <description>
 
 &lt;h2 id=&#34;clone-the-meganote-seed-https-github-com-xternbootcamp16-meganote-seed-project&#34;&gt;Clone the &lt;a href=&#34;https://github.com/xternbootcamp16/meganote-seed&#34;&gt;meganote-seed&lt;/a&gt; project&lt;/h2&gt;
@@ -372,10 +372,10 @@ git push -u origin master
     
     <item>
       <title>Day 10: ui-router Basics</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day10/</link>
+      <link>http://bootcamp16.getfretless.com/week3/day10/</link>
       <pubDate>Mon, 13 Jun 2016 16:19:37 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day10/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/day10/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 13, 2016&lt;/date&gt;&lt;/p&gt;
@@ -483,10 +483,10 @@ git push -u origin master
     
     <item>
       <title>Day 5: jQuery &amp; Ajax</title>
-      <link>http://replace-this-with-your-hugo-site.com/week2/day05/</link>
+      <link>http://bootcamp16.getfretless.com/week2/day05/</link>
       <pubDate>Sat, 11 Jun 2016 23:23:36 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week2/day05/</guid>
+      <guid>http://bootcamp16.getfretless.com/week2/day05/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 6, 2016&lt;/date&gt;&lt;/p&gt;
@@ -570,7 +570,7 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week2/05-ajax-and-github-pages&#34;&gt;GitHub Pages, jQuery, and Ajax&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -629,10 +629,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 1: Introduction</title>
-      <link>http://replace-this-with-your-hugo-site.com/week1/day01/</link>
+      <link>http://bootcamp16.getfretless.com/week1/day01/</link>
       <pubDate>Sat, 11 Jun 2016 16:29:51 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week1/day01/</guid>
+      <guid>http://bootcamp16.getfretless.com/week1/day01/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, May 31, 2016&lt;/date&gt;&lt;/p&gt;
@@ -670,8 +670,8 @@ git push -u master gh-pages  # Push it to GitHub
 &lt;p&gt;Presentations have been converted from their original format to play in web browsers.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://replace-this-with-your-hugo-site.com/presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/01-javascript-history&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://bootcamp16.getfretless.com//presentations/week1/js-bootcamp-expectations-tips&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
@@ -751,10 +751,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Google Chrome</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/google-chrome/</link>
       <pubDate>Fri, 10 Jun 2016 23:39:14 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/google-chrome/</guid>
       <description>
 
 &lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
@@ -778,10 +778,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Google Chrome</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</link>
+      <link>http://bootcamp16.getfretless.com/setup-mac/google-chrome/</link>
       <pubDate>Fri, 10 Jun 2016 22:39:00 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-mac/google-chrome/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-mac/google-chrome/</guid>
       <description>
 
 &lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
@@ -805,10 +805,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 35: Readme and more Bluit</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/day35/</link>
+      <link>http://bootcamp16.getfretless.com/week8/day35/</link>
       <pubDate>Tue, 19 Jul 2016 15:27:44 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/day35/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/day35/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, July 19, 2016&lt;/date&gt;&lt;/p&gt;
@@ -817,7 +817,7 @@ git push -u master gh-pages  # Push it to GitHub
 
 &lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
 
-&lt;p&gt;We&amp;rsquo;ve covered markdown briefly before.  &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/week3/day14&#34;&gt;Here is a link&lt;/a&gt; to the page that has several great resources for learning and using markdown.  Specifically, we used markdown to write a &lt;code&gt;README.md&lt;/code&gt; for our Meganote project on Github.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve covered markdown briefly before.  &lt;a href=&#34;http://bootcamp16.getfretless.com//week3/day14&#34;&gt;Here is a link&lt;/a&gt; to the page that has several great resources for learning and using markdown.  Specifically, we used markdown to write a &lt;code&gt;README.md&lt;/code&gt; for our Meganote project on Github.&lt;/p&gt;
 
 &lt;h4 id=&#34;important-info-to-include-in-a-readme-md&#34;&gt;Important info to include in a &lt;code&gt;README.md&lt;/code&gt;&lt;/h4&gt;
 
@@ -850,10 +850,10 @@ git push -u master gh-pages  # Push it to GitHub
     
     <item>
       <title>Day 30: Authentication with JWT</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day30/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day30/</link>
       <pubDate>Tue, 12 Jul 2016 15:22:54 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day30/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day30/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, July 12, 2016&lt;/date&gt;&lt;/p&gt;
@@ -949,10 +949,10 @@ HMACSHA256(
     
     <item>
       <title>Day 26: Gulp</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/day26/</link>
+      <link>http://bootcamp16.getfretless.com/week6/day26/</link>
       <pubDate>Wed, 06 Jul 2016 14:18:59 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/day26/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/day26/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, July 6, 2016&lt;/date&gt;&lt;/p&gt;
@@ -1018,10 +1018,10 @@ var babel = require(&#39;babel&#39;);
     
     <item>
       <title>Day 21: Directives and Angular Form Validation</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/day21/</link>
+      <link>http://bootcamp16.getfretless.com/week5/day21/</link>
       <pubDate>Tue, 28 Jun 2016 16:32:11 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week5/day21/</guid>
+      <guid>http://bootcamp16.getfretless.com/week5/day21/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, June 28, 2016&lt;/date&gt;&lt;/p&gt;

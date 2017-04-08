@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week8s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week8/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week8/index.xml</link>
     <description>Recent content in Week8s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Jul 2016 16:15:26 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week8/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ruby on Rails</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/</link>
+      <link>http://bootcamp16.getfretless.com/week8/</link>
       <pubDate>Mon, 18 Jul 2016 16:15:26 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/</guid>
       <description>
 
 &lt;h3 id=&#34;week-8&#34;&gt;Week 8&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 34: Ruby on Rails</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/day34/</link>
+      <link>http://bootcamp16.getfretless.com/week8/day34/</link>
       <pubDate>Mon, 18 Jul 2016 16:40:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/day34/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/day34/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, July 18, 2016&lt;/date&gt;&lt;/p&gt;
@@ -77,10 +77,10 @@
     
     <item>
       <title>Day 35: Readme and more Bluit</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/day35/</link>
+      <link>http://bootcamp16.getfretless.com/week8/day35/</link>
       <pubDate>Tue, 19 Jul 2016 15:27:44 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/day35/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/day35/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, July 19, 2016&lt;/date&gt;&lt;/p&gt;
@@ -89,7 +89,7 @@
 
 &lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
 
-&lt;p&gt;We&amp;rsquo;ve covered markdown briefly before.  &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/week3/day14&#34;&gt;Here is a link&lt;/a&gt; to the page that has several great resources for learning and using markdown.  Specifically, we used markdown to write a &lt;code&gt;README.md&lt;/code&gt; for our Meganote project on Github.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve covered markdown briefly before.  &lt;a href=&#34;http://bootcamp16.getfretless.com//week3/day14&#34;&gt;Here is a link&lt;/a&gt; to the page that has several great resources for learning and using markdown.  Specifically, we used markdown to write a &lt;code&gt;README.md&lt;/code&gt; for our Meganote project on Github.&lt;/p&gt;
 
 &lt;h4 id=&#34;important-info-to-include-in-a-readme-md&#34;&gt;Important info to include in a &lt;code&gt;README.md&lt;/code&gt;&lt;/h4&gt;
 
@@ -122,10 +122,10 @@
     
     <item>
       <title>Day 36: Testing, Partials, Pagination, Devise</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/day36/</link>
+      <link>http://bootcamp16.getfretless.com/week8/day36/</link>
       <pubDate>Wed, 20 Jul 2016 15:56:50 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/day36/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/day36/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, July 20, 2016&lt;/date&gt;&lt;/p&gt;
@@ -219,10 +219,10 @@
     
     <item>
       <title>Day 37: Testing with Rspec and Capybara</title>
-      <link>http://replace-this-with-your-hugo-site.com/week8/day37/</link>
+      <link>http://bootcamp16.getfretless.com/week8/day37/</link>
       <pubDate>Thu, 21 Jul 2016 15:53:24 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week8/day37/</guid>
+      <guid>http://bootcamp16.getfretless.com/week8/day37/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, July 21, 2016&lt;/date&gt;&lt;/p&gt;

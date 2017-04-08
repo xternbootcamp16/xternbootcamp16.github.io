@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week6s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week6/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week6/index.xml</link>
     <description>Recent content in Week6s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jun 2016 16:15:26 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week6/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Authentication with NodeJS</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/</link>
+      <link>http://bootcamp16.getfretless.com/week6/</link>
       <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/</guid>
       <description>
 
 &lt;h3 id=&#34;week-6&#34;&gt;Week 6&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 25: Review</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/day25/</link>
+      <link>http://bootcamp16.getfretless.com/week6/day25/</link>
       <pubDate>Tue, 05 Jul 2016 15:37:48 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/day25/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/day25/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, July 5, 2016&lt;/date&gt;&lt;/p&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Day 26: Gulp</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/day26/</link>
+      <link>http://bootcamp16.getfretless.com/week6/day26/</link>
       <pubDate>Wed, 06 Jul 2016 14:18:59 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/day26/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/day26/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, July 6, 2016&lt;/date&gt;&lt;/p&gt;
@@ -158,10 +158,10 @@ var babel = require(&#39;babel&#39;);
     
     <item>
       <title>Day 27: ECMAScript 6</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/day27/</link>
+      <link>http://bootcamp16.getfretless.com/week6/day27/</link>
       <pubDate>Thu, 07 Jul 2016 14:52:33 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/day27/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/day27/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, July 7, 2016&lt;/date&gt;&lt;/p&gt;
@@ -265,10 +265,10 @@ obj = { x, y }
     
     <item>
       <title>Day 28: User Authentication</title>
-      <link>http://replace-this-with-your-hugo-site.com/week6/day28/</link>
+      <link>http://bootcamp16.getfretless.com/week6/day28/</link>
       <pubDate>Fri, 08 Jul 2016 13:08:42 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week6/day28/</guid>
+      <guid>http://bootcamp16.getfretless.com/week6/day28/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Friday, July 8, 2016&lt;/date&gt;&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week3s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week3/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week3/index.xml</link>
     <description>Recent content in Week3s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Jun 2016 16:15:26 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Angular: Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/</link>
+      <link>http://bootcamp16.getfretless.com/week3/</link>
       <pubDate>Mon, 13 Jun 2016 16:15:26 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/</guid>
       <description>
 
 &lt;h3 id=&#34;week-3&#34;&gt;Week 3&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 10: ui-router Basics</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day10/</link>
+      <link>http://bootcamp16.getfretless.com/week3/day10/</link>
       <pubDate>Mon, 13 Jun 2016 16:19:37 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day10/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/day10/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 13, 2016&lt;/date&gt;&lt;/p&gt;
@@ -136,10 +136,10 @@
     
     <item>
       <title>Day 11: Angular Services</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day11/</link>
+      <link>http://bootcamp16.getfretless.com/week3/day11/</link>
       <pubDate>Tue, 14 Jun 2016 16:50:36 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day11/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/day11/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, June 14, 2016&lt;/date&gt;&lt;/p&gt;
@@ -206,10 +206,10 @@
     
     <item>
       <title>Day 12: Update &amp; Delete</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day12/</link>
+      <link>http://bootcamp16.getfretless.com/week3/day12/</link>
       <pubDate>Wed, 15 Jun 2016 19:57:29 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day12/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/day12/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, June 15, 2016&lt;/date&gt;&lt;/p&gt;
@@ -241,10 +241,10 @@
     
     <item>
       <title>Day 13: Node &amp; MongoDB</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day13/</link>
+      <link>http://bootcamp16.getfretless.com/week3/day13/</link>
       <pubDate>Thu, 16 Jun 2016 16:51:31 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day13/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/day13/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, June 16, 2016&lt;/date&gt;&lt;/p&gt;
@@ -312,10 +312,10 @@
     
     <item>
       <title>Day 14: Wrapping up Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/week3/day14/</link>
+      <link>http://bootcamp16.getfretless.com/week3/day14/</link>
       <pubDate>Fri, 17 Jun 2016 13:16:56 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week3/day14/</guid>
+      <guid>http://bootcamp16.getfretless.com/week3/day14/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Friday, June 17, 2016&lt;/date&gt;&lt;/p&gt;

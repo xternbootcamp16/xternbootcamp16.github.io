@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Setup-wins on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/setup-win/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/setup-win/index.xml</link>
     <description>Recent content in Setup-wins on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jun 2016 23:37:28 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/setup-win/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/setup-win/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setup for Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/</link>
       <pubDate>Fri, 10 Jun 2016 23:37:28 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/</guid>
       <description>
 
 &lt;h3 id=&#34;week-0b&#34;&gt;Week 0b&lt;/h3&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Google Chrome</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/google-chrome/</link>
       <pubDate>Fri, 10 Jun 2016 23:39:14 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/google-chrome/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/google-chrome/</guid>
       <description>
 
 &lt;p&gt;To author JavaScript applications, you&amp;rsquo;ll want a modern web browser with a JavaScript console and debugger. The latest versions of all the major browsers have the tools you need, but we recommend using Google Chrome for the course, as we can provide the most detailed help for the tools built into Chrome.&lt;/p&gt;
@@ -58,10 +58,10 @@
     
     <item>
       <title>Command Line</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/command-line/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/command-line/</link>
       <pubDate>Fri, 10 Jun 2016 23:39:44 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/command-line/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/command-line/</guid>
       <description>
 
 &lt;p&gt;We&amp;rsquo;ll be using the command line a fair amount in class. I recommend installing a UNIX-style shell in Windows, as it will allow to use the same commands that I use.&lt;/p&gt;
@@ -82,10 +82,10 @@
     
     <item>
       <title>Git</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/git/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/git/</link>
       <pubDate>Fri, 10 Jun 2016 23:40:01 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/git/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/git/</guid>
       <description>
 
 &lt;p&gt;Babun includes Git source code management, which we&amp;rsquo;ll use throughout class.&lt;/p&gt;
@@ -106,10 +106,10 @@ git config --global user.email &amp;quot;youremailaddress@example.com&amp;quot;
     
     <item>
       <title>NodeJS</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/nodejs/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/nodejs/</link>
       <pubDate>Fri, 10 Jun 2016 23:40:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/nodejs/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/nodejs/</guid>
       <description>
 
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -139,10 +139,10 @@ git config --global user.email &amp;quot;youremailaddress@example.com&amp;quot;
     
     <item>
       <title>Text Editors</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/text-editors/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/text-editors/</link>
       <pubDate>Fri, 10 Jun 2016 23:40:24 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/text-editors/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/text-editors/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;&lt;/strong&gt; is free text editor that&amp;rsquo;s especially well-suited for editing code. It is similar to Sublime Text in many respects, but it&amp;rsquo;s completely free and open source, and it&amp;rsquo;s rapidly improving.&lt;/p&gt;
@@ -182,10 +182,10 @@ git config --global user.email &amp;quot;youremailaddress@example.com&amp;quot;
     
     <item>
       <title>SSH</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/ssh/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/ssh/</link>
       <pubDate>Fri, 10 Jun 2016 23:40:37 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/ssh/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/ssh/</guid>
       <description>
 
 &lt;p&gt;I recommend setting up an SSH key to simplify authentication with GitHub and other services.&lt;/p&gt;
@@ -240,10 +240,10 @@ chmod 600 .ssh/id_rsa
     
     <item>
       <title>GitHub</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/github/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/github/</link>
       <pubDate>Fri, 10 Jun 2016 23:40:48 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/github/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/github/</guid>
       <description>
 
 &lt;h2 id=&#34;create-a-free-github-account&#34;&gt;Create a free GitHub account&lt;/h2&gt;
@@ -312,10 +312,10 @@ chmod 600 ~/.ssh/id_rsa
     
     <item>
       <title>MongoDB</title>
-      <link>http://replace-this-with-your-hugo-site.com/setup-win/mongodb/</link>
+      <link>http://bootcamp16.getfretless.com/setup-win/mongodb/</link>
       <pubDate>Fri, 10 Jun 2016 23:41:01 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/setup-win/mongodb/</guid>
+      <guid>http://bootcamp16.getfretless.com/setup-win/mongodb/</guid>
       <description>&lt;p&gt;We&amp;rsquo;ll use &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt; on at least one project, so follow the &lt;a href=&#34;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/&#34;&gt;installation guide&lt;/a&gt; to get MongoDB running.&lt;/p&gt;
 
 &lt;p&gt;For Windows 7 and newer, you want the version that describes itself as being for &lt;strong&gt;Windows Server 2008 R2 and later&lt;/strong&gt;.&lt;/p&gt;

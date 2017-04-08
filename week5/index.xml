@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week5s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week5/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week5/index.xml</link>
     <description>Recent content in Week5s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jun 2016 16:15:26 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week5/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Angular / Node: Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/</link>
+      <link>http://bootcamp16.getfretless.com/week5/</link>
       <pubDate>Mon, 27 Jun 2016 16:15:26 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week5/</guid>
+      <guid>http://bootcamp16.getfretless.com/week5/</guid>
       <description>
 
 &lt;h3 id=&#34;week-5&#34;&gt;Week 5&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 20: Mailgun and Firebase Security</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/day20/</link>
+      <link>http://bootcamp16.getfretless.com/week5/day20/</link>
       <pubDate>Mon, 27 Jun 2016 16:25:11 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week5/day20/</guid>
+      <guid>http://bootcamp16.getfretless.com/week5/day20/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 27, 2016&lt;/date&gt;&lt;/p&gt;
@@ -98,10 +98,10 @@ mailgunClient.messages().send(emailData, function(error, body) {
     
     <item>
       <title>Day 21: Directives and Angular Form Validation</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/day21/</link>
+      <link>http://bootcamp16.getfretless.com/week5/day21/</link>
       <pubDate>Tue, 28 Jun 2016 16:32:11 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week5/day21/</guid>
+      <guid>http://bootcamp16.getfretless.com/week5/day21/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, June 28, 2016&lt;/date&gt;&lt;/p&gt;
@@ -174,10 +174,10 @@ function myDirective() {
     
     <item>
       <title>Days 22-24: Wrapping up Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week5/day22/</link>
+      <link>http://bootcamp16.getfretless.com/week5/day22/</link>
       <pubDate>Wed, 29 Jun 2016 16:21:28 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week5/day22/</guid>
+      <guid>http://bootcamp16.getfretless.com/week5/day22/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, June 28, 2016&lt;/date&gt;&lt;/p&gt;

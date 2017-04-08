@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week7s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week7/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week7/index.xml</link>
     <description>Recent content in Week7s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Jul 2016 18:53:46 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week7/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wrapping up Meganote</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/</link>
+      <link>http://bootcamp16.getfretless.com/week7/</link>
       <pubDate>Mon, 11 Jul 2016 18:53:46 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/</guid>
       <description>
 
 &lt;h3 id=&#34;week-7&#34;&gt;Week 7&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 29: More User Authentication</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day29/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day29/</link>
       <pubDate>Mon, 11 Jul 2016 19:00:12 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day29/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day29/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, July 11, 2016&lt;/date&gt;&lt;/p&gt;
@@ -87,10 +87,10 @@ bcrypt.compare(&#39;password_string&#39;, stored_password_hash, (err, res) =&amp
     
     <item>
       <title>Day 30: Authentication with JWT</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day30/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day30/</link>
       <pubDate>Tue, 12 Jul 2016 15:22:54 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day30/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day30/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, July 12, 2016&lt;/date&gt;&lt;/p&gt;
@@ -186,10 +186,10 @@ HMACSHA256(
     
     <item>
       <title>Day 31: Deployment</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day31/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day31/</link>
       <pubDate>Fri, 15 Jul 2016 14:40:02 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day31/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day31/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, July 13, 2016&lt;/date&gt;&lt;/p&gt;
@@ -252,10 +252,10 @@ HMACSHA256(
     
     <item>
       <title>Day 32: Minification, Promises and ng-Resource</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day32/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day32/</link>
       <pubDate>Thu, 14 Jul 2016 14:49:51 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day32/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day32/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, July 14, 2016&lt;/date&gt;&lt;/p&gt;
@@ -357,10 +357,10 @@ firstPromise
     
     <item>
       <title>Day 33: Freelancing and Ruby</title>
-      <link>http://replace-this-with-your-hugo-site.com/week7/day33/</link>
+      <link>http://bootcamp16.getfretless.com/week7/day33/</link>
       <pubDate>Fri, 15 Jul 2016 14:17:08 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week7/day33/</guid>
+      <guid>http://bootcamp16.getfretless.com/week7/day33/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Friday, July 15, 2016&lt;/date&gt;&lt;/p&gt;
@@ -409,9 +409,9 @@ firstPromise
 &lt;h3 id=&#34;meganote-server-updates&#34;&gt;Meganote Server updates&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/xternbootcamp16/meganote/commit/380a11f620ce4338e604c8ab23f7930659be9aa0&#34; title=&#34;Allow unused args, prefixed with underscores.&#34;&gt;Allow unused args, prefixed with underscores.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/xternbootcamp16/meganote/commit/0fcb5ce435503c732d8b890416ae67722f0cfade&#34; title=&#34;Add focusOn directive for autofocus.&#34;&gt;Add focusOn directive for autofocus.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/xternbootcamp16/meganote/commit/1d3203f95625f8769a497d9b1912abae81d8140e&#34; title=&#34;Use focusOn to focus appropriate form fields.&#34;&gt;Use focusOn to focus appropriate form fields.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bootcamp16.getfretless.com//xternbootcamp16/meganote/commit/380a11f620ce4338e604c8ab23f7930659be9aa0&#34; title=&#34;Allow unused args, prefixed with underscores.&#34;&gt;Allow unused args, prefixed with underscores.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bootcamp16.getfretless.com//xternbootcamp16/meganote/commit/0fcb5ce435503c732d8b890416ae67722f0cfade&#34; title=&#34;Add focusOn directive for autofocus.&#34;&gt;Add focusOn directive for autofocus.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bootcamp16.getfretless.com//xternbootcamp16/meganote/commit/1d3203f95625f8769a497d9b1912abae81d8140e&#34; title=&#34;Use focusOn to focus appropriate form fields.&#34;&gt;Use focusOn to focus appropriate form fields.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;

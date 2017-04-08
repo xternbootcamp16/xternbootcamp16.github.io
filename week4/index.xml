@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week4s on Xtern Bootcamp 16</title>
-    <link>http://replace-this-with-your-hugo-site.com/week4/index.xml</link>
+    <link>http://bootcamp16.getfretless.com/week4/index.xml</link>
     <description>Recent content in Week4s on Xtern Bootcamp 16</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Jun 2016 16:15:26 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/week4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bootcamp16.getfretless.com/week4/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Angular: Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/</link>
+      <link>http://bootcamp16.getfretless.com/week4/</link>
       <pubDate>Mon, 20 Jun 2016 16:15:26 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/</guid>
       <description>
 
 &lt;h3 id=&#34;week-4&#34;&gt;Week 4&lt;/h3&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Day 15: Mutant Office Hours</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day15/</link>
+      <link>http://bootcamp16.getfretless.com/week4/day15/</link>
       <pubDate>Mon, 20 Jun 2016 13:16:56 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day15/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/day15/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Monday, June 20, 2016&lt;/date&gt;&lt;/p&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Day 16: Firebase and Twilio</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day16/</link>
+      <link>http://bootcamp16.getfretless.com/week4/day16/</link>
       <pubDate>Tue, 21 Jun 2016 16:10:52 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day16/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/day16/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Tuesday, June 21, 2016&lt;/date&gt;&lt;/p&gt;
@@ -170,10 +170,10 @@ client.messages.create({
     
     <item>
       <title>Day 17: Authorization</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day17/</link>
+      <link>http://bootcamp16.getfretless.com/week4/day17/</link>
       <pubDate>Wed, 22 Jun 2016 14:34:38 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day17/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/day17/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Wednesday, June 22, 2016&lt;/date&gt;&lt;/p&gt;
@@ -221,10 +221,10 @@ client.messages.create({
     
     <item>
       <title>Day 18: Re-Factory-ing</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day18/</link>
+      <link>http://bootcamp16.getfretless.com/week4/day18/</link>
       <pubDate>Thu, 23 Jun 2016 11:36:04 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day18/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/day18/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Thursday, June 23, 2016&lt;/date&gt;&lt;/p&gt;
@@ -280,10 +280,10 @@ function myFactory() {
     
     <item>
       <title>Day 19: Resolve and Directives</title>
-      <link>http://replace-this-with-your-hugo-site.com/week4/day19/</link>
+      <link>http://bootcamp16.getfretless.com/week4/day19/</link>
       <pubDate>Fri, 24 Jun 2016 15:41:42 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/week4/day19/</guid>
+      <guid>http://bootcamp16.getfretless.com/week4/day19/</guid>
       <description>
 
 &lt;p&gt;&lt;date&gt;Friday, June 24, 2016&lt;/date&gt;&lt;/p&gt;
